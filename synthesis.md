@@ -388,6 +388,179 @@ nondominated); and the certificate forms (feasible
 improvement, catalogue optimum, generator optimum, with
 certified branch pruning).
 
+### 3.10 Placements from the estate-wide content sweep (2026-11-18)
+
+Chris's ruling of 2026-11-18 01:59 PST: the accounting is
+estate-wide, by content, not by name. A sweep of all 565 repos
+then in the estate (method and counts in census.md) found
+proof-bearing content in eleven repos the first synthesis had
+not theorem-censused. Their placements follow; the annex files
+in census/ carry the full per-theorem censuses. The nine
+original family placements (sections 3.1 to 3.8) were refreshed
+in the same sweep at new pins: quantifiable now 186 theorems
+at f3709926 (toolchain moved to Lean 4.19.0; coverage still a
+premise, restated as an abbreviation of the premise's own
+mediation field); optimality 412 declarations across 33 root
+modules at b52c3170 (the two general Pareto obligations
+discharged; the five design items proven in fenced forms or
+disproven where the design document warned); composable at
+a3058ba6 (its copied modules became pinned dependencies; its
+own theorems grew 49 to 52); the two claim shells landed full
+proof packages (regress: 131 theorems at c36829da; review: 82
+at 40b1e885); solvable 51 at 5bbceee7 and frontier 18 at
+6a41c7be, both by example-only additions; certifiable and safe
+remain claimed-not-proven at their heads, each with a worked
+example landed and the safe branch still unmerged. Five repos
+moved again while the sweep ran — optimality, composable,
+traceability, idol-theses, and idol — and their placements
+stand at the census pins named here with the live heads
+recorded in census.md; re-census is owed on each and is the
+continuous job's next input.
+
+Stage 2 and 4 — idol-semi, census pin 508d7c66 (the identical
+tree stands at the same pin as semi-persistent; one census
+covers both). The largest proof tree in the estate: 156 Lean
+files and 2,053 named theorems on a Lean and Mathlib pin of
+version 4.35.0, proving soundness, completeness, and fidelity
+results for a congruence-closure and e-matching engine
+(saturation modulo the theory, flattened views, environment
+and step semantics), plus a conformance development of
+executable generators with 200 fixtures per family, and, on
+the Rust side of the same tree, Verus proofs in the abstract
+domains, verified containers, anti-unification, and engine
+crates. Nine disproofs are flagged in its census (among them
+delta incompleteness and an off-spine unsoundness family).
+State: PROVEN as source statements at the pin, with a clean
+admitted-proof token scan in this census; no recorded check
+log sits in the tree, so a passing gate at this exact head is
+CLAIMED, NOT PROVEN — its status file's passing-build claim
+stands at an earlier date. One internal discrepancy (the
+trusted-body marker count) is recorded in its annex as
+unknown, not resolved. In loop terms this tree is a second,
+independent formalization of the closure and fidelity content
+of stages 2 and 4, built for a different engine; no import
+joins it to the family modules, and the synthesis asserts no
+equivalence between the two developments.
+
+Stage 4 — premise-retraction-playground, census pin 47f469a4.
+Premise-tracked retraction exactness for a small least-squares
+model: the normal equations are a sum of per-premise blocks,
+retraction subtracts one block and re-solves in exact rational
+arithmetic. The general additive form is proven as ordinary
+mathematics in its readme (not machine-checked); the two demo
+fits were independently recomputed in this census and matched
+exactly; the page's run-time check is an executed verification.
+State: executed-arithmetic evidence — below kernel-checked
+proof in this ledger, placed at stage 4 as the retraction law
+in miniature.
+
+Stages 2, 4, and 5 — software-compilers-lose-info, census pin
+f531e31a. 33 theorems: a general loss lemma and a concrete
+distinguishing pair prove that no recovery map exists for a
+forgetting compiler (exact provenance is not a function of the
+conventional artifact); preservation proves recovery as a
+retraction on the qualified quotient, premise cones read from
+the carried artifact exactly, and merge reachability exactly
+the transitive closure of the union of the topologies;
+completeness proves same carried artifact exactly when same
+qualified quotient. Of the 14 audited headline results, 10 are
+axiom-free and 4 rest on propext and quotient soundness only.
+Carried openly: the behavior of a merge is not the join of the
+behaviors (derivation growth is proven one direction only);
+the general join-semilattice claim over all software states
+is a labeled premise, with only its hypergraph instance
+proven. State: PROVEN at the pin on the repo's recorded log.
+
+Stages 3 and 4 — software-is-more-traceable-than-you-think,
+census pin 4420fb1e. At this pin the repo carries a readme and
+an invoice example (5 theorems, fixture scale, PROVEN on its
+recorded transcript). The thesis content — the historical
+witness hypergraph over the real witness store, the grain
+determination, and the Lean proof of platform independence —
+is recorded in the repo's own readme as implemented in a lane
+and not yet landed in the repository. State in this repo:
+CLAIMED, NOT PROVEN for the thesis; the grain map PROPOSED.
+The placement stands so the gap is accounted, not hidden;
+the lane's own record is the place its evidence will land
+from, and the repo enters full census when the content does.
+
+All stages — idol-theses, census pin d207be6e. The Idol
+program's falsifiable theses formalized in Lean: 35 native
+theorems (a merge development of 20, the fold 5, the frontier
+8 plus a helper, a cited-registry module 2), a cited tranche
+of 9 theses carried from their family homes at their stated
+strengths (6 proven with their side conditions, the
+per-execution dominance thesis REFUTED, coverage a PREMISE),
+and a 16-entry future-work remainder stated as named work,
+including 2 further refuted entries. State: PROVEN as the
+repo states it for the native tranche; its check script
+enforces full coverage and prints axioms for 14 theorems,
+but no recorded check log sits in the repo, so a passing run
+at this pin is not evidenced in-repo.
+
+Stage 2 and 7 — software-testing-is-redundant, census pin
+66f65b6f. 22 theorems over a copied qualification foundation:
+an exact redundancy criterion (a test is redundant exactly
+when its outcome is entailed by the retained set) and its
+consequences, with a recorded gate log passing and 15 of 18
+printed theorems axiom-free. The unrestricted slogan of its
+name is REFUTED in-repo by a finite counterexample; the
+general form that survives is a strict-growth theorem for
+novel witnesses. State: PROVEN at the pin on the recorded log.
+
+Stage 7 — software-fuzzing-is-suboptimal, census pin
+18d9569b. 15 theorems: contract-bound strict dominance of an
+adaptive policy over fixed plans, proven; and the blanket
+reading REFUTED in-repo — every fixed two-query plan misses a
+world of a three-world oracle while the feedback policy
+succeeds in all three, and the converse dominance holds once
+the target is justified. Recorded gate log passing. State:
+PROVEN at the pin on the recorded log, the pair standing as
+the countermodel against any unconditional reading.
+
+Stage 5 and 7 — software-benchmarking-is-redundant-and-
+suboptimal, census pin 4314a181. 10 new theorems over
+foundation modules verified byte-identical to the testing
+repo's at its pin: conditional redundancy of benchmark runs
+and Pareto dominance of the retained set, proven in source;
+several stronger readings REFUTED in-repo (strict savings
+composing under parallel span, equal output implying equal
+cost, and two others). Its check script's run is not recorded
+in the repo, so the gate verdict at this pin is unknown from
+recorded logs and the readme's no-axioms statement is carried
+as claimed. State: PROVEN in source, gate unrecorded.
+
+Stage 5 — idol, census pin 561cf395 (proof-bearing content
+only; the repo's full placement is its family entry in
+census.md). One Lean file in the compiler tree carries 7
+theorems of the elaboration frontier: certain dominance
+between bound assignments holds exactly when every pair of
+realizations dominates; possible dominance exactly when some
+pair does; a certified candidate with a complete cover
+premise is cost-undominated by every eligible catalogue
+member; and the demand closure is least and distributes over
+unions. The file's own header carries the premises
+(qualification relative to the supplied catalogue, observer,
+and axes; measurement truth and coverage external). State:
+PROVEN as Lean source at the pin; no recorded check log
+covers the file. The same repo's checked-evidence tree is
+executed machine-checked evidence at its own named pins —
+4,918 controls across eleven batteries at its attributed pin,
+in its own words test controls, not independent proved
+theorems — and its polyglot fixture samples are test data,
+determined not results. Both are accounted in its annex.
+
+This repo — software-is-a-closed-loop, census pin d8047804.
+Its own proof-bearing content is one checked example: a
+four-point tuning space in which one step preserves
+feasibility and never raises cost, the bounded loop's winner
+is a feasible fixed point no feasible rival beats on cost,
+and the before-and-after trace computes as stated — 3
+theorems, all axiom-free, with the run recorded in the tree
+and a rejected control. State: PROVEN at the pin. The theorem
+statements this repo carries in its annex are other repos'
+results and are counted at their homes, never here.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -800,7 +973,8 @@ witnessing and accounting, at the finest grain). Read back at
 01:32 PST it did not yet exist. It is carried in the census
 as an announced entry, colored unknown, and enters at census
 depth on the continuous job's next re-enumeration after it
-lands.
+lands. (Sweep update: it has since landed and is placed in
+section 3.10 at its census pin.)
 
 ## 6. Evidence-state update — relayed external audit (unverified)
 

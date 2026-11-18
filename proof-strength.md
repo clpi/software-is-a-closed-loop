@@ -21,7 +21,7 @@ states are marked relayed until the verification lane
 reports (next-steps.md step 1). First ledger: 2026-11-18,
 at the first synthesis's census pins.
 
-## software-is-quantifiable — census pin 37917a41 (head ba27febf)
+## software-is-quantifiable — census pin f3709926 (sweep refresh 2026-11-18; first-synthesis pin 37917a41)
 
 - Proven: 46 theorems — finiteness (4), the fold (12),
   coloring (19, under the universe side condition), Pareto
@@ -45,7 +45,7 @@ at the first synthesis's census pins.
   ba27febf ran the lake build green with 63 theorems and
   clean hygiene.
 
-## software-optimality — census pin 0ea4626b (head aab49084)
+## software-optimality — census pin b52c3170 (sweep refresh 2026-11-18; first-synthesis pin 0ea4626b; head moved again after the sweep census — see the sweep section)
 
 - Proven: the fourteen modules' results as placed in
   synthesis.md — the axiom-free closure core, the
@@ -75,7 +75,7 @@ at the first synthesis's census pins.
   no errors or warnings). Relayed: the audit at af23f5d
   counted 26 files and 172 theorems, build green.
 
-## software-is-composable — pin 033c12c0
+## software-is-composable — pin a3058ba6 (sweep refresh 2026-11-18; first-synthesis pin 033c12c0)
 
 - Proven: 49 own theorems; of its 19 headline claims, 13
   proven and 5 DISPROVEN (per-execution monotonicity, module
@@ -103,7 +103,7 @@ at the first synthesis's census pins.
   earlier pin 929d8e35 found no proof in the repo at all —
   true at that pin; the verification lane settles the pair.
 
-## software-is-incrementally-certifiable — pin f3b9f896
+## software-is-incrementally-certifiable — pin c9ffd49a (sweep refresh 2026-11-18)
 
 - Proven: 0 at the default head.
 - On named premises: none stated in the repo.
@@ -118,7 +118,7 @@ at the first synthesis's census pins.
 - Controls in tree: none.
 - Gate state: none — no check script, no toolchain pin.
 
-## software-is-incrementally-safe — head 94661358; branch 5c1006a6
+## software-is-incrementally-safe — head 8ad1dd26; branch 5c1006a6 unmerged (sweep refresh 2026-11-18)
 
 - Proven: 0 at the default head. On the unmerged branch: 54
   theorems in its own modules plus 32 in two stand-ins —
@@ -146,7 +146,7 @@ at the first synthesis's census pins.
   rests on the pull-request body's quoted log. Relayed: the
   audit built the branch at de1b3071 green.
 
-## software-doesnt-have-to-regress — pin 24d36c13
+## software-doesnt-have-to-regress — pin c36829da (sweep refresh 2026-11-18)
 
 - Proven: 0. On named premises: none stated.
 - Absent: the entire claim — a release process with
@@ -157,7 +157,7 @@ at the first synthesis's census pins.
   proven nowhere.
 - Controls in tree: none. Gate state: none.
 
-## software-doesnt-need-review — pin ae5f3918
+## software-doesnt-need-review — pin 40b1e885 (sweep refresh 2026-11-18)
 
 - Proven: 0. On named premises: none stated.
 - Absent: any formal statement of when manual review is
@@ -166,7 +166,7 @@ at the first synthesis's census pins.
   proposal half of the readme is likewise absent as a design.
 - Controls in tree: none. Gate state: none.
 
-## software-is-solvable — pin 815e125f
+## software-is-solvable — pin 5bbceee7 (sweep refresh 2026-11-18)
 
 - Proven: 48 named theorems (closure core 10, executable
   closure 13, hyperlattice 15, executable witness 10),
@@ -191,7 +191,7 @@ at the first synthesis's census pins.
   errors; the recorded check log ends in PASS. Relayed: the
   audit built this pin green and confirmed hygiene.
 
-## software-frontier-is-solvable — pin c7ffc6d0
+## software-frontier-is-solvable — pin 6a41c7be (sweep refresh 2026-11-18)
 
 - Proven: 14 theorems, every one with a printed axiom line
   (standard axioms or none) — exact insertion and retraction
@@ -221,3 +221,250 @@ at the first synthesis's census pins.
   synthesis. Every column enters on the re-enumeration that
   first sees it: proven, premises, absent, controls, gate —
   all currently unrecorded, colored unknown.
+
+## Sweep refresh — 2026-11-18 (estate-wide content sweep)
+
+The rows above were first written at the first synthesis's
+pins. This section restates every row at the sweep's census
+pin and adds the rows for the repos the sweep found
+proof-bearing outside the original family. The annex files in
+census/ carry the full censuses these lines summarize.
+
+Refreshed rows, at their sweep pins:
+
+- software-is-quantifiable — f3709926. Proven: 186 theorems
+  (was 46): finiteness 13, fold 17, coloring 36 under the same
+  universe side condition, Pareto 35, coverage module 10, and
+  two new modules (interface 54, instance 21). Disproofs grew
+  from 1 to 9, plus 10 further counterexample results. On
+  named premises: coverage — restructured, and the coverage
+  name is now an abbreviation of the premise's mediation
+  field, not a theorem; a new axiom-free vacuity theorem
+  stands beside it. Toolchain: Lean 4.19.0 (was 4.15.0). Gate:
+  the readme records a warnings-as-errors build at exit 0;
+  the portable replayer record covers the earlier 63-theorem
+  base only.
+- software-optimality — b52c3170 (live head moved to a2e492cb
+  after this census; re-census owed). Proven: 412
+  declarations across 33 root modules and a composition
+  package (was 14 modules). Discharged in this refresh: the
+  two general Pareto obligations (bounds-derivation
+  soundness; aggregation well-defined) and the design items
+  in fenced forms — the linked certificate in its eligible
+  specialization plus the enumerated-generator upgrade, typed
+  transfer as checked pairs, the coverage upgrade for the
+  enumerated generator and named catalogues, product
+  decomposition in its fenced forms (unrestricted forms
+  disproven), and the certificate forms including worklist
+  agreement. Not discharged: the coloring lawful and unlawful
+  characterizations. Gate: two recorded logs at the pin,
+  247 axiom prints, all standard or empty.
+- software-is-composable — a3058ba6 (live head moved to
+  7d72fd08 after this census; re-census owed). Proven: its own
+  theorems grew 49 to 52 (a new bridge module); the same 19
+  headlines stand with the same axiom sets. Defect-rule note,
+  flagged rather than absorbed: the in-tree theorem count
+  fell from 94 to 56 because the 45 byte-copied upstream
+  modules were removed and replaced by pinned dependencies on
+  optimality and quantifiable. That is de-duplication, not a
+  shrink of the proven set — the claims those modules carried
+  are now cited at their stronger homes, and the repo's own
+  proven set grew. The recorded gate log predates the bridge
+  module, so the 3 bridge theorems' axiom sets are unknown
+  from recorded evidence.
+- software-is-incrementally-certifiable — c9ffd49a. Proven at
+  head: 7 theorems, all inside a worked Merkle-tree repair
+  example with recorded axiom sets and a rejected control.
+  Absent: the library itself — the thesis (certification
+  extensivity with Pareto dominance across releases) remains
+  claimed, not proven; no toolchain pin or lakefile yet.
+- software-is-incrementally-safe — head 8ad1dd26. Proven at
+  head: 6 theorems inside a worked policy-migration example.
+  The former branch content (86 theorems at audited strength)
+  has NOT merged; its pull request is still open and none of
+  its files are in the head tree. The thesis at head remains
+  claimed, not proven. No proven-set shrink: the branch
+  content was never head content.
+- software-doesnt-have-to-regress — c36829da. Proven: 131
+  theorems (125 library across six modules, plus guards and
+  example theorems), where the first synthesis recorded 0.
+  Recorded gate log passes; 28 headline axiom prints, all
+  standard or none. Absent at this pin: nothing in its claim
+  list lacks a statement; its dependencies are pinned at
+  older sibling pins, recorded in its annex.
+- software-doesnt-need-review — 40b1e885. Proven: 82 theorems
+  in tree (76 library across ten modules, 4 example, 2 inside
+  planted controls that must fail), where the first synthesis
+  recorded 0. The broad redundancy claim is refuted in its
+  own table; only the narrow cone form is proven. Gate: a
+  complete check script stands in the tree but no recorded
+  run log does — recorded pass unknown.
+- software-is-solvable — 5bbceee7. Proven: 51 (library
+  unchanged at 48 with the same names; 3 new example theorems,
+  all axiom-free). Guards unchanged at 35; recorded log
+  passes; the two shared modules re-verified byte-identical
+  to optimality at its sweep pin.
+- software-frontier-is-solvable — 6a41c7be. Proven: 18
+  (library unchanged at 14 with the same axiom sets; 4 new
+  example theorems). Examples 15 and disproofs 2 unchanged;
+  recorded log identical to the first census.
+
+New rows from the sweep:
+
+## idol-semi — pin 508d7c66 (the same tree stands as semi-persistent at the same pin)
+
+- Proven: 2,053 named theorems across 156 Lean files —
+  congruence closure 493, matching 1,483 (engine, flattened
+  views, environment, steps, proof files, base), fidelity 72,
+  final 5 — plus a conformance development of executable
+  generators (200 fixtures per family, no theorems), and
+  Verus proofs on the Rust side (proof functions in the
+  abstract domains, verified containers, anti-unification,
+  and engine crates). Nine disproofs flagged in its annex.
+- On named premises: the anti-unification crate expressly
+  does not claim the derived value equals the optimum or that
+  the solver is refined; the container crate's verified-fact
+  count is a recorded claim dated 2026-08-24, with no log in
+  the tree.
+- Absent: a recorded check log at this head — the check
+  script and CI gate stand in the tree, and the census token
+  scan is clean (no admitted proofs; 424 print-axioms lines
+  across 23 check files), so theorems are proven as source
+  statements while a passing gate at this exact head is
+  claimed, not proven. One internal trusted-body count
+  discrepancy is recorded as unknown in its annex.
+- Controls in tree: the conformance fixtures and the check
+  files. Toolchain: Lean with Mathlib at version 4.35.0 —
+  the only Mathlib-bearing proof tree in the estate.
+
+## premise-retraction-playground — pin 47f469a4
+
+- Proven: the additive form of retraction exactness as
+  ordinary mathematics in its readme (not machine-checked);
+  its two demo fits independently recomputed in the sweep
+  with exact rational arithmetic, matching all six printed
+  weight values.
+- Absent: any kernel-checked form; the page's general
+  exactness claim for its own code is claimed, not proven —
+  an executed run-time verification, placed below
+  kernel-checked proof in this ledger. Controls: the in-page
+  exact comparisons (five, byte-identical). Gate: none in
+  tree.
+
+## software-compilers-lose-info — pin f531e31a
+
+- Proven: 33 theorems (loss 12, preservation 10, basic 5,
+  completeness 2, implications 4), plus the hypergraph
+  instance of the join-semilattice premise shape and a
+  4-theorem example. Of 14 audited headline results: 10
+  axiom-free, 4 on propext and quotient soundness only. The
+  other 19 theorems are not in the audit print list; their
+  axiom state is unknown from recorded evidence.
+- On named premises: the general join-semilattice claim over
+  all software states is a labeled premise; no theorem
+  depends on it.
+- Absent (by the repo's own scoping): merge behavior as the
+  join of behaviors — derivation growth is proven one
+  direction only. Controls: a recorded rejected mutation in
+  the example. Gate: the recorded check log at the pin.
+
+## software-is-more-traceable-than-you-think — pin 4420fb1e
+
+- Proven in this repo: 5 theorems of an invoice example, at
+  fixture scale, on its recorded transcript (3 on propext and
+  quotient soundness, 2 axiom-free), with a recorded rejected
+  mutation.
+- Absent in this repo: the thesis itself — the witness
+  hypergraph construction, the grain determination, and the
+  platform-independence proof are recorded in its readme as
+  implemented in a lane and not yet landed here. State:
+  claimed, not proven, in-repo; the grain map proposed.
+  (Live head moved to 5f84b051 after this census; what landed
+  there is the continuous job's next re-census.)
+
+## idol-theses — pin d207be6e
+
+- Proven: 35 native theorems (merge 20, fold 5, frontier 8
+  plus 1 private helper, cited-registry 2), stated at the
+  strengths the repo itself states. Its cited tranche carries
+  9 family theses at their homes' strengths: 6 proven with
+  side conditions, 1 refuted (per-execution dominance),
+  coverage a premise.
+- Absent: the 16-entry future-work remainder is stated as
+  named work, not results — it includes 2 further refuted
+  entries and premise, proposed, and claimed-not-proven
+  entries, none counted as proved. Gate: the check script
+  enforces full coverage and prints axioms for 14 theorems,
+  but no recorded check log sits in the repo — a passing run
+  at this pin is not evidenced in-repo. (Live head moved to
+  ea7437ac after this census; re-census owed.)
+
+## software-testing-is-redundant — pin 66f65b6f
+
+- Proven: 22 theorems (foundation 10, copied unchanged;
+  redundancy theory 10; executable decision 2), plus 15
+  checked examples and a 4-theorem capacity example. Of 18
+  printed theorems, 15 are axiom-free and 3 rest on the
+  standard pair only.
+- Refuted in-repo: the unrestricted slogan of its name, by a
+  finite counterexample; the surviving general form is the
+  novel-witness strict-growth theorem.
+- Controls: the recorded gate log passes with both rejection
+  controls; sums verified in the sweep.
+
+## software-fuzzing-is-suboptimal — pin 18d9569b
+
+- Proven: 15 theorems (dominance core 8, executable checker
+  2, fixtures 5), plus 18 checked examples and a 5-theorem
+  campaign example. Of 9 printed theorems: 4 axiom-free, 4 on
+  propositional extensionality only, 1 on the standard pair.
+- Refuted in-repo: blanket fixed-over-adaptive superiority,
+  and its converse once the target is justified — the pair is
+  the standing countermodel.
+- Controls: the recorded gate log passes, including rejection
+  of a proof hole, a false derivation, and four forbidden
+  tokens. Gate-coverage note: the gate's token scan covers
+  the three main modules; the example runs under its own
+  runner.
+
+## software-benchmarking-is-redundant-and-suboptimal — pin 4314a181
+
+- Proven in source: 10 new theorems in the benchmark module,
+  plus 17 checked examples and a 4-theorem campaign example;
+  the 20 foundation theorems are byte-identical copies of the
+  testing repo's at its pin, counted there.
+- Refuted in-repo: strict savings composing under parallel
+  span; equal output implying equal cost; one covered outcome
+  making a flaky experiment redundant; zero-cost redundancy
+  implying strict dominance.
+- Absent: a recorded main-gate run — the check script stands
+  in the tree with its controls, unrecorded, so the gate
+  verdict at this pin is unknown from recorded logs and the
+  readme's no-axioms statement for the new theorems is
+  carried as claimed.
+
+## idol — pin 561cf395 (proof-bearing content only)
+
+- Proven: 7 theorems in one Lean file of the compiler tree
+  (the elaboration frontier: certain and possible dominance
+  exactness, axis composition, certificate soundness under a
+  cover premise, closure least and union), zero sorry tokens
+  by the sweep's scan; the file prints axioms for six of the
+  seven when compiled.
+- On named premises: the file's own header — qualification
+  relative to the supplied catalogue, observer, and axes;
+  measurement truth and envelope coverage external.
+- Absent: a recorded check log covering the file — gate state
+  unknown. The repo's checked-evidence tree is executed
+  evidence at its own named pins (4,918 controls, in its own
+  words not independent proved theorems), accounted in its
+  annex and never in this ledger's proven column. (Live head
+  moved to c8336841 after this census; re-census owed.)
+
+## software-is-a-closed-loop — pin d8047804 (its own content)
+
+- Proven: 3 theorems of its checked tuning example, all
+  axiom-free, with the run recorded in the tree and a
+  rejected control (advancing beyond the cap refused).
+- Absent: nothing else is claimed — the theorem statements in
+  its annex are other repos' results, counted at their homes.
