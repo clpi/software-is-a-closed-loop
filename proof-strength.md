@@ -520,3 +520,144 @@ names at the live head, one mechanical method both times):
   census pins with the owed mark; the annex watch deltas
   record the watch's mechanical counts at the live heads.
   No pin moved without a ledger entry saying so.
+
+## Watch refresh — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-enumerated the estate at 565 repos, every head
+read individually with no errors, and cloned every moved
+proof repo at its fresh head. Counts below are the watch's
+mechanical method, one method at both heads: every theorem
+or lemma declaration in every Lean file, with distinct
+short names compared between the last recorded head and
+the fresh head. Placements stand at the census pins named
+in each row; a full theorem-level re-census at each fresh
+head is owed, except for this repo itself, re-censused in
+full in its annex.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The name comparison found zero
+  lost names in every moved proof repo, and the idol repo's
+  one Lean file is byte-identical between its pins. No
+  regression is flagged.
+- No pin moved without this ledger moving: every moved
+  proof repo has its row restated below in this same pass.
+  No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-quantifiable — fresh head d88acbdc (census
+  pin f3709926). Proven by the watch method: 208
+  declarations, 204 distinct names (was 189 and 185 at the
+  last recorded head); 19 gained, none lost. The growth is
+  the range example and one verification controls file.
+  Premises, absent set, and controls stand as the sweep row
+  records. Gate: as the sweep row records.
+- software-optimality — enumeration head f759c33f, cloned
+  head ec1eadda (census pin b52c3170). Proven by the watch
+  method: 557 declarations, 536 distinct names at the
+  cloned head (was 470 and 450 at the last recorded head);
+  86 gained, none lost. Eight new root modules — a
+  historical certificates group, an observation group, and
+  a three-valued gate — beside the range example. Gate: a
+  recorded check log stands at the cloned head, its axiom
+  prints ending in the new observation modules, all
+  standard or empty as printed there.
+- software-is-composable — fresh head dce6564b (census pin
+  a3058ba6). Proven: 70 declarations, 67 distinct names
+  (was 66 and 64); 3 gained, none lost — the range example
+  only. Premises, absent set, controls, and gate stand as
+  the sweep row records.
+- software-is-incrementally-certifiable — fresh head
+  36901673 (census pin c9ffd49a). State change at the head:
+  a full library now stands there — 88 declarations, 88
+  distinct names (was 7) — where the sweep row recorded
+  seven example theorems and the thesis absent as a
+  library. Proven at the head, at the strength the tree
+  states: the certification closure results in the repo's
+  own claims table, marked proven there, with one union
+  reading marked disproven. On named premises: the five
+  premises the repo's own readme now names (required
+  nonempty, nothing outside, no coverage gaps, an
+  independence premise, a coverage premise). Absent: a
+  full census of the new library in this ledger — owed.
+  Gate: a recorded check log stands in the tree and ends
+  in a pass.
+- software-is-incrementally-safe — enumeration head
+  dafd79a4, cloned head c9592e93 (head census pin
+  8ad1dd26). State change at the head: a full library now
+  stands there — 131 declarations, 129 distinct names at
+  the cloned head (was 6 at the head) — where the sweep
+  row recorded six example theorems and the former branch
+  content unmerged. The repo's own claims table marks its
+  first findings proven at the head, and its readme names
+  the spec authority trust the checker does not derive.
+  Absent: a full census of the new library in this ledger
+  — owed; the audited-strength caveats of the sweep row
+  stand until that census lands. Gate: no recorded check
+  log stands in the head tree — a passing gate at this
+  head is unrecorded.
+- software-doesnt-have-to-regress — fresh head 858a85e3
+  (census pin c36829da). Proven: 137 declarations (was
+  131); 6 gained, none lost — the range example only.
+  Gate: the recorded log stands as the sweep row records.
+- software-doesnt-need-review — fresh head 1d504014
+  (census pin 40b1e885). Proven: 85 declarations (was
+  82); 3 gained, none lost — the range example only. The
+  only sorry token and the only axiom declaration in the
+  tree sit inside the planted controls that must fail, as
+  the sweep row records. Gate: still unrecorded, as the
+  sweep row records.
+- software-is-solvable — fresh head 3053b78d (census pin
+  5bbceee7). Proven: 54 declarations (was 51); 3 gained,
+  none lost — the range example only. Gate: the recorded
+  log stands as the sweep row records.
+- software-frontier-is-solvable — fresh head 22418d56
+  (census pin 6a41c7be). Proven: 66 declarations, 63
+  distinct names (was 18); 45 gained, none lost. Five new
+  library files stand beside the range example, so the
+  growth is library growth. Gate: a recorded check log
+  stands at the fresh head with axiom prints for the new
+  modules, standard or empty as printed there.
+- software-compilers-lose-info — fresh head 69358971
+  (census pin f531e31a). Proven: 41 declarations (was
+  37); 4 gained, none lost — the range example only.
+  Gate: the recorded log stands as its row records.
+- software-is-more-traceable-than-you-think — fresh head
+  8f6a1280 (census pin 4420fb1e). Proven in this repo: 43
+  declarations by the watch method (was 37 at the last
+  recorded head); 6 gained, none lost — the range example
+  only. Absent: the thesis itself, still claimed and not
+  proven in-repo, as its row records.
+- idol-theses — fresh head c443ebe1 (census pin
+  d207be6e). Proven: 87 declarations, 75 distinct names
+  (was 35 and 23 at the last recorded head); 52 gained,
+  none lost — one new solver dominance file. Gate: still
+  no recorded check log in the repo, as its row records.
+- software-testing-is-redundant — fresh head 18feb7ab
+  (census pin 66f65b6f). Proven: 30 declarations (was
+  26); 4 gained, none lost — the range example only.
+  Gate: the recorded log stands as its row records.
+- software-fuzzing-is-suboptimal — fresh head 6ed7a596
+  (census pin 18d9569b). Proven: 27 declarations (was
+  21); 6 gained, none lost — the range example only.
+  Gate: the recorded log stands as its row records.
+- software-benchmarking-is-redundant-and-suboptimal —
+  fresh head a85286ac (census pin 4314a181). Proven in
+  source: 37 declarations (was 34); 3 gained, none lost
+  — the range example only. Gate: still unrecorded for
+  the main gate, as its row records.
+- idol — enumeration head ef3dbcfa (census pin 561cf395,
+  proof-bearing content only). Proven: unchanged — the
+  one Lean file is byte-identical at both pins, 4,733
+  bytes, still carrying its 7 theorems on the premises
+  its row records. Gate: unknown, as its row records.
+- software-is-a-closed-loop — new census pin d558669b.
+  Proven: 11 theorems of its own (was 3): the first
+  example's three, axiom-free, plus the range example's
+  eight, six on subsets of the standard axioms, one
+  axiom-free, and one with no printed axiom line in the
+  recorded transcript, its axiom state unrecorded.
+  Controls: the recorded transcript's rejected control
+  stands beside the first example's. Gate: the recorded
+  verification transcript in the tree.
