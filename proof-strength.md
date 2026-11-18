@@ -661,3 +661,82 @@ Restated rows, at their fresh heads:
   Controls: the recorded transcript's rejected control
   stands beside the first example's. Gate: the recorded
   verification transcript in the tree.
+
+## Watch refresh — 2026-11-18, the third hourly re-synthesis watch
+
+The watch re-enumerated the estate at 565 repos, every head
+read individually with no errors, and cloned every moved
+proof repo at its fresh head. Counts below are the watch
+mechanical method, one method at both heads: every theorem
+or lemma declaration in every Lean file, with distinct
+short names compared between the last recorded head and
+the fresh head. Placements stand at the census pins named
+in each row; a full theorem-level re-census at each fresh
+head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The name comparison found zero
+  lost names in every moved proof repo: the optimality repo
+  gained 52 names, the safe repo gained 17, the composable
+  repo held its set, the idol frontier file is unchanged
+  while its release tools files gained nine declarations
+  with no name lost, and this repo's eleven names stand
+  unchanged. No regression is flagged.
+- No pin moved without this ledger moving: every moved
+  proof repo has its row restated below in this same pass.
+  No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-optimality — fresh head 95df5fb7 (census
+  pin b52c3170). Proven by the watch method: 684
+  declarations, 588 distinct names (was 557 and 536 at the
+  last recorded cloned head); 52 gained, none lost.
+  Eleven new Lean files: a root module on the executable
+  incremental form, and composition developments on axiom
+  audit, exhaustive edits, identity and representation,
+  and incremental selection, with a portable evidence
+  folder. Premises and absent set stand as the sweep row
+  records. Gate: a recorded check log stands in the tree
+  at the fresh head.
+- software-is-composable — fresh head 7b174646 (census
+  pin a3058ba6). Proven: 70 declarations, 67 distinct
+  names, unchanged from the last recorded head; no name
+  gained and none lost. The movement is a dependency
+  re-pin in the lake file and its manifest, with a readme
+  update; no library source file changed. Premises,
+  absent set, controls, and gate stand as the sweep row
+  records.
+- software-is-incrementally-safe — fresh head 23a22552
+  (census pin 8ad1dd26). Proven by the watch method: 148
+  declarations, 146 distinct names (was 131 and 129 at
+  the last recorded cloned head); 17 gained, none lost.
+  The growth stands in the model, cone, check, and
+  ordered increment modules, with one new audit file.
+  The audited-strength caveats of the sweep row stand
+  until a full census of the library lands. Gate: no
+  recorded check log stands in the head tree, as the
+  sweep row records for the earlier head.
+- idol — fresh head 2f44b4fe (census pin 561cf395,
+  proof-bearing content only). Proven: the frontier file
+  is unchanged — byte-identical at both pins, 4,733
+  bytes, still carrying its 7 theorems on the premises
+  its row records. A second development in the release
+  tools folder, landed after the census pin and not in
+  the sweep census, grew in this window: its retention
+  file carries 20 declarations (was 16 at the last
+  recorded head; 4 gained, none lost) and a new
+  qualification file carries 5, with print-axioms lines
+  for all five in the file and no sorry token in either
+  file by the watch scan. Gate: unknown for the frontier
+  file, as its row records, and unknown for the release
+  tools files — no recorded check log covering them was
+  read in this watch. A full census of the release tools
+  development is owed.
+- software-is-a-closed-loop — fresh head 98761a1a
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the census pin and at the fresh
+  head, which is the head the second watch landed; the
+  commits between them carry no Lean change. Controls
+  and gate stand as the second watch row records.
