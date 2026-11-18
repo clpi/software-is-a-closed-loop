@@ -221,3 +221,24 @@ own eleven theorems stand unchanged at the head one ledger
 addendum past the third watch landing. All census pins
 stand with re-census owed at the fresh heads recorded in
 the pins file.
+
+Fifth watch update (2026-11-18, later the same night): the
+estate was re-enumerated a sixth time at 565 repos, every
+head read individually with no errors. Six repos had
+moved, none were new or gone, and the paper source hash
+was unchanged at the value recorded in the sync note, so
+no paper re-sync was owed. Two proof repos moved without
+any change to their proof content: the idol repo's
+movement is compiler and gate work with every Lean file
+byte-identical (fresh head 586ff5a1, census pin 561cf395,
+re-census owed), and the semi repo gained ten files of
+analysis and parity tooling with every Lean and Rust
+file unchanged (fresh head 238717ba, census pin 508d7c66,
+re-census owed) — its mirror did not move, so the two
+heads have diverged while their proof content remains
+identical. Three further idol-family repos moved and
+remain proof-free by the named check, and this repo's
+own eleven theorems stand unchanged at the head the
+fourth watch landed. All census pins stand with
+re-census owed at the fresh heads recorded in the pins
+file.

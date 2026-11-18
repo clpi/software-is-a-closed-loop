@@ -1242,3 +1242,42 @@ is the V-language example set the sweep already resolved
 as not Coq; it remains proof-free by the named check. This
 repo's own head moved by one ledger addendum commit from
 another lane; its eleven theorems stand unchanged.
+
+## 10. Watch update — 2026-11-18, the fifth hourly re-synthesis
+
+The fifth watch re-enumerated the estate completely: 565
+repos, every head read individually, no read errors.
+Six repos had moved since the last recorded heads,
+none were new, none were gone, and the paper source
+hash was unchanged, so no paper re-sync was owed.
+Three of the six are proof repos and three are other
+idol-family repos; there was no long-tail movement
+this watch. The annex watch deltas carry the tree
+evidence at the fresh heads; the placements in
+section 3 stand at their census pins, with re-census
+owed at the new heads.
+
+Both moved proof repos moved without touching their
+proof content. In the idol repo every Lean file is
+byte-identical between the two heads — the frontier
+file, both release tools files, and the solver history
+file all stand at the same blobs — and the movement
+is compiler and gate work. In the semi repo the
+movement is addition only: ten new files of analysis
+and parity tooling, with every Lean and Rust file
+unchanged, so the largest proof tree in the estate
+stands at the fresh head with its content and its
+gate state exactly as the sweep census recorded them.
+One placement fact does change: the semi repo's mirror
+did not move, so the two no longer stand at one head;
+their proof content remains identical, and the
+divergence is recorded in the annex delta and the
+ledger.
+
+The three other idol-family repos — the compiler port,
+the library, and the relay — were read by tree at
+their fresh heads; no proof-assistant source was
+found in any of them and no tree read was truncated,
+so they remain proof-free by the named check. This
+repo's own head moved only by the fourth watch
+landing itself; its eleven theorems stand unchanged.

@@ -139,6 +139,30 @@ development in its solver benchmarks, recorded in its
 annex delta, and the safe repo's merged change discharged
 its string cone hypothesis, recorded in its annex delta.
 
+## Watch update — 2026-11-18 (fifth hourly re-synthesis)
+
+A sixth enumeration the same night: 565 repos, every head
+read individually, no read errors. Six repos had moved
+since the last recorded heads, none were new, none were
+gone, and the paper source hash was unchanged. The
+moved set: the proof repos idol and idol-semi, and this
+repo itself; and three further idol-family repos (the
+compiler port, the library, and the relay). Fresh heads
+for every repo stand in the pins file at this
+re-synthesis. Both moved proof repos were read in full
+at their fresh heads: every Lean file in each is
+byte-identical to its last recorded head, so their
+proven sets are unchanged and their annex deltas record
+the tree evidence. The semi repo's movement is ten
+added files of analysis and parity tooling; its mirror
+did not move and still stands at the shared census pin,
+so the two repos' heads have diverged while their proof
+content remains identical. The three further idol-family
+repos were read by tree at their fresh heads and carry
+no proof-assistant content, so they remain proof-free
+by the named check; no tree read was truncated this
+watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -215,15 +239,15 @@ software whose releases the loop qualifies, and the machinery
 that runs the loop on the engine side. Heads as read
 2026-11-18 ~01:30 PST.
 
-- idol (107e52a9) — the language and compiler: the named
+- idol (586ff5a1) — the language and compiler: the named
   software of stage 0, the source of the executions stage 3
   witnesses, and the pin every improvement re-enters against.
   Active; moved during census night.
-- idol-compiler (dd28e0c8) — the pure-Idol compiler port: an
+- idol-compiler (5ca148f4) — the pure-Idol compiler port: an
   improvement line whose pins are stage 8 candidates against
   the production compiler; its performance stands UNMEASURED
   in the wider record.
-- idol-lib (7785c481) — the library ports: measured
+- idol-lib (69ee40eb) — the library ports: measured
   candidates — every port wins compactness and loses speed on
   the shared gaps in the wider record; those cells are stage 5
   frontier readings over this repo's pins.
@@ -257,8 +281,8 @@ that runs the loop on the engine side. Heads as read
   idol-edit 6f0d83dc, idol-eyes d7e7b009, idol-id cd4c2e55,
   idol-id-agents 40cad7d9, idol-ide d06fd36c, idol-ifconv
   3590f2a4, idol-kernel 5832fb78, idol-native 4a851575,
-  idol-relay a237fdb9 — pushed during census night,
-  idol-restored 1c4ef7fd, idol-semi 508d7c66, idol-space
+  idol-relay 76939fd5 — pushed during census night,
+  idol-restored 1c4ef7fd, idol-semi 238717ba, idol-space
   37bb410d, idolg 94de4e5c) are placed by their names and
   listing descriptions in the table below and colored
   unexamined in this census — unknown — except where the
@@ -542,10 +566,10 @@ same data, machine-readable, is synthesis-pins.json.
 | idlntx | public | primitive experimental version of the real thing | 0c6deec9 | 2021-06-16 |  | unknown (unexamined) |
 | idlx | public |  | 61d0acda | 2022-05-28 |  | unknown (unexamined) |
 | idnx | private |  | d0fdd1db | 2022-02-05 |  | unknown (unexamined) |
-| idol | private |  | 107e52a9 | 2026-11-18 |  | idol family — placements above |
+| idol | private |  | 586ff5a1 | 2026-11-18 |  | idol family — placements above |
 | idol-api | private | Idol-authored compiler and semantic graph API; native admission and production qualification tracked explicitly | 46b8f168 | 2026-11-08 |  | idol family — placements above |
 | idol-canary-7x3q | private | canary - do not delete | empty | 2026-09-25 | no commits | idol family — placements above |
-| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler | dd28e0c8 | 2026-11-18 |  | idol family — placements above |
+| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler | 5ca148f4 | 2026-11-18 |  | idol family — placements above |
 | idol-console | private |  | 7e25bda8 | 2026-10-30 |  | idol family — placements above |
 | idol-edit | private | Independent Idol source editor. Graph and Space are separate products. | 6f0d83dc | 2026-11-07 |  | idol family — placements above |
 | idol-eyes | private | Idol-native computer perception, control, and UI. Graph-owned semantics; verified outcomes; measured Peekaboo parity and dominance as release gates. | d7e7b009 | 2026-11-08 |  | idol family — placements above |
@@ -558,17 +582,17 @@ same data, machine-readable, is synthesis-pins.json.
 | idol-ir | private | Idol graph IR: keyword-free surface other languages compile to and emit from. Measured kernel floors. No module paths. | ef3b9ea1 | 2026-11-12 |  | idol family — placements above |
 | idol-kernel | private | Idol kernel: law-inheriting graph → demand → one realization. Not a new language. Donor: clpi/idol-restored@1d085bf. | 5832fb78 | 2026-10-07 |  | idol family — placements above |
 | idol-lake | private |  | empty | 2026-10-29 | no commits | idol family — placements above |
-| idol-lib | private | Daily graph-native Idol rewrites of major open source codebases: one per day, minimum lines, minimum syntax, highest performance, proven against the incumbent. |  7785c481  | 2026-11-17 |  | idol family — placements above |
+| idol-lib | private | Daily graph-native Idol rewrites of major open source codebases: one per day, minimum lines, minimum syntax, highest performance, proven against the incumbent. |  69ee40eb  | 2026-11-18 |  | idol family — placements above |
 | idol-live | private | Idol Live: continuous coordination, authorship, and source-state substrate. Git is a compatibility projection. Separate from clpi/idol; will stand alone after Idol release. | 2db4aade | 2026-11-11 |  | idol family — placements above |
 | idol-model | private |  | 8ea29c9f | 2026-11-17 |  | idol family — placements above |
 | idol-native | private |  | 4a851575 | 2026-11-08 |  | idol family — placements above |
 | idol-observatory | private |  | 7ec2600e | 2026-10-30 |  | idol family — placements above |
 | idol-ocean | private |  | 0ba07f62 | 2026-11-06 |  | idol family — placements above |
 | idol-os | private | The OS layer home for the Idol family: code signing first (identity-held re-signing by premise proof), process and jobs machinery to follow | a9ffe819 | 2026-11-17 |  | idol family — placements above |
-| idol-relay | private | Shared coordination channel for Idol agents: Grok, Cursor, Codex, Grokbot, Muse, Devin. Post messages as files; poll for new ones. No provider lock-in. | a237fdb9 | 2026-11-18 |  | idol family — placements above |
+| idol-relay | private | Shared coordination channel for Idol agents: Grok, Cursor, Codex, Grokbot, Muse, Devin. Post messages as files; poll for new ones. No provider lock-in. | 76939fd5 | 2026-11-18 |  | idol family — placements above |
 | idol-release-observability | private | Private research and prototypes for evidence-scoped release observability, deterministic replay, and qualified release comparisons. | empty | 2026-11-16 | no commits | idol family — placements above |
 | idol-restored | private | Idol — S0 kernel: graph sovereignty, demand-before-representation, compiler B. The kernel branch is the work line. | 1c4ef7fd | 2026-10-15 |  | idol family — placements above |
-| idol-semi | private | Private Idol-owned fork/mirror of yaspar-org/semi-persistent for the Idol qualification hyperlattice and self-hosting path | 508d7c66 | 2026-11-17 |  | idol family — placements above |
+| idol-semi | private | Private Idol-owned fork/mirror of yaspar-org/semi-persistent for the Idol qualification hyperlattice and self-hosting path | 238717ba | 2026-11-18 |  | idol family — placements above |
 | idol-sites | private | Catalogue of every Space and site built for Chris on Muse and ChatGPT sites, with full source, synced live | 12b61b6d | 2026-11-18 |  | idol family — placements above |
 | idol-space | private | Idol-native compiler workbench and verified graph/fuzz components | 37bb410d | 2026-11-08 |  | idol family — placements above |
 | idol-wide | private | Wide — an IDE in pure Idol for weight space programming, live at wide.idol.id | 8aa4798f | 2026-11-10 |  | idol family — placements above |
@@ -849,6 +873,6 @@ same data, machine-readable, is synthesis-pins.json.
 | software-benchmarking-is-redundant-and-suboptimal | private |  |  a85286ac  | 2026-11-18 |  | proof family — sweep placements |
 | software-compilers-lose-info | private | The full proof of Idol's topological thesis: conventional compilation provably loses the derivation structure; derivation-carrying compilation loses nothing. |  69358971  | 2026-11-18 |  | proof family — sweep placements |
 | software-fuzzing-is-suboptimal | private |  |  6ed7a596  | 2026-11-18 |  | proof family — sweep placements |
-| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | 65914d1a | 2026-11-18 |  | proof family — sweep placements |
+| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | 68630ed9 | 2026-11-18 |  | proof family — sweep placements |
 | software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. |  8f6a1280  | 2026-11-18 |  | proof family — sweep placements |
 | software-testing-is-redundant | private |  |  18feb7ab  | 2026-11-18 |  | proof family — sweep placements |
