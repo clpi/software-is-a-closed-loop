@@ -82,3 +82,7 @@ The watch re-read this repo's live head at 97d26e804c7e46693785bab042173ecee885f
 ## Watch delta — 2026-11-18, the seventh hourly re-synthesis watch
 
 The watch re-read this repo's live head at b07314d3484ca1d14fae7de6bed2d7dc586c8251 in the full enumeration — the head the sixth watch landed with its pins bump. The theorem count is unchanged between the last recorded head 97d26e804c7e46693785bab042173ecee885ff73 and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The commits between them are the sixth watch's own annex, placement, ledger, and pins commits; no Lean file changed among them. This repo's own proven count stands at eleven.
+
+## Watch delta — 2026-11-18, the eighth hourly re-synthesis watch
+
+The watch re-read this repo's live head at 22957bf6ebd327d5dd2babeff2d8068b26e08749 in the full enumeration — the head the seventh watch landed with its pins bump. The theorem count is unchanged between the last recorded head b07314d3484ca1d14fae7de6bed2d7dc586c8251 and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The commits between them are the seventh watch's own annex, placement, ledger, and pins commits; no Lean file changed among them. This repo's own proven count stands at eleven.
