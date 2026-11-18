@@ -1,0 +1,784 @@
+# The synthesis — software is a closed loop
+
+First synthesis, 2026-11-18. Sources: the nine landed software
+proof repos at the pins named in README.md, the decidability
+spec through section 26, the improvement-pass record of
+2026-11-17, the frontier reduction check, and the topology
+census of 2026-11-18. Every theorem is placed below by name,
+with its statement in plain English, its pin, its axiom
+dependencies where the source states them, and its stage in
+the loop. The census annex (census/) carries the full
+per-theorem census each placement was drawn from. States use
+the discipline of README.md: proven, premise, proposed,
+refuted, asserted, unknown. A claim sits no higher than its
+evidence.
+
+## 1. The loop, stated precisely
+
+The loop has eight stages. Each stage's inputs are the
+previous stage's outputs. The only external inputs are the
+two named at stage 0.
+
+Stage 0 — Entry. Inputs: named software (a repo at a pin)
+and named criteria (the qualification's intent, policy, and
+metric definitions). Nothing else enters. An instance of the
+loop is identified by exactly these names together with the
+observation snapshot, the venue model, the candidate
+generator, and the equivalence rules — the instance identity
+the certificate design calls K (proposed as a single linked
+object; its parts exist and are checked separately).
+
+Stage 1 — Finiteness. The named software and criteria
+determine a finite behavior space: runs and venues are lists,
+schedules are lists over a finite alphabet, profiles are
+Boolean vectors of named dimension. Finiteness is derived
+from the definitions, never assumed. Governed by
+software-is-quantifiable's finiteness theorems and
+software-optimality's finite qualification enumeration
+(stage placements in section 2).
+
+Stage 2 — Qualification. Ground rules over the finite space
+derive what holds: the least closure under the named roots
+and rules. The coloring of a configuration — unknown, lawful,
+unlawful, conflict — is computed from evidence, never
+assigned by hand. Governed by the closure semantics of
+software-optimality (axiom-free core), the coloring fixed
+point of software-is-quantifiable (proven under one side
+condition), and the fail-closed executable bridge between
+them.
+
+Stage 3 — Witnessing. Executions of the named software
+append witnesses to an append-only ledger. Coverage — every
+execution witnessed — is a named premise of the platform
+(sensor strictly below the observed software, append-only
+ledger, complete mediation), never counted proven; its exact
+falsification condition is itself a theorem. Receipts bind
+witnesses to obligations under scope keys at this stage.
+
+Stage 4 — Accounting. The ledger folds to an accounting: a
+pure fold, associative, commutative, idempotent, so the
+accounting equals recomputation from the surviving witness
+set in any order, and retraction is exact — observables after
+a withdrawal equal recomputation from what survives. The
+hypergraph is the source of truth at this stage; every other
+graph (dependency, invalidation, interaction) is a derived
+view, reproducible from it, and incremental recomputation
+over the views is proven equal to full recomputation of the
+new snapshot.
+
+Stage 5 — Bounds and frontier. From the accounting, bounds
+on each named axis and the Pareto frontier of the named
+candidate set are derived. Dominance is decided on bounds
+with three outcomes; the frontier is exactly the
+non-dominated set of the supplied population — finite,
+membership decidable, complete over that population, and
+never claimed over populations not supplied. Per-execution
+dominance is refuted at this stage and excluded by name.
+
+Stage 6 — Eligibility and admission. Before any ranking, a
+hard gate: a candidate is admitted only with evidence for
+every obligation — feasibility, observed behavior, timing
+receipts present and within limits. Missing evidence is a
+distinct state from failure. A rejected candidate cannot be
+optimal; an admitted dominator refutes a certificate.
+
+Stage 7 — Improvement. Candidates are generated, qualified
+through stages 2–6, and measured; the solve returns the
+non-dominated eligible set with a certificate a separate
+checker can verify. Schedules are the worked form: complete
+enumeration of a named finite model, feasibility by exact
+membership, a certified optimum over the enumerated set.
+
+Stage 8 — Re-entry. An accepted improvement becomes the
+named software at a new pin and re-enters at stage 0.
+Requalification is incremental by construction: witnesses
+join, derivations re-derive over their premise cones,
+verdicts carry; there is no batch mode underneath. The
+regression gate at this stage accepts exactly the candidates
+that drop no qualified behavior. The loop closes here: the
+output of stage 8 is an input of stage 0 of the same form as
+the loop's only external input.
+
+## 2. The composed claim, at its evidence
+
+The composed claim (spec section 24; open item O3): over one
+named snapshot, finiteness, coloring, fold accounting,
+frontier at bounds, and the exclusion of per-execution
+dominance hold together as one joined statement. State:
+composed in the spec with eight hypotheses and part-by-part
+citations; the parts are proven where section 3 places them;
+the composition as one joined theorem object is PROPOSED —
+no single checked run of the composed statement exists in
+either repo. The topology program's phase 2, item 8 owns its
+formal half. Nothing in this synthesis claims it higher.
+
+The practical instance stands separately and is verified:
+the nine-run, six-venue ordering instance of spec section 23
+was recomputed exactly — the exact frontier is 209,352 of
+209,952 assignments, the filed 23 all genuinely undominated
+but only the upper-point-minimal subset, 448 assignments of
+the exact frontier discharging against the incumbent, bounds
+recomputed in exact rationals and reproduced digit for digit
+(bound-map hash e4ded389). That is an executed verification
+of one instance, not the composed theorem.
+
+## 3. Placements by repo
+
+### 3.1 software-is-quantifiable — census pin 37917a41, Lean 4.15.0
+
+Axiom posture (repo README, recorded build 2026-11-17):
+headline theorems depend only on the standard axioms
+(propext, Classical.choice, Quot.sound); zero sorries, zero
+added axioms; modules compiled directly with the Lean
+executable, exit 0. No per-theorem axiom lists are stated in
+the sources; the coverage theorem is stated to depend on no
+axioms at all. 46 theorems and lemmas in five modules.
+
+Stage 1 — Finiteness module (4 theorems). The qualification
+is a structure of two lists (runs, venues); one theorem
+exhibits an explicit enumerating list of every schedule of
+run-count length over the presentation, and a second
+restricts it to every valid ordering. Two supporting lemmas
+carry the list machinery. PROVEN. Finiteness by construction;
+no finiteness hypothesis appears anywhere in the repo.
+
+Stage 4 — Fold module (12 theorems). The accounting state is
+the characteristic function of the recorded witness set; join
+is pointwise union. Proven: join associative, commutative,
+idempotent; the identity laws; the fold over an append
+records exactly the appended set; two accountings with the
+same membership are the same accounting; the accounting is
+invariant under permutation and under self-append, and
+conses agree. PROVEN at value level. This is the fold law of
+the loop's accounting stage in its value projection; the
+stronger inductive form lives in software-optimality
+(section 3.2) and is the stronger home (section 4).
+
+Stage 2 — Coloring module (19 theorems). Ground Horn rules
+over a finite universe; the step and iteration functions and
+the coloring are defined executably. Proven: a fixed point
+is reached within universe-length steps; the coloring is a
+fixed point; the coloring is sound and complete against the
+inductive derivability relation. PROVEN under one side
+condition: every rule's conclusion is a member of the
+universe list. The condition is required for termination,
+the fixed point, and completeness — notably not for
+soundness. In software-optimality the same condition becomes
+an executable gate (section 4).
+
+Stage 5 — Pareto module (9 theorems). Bounds are intervals
+over the natural numbers on two axes (time, compute). Proven:
+the separation test is sound — separation implies dominance
+under every realization inside the bounds; refinement of
+bounds is monotone for separation; every finite nonempty
+candidate list has an undominated element; a frontier output
+is never dominated by an in-set incumbent; the regression
+gate accepts exactly the candidates that drop no qualified
+behavior. One DISPROOF: per-execution dominance is false,
+proven by the counterexample of bounds [1, 100] against
+[2, 3] with compute 0, where the dominated schedule can
+realize 1 against 3. The disproof is a result of this repo
+and sits at stage 5 as the exclusion the composed claim
+cites.
+
+Stage 3 — Coverage module (2 theorems). The platform premise
+structure names three assumptions: the sensor sits strictly
+below the observed software, the ledger is append-only, and
+mediation is complete. The coverage theorem is the
+projection of the mediation field from a premise passed as
+an argument — PREMISE, never counted proven. Its companion
+states the exact falsification condition: coverage holds if
+and only if no execution is unwitnessed. Axioms: none.
+
+### 3.2 software-optimality — census pin 0ea4626b, Lean 4.19.0
+
+Fourteen root modules, no Mathlib, no custom axioms, no
+sorry admissions; the check script rejects custom axioms and
+sorries and treats warnings as errors. Axiom dependencies
+below are the repo's own printed audits.
+
+Stage 2 — the Qualification module. The least rooted
+derivation semantics: the closure is least, closed, monotone,
+idempotent; compounding is exact — the closure of a union
+equals the closure over the two closures, retaining
+cross-source consequences, explicitly not the union of the
+closures; any two sound exhaustive saturations agree (order
+independence); soundness is conditional on valid roots and
+rules; withdrawal creates no new support; the surviving
+subsystem is characterized; cycles alone bootstrap nothing
+when every rule needs a premise. All nine printed theorems
+carry EMPTY axiom lists — the strongest axiom posture in the
+estate. This module is the semantic core of stage 2 and the
+stronger home of the fold's compounding content (section 4).
+
+Stage 2 — the ExecutableClosure module. An exhaustive
+sublist-and-intersection algorithm: the powerset enumeration
+has exactly 2-to-the-universe-size entries (proven), and
+under roots and rule heads bounded by the universe, the
+algorithm's membership is exactly the derivability relation.
+The checked face is fail-closed: a some result is bounded
+and exactly the derivable set; a none result holds exactly
+when the bounds fail — both proven. The raw function outside
+its preconditions can return the whole universe vacuously
+and must not be exposed; the README directs all use to the
+checked face. PROVEN, standard axioms. The algorithm is a
+deliberately exponential reference, not a worklist — the
+efficient saturation proven equal to it is an open point
+(next-steps.md, from topology point (b)).
+
+Stage 1 — the FiniteQualification module. All Boolean
+profiles of dimension n: the count is 2-to-the-n (proven),
+completeness holds by exact membership rather than by
+counting, and filtering under a supplied total Boolean
+evaluator is exact. The evaluator is an input, not assumed
+to decide arbitrary semantics. PROVEN.
+
+Stage 5 — the FiniteFrontier module. The frontier of a
+supplied list under a supplied dominance predicate is
+exactly its non-dominated members; the strict Pareto
+comparator over integer costs is exactly componentwise
+no-worse with one axis strict. The four-way coloring
+(unknown, lawful, unlawful, conflict) is a function of two
+evidence Booleans, with exactness theorems for the conflict
+and unknown cases — and, a small dominated point the
+topology census found, no characterization theorems for the
+lawful and unlawful cases. PROVEN; the frontier is relative
+to the supplied list only — no claim that candidates cover
+all implementations.
+
+Stage 7 — the FiniteSchedules module. Complete start-tick
+enumeration of a named model: enumeration completeness is
+exact membership (proven); feasibility (size, placement
+bounds, pairwise non-overlap on capacity-one venues,
+precedence) filters the enumeration to exactly the feasible
+schedules; a certificate designates a feasible schedule with
+no strict Pareto dominator among all schedules of the
+enumerated model; the external queue form has its own
+exactness theorem; an accepted improvement is conditional on
+a supplied preservation checker being sound. PROVEN within a
+deliberately literal model, whose boundaries the repo states
+and the synthesis carries: durations are natural numbers and
+positive durations are not enforced in the model (a
+zero-duration dependency cycle satisfies the non-strict
+precedence inequalities); acyclicity is directed to be
+enforced separately; venues are homogeneous; shared or
+external resources are not modeled; the horizon bounds start
+ticks, never completion times.
+
+Stage 7 — the ForeignCampaign module. 120 distinct
+two-worker queue candidates, metrics recomputed from
+durations; the chosen assignment's costs [6991879848,
+10280231762] strictly improve the baseline's [9006285993,
+13775558659], and the exact frontier of the 120 is four
+named schedules — all by kernel decision, several theorems
+axiom-free. PROVEN for the imported catalogue only: no
+completeness for the external queue generator, no future
+speedup. Physical timings are imported constants; their
+provenance is evidence, not proof.
+
+Stage 6 — the EligibleSchedules module. The hard gate before
+ranking: admission requires a positive required count, the
+exact receipt count, and every timing present and within its
+limit (equality passes; missing, over-limit, and zero-round
+are rejected) — characterized exactly. A rejected candidate
+cannot be optimal; an admitted dominator refutes a
+certificate. PROVEN, standard axioms.
+
+Stage 6 and 7 — the EligibleCampaign module. The three-plan
+pilot (three paired rounds, caps equal to the baseline plan's
+times): all admitted; the second plan is the singleton
+frontier (its maximum 6240471073 ns against 10769189848 and
+9146680841); a synthetic one-nanosecond-over control is
+rejected. Most theorems axiom-free. Boundaries carried:
+receipt flags are imported inputs; the objective was
+corrected mid-run, not preregistered; caps are a
+paired-baseline, not a service-level agreement; no causality
+or forecast is claimed.
+
+Stage 3 and 6 — the ScopedEvidence module. Scoped
+qualification: nonempty requirements; unique scope and round
+keys and receipt identifiers; equal counts; scopes tied to
+the named policy; exactly one matching receipt per
+obligation; witness extraction; duplicate and wrong-scope
+rejection — all proven as the acceptance contract. The
+boundaries are explicit and carried: identifiers are opaque;
+cryptographic authenticity, parser correctness, and the
+policy digest-to-bytes binding are NOT proven; dedupe by
+receipt identity must happen before the selected set is
+constructed; no cross-lineage transfer is inferred; a
+suite's elapsed time is not a per-job elapsed time.
+
+Stage 7 — the LinearSelection module. Single-axis minimum
+selection with exactly n−1 comparisons (proven); the count
+excludes gate evaluation and cost computation and is not a
+runtime benchmark. The set-valued all-ties form is exact and
+membership order-independent; the internal one-winner form
+is not order-invariant, and no serialization is claimed.
+PROVEN.
+
+Stage 6 — the ScopedSelection module. The bridge: the
+selection gate is scoped qualification itself. A certified
+scoped optimum yields witnesses for every winner obligation
+and has no qualified dominator. PROVEN, standard axioms.
+Boundary carried: the selector does not prove candidates
+share an intent or metric contract — ingestion must enforce
+compatibility (topology point (f): closable as a checked
+admission precondition).
+
+Stage 6 and 7 — the ScopedCampaign module. The concrete
+bridge on the pilot: all scoped-admitted; the second plan's
+certificate; singleton selection with reordered-catalogue
+agreement; reused-round and foreign-configuration rejection.
+All axiom-free except witness extraction. Not a transport
+layer; dedupe, digest authenticity, and authorization remain
+ingestion obligations.
+
+Stage 9 — the MetricRelevance module. Relevance as exact
+nonaggregated profiles: no weights, no scalar score is
+manufactured anywhere in the module. Direct single-metric
+exactness; composition irreducibility over proper subgroups;
+exact unreduced fractions (empty evidence is none, not
+zero); the indirect rate's denominator restricted to
+admitted, matched-context records; permutation invariance.
+PROVEN over synthetic fixtures — the fixtures are not
+probabilities, utilities, or causal estimates. Reconciliation
+with the spec's section 26 scalar (topology point (i)): the
+nonaggregated profile is the design — it is what a checker
+can verify without inventing weights; the scalar
+R = (D + C)/(1 + P) stands PROPOSED exactly as the spec
+states it, admissible only as a named projection of a
+profile whose weights are filed in the snapshot, with its
+residue printed beside it.
+
+Stage 4 and 8 — the HypergraphIncremental module (the head
+commit of the census pin). One authoritative hypergraph;
+dependency, incidence, and interaction views are derived,
+and the interaction view is proven equal to complete
+regeneration from the hypergraph. Incremental recomputation
+— reuse the unaffected, rebuild the affected, over the old
+and new topology together — is proven exactly equal to full
+recomputation, and agrees with the exhaustive closure on
+admitted finite lists. A retracted cycle cannot bootstrap;
+a withdrawn dominator's candidate returns to the frontier;
+typed matrix cells equal complete regeneration. PROVEN,
+mostly the three standard axioms, the matrix theorems
+propext only. Non-claims carried: this is a semantic theorem,
+not a fast-worklist or sparse performance proof; raw list
+counts carry multiplicity; dedupe, identity, and withdrawal
+precedence are upstream; remove-and-add is not a tombstone
+protocol. This module is the loop's incrementality made
+theorem: stage 8's requalification is stage 2's qualification
+because the incremental and full answers are proven equal.
+
+Proposed, not checked (the repo's own design document marks
+these "not claimed as checked"; the synthesis places them as
+PROPOSED): the linked-certificate principal theorem over the
+instance identity K (checker acceptance implying
+qualification, preservation for exactly K's scope,
+feasibility under K's model, and no admitted dominator, as
+one theorem); the coverage-certificate upgrade from a
+catalogue frontier to a generator frontier; typed transfer
+edges with checked cross-lineage reuse (the checked default
+today is the opposite: reuse is never inferred); the product
+decomposition theorem (removing a locally dominated
+alternative cannot remove every representative of a globally
+nondominated vector — with the document's own non-claim that
+not every product of local-frontier members is globally
+nondominated); and the certificate forms (feasible
+improvement, catalogue optimum, generator optimum, with
+certified branch pruning).
+
+## 4. Duplication and stronger homes
+
+From the topology census, carried as rulings:
+
+- Fold and compounding: software-optimality is the stronger
+  home (inductive derivability with exact compounding and
+  order independence, axiom-free) over
+  software-is-quantifiable's value-level fold. The value-level
+  fold remains the accounting's presentation form.
+- Coloring: software-optimality is the stronger home — the
+  side condition of the quantifiable coloring becomes the
+  checked face's executable gate. The quantifiable fixed
+  point and its counting bound remain its own.
+- Pareto: NEITHER repo dominates. The interval-bounds
+  separation and the per-execution disproof exist only in
+  software-is-quantifiable; the n-axis integer frontier only
+  in software-optimality. The ruling is a join, not a pick:
+  one Pareto theory with both halves is a closure item.
+- Metric relevance: the nonaggregated Lean profile is the
+  design; the spec section 26 scalar stays proposed (section
+  3.2, stage 9).
+- Pure duplication: software-is-solvable's closure and
+  executable-closure modules are byte-identical to
+  software-optimality's files of the same names (verified by
+  diff at census time) — two homes, one content, drift risk
+  only; a dominated point of the purest form. Its unique
+  content is placed in section 3.5. software-is-composable
+  likewise carries 45 byte-copied upstream modules from
+  software-optimality, checksum-verified in its own repo,
+  under its 49 own theorems (section 3.3).
+- Toolchain split: quantifiable stands on Lean 4.15.0, the
+  rest of the proof family on 4.19.0. Porting the
+  quantifiable results to 4.19, or proving they follow from
+  the 4.19 homes, is a closure item (topology item 7).
+
+### 3.3 software-is-composable — census pin 033c12c0, Lean 4.19.0
+
+This repo moved during its census: at first read it was a
+skeleton (readme and toolchain, zero code); its pull request
+landed the full proof the same hour and this census is of the
+landed head. 94 theorems: 49 its own, 45 byte copies from
+software-optimality (checksum-verified in-repo), plus one
+import — only the finiteness module — from
+software-is-quantifiable. Its own check script runs two
+negative controls and treats warnings as errors; its recorded
+log gives per-theorem axiom lists for all 19 headline claims
+(subsets of the three standard axioms, several empty). The
+census did not re-run the build; the build evidence is the
+repo's recorded log, labelled as such.
+
+Thesis: release admission, symbol by symbol — a new release
+is admitted over an old one exactly when every old symbol is
+present, keeps every behaviour, keeps the same number of cost
+axes, never raises a cost upper bound, and both sides have
+valid bounds. Admission is monotone and composes; an
+incremental recheck of exactly the affected set agrees with
+a full recheck.
+
+Stage 8 — the Incremental module (3 theorems), the headline.
+The caller closure of the changed set is exactly the
+hypergraph module's affected set. The recheck equivalence:
+under two carried premises — the old release's bounds are all
+valid, and every symbol outside the affected set is literally
+unchanged — full release admission holds if and only if every
+affected symbol passes its individual check. And a DISPROOF:
+rechecking only the edited symbol is not enough (a concrete
+pair where the edited symbol passes, its caller is in the
+closure, and the whole release is refused).
+
+Stage 8 — the Admission module (13 theorems). The executable
+admission test is true exactly when the propositional
+admission relation holds; symbol admission is reflexive given
+valid bounds (a carried premise) and transitive; release
+admission composes along chains; the per-symbol verdict's
+admitted case is characterized exactly (refusal-reason
+correctness is not part of that theorem).
+
+Stage 8 — the Monotonicity module (6 theorems). An admitted
+step keeps every qualified behaviour of every old symbol, and
+the inclusion composes along two steps; an admitted step does
+not strictly dominate the old symbol on upper bounds (side
+condition: axes in range), and non-regression composes. One
+DISPROOF, the repo's own: per-execution cost monotonicity is
+false — bounds 1..100 admitted to 2..3 yet an execution value
+3 exceeds 1. This is the composable form of the per-execution
+exclusion placed at stage 5 from quantifiable.
+
+Stage 2 — the Composition module (11 theorems). Per-module
+admission implies whole-release admission under a named side
+condition — interaction closure: every call stays inside one
+module — plus module coverage and unique identifiers. And a
+counterexample DISPROOF: with one cross-module call and a
+stubbed callee, both modules are admitted separately while
+the composed release is not — the side condition cannot be
+dropped.
+
+Stage 1 and 3 — the Evidence module (13 theorems) and
+Finiteness (1). Fixing a prefix of independent bits leaves
+exactly 2-to-the-free-bits candidates; the candidate set is
+duplicate-free; filtering to one member gives the singleton.
+Two DISPROOFS by computation: observing the same bit twice
+does not shrink the candidate set again, and one
+disqualifying bit does not empty it. One PREMISE, the repo's
+own label: given a total coverage observation (one Boolean
+per symbol, supplied as a structure), filtering leaves
+exactly one candidate — coverage is carried, not produced;
+the same premise as stage 3's platform premise, in
+per-symbol form. The schedule space is finite, by direct
+application of the imported finiteness theorem.
+
+Stage 7 — the Examples module (2 theorems): the worked pair
+computes exactly "symbol 1 admitted; symbol 7 refused for
+cost regression on axis 0", and the pair's admission test
+computes false.
+
+Non-claims carried: platform execution coverage is not
+imported and not proved (the sibling's Pareto and Coverage
+modules at the import pin do not typecheck on Lean 4.19.0 and
+are excluded); the copied modules are acknowledged as another
+repo's bytes; admission controls upper bounds, not every
+individual execution value.
+
+### 3.4 software-is-incrementally-certifiable — census pin f3b9f896
+
+Theorem count at the live head: 0. The repo at its pin is a
+single readme sentence asserting a finished Lean 4 proof
+that incremental monotonic certification is extensive and
+yields Pareto-optimal dominance across releases. No Lean
+code, no toolchain pin, no check log. State: ASSERTED — a
+claim with neither spec nor proof in the repo, hence a work
+order, not a result.
+
+Its intended content exists as a stand-in module (14
+theorems) on software-is-incrementally-safe's unmerged
+branch, censused there and placed here as an annex, not as
+this repo's theorems: the certification closure is extensive,
+monotone, and idempotent; the componentwise cost order is
+reflexive and transitive; dominance implies the order; one
+DISPROOF — dominance is irreflexive; admission is
+definitionally closure membership plus a componentwise cost
+bound (both inputs); admission is downward closed. Five of
+the fourteen are interface obligations that hold by
+definition. The stand-in proves no existence or maximality
+theorem, so the readme's "Pareto-optimal" wording is
+stronger than anything the stand-in states. The stand-in
+carries equivalence obligations so a real dependency could
+replace it if this repo ever exports the same operations.
+
+### 3.5 software-is-solvable — census pin 815e125f, Lean 4.19.0
+
+48 named theorems plus 35 kernel guards; the check script
+bans sorry, admission, axiom, and native-decision tokens and
+compiles with warnings as errors; the check log prints axiom
+dependencies per theorem (many empty; the executable bridge
+theorems carry the standard three). Thesis: witness-compounding
+search over a finite behavioral hypergraph is exactly
+solvable — least closure is append-monotone, compounds across
+premises, and yields exact resolution and catalogue
+accounting. Saturation, colors, matrices, and catalogues are
+derived views, not the authority — the stage 4 discipline in
+this repo's own statement.
+
+Duplication, stated plainly: its closure core (10 theorems)
+and executable closure (13) are byte-identical to
+software-optimality's modules of the same names (section 4).
+The placements below are its unique content.
+
+Stage 4 — the Hyperlattice module (15 theorems). Joining
+graphs is pointwise on roots and edges; knowledge (the
+derivation set) is monotone under extension and equal for
+equal graphs; join is commutative, associative, idempotent.
+The headline compounding: knowledge of a join equals
+knowledge of the join of the two saturated graphs, reclosed —
+merely unioning old closures is explicitly not the claim.
+Redundancy: appending only already-known roots under closed
+knowledge changes nothing. The resolution vector (per-axis
+counts of supported probes) has exact accounting: counts are
+monotone, strictly increase exactly when a novel witness
+exists, and the marginal gain telescopes exactly. Resolution
+expansion per coordinate is proven under a carried premise —
+both Boolean classifiers are exact for their graphs. The live
+projection (withdrawal) creates no support.
+
+Stage 2 and 7 — the WitnessExecutable module (10 theorems).
+Appending batches is exactly joining their authority graphs;
+the executable classifier is exact for a batch's graph under
+the boundedness side condition (roots and edge heads inside
+the universe); resolution after an append is coordinatewise
+no smaller; the catalogue has exactly 2-to-the-closure-length
+entries; after an append, catalogue entries multiply by
+exactly 2-to-the-closure-length-delta (a duplicate append has
+delta zero) — counted before any qualification filter; the
+qualified list is exactly the catalogue filtered by a supplied
+total Boolean gate, whose correctness is a premise, not a
+theorem.
+
+Stage 2 — its one DISPROOF is the shared no-bootstrap:
+under the side premise that every rule has at least one
+premise, an empty root set derives nothing — cycles alone
+create no support.
+
+Premises carried (consolidated): admission and authentication
+of roots and edges are prerequisites, not proved; semantic
+truth of roots and truth preservation of rules are assumed by
+the soundness theorem; classifier exactness as above;
+boundedness for every executable bridge; the qualification
+gate is supplied; withdrawal input is an already-resolved
+projection. Non-claims carried: the resolution vector is a
+lower bound on resolved support in the named probe scopes —
+not remaining runtime, not confidence, not a count of feasible
+designs; the catalogue count does not claim every subset is
+executable or optimal; hashing is not semantic equivalence;
+colors are information statuses, not a quality ordering; the
+reference enumeration is exponential and no production
+performance win is claimed; an external system is not verified
+merely because it can emit this model.
+
+### 3.6 software-frontier-is-solvable — census pin c7ffc6d0, Lean 4.19.0
+
+14 named theorems, every one with a printed axiom line in
+the check log (standard axioms or none), plus 15
+kernel-reduced examples. Thesis: exact finite Pareto
+frontiers are computable from supplied eligibility and
+integer cost views, with exact insertion and retraction
+updates. A standalone companion that introduces no second
+graph or evidence store.
+
+Stage 5 — the Frontier module (all 14). Dominance is
+irreflexive and transitive, and equal cost vectors never
+dominate (three negation theorems). The insertion equation:
+under irreflexivity, frontier membership after inserting a
+candidate is exactly "old member not dominated by the new
+one, or the new one dominated by no old eligible candidate".
+The retraction equation, the headline: after removing a set,
+a survivor is on the frontier exactly when it is eligible,
+not removed, and every former eligible dominator of it was
+removed — all dominators accounted for. A frontier member
+survives a retraction that spares it; a live dominator blocks
+resurrection (negation theorem). Frontiers defined by
+pointwise-equal eligibility and dominance views coincide —
+storage layout is irrelevant. The executable evaluator's
+membership is exactly the propositional frontier; the Boolean
+finite-axis comparison is exactly "no worse on every listed
+axis and strict on one" (an empty axis list makes everyone
+tie). Existence: under a strict partial order, any nonempty
+candidate list has a frontier member. The baseline guard: a
+guarded-frontier member is no worse than the baseline on
+every selected objective and is globally nondominated, and
+the guarded frontier is nonempty while the baseline stays in
+the list and eligible.
+
+Two DISPROOFS by concrete counterexample, the repo's own:
+Pareto membership does not imply no regression against a
+baseline (a frontier member strictly worse than the baseline
+on the first axis) — membership alone is not a regression
+guarantee, which is what the separate guard is for; and
+frontier-only storage loses information exact retraction
+needs (two populations with the same frontier whose
+post-retraction frontiers differ) — dominated candidates, or
+equivalent source data, must be retained. This second
+disproof is the frontier form of stage 4's accounting law:
+the fold keeps the witness set, not its frontier projection,
+for exactly this reason.
+
+Premises carried: eligibility, costs, and the dominance
+relation are supplied by the caller; generator completeness
+is not proved; identity normalization is upstream.
+Non-claims carried: no runtime measurements; the evaluator
+is a full-scan reference oracle of order m-squared-times-a,
+not an optimized runtime; no global optimum beyond the
+supplied population.
+
+### 3.7 software-is-incrementally-safe — head 94661358; content on branch 5c1006a6
+
+At the live head: one file, the toolchain pin (Lean 4.19.0).
+Theorem count at head: 0, no readme — the repo states
+nothing at its pin; its thesis lives in the repo description:
+safety preserved incrementally across releases, with
+noninterference and monotone capability shrinkage, built on
+software-is-composable. State at head: ASSERTED.
+
+All proof content is on the unmerged pull-request branch
+(open pull request 1), censused at branch pin 5c1006a6 and
+placed here as branch content, never as head results: 54
+theorems in its own five modules, plus 32 in two stand-in
+modules (the composable stand-in, 18; the certifiable
+stand-in, 14, placed in section 3.4). Evidence caveat,
+stated once: the branch has no check log and no printed
+axiom audit in the repo; no sorry token was found by search;
+the build and axiom claims rest on the pull-request body's
+quoted log — labelled as such, not independently re-run.
+
+Stage 8 — the Increment module (6 theorems), the headline:
+given a safe base release and the closure hypothesis for a
+delta (every symbol in the delta's dependency cone is
+inspected — a named premise, assumed throughout), cone
+acceptance of the delta holds if and only if the applied
+release is safe from scratch. Checking the cone is exactly as
+good as rechecking everything. Chain forms: stepwise
+incremental acceptance of a chain is equivalent to every
+release in the chain being safe from scratch (under per-step
+closure hypotheses), and the composed delta of a whole list
+bridges the two.
+
+Stage 8 — the Safety module (13 theorems). A safety property
+is a fixed point of the certification closure, equivalently a
+downward-closed property; per-symbol safety is equivalent to
+trace safety for a release; safety descends along the release
+order; allowed traces are prefix-closed.
+
+Stage 8 — the Security module (9 theorems). Cone acceptance
+preserves the capability bound (every reachable observation
+within its symbol's allowance), in single and chain form;
+monotone capability shrinkage — a delta monotone in the
+composable sense preserves allowance without the closure
+hypothesis, monotonicity substituting for checking;
+noninterference is preserved (low symbols' reachable
+observations stay not-high), in single and chain form;
+forbidden-symbol emptiness is preserved. One DISPROOF: under
+the policy premise that a forbidden symbol's allowance is
+empty, a delta that activates a forbidden symbol cannot be
+cone-accepted — the negation is proved.
+
+Stage 6 — the Checker module (24 theorems). The executable
+checker is characterized exactly on both sides: it accepts
+exactly when no cone symbol is uninspected, none is a
+forbidden hit, none has an unsafe reachable observation, and
+the cost test passes; it refuses naming the first failure in
+a fixed priority order, and the refusal is correctly named.
+The executable cone and the observation collection are proven
+SOUND only — every computed cone member is a true cone
+member, every collected observation truly reachable — with
+no completeness converse anywhere; the census flags this
+twice and the synthesis carries it. Side condition: the
+executable cost test uses one number for both the time and
+compute bounds. The Example module (2 theorems) computes the
+two verdicts: a delta activating the designated forbidden
+symbol is refused by that symbol's name; a benign delta is
+accepted.
+
+Premises carried (branch, consolidated): the closure
+hypothesis and cone acceptance per delta; base-release
+safety, noninterference, and forbidden-emptiness are assumed,
+never established for a concrete release in the abstract
+modules; the empty-allowance policy premise; the
+monotonicity premise where it substitutes for checking.
+
+### 3.8 The two claim shells — regress and review
+
+software-doesnt-have-to-regress (pin 24d36c13) and
+software-doesnt-need-review (pin ae5f3918) each contain a
+two-line readme and nothing else: no Lean files, no toolchain
+pin, no check log. Theorem count 0 in both. States: ASSERTED.
+
+- doesnt-have-to-regress claims a release process with
+  per-symbol observed-behavior certification never has to
+  regress. Its proven content today lives elsewhere and is
+  partial: the regression gate exactness of
+  software-is-quantifiable (stage 5), the baseline guard of
+  software-frontier-is-solvable (stage 5), and the admission
+  monotonicity of software-is-composable (stage 8) each prove
+  a component; the release-level statement itself — a
+  per-symbol certified release process whose every step is
+  monotone across releases — is proven nowhere. The topology
+  census names this the monotonicity family's genuine open
+  point: the family (composable, certifiable, safe, regress)
+  is one claim family at different scopes, to be stated once
+  at its strongest scope with each shell dispositioned
+  against it.
+- doesnt-need-review claims a proof of when manual review is
+  redundant given per-symbol certification, plus a proposal
+  to replace it. A different claim — a sufficiency statement
+  about review, not a monotonicity statement. Its proven
+  content today is zero and its design content is one line;
+  it stands as its own open point. The settled boundary from
+  the wider record applies: there is a feasible path to
+  eliminating routine human review within a defined scope,
+  and no sound general guarantee that humans will never need
+  to review contracts, exceptions, or consequences of
+  arbitrary software — any future proof here sits inside that
+  boundary or refutes it, and the synthesis presumes neither.
+
+### 3.9 The tenth repo — announced, not landed
+
+software-is-more-traceable-than-you-think was announced
+2026-11-18 01:30 PST (a historical witness hypergraph at
+symbol grain, with a Lean proof that the construction holds
+independent of operating system, software, and language —
+which, when landed and checked, places at stages 3 and 4:
+witnessing and accounting, at the finest grain). Read back at
+01:32 PST it did not yet exist. It is carried in the census
+as an announced entry, colored unknown, and enters at census
+depth on the continuous job's next re-enumeration after it
+lands.
