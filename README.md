@@ -203,3 +203,21 @@ development owed); and this repo's own eleven theorems stand
 unchanged at the head the second watch landed. All census
 pins stand with re-census owed at the fresh heads recorded
 in the pins file.
+
+Fourth watch update (2026-11-18, later the same night): the
+estate was re-enumerated a fifth time at 565 repos, every
+head read individually with no errors. Eighty-eight repos
+had moved, none were new or gone, and the paper source hash
+was unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. Three proof repos moved: the safe
+repo gained three names with none lost and discharged its
+string cone hypothesis by proof (fresh head 97e55d28,
+census pin 8ad1dd26, re-census owed); the idol repo gained
+a new Lean development of ten theorems in its solver
+benchmarks while its frontier and release tools files stand
+byte-identical (fresh head 107e52a9, census pin 561cf395, a
+full census of the new development owed); and this repo's
+own eleven theorems stand unchanged at the head one ledger
+addendum past the third watch landing. All census pins
+stand with re-census owed at the fresh heads recorded in
+the pins file.

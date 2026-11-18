@@ -1198,3 +1198,47 @@ from the sweep, and the truncated read is recorded here
 rather than hidden. This repo's own head moved only by
 the second watch landing itself; its eleven theorems
 stand unchanged.
+
+## 9. Watch update — 2026-11-18, the fourth hourly re-synthesis
+
+The fourth watch re-enumerated the estate completely: 565
+repos, every head read individually, no read errors.
+Eighty-eight repos had moved since the last recorded heads,
+none were new, none were gone, and the paper source hash
+was unchanged, so no paper re-sync was owed. Three of the
+eighty-eight are proof repos, two are other idol-family
+repos, and eighty-three are long-tail repos. The annex
+watch deltas carry the mechanical counts at the fresh
+heads; the placements in section 3 stand at their census
+pins, with re-census owed at the new heads, except where
+this section records a change of kind.
+
+The safe repo grew in place and discharged a premise: one
+merged change added a module proving the natural-number
+text representation injective, and the merge record states
+the string cone hypothesis is discharged by that proof.
+Its count rose from 148 declarations to 151, with three
+names gained and none lost; no recorded check log stands
+in its head tree.
+
+The idol repo gained a third Lean development: a history
+file in the solver benchmarks incidence folder, carrying
+ten theorems on witnessed derivation histories and finite
+solver costs, landed at the head's merge. Its frontier
+file and both release tools files are byte-identical at
+the last recorded head and the fresh head, so the
+proof-bearing content the earlier censuses recorded is
+unchanged. No check log covering the new file was read in
+this watch; its gate state is unknown and a full census
+of it is owed.
+
+The remaining movement is pin movement only. The two other
+idol-family repos and the eighty-three long-tail repos
+were read by tree at their fresh heads; no proof-assistant
+source was found in them, and no tree read was truncated
+this watch. The one apparent hit, a long-tail repo whose
+tree carries many files with a proof-assistant extension,
+is the V-language example set the sweep already resolved
+as not Coq; it remains proof-free by the named check. This
+repo's own head moved by one ledger addendum commit from
+another lane; its eleven theorems stand unchanged.
