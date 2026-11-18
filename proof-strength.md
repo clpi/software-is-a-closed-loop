@@ -859,3 +859,70 @@ Restated rows, at their fresh heads:
   past the head the third watch recorded; the commit
   between them carries no Lean change. Controls and gate
   stand as the second watch row records.
+
+## Watch refresh — 2026-11-18, the fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 565 repos, every head
+read individually with no errors, read the idol tree in
+full at its fresh head, and cloned the semi repo at its
+fresh head. Evidence below rests on tree reads at both
+heads of each moved proof repo: blob identity file by
+file, not counts alone. Placements stand at the census
+pins named in each row; a full theorem-level re-census
+at each fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Every Lean file in both moved
+  proof repos is byte-identical between the last recorded
+  head and the fresh head, so no name was lost in either;
+  this repo's eleven names stand unchanged. No regression
+  is flagged.
+- No pin moved without this ledger moving: every moved
+  proof repo has its row restated below in this same pass.
+  No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol — fresh head 586ff5a1 (census pin 561cf395,
+  proof-bearing content only). Proven: unchanged — all
+  five Lean files stand at the same blobs at both heads:
+  the frontier file with its 7 theorems on the premises
+  its row records, the release tools files with their 20
+  and 5 declarations, and the solver history file with
+  its 10, beside the proof data sample that remains test
+  data. The movement between the heads is compiler and
+  gate work: 3 files added, 1 removed, 23 changed, none
+  of them Lean. Gate: the release tools verdict stands
+  in the high-impact addendum above at its named pin;
+  the solver history file's gate remains unknown, as
+  its row records.
+- idol-semi — fresh head 238717ba (census pin 508d7c66).
+  Proven: unchanged — all 156 Lean files are byte-identical
+  between the census pin and the fresh head, and no Rust
+  file changed, so the congruence closure, matching, and
+  fidelity development and the Rust verification stand
+  exactly as the sweep row records. Counted at the fresh
+  head by the watch method: 1,865 declarations, 1,736
+  distinct short names, no sorry token, 424 print-axioms
+  lines; that mechanical count runs lower than the sweep
+  census's fuller count of the same content, and the
+  content identity is the governing evidence. The
+  movement is ten added files of analysis and parity
+  tooling. Absent: a recorded check log still stands
+  nowhere in the tree, so a passing gate at the fresh
+  head remains claimed, not proven; the gate re-run at
+  the shared pin remains blocked on host disk quota, as
+  the high-impact addendum records. Placement note:
+  semi-persistent did not move and still stands at
+  508d7c66, so the two repos no longer share one head;
+  their proof content remains identical, and this row
+  now tracks the semi repo's head, with the mirror's
+  head recorded here until it moves.
+- software-is-a-closed-loop — fresh head 68630ed9
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the fourth watch landed;
+  the commits between them are that watch's placement,
+  ledger, and pins commits and carry no Lean change.
+  Controls and gate stand as the second watch row records.
