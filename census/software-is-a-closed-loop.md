@@ -66,3 +66,7 @@ repo is claimed.
 ## Watch delta — 2026-11-18, the third hourly re-synthesis watch
 
 The watch re-read this repo's live head at 98761a1ae0f70eeda2edea25a790998dcdaaf323 in the full enumeration — the head the second watch landed. The theorem count is unchanged between the census pin d558669b7cf556bb1d9653e6432c895c3ceb6cfd and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The commits between the two pins are the second watch placements, its ledger refresh, and its pins bump; no Lean file changed among them. This repo's own proven count stands at eleven.
+
+## Watch delta — 2026-11-18, the fourth hourly re-synthesis watch
+
+The watch re-read this repo's live head at 65914d1afe201c42897d17a05ff3299905912556 in the full enumeration — one ledger addendum commit past the head the third watch recorded. The theorem count is unchanged between the last recorded head 98761a1ae0f70eeda2edea25a790998dcdaaf323 and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The one commit between them carries no Lean change. This repo's own proven count stands at eleven.
