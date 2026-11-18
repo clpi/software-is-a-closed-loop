@@ -182,3 +182,24 @@ to d558669b on a full re-census of its new range example
 (its proven count is now eleven). All other census pins
 stand with re-census owed at the fresh heads recorded in
 the pins file.
+
+Third watch update (2026-11-18, later the same night): the
+estate was re-enumerated a fourth time at 565 repos, every
+head read individually with no errors. Thirty-six repos had
+moved, none were new or gone, and the paper source hash was
+unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. Five proof repos moved: the
+optimality repo gained eleven Lean files and 52 names with
+none lost (fresh head 95df5fb7, census pin b52c3170,
+re-census owed); the safe repo gained 17 names with none
+lost (fresh head 23a22552, census pin 8ad1dd26, re-census
+owed); the composable repo held its count and its name set,
+its movement a dependency re-pin (fresh head 7b174646,
+census pin a3058ba6); the idol repo's frontier file is
+unchanged, while a release tools Lean development in its
+tree grew by nine declarations across two files (fresh head
+2f44b4fe, census pin 561cf395, a full census of that
+development owed); and this repo's own eleven theorems stand
+unchanged at the head the second watch landed. All census
+pins stand with re-census owed at the fresh heads recorded
+in the pins file.

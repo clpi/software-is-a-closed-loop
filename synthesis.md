@@ -1150,3 +1150,51 @@ pin and at the fresh head, so its proof-bearing content is
 unchanged. This repo's own proven count grew from three
 theorems to eleven with its range example, re-censused in
 full in its annex at the new pin.
+
+## 8. Watch update — 2026-11-18, the third hourly re-synthesis
+
+The third watch re-enumerated the estate completely: 565
+repos, every head read individually, no read errors.
+Thirty-six repos had moved since the last recorded heads,
+none were new, none were gone, and the paper source hash
+was unchanged, so no paper re-sync was owed. Five of the
+thirty-six are proof repos, two are other idol-family
+repos, and twenty-nine are long-tail repos. The annex
+watch deltas carry the mechanical counts at the fresh
+heads; the placements in section 3 stand at their census
+pins, with re-census owed at the new heads, except where
+this section records a change of kind.
+
+The optimality repo grew in place: eleven new Lean files —
+a root module on the executable incremental form, and
+composition developments on axiom audit, exhaustive edits,
+identity and representation, and incremental selection —
+taking its mechanical count from 557 declarations to 684,
+with no name lost. The safe repo grew in place in its
+model, cone, check, and ordered increment modules, from
+131 declarations at the last recorded cloned head to 148,
+with no name lost. The composable repo did not change in
+content: its count and its name set stand as recorded,
+and its movement is a dependency re-pin in its lake file.
+
+One change of kind is small but real. The idol repo's
+frontier file is unchanged, but a release tools Lean
+development that landed after the sweep census grew in
+this window: its retention file gained four declarations
+and a new qualification file with five declarations stands
+beside it, both free of sorry tokens by the watch scan and
+neither covered by a check log this watch read. It is
+placed in the idol annex delta at that strength; a full
+census of it is owed.
+
+The remaining movement is pin movement only. The two other
+idol-family repos and the twenty-nine long-tail repos were
+read by tree at their fresh heads; no proof-assistant
+source was found in them, with one stated limit: one
+long-tail tree was large enough that its read came back
+truncated, and no proof-assistant source stood in the
+returned portion — its proof-free determination stands
+from the sweep, and the truncated read is recorded here
+rather than hidden. This repo's own head moved only by
+the second watch landing itself; its eleven theorems
+stand unchanged.

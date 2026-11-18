@@ -96,6 +96,27 @@ idol-family repos were checked by tree read at their fresh
 heads and carry no proof-assistant content; they remain
 proof-free by the named check.
 
+## Watch update — 2026-11-18 (third hourly re-synthesis)
+
+A fourth enumeration the same night: 565 repos, every head
+read individually, no read errors. Thirty-six repos had
+moved since the last recorded heads, none were new, none
+were gone, and the paper source hash was unchanged. The
+moved set: the proof repos optimality, composable, safe,
+and idol, and this repo itself; two further idol-family
+repos (the compiler port and the relay); and twenty-nine
+long-tail repos. Fresh heads for every repo stand in the
+pins file at this re-synthesis; the moved proof repos'
+annex deltas carry their mechanical counts at the fresh
+heads. The two further idol-family repos and the long-tail
+repos were read by tree at their fresh heads and carry no
+proof-assistant content, so they remain proof-free by the
+named check — with one stated limit: one long-tail tree
+read was truncated by size, no proof-assistant source stood
+in the returned portion, and its determination stands from
+the sweep. The idol tree read found the release tools Lean
+development recorded in its annex delta.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -172,11 +193,11 @@ software whose releases the loop qualifies, and the machinery
 that runs the loop on the engine side. Heads as read
 2026-11-18 ~01:30 PST.
 
-- idol (ef3dbcfa) — the language and compiler: the named
+- idol (2f44b4fe) — the language and compiler: the named
   software of stage 0, the source of the executions stage 3
   witnesses, and the pin every improvement re-enters against.
   Active; moved during census night.
-- idol-compiler (d1f9dcba) — the pure-Idol compiler port: an
+- idol-compiler (dd28e0c8) — the pure-Idol compiler port: an
   improvement line whose pins are stage 8 candidates against
   the production compiler; its performance stands UNMEASURED
   in the wider record.
@@ -214,7 +235,7 @@ that runs the loop on the engine side. Heads as read
   idol-edit 6f0d83dc, idol-eyes d7e7b009, idol-id cd4c2e55,
   idol-id-agents 40cad7d9, idol-ide d06fd36c, idol-ifconv
   3590f2a4, idol-kernel 5832fb78, idol-native 4a851575,
-  idol-relay 3a865f1c — pushed during census night,
+  idol-relay 5c8f2743 — pushed during census night,
   idol-restored 1c4ef7fd, idol-semi 508d7c66, idol-space
   37bb410d, idolg 94de4e5c) are placed by their names and
   listing descriptions in the table below and colored
@@ -244,12 +265,12 @@ same data, machine-readable, is synthesis-pins.json.
 | Repo | Visibility | Description (repo's own) | Head | Last push | Flags | State |
 |---|---|---|---|---|---|---|
 | .clp | private | secret stuff | empty | 2022-02-01 | no commits | unknown (unexamined) |
-| .df | private |  | b118d486 | 2022-03-23 |  | unknown (unexamined) |
+| .df | private |  | 081620f4 | 2026-11-18 |  | unknown (unexamined) |
 | .f | private | dotfiles | 88269541 | 2023-03-19 |  | unknown (unexamined) |
-| .infra | private |  | 52c366df | 2025-10-14 |  | unknown (unexamined) |
+| .infra | private |  | 14e3aa40 | 2026-11-18 |  | unknown (unexamined) |
 | .sway | private | df | d84e54f0 | 2023-05-02 |  | unknown (unexamined) |
-| 2D-Beam-Propagation | public |  | 96d585bd | 2019-03-20 |  | unknown (unexamined) |
-| a-1 | private |  | 92dbd304 | 2023-03-24 |  | unknown (unexamined) |
+| 2D-Beam-Propagation | public |  | dbad806e | 2026-11-18 |  | unknown (unexamined) |
+| a-1 | private |  | 3a695b86 | 2026-11-18 |  | unknown (unexamined) |
 | ach | private |  | empty | 2025-02-19 | no commits | unknown (unexamined) |
 | acha | public |  | 6465c443 | 2025-02-19 |  | unknown (unexamined) |
 | achat | private |  | empty | 2025-02-19 | no commits | unknown (unexamined) |
@@ -260,21 +281,21 @@ same data, machine-readable, is synthesis-pins.json.
 | ann | private |  | 20a0741a | 2024-11-04 |  | unknown (unexamined) |
 | any | private |  | fd163b96 | 2024-11-04 |  | unknown (unexamined) |
 | api | private |  | empty | 2021-03-02 | no commits | unknown (unexamined) |
-| apigen | public |  | f841c231 | 2020-09-13 |  | unknown (unexamined) |
+| apigen | public |  | 0a915471 | 2026-11-18 |  | unknown (unexamined) |
 | autocoder | private | AutoCoder line of work on the Idol toolchain (clpi/zai contributions) | d74481bd | 2026-09-24 |  | unknown (unexamined) |
-| aware | private |  | 57589639 | 2022-08-25 |  | unknown (unexamined) |
+| aware | private |  | 49818749 | 2026-11-18 |  | unknown (unexamined) |
 | awe | private |  | d1f04298 | 2024-11-04 |  | unknown (unexamined) |
 | aws-cloudformation-templates | public | A collection of useful CloudFormation templates | d93ea5ff | 2026-08-21 | fork | unknown (unexamined) |
-| axa | public |  | 000b5d64 | 2024-01-31 |  | unknown (unexamined) |
+| axa | public |  | fac009ff | 2026-11-18 |  | unknown (unexamined) |
 | axe | public |  | 37e33a51 | 2024-11-04 |  | unknown (unexamined) |
 | ayu.nvim | public | personal ayu | 64f2bad8 | 2022-12-14 |  | unknown (unexamined) |
-| ayum | private | ayu modifications for nvim | 3caba054 | 2022-01-30 |  | unknown (unexamined) |
+| ayum | private | ayu modifications for nvim | db4e0d4f | 2026-11-18 |  | unknown (unexamined) |
 | babble | private |  | empty | 2025-10-10 | no commits | unknown (unexamined) |
-| Bid | private |  | d1a0df13 | 2025-11-26 |  | unknown (unexamined) |
+| Bid | private |  | 71494722 | 2026-11-18 |  | unknown (unexamined) |
 | boxd | private | Experiment box daemon: provision/run/collect/teardown across the Tailscale/Cloudflare compute mesh | ac14d07b | 2026-10-29 |  | unknown (unexamined) |
 | browsh | public | A fully-modern text-based browser, rendering to TTY and browsers | 8d321c47 | 2022-07-01 | fork | unknown (unexamined) |
-| burg.lua | public |  | f2f142b4 | 2024-10-21 |  | unknown (unexamined) |
-| bv | private |  | 17dfc44e | 2022-09-07 |  | unknown (unexamined) |
+| burg.lua | public |  | d1a013ec | 2026-11-18 |  | unknown (unexamined) |
+| bv | private |  | 5328a58f | 2026-11-18 |  | unknown (unexamined) |
 | c.i | private |  | 5eb87643 | 2023-06-12 |  | unknown (unexamined) |
 | c2 | public |  | empty | 2024-10-09 | no commits | unknown (unexamined) |
 | cai | public |  | 47a37ee9 | 2024-09-29 |  | unknown (unexamined) |
@@ -282,23 +303,23 @@ same data, machine-readable, is synthesis-pins.json.
 | captoma | public | auto capture software | empty | 2020-11-24 | no commits | unknown (unexamined) |
 | cat- | public | Created with StackBlitz ⚡️ | 399bc67a | 2022-06-02 |  | unknown (unexamined) |
 | cbase | private |  | 03184b29 | 2022-02-09 |  | unknown (unexamined) |
-| cbc | public | nim ms | f54894d2 | 2024-01-08 |  | unknown (unexamined) |
-| ccr | private |  | 7a43463c | 2026-08-24 |  | unknown (unexamined) |
+| cbc | public | nim ms | 927f4e4a | 2026-11-18 |  | unknown (unexamined) |
+| ccr | private |  | b68c0945 | 2026-11-18 |  | unknown (unexamined) |
 | cdotis | public |  | 9a94aadd | 2022-06-02 |  | unknown (unexamined) |
-| cdx | public |  | ef19311d | 2022-05-27 |  | unknown (unexamined) |
+| cdx | public |  | b5fc055c | 2026-11-18 |  | unknown (unexamined) |
 | ch | private |  | 01a0a605 | 2024-09-23 |  | unknown (unexamined) |
 | chap | public | chalice lambda api | empty | 2026-05-17 | no commits | unknown (unexamined) |
-| chrisp-finance- | private | personal finance | 8f9ed409 | 2020-11-10 |  | unknown (unexamined) |
+| chrisp-finance- | private | personal finance | 01c61e12 | 2026-11-18 |  | unknown (unexamined) |
 | chrisp.fyi | public | personal website 2 | 3b8b9969 | 2018-09-08 | archived | unknown (unexamined) |
-| chrispweb | public | personal website | fcef3daf | 2017-07-31 |  | unknown (unexamined) |
-| ChrispWiki | private | Personal wiki | 0277c783 | 2020-03-03 |  | unknown (unexamined) |
+| chrispweb | public | personal website | d5bcfeb2 | 2026-11-18 |  | unknown (unexamined) |
+| ChrispWiki | private | Personal wiki | ea135062 | 2026-11-18 |  | unknown (unexamined) |
 | ci | private |  | b2503262 | 2023-06-12 |  | unknown (unexamined) |
 | cj | public |  | 910f31e2 | 2024-09-24 |  | unknown (unexamined) |
-| cku | public | cku | 60b9a4ff | 2023-02-02 |  | unknown (unexamined) |
-| cl | public |  | 2b809359 | 2025-11-02 |  | unknown (unexamined) |
+| cku | public | cku | 00314ba2 | 2026-11-18 |  | unknown (unexamined) |
+| cl | public |  | 5b2bc81d | 2026-11-18 |  | unknown (unexamined) |
 | clam | private |  | empty | 2026-05-15 | no commits | unknown (unexamined) |
 | clam-alt-studio | private |  | f2ed79f0 | 2026-06-05 |  | unknown (unexamined) |
-| clam-cli | public |  | fab12092 | 2026-05-17 |  | unknown (unexamined) |
+| clam-cli | public |  | 427c7a2d | 2026-11-18 |  | unknown (unexamined) |
 | clam-studio | private |  | 1099f715 | 2026-06-06 |  | unknown (unexamined) |
 | class-rs | public | a truly optimized, comfy-to-use, feather-mid-lightweight command line arg parsing alternative in Rust | 4d3009c9 | 2022-04-27 |  | unknown (unexamined) |
 | climax | private |  | dca94cb5 | 2026-06-01 |  | unknown (unexamined) |
@@ -319,11 +340,11 @@ same data, machine-readable, is synthesis-pins.json.
 | commerce | private |  | 0b11d165 | 2020-12-31 |  | unknown (unexamined) |
 | corpora | public | A collection of small corpuses of interesting data for the creation of bots and similar stuff. | 0af58bc9 | 2020-11-18 | fork | unknown (unexamined) |
 | cosmos-genesis-tinkerer | public | Python module for tinkering with Cosmos Network Genesis files | 8c8c811a | 2022-09-01 | fork | unknown (unexamined) |
-| cplaydb | public | just a db for learning | 4fa4d7ab | 2022-06-09 |  | unknown (unexamined) |
+| cplaydb | public | just a db for learning | 19b9c552 | 2026-11-18 |  | unknown (unexamined) |
 | CppCoreGuidelines | public | The C++ Core Guidelines are a set of tried-and-true guidelines, rules, and best practices about coding in C++ | 6d018fcf | 2022-06-30 | fork | unknown (unexamined) |
 | cpr | public |  | efaca3a9 | 2023-04-19 |  | unknown (unexamined) |
 | crescent | public | ⛓️ Crescent Network, Expanding DeFi capabilities through InterBlockchain Technology 🌙 | d0ae1c97 | 2022-11-10 | fork | unknown (unexamined) |
-| crit | private | important info | 4c0f503a | 2021-07-24 |  | unknown (unexamined) |
+| crit | private | important info | e8ca4ca9 | 2026-11-18 |  | unknown (unexamined) |
 | crys | public | crystal server | empty | 2026-05-17 | no commits | unknown (unexamined) |
 | crystal-lsp | private |  | 7a76ed7e | 2026-06-07 |  | unknown (unexamined) |
 | crystalline | public | A Language Server Protocol implementation for Crystal. 🔮 | dcd54205 | 2025-04-30 | fork | unknown (unexamined) |
@@ -332,14 +353,14 @@ same data, machine-readable, is synthesis-pins.json.
 | cwasm | public |  | 55cbb910 | 2020-12-15 |  | unknown (unexamined) |
 | cync | public |  | empty | 2025-12-31 | no commits | unknown (unexamined) |
 | cyu.lua | public | neovim colorscheme based loosely on ayu with a lot of plugin support | 5af5e7f6 | 2022-07-26 |  | unknown (unexamined) |
-| d-docs | private | whitepaper and documentation for div,is | 3dbcd3aa | 2020-12-25 |  | unknown (unexamined) |
-| d-ml | public | experimenting working with ml in rust | 7a840905 | 2020-08-11 |  | unknown (unexamined) |
+| d-docs | private | whitepaper and documentation for div,is | 07e4bdda | 2026-11-18 |  | unknown (unexamined) |
+| d-ml | public | experimenting working with ml in rust | 158787a7 | 2026-11-18 |  | unknown (unexamined) |
 | d-paper | private | whitepaper for div.is | empty | 2020-12-25 | no commits | unknown (unexamined) |
-| dapi | public | new graphql-based api for di (again) | 8715f7c6 | 2021-01-16 |  | unknown (unexamined) |
+| dapi | public | new graphql-based api for di (again) | 28c5a8b9 | 2026-11-18 |  | unknown (unexamined) |
 | dc | public |  | empty | 2025-11-14 | no commits | unknown (unexamined) |
 | dcode | public |  | 428fcadb | 2021-12-20 |  | unknown (unexamined) |
 | dd | public |  | 2d483558 | 2025-09-05 |  | unknown (unexamined) |
-| ddf | private | dot files | 808ed78e | 2025-12-06 |  | unknown (unexamined) |
+| ddf | private | dot files | f1433858 | 2025-12-06 |  | unknown (unexamined) |
 | ddff | private |  | empty | 2025-12-06 | no commits | unknown (unexamined) |
 | ddockwasm | public |  | cb5e4b02 | 2025-10-21 |  | unknown (unexamined) |
 | ddrt | private |  | 15165483 | 2023-06-04 |  | unknown (unexamined) |
@@ -348,7 +369,7 @@ same data, machine-readable, is synthesis-pins.json.
 | defre | public |  | d7f6a4e3 | 2022-06-11 |  | unknown (unexamined) |
 | derive_more | public | Some more derive(Trait) options | 718fbb67 | 2021-12-07 | fork | unknown (unexamined) |
 | des-steps | private |  | 11646d0d | 2026-06-06 |  | unknown (unexamined) |
-| devisa | private |  | 40da7350 | 2021-03-13 |  | unknown (unexamined) |
+| devisa | private |  | d5a9e96e | 2021-03-13 |  | unknown (unexamined) |
 | devisa-webx | private | a project to get the core tech of devisa to mvp as quickly as possible by cutting out as much frontend learning as possible | 64fbd064 | 2021-06-26 |  | unknown (unexamined) |
 | df | private | dotfiles for i3wm/sway config, Xresources config, vim/neovim config, qutebrowser, dmenu, zsh, bspwm | 3d71a8aa | 2020-12-18 |  | unknown (unexamined) |
 | df-priv | private |  | 46348f9d | 2021-07-24 |  | unknown (unexamined) |
@@ -458,7 +479,7 @@ same data, machine-readable, is synthesis-pins.json.
 | g | public |  | 69533da3 | 2022-09-07 |  | unknown (unexamined) |
 | gc | public | 3d tui | c57de023 | 2025-09-09 |  | unknown (unexamined) |
 | gd | public | engine | 60c19dbd | 2025-09-05 |  | unknown (unexamined) |
-| GEMSEC | public |  | 2d7ed796 | 2019-04-06 |  | unknown (unexamined) |
+| GEMSEC | public |  | 9b184715 | 2026-11-18 |  | unknown (unexamined) |
 | GEMSEC-Hilbert | private |  | 96169dce | 2019-10-03 |  | unknown (unexamined) |
 | gemsec-metadata-front | private | frontend for GEMSEC metadata project | b576bcb9 | 2021-05-11 |  | unknown (unexamined) |
 | gemsec-neuropep | public | Neuropeptide graphene-binding prediction project | 3e30b3b7 | 2020-07-29 |  | unknown (unexamined) |
@@ -499,10 +520,10 @@ same data, machine-readable, is synthesis-pins.json.
 | idlntx | public | primitive experimental version of the real thing | 0c6deec9 | 2021-06-16 |  | unknown (unexamined) |
 | idlx | public |  | 61d0acda | 2022-05-28 |  | unknown (unexamined) |
 | idnx | private |  | d0fdd1db | 2022-02-05 |  | unknown (unexamined) |
-| idol | private |  |  ef3dbcfa  | 2026-11-18 |  | idol family — placements above |
+| idol | private |  | 2f44b4fe | 2026-11-18 |  | idol family — placements above |
 | idol-api | private | Idol-authored compiler and semantic graph API; native admission and production qualification tracked explicitly | 46b8f168 | 2026-11-08 |  | idol family — placements above |
 | idol-canary-7x3q | private | canary - do not delete | empty | 2026-09-25 | no commits | idol family — placements above |
-| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler |  d1f9dcba  | 2026-11-17 |  | idol family — placements above |
+| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler | dd28e0c8 | 2026-11-18 |  | idol family — placements above |
 | idol-console | private |  | 7e25bda8 | 2026-10-30 |  | idol family — placements above |
 | idol-edit | private | Independent Idol source editor. Graph and Space are separate products. | 6f0d83dc | 2026-11-07 |  | idol family — placements above |
 | idol-eyes | private | Idol-native computer perception, control, and UI. Graph-owned semantics; verified outcomes; measured Peekaboo parity and dominance as release gates. | d7e7b009 | 2026-11-08 |  | idol family — placements above |
@@ -522,7 +543,7 @@ same data, machine-readable, is synthesis-pins.json.
 | idol-observatory | private |  | 7ec2600e | 2026-10-30 |  | idol family — placements above |
 | idol-ocean | private |  | 0ba07f62 | 2026-11-06 |  | idol family — placements above |
 | idol-os | private | The OS layer home for the Idol family: code signing first (identity-held re-signing by premise proof), process and jobs machinery to follow | a9ffe819 | 2026-11-17 |  | idol family — placements above |
-| idol-relay | private | Shared coordination channel for Idol agents: Grok, Cursor, Codex, Grokbot, Muse, Devin. Post messages as files; poll for new ones. No provider lock-in. |  3a865f1c  | 2026-11-18 |  | idol family — placements above |
+| idol-relay | private | Shared coordination channel for Idol agents: Grok, Cursor, Codex, Grokbot, Muse, Devin. Post messages as files; poll for new ones. No provider lock-in. | 5c8f2743 | 2026-11-18 |  | idol family — placements above |
 | idol-release-observability | private | Private research and prototypes for evidence-scoped release observability, deterministic replay, and qualified release comparisons. | empty | 2026-11-16 | no commits | idol family — placements above |
 | idol-restored | private | Idol — S0 kernel: graph sovereignty, demand-before-representation, compiler B. The kernel branch is the work line. | 1c4ef7fd | 2026-10-15 |  | idol family — placements above |
 | idol-semi | private | Private Idol-owned fork/mirror of yaspar-org/semi-persistent for the Idol qualification hyperlattice and self-hosting path | 508d7c66 | 2026-11-17 |  | idol family — placements above |
@@ -741,12 +762,12 @@ same data, machine-readable, is synthesis-pins.json.
 | software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress |  858a85e3  | 2026-11-18 |  | proof family — synthesis.md |
 | software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it |  1d504014  | 2026-11-18 |  | proof family — synthesis.md |
 | software-frontier-is-solvable | private |  |  22418d56  | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. |  dce6564b  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. | 7b174646 | 2026-11-18 |  | proof family — synthesis.md |
 | software-is-incrementally-certifiable | private | Lean 4 proof that incremental monotonic certification is extensive and yields Pareto-optimal dominance across releases |  36901673  | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-incrementally-safe | private | Lean 4 proof that safety is preserved incrementally across releases, with security consequences (noninterference, monotone capability shrinkage), built on software-is-composable. |  dafd79a4  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-incrementally-safe | private | Lean 4 proof that safety is preserved incrementally across releases, with security consequences (noninterference, monotone capability shrinkage), built on software-is-composable. | 23a22552 | 2026-11-18 |  | proof family — synthesis.md |
 | software-is-quantifiable | public | Lean 4 formalization of the qualification-of-software claims: finiteness, witness fold correctness, snapshot coloring, Pareto ordering, coverage premise — each proven, disproven, open, or named as a premise. |  d88acbdc  | 2026-11-18 |  | proof family — synthesis.md |
 | software-is-solvable | private |  |  3053b78d  | 2026-11-18 |  | proof family — synthesis.md |
-| software-optimality | private | Machine-checked foundations for qualification closure, compounding evidence, and finite Pareto frontiers. |  f759c33f  | 2026-11-18 |  | proof family — synthesis.md |
+| software-optimality | private | Machine-checked foundations for qualification closure, compounding evidence, and finite Pareto frontiers. | 95df5fb7 | 2026-11-18 |  | proof family — synthesis.md |
 | solo-provisioner | private |  | 675b3315 | 2025-10-09 |  | unknown (unexamined) |
 | station8-landing | private |  | 3bf54e24 | 2022-07-22 |  | unknown (unexamined) |
 | std | private |  | ae782739 | 2023-06-12 |  | unknown (unexamined) |
@@ -773,7 +794,7 @@ same data, machine-readable, is synthesis-pins.json.
 | txauth | private |  | d130086a | 2026-10-23 |  | unknown (unexamined) |
 | voile-rs | public | Dependently-typed row-polymorphic programming language, evolved from minitt-rs | 71def16d | 2020-09-21 | fork | unknown (unexamined) |
 | vscode-duo | public |  | e3e51602 | 2026-06-19 |  | unknown (unexamined) |
-| VSEPR-Encoding-Doc | public |  | a86c1cf9 | 2019-07-21 |  | unknown (unexamined) |
+| VSEPR-Encoding-Doc | public |  | d6418ab3 | 2026-11-18 |  | unknown (unexamined) |
 | vtrl-web | private |  | 32808b1c | 2021-04-17 |  | unknown (unexamined) |
 | vue | private |  | 1712130f | 2020-02-10 |  | unknown (unexamined) |
 | vuepress | private |  | 476ae4a4 | 2020-02-09 |  | unknown (unexamined) |
@@ -806,6 +827,6 @@ same data, machine-readable, is synthesis-pins.json.
 | software-benchmarking-is-redundant-and-suboptimal | private |  |  a85286ac  | 2026-11-18 |  | proof family — sweep placements |
 | software-compilers-lose-info | private | The full proof of Idol's topological thesis: conventional compilation provably loses the derivation structure; derivation-carrying compilation loses nothing. |  69358971  | 2026-11-18 |  | proof family — sweep placements |
 | software-fuzzing-is-suboptimal | private |  |  6ed7a596  | 2026-11-18 |  | proof family — sweep placements |
-| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. |  d558669b  | 2026-11-18 |  | proof family — sweep placements |
+| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | 98761a1a | 2026-11-18 |  | proof family — sweep placements |
 | software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. |  8f6a1280  | 2026-11-18 |  | proof family — sweep placements |
 | software-testing-is-redundant | private |  |  18feb7ab  | 2026-11-18 |  | proof family — sweep placements |
