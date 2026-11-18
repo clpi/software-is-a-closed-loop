@@ -1107,3 +1107,46 @@ experiments and evidence bundles behind the campaign timing
 claims were not opened — those claims stand unverified
 beyond the Lean arithmetic; four unmerged branches were not
 audited.
+
+## 7. Watch update — 2026-11-18, the second hourly re-synthesis
+
+The second watch re-enumerated the estate completely: 565
+repos, every head read individually, no read errors. Twenty
+repos had moved since the sweep pins, none were new, none
+were gone, and the paper source hash was unchanged, so no
+paper re-sync was owed. Fifteen of the twenty are proof
+repos, four are other idol-family repos, and one is this
+repo itself. The annex watch deltas carry the mechanical
+counts at the fresh heads; the placements in section 3 stand
+at their census pins, with re-census owed at the new heads,
+except where this section records a change of kind.
+
+Two repos changed in kind at the head. The certifiable repo,
+whose thesis stood claimed and not proven at its head, now
+carries a full library at its head: certification closure
+modules with a recorded check log ending in a pass, a claims
+table marking the closure results proven and one union
+reading disproven, and five named premises. The safe repo,
+whose head likewise carried only a worked example with its
+branch content unmerged, now carries a full library at its
+head: model, cone, check, and increment modules with an
+audit folder, and a claims table marking its first findings
+proven; no recorded check log stands in its head tree. Both
+state changes are recorded here at the strength the trees
+themselves state; a full theorem-level census of each at
+its new pin is owed before their section 3 placements move.
+
+The remaining movement is growth in place: a coordinated
+range example landed in eleven proof repos and in this
+repo; the frontier repo gained five library files beside
+its example; the optimality repo gained eight root modules
+beside its example; the quantifiable repo gained its range
+example and one verification controls file; the theses repo
+gained a solver dominance file. The mechanical name
+comparison, one method at both heads, found no lost name in
+any moved proof repo: every proven set grew or held. The
+idol repo's one Lean file is byte-identical at its census
+pin and at the fresh head, so its proof-bearing content is
+unchanged. This repo's own proven count grew from three
+theorems to eleven with its range example, re-censused in
+full in its annex at the new pin.

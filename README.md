@@ -163,3 +163,22 @@ in the commit message. It is silent when nothing moved and
 reports only a landed re-synthesis or a failure. Its job id
 is recorded in the lane record,
 ~/workspace/research/software-closed-loop-2026-11-18.md.
+
+Second watch update (2026-11-18, later the same night): the
+estate was re-enumerated a third time at 565 repos, every
+head read individually with no errors. Twenty repos had
+moved, none were new or gone, and the paper source hash was
+unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. Fifteen proof repos moved and every
+one gained declarations with no name lost: the certifiable
+repo landed its library at its head (fresh head 36901673,
+census pin c9ffd49a, re-census owed), the safe repo landed
+its library at its head (enumeration head dafd79a4, census
+pin 8ad1dd26, re-census owed), a coordinated range example
+landed across eleven proof repos and in this repo, and the
+optimality, frontier, quantifiable, and theses repos gained
+library modules beside it. This repo's own census pin moved
+to d558669b on a full re-census of its new range example
+(its proven count is now eleven). All other census pins
+stand with re-census owed at the fresh heads recorded in
+the pins file.

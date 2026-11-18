@@ -75,6 +75,27 @@ premise-retraction-playground 47f469a4; idol 561cf395 /
 c8336841; this repo d8047804. A census pin with a differing
 live head carries re-census owed, per resynthesis.md.
 
+## Watch update — 2026-11-18 (second hourly re-synthesis)
+
+A third enumeration the same night: 565 repos, every head
+read individually, no read errors. Twenty repos had moved
+since the sweep pins, none were new, none were gone, and
+the paper source hash was unchanged. The moved set: the
+proof repos benchmarking, compilers, regress, review,
+frontier, fuzzing, this repo, composable, certifiable,
+safe, traceability, quantifiable, solvable, optimality,
+and testing; the theses repo; the idol repo; and three
+further idol-family repos (the compiler port, the library,
+and the relay). Fresh heads for every repo stand in the
+pins file at this re-synthesis; the moved proof repos'
+annex deltas carry their mechanical counts at the fresh
+heads, and two of them changed in kind at the head — the
+certifiable and safe libraries landed in their head trees,
+recorded in the synthesis watch section. The three further
+idol-family repos were checked by tree read at their fresh
+heads and carry no proof-assistant content; they remain
+proof-free by the named check.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -151,15 +172,15 @@ software whose releases the loop qualifies, and the machinery
 that runs the loop on the engine side. Heads as read
 2026-11-18 ~01:30 PST.
 
-- idol (0608bf6f) — the language and compiler: the named
+- idol (ef3dbcfa) — the language and compiler: the named
   software of stage 0, the source of the executions stage 3
   witnesses, and the pin every improvement re-enters against.
   Active; moved during census night.
-- idol-compiler (fceacf1f) — the pure-Idol compiler port: an
+- idol-compiler (d1f9dcba) — the pure-Idol compiler port: an
   improvement line whose pins are stage 8 candidates against
   the production compiler; its performance stands UNMEASURED
   in the wider record.
-- idol-lib (57702e58) — the library ports: measured
+- idol-lib (7785c481) — the library ports: measured
   candidates — every port wins compactness and loses speed on
   the shared gaps in the wider record; those cells are stage 5
   frontier readings over this repo's pins.
@@ -193,7 +214,7 @@ that runs the loop on the engine side. Heads as read
   idol-edit 6f0d83dc, idol-eyes d7e7b009, idol-id cd4c2e55,
   idol-id-agents 40cad7d9, idol-ide d06fd36c, idol-ifconv
   3590f2a4, idol-kernel 5832fb78, idol-native 4a851575,
-  idol-relay 9c8a2942 — pushed during census night,
+  idol-relay 3a865f1c — pushed during census night,
   idol-restored 1c4ef7fd, idol-semi 508d7c66, idol-space
   37bb410d, idolg 94de4e5c) are placed by their names and
   listing descriptions in the table below and colored
@@ -478,10 +499,10 @@ same data, machine-readable, is synthesis-pins.json.
 | idlntx | public | primitive experimental version of the real thing | 0c6deec9 | 2021-06-16 |  | unknown (unexamined) |
 | idlx | public |  | 61d0acda | 2022-05-28 |  | unknown (unexamined) |
 | idnx | private |  | d0fdd1db | 2022-02-05 |  | unknown (unexamined) |
-| idol | private |  | 0608bf6f | 2026-11-18 |  | idol family — placements above |
+| idol | private |  |  ef3dbcfa  | 2026-11-18 |  | idol family — placements above |
 | idol-api | private | Idol-authored compiler and semantic graph API; native admission and production qualification tracked explicitly | 46b8f168 | 2026-11-08 |  | idol family — placements above |
 | idol-canary-7x3q | private | canary - do not delete | empty | 2026-09-25 | no commits | idol family — placements above |
-| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler | fceacf1f | 2026-11-17 |  | idol family — placements above |
+| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler |  d1f9dcba  | 2026-11-17 |  | idol family — placements above |
 | idol-console | private |  | 7e25bda8 | 2026-10-30 |  | idol family — placements above |
 | idol-edit | private | Independent Idol source editor. Graph and Space are separate products. | 6f0d83dc | 2026-11-07 |  | idol family — placements above |
 | idol-eyes | private | Idol-native computer perception, control, and UI. Graph-owned semantics; verified outcomes; measured Peekaboo parity and dominance as release gates. | d7e7b009 | 2026-11-08 |  | idol family — placements above |
@@ -494,14 +515,14 @@ same data, machine-readable, is synthesis-pins.json.
 | idol-ir | private | Idol graph IR: keyword-free surface other languages compile to and emit from. Measured kernel floors. No module paths. | ef3b9ea1 | 2026-11-12 |  | idol family — placements above |
 | idol-kernel | private | Idol kernel: law-inheriting graph → demand → one realization. Not a new language. Donor: clpi/idol-restored@1d085bf. | 5832fb78 | 2026-10-07 |  | idol family — placements above |
 | idol-lake | private |  | empty | 2026-10-29 | no commits | idol family — placements above |
-| idol-lib | private | Daily graph-native Idol rewrites of major open source codebases: one per day, minimum lines, minimum syntax, highest performance, proven against the incumbent. | 57702e58 | 2026-11-17 |  | idol family — placements above |
+| idol-lib | private | Daily graph-native Idol rewrites of major open source codebases: one per day, minimum lines, minimum syntax, highest performance, proven against the incumbent. |  7785c481  | 2026-11-17 |  | idol family — placements above |
 | idol-live | private | Idol Live: continuous coordination, authorship, and source-state substrate. Git is a compatibility projection. Separate from clpi/idol; will stand alone after Idol release. | 2db4aade | 2026-11-11 |  | idol family — placements above |
 | idol-model | private |  | 8ea29c9f | 2026-11-17 |  | idol family — placements above |
 | idol-native | private |  | 4a851575 | 2026-11-08 |  | idol family — placements above |
 | idol-observatory | private |  | 7ec2600e | 2026-10-30 |  | idol family — placements above |
 | idol-ocean | private |  | 0ba07f62 | 2026-11-06 |  | idol family — placements above |
 | idol-os | private | The OS layer home for the Idol family: code signing first (identity-held re-signing by premise proof), process and jobs machinery to follow | a9ffe819 | 2026-11-17 |  | idol family — placements above |
-| idol-relay | private | Shared coordination channel for Idol agents: Grok, Cursor, Codex, Grokbot, Muse, Devin. Post messages as files; poll for new ones. No provider lock-in. | 9c8a2942 | 2026-11-18 |  | idol family — placements above |
+| idol-relay | private | Shared coordination channel for Idol agents: Grok, Cursor, Codex, Grokbot, Muse, Devin. Post messages as files; poll for new ones. No provider lock-in. |  3a865f1c  | 2026-11-18 |  | idol family — placements above |
 | idol-release-observability | private | Private research and prototypes for evidence-scoped release observability, deterministic replay, and qualified release comparisons. | empty | 2026-11-16 | no commits | idol family — placements above |
 | idol-restored | private | Idol — S0 kernel: graph sovereignty, demand-before-representation, compiler B. The kernel branch is the work line. | 1c4ef7fd | 2026-10-15 |  | idol family — placements above |
 | idol-semi | private | Private Idol-owned fork/mirror of yaspar-org/semi-persistent for the Idol qualification hyperlattice and self-hosting path | 508d7c66 | 2026-11-17 |  | idol family — placements above |
@@ -717,15 +738,15 @@ same data, machine-readable, is synthesis-pins.json.
 | shy | public |  | empty | 2025-12-31 | no commits | unknown (unexamined) |
 | site | private |  | 663f34cf | 2021-04-27 |  | unknown (unexamined) |
 | ska | private |  | 81f0c4d6 | 2023-06-12 |  | unknown (unexamined) |
-| software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress | 24d36c13 | 2026-11-18 |  | proof family — synthesis.md |
-| software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it | ae5f3918 | 2026-11-18 |  | proof family — synthesis.md |
-| software-frontier-is-solvable | private |  | c7ffc6d0 | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. | 033c12c0 | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-incrementally-certifiable | private | Lean 4 proof that incremental monotonic certification is extensive and yields Pareto-optimal dominance across releases | f3b9f896 | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-incrementally-safe | private | Lean 4 proof that safety is preserved incrementally across releases, with security consequences (noninterference, monotone capability shrinkage), built on software-is-composable. | 94661358 | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-quantifiable | public | Lean 4 formalization of the qualification-of-software claims: finiteness, witness fold correctness, snapshot coloring, Pareto ordering, coverage premise — each proven, disproven, open, or named as a premise. | ba27febf | 2026-11-18 |  | proof family — synthesis.md |
-| software-is-solvable | private |  | 815e125f | 2026-11-18 |  | proof family — synthesis.md |
-| software-optimality | private | Machine-checked foundations for qualification closure, compounding evidence, and finite Pareto frontiers. | 81b47d3c | 2026-11-18 |  | proof family — synthesis.md |
+| software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress |  858a85e3  | 2026-11-18 |  | proof family — synthesis.md |
+| software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it |  1d504014  | 2026-11-18 |  | proof family — synthesis.md |
+| software-frontier-is-solvable | private |  |  22418d56  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. |  dce6564b  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-incrementally-certifiable | private | Lean 4 proof that incremental monotonic certification is extensive and yields Pareto-optimal dominance across releases |  36901673  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-incrementally-safe | private | Lean 4 proof that safety is preserved incrementally across releases, with security consequences (noninterference, monotone capability shrinkage), built on software-is-composable. |  dafd79a4  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-quantifiable | public | Lean 4 formalization of the qualification-of-software claims: finiteness, witness fold correctness, snapshot coloring, Pareto ordering, coverage premise — each proven, disproven, open, or named as a premise. |  d88acbdc  | 2026-11-18 |  | proof family — synthesis.md |
+| software-is-solvable | private |  |  3053b78d  | 2026-11-18 |  | proof family — synthesis.md |
+| software-optimality | private | Machine-checked foundations for qualification closure, compounding evidence, and finite Pareto frontiers. |  f759c33f  | 2026-11-18 |  | proof family — synthesis.md |
 | solo-provisioner | private |  | 675b3315 | 2025-10-09 |  | unknown (unexamined) |
 | station8-landing | private |  | 3bf54e24 | 2022-07-22 |  | unknown (unexamined) |
 | std | private |  | ae782739 | 2023-06-12 |  | unknown (unexamined) |
@@ -781,10 +802,10 @@ same data, machine-readable, is synthesis-pins.json.
 | zig.vim | public | Vim configuration for Zig | 29ceb122 | 2022-01-17 | fork | unknown (unexamined) |
 | zpkg | public |  | 33c2dcb2 | 2022-04-24 |  | unknown (unexamined) |
 
-| idol-theses | public | The falsifiable theses of the Idol program, formalized in Lean at their strongest reachable forms, each with the observation that would refute it | d207be6e | 2026-11-18 |  | proof family — sweep placements |
-| software-benchmarking-is-redundant-and-suboptimal | private |  | 4314a181 | 2026-11-18 |  | proof family — sweep placements |
-| software-compilers-lose-info | private | The full proof of Idol's topological thesis: conventional compilation provably loses the derivation structure; derivation-carrying compilation loses nothing. | f531e31a | 2026-11-18 |  | proof family — sweep placements |
-| software-fuzzing-is-suboptimal | private |  | 18d9569b | 2026-11-18 |  | proof family — sweep placements |
-| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | d8047804 | 2026-11-18 |  | proof family — sweep placements |
-| software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. | 4420fb1e | 2026-11-18 |  | proof family — sweep placements |
-| software-testing-is-redundant | private |  | 66f65b6f | 2026-11-18 |  | proof family — sweep placements |
+| idol-theses | public | The falsifiable theses of the Idol program, formalized in Lean at their strongest reachable forms, each with the observation that would refute it |  c443ebe1  | 2026-11-18 |  | proof family — sweep placements |
+| software-benchmarking-is-redundant-and-suboptimal | private |  |  a85286ac  | 2026-11-18 |  | proof family — sweep placements |
+| software-compilers-lose-info | private | The full proof of Idol's topological thesis: conventional compilation provably loses the derivation structure; derivation-carrying compilation loses nothing. |  69358971  | 2026-11-18 |  | proof family — sweep placements |
+| software-fuzzing-is-suboptimal | private |  |  6ed7a596  | 2026-11-18 |  | proof family — sweep placements |
+| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. |  d558669b  | 2026-11-18 |  | proof family — sweep placements |
+| software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. |  8f6a1280  | 2026-11-18 |  | proof family — sweep placements |
+| software-testing-is-redundant | private |  |  18feb7ab  | 2026-11-18 |  | proof family — sweep placements |
