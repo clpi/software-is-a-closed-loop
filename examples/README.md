@@ -27,3 +27,7 @@ The [verification transcript](verification.txt) includes the observed outputs an
 ## Scope
 
 The contract uses batch width as the latency bound and assumes exactly eight records and the four named divisors. It establishes no wall-clock result and does not authorize reuse across a changed contract.
+
+## Additional worked example
+
+[One verified range query across four read catalogs](range-ledger/README.md)

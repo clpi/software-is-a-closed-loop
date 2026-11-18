@@ -1,0 +1,11 @@
+--- Settlement.lean
++++ Settlement.lean
+@@ -15,7 +15,7 @@
+ def rightPage (p : Nat → Int) := page 1024 4096 (OverlapPlan.read p .right)
+ 
+ -- Query the stored values. Check the matching seams while reversing the overlap.
+-def publish (l m r : Receipt) := chain l [rev m,r]
++def publish (l m r : Receipt) := chain l [m,r]
+ theorem publish_exact (p : Nat → Int) :
+     publish (leftPage p) (midPage p) (rightPage p) = some (page 0 4096 (p 4096 - p 0)) := by
+   change some (page 0 4096 (OverlapPlan.solve (OverlapPlan.read p .left)

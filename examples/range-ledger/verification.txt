@@ -1,0 +1,10 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'RangeLedger.Settlement.validate_implementation' depends on axioms: [propext, Quot.sound]
+'RangeLedger.Settlement.build_amortization' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RangeLedger.Settlement.external_publish' depends on axioms: [propext, Quot.sound]
+'RangeLedger.Settlement.release_reuse' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RangeLedger.Settlement.ledger_determines' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RangeLedger.Settlement.bank_venue' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RangeLedger.Settlement.overlap_is_essential' does not depend on any axioms
+Rejected control: remove the orientation reversal in the integrated publisher.
+{"epoch_totals": [12263, 12263, 12264], "overlap_index_two_queries": {"raw_rows": 8192, "reads_plus_writes": 4105}, "query_rows": {"banks": 4, "overlap": 3, "prefix": 2, "raw": 4096}, "sqlite": "3.53.1", "stale_tiles": [[64, 128], [192, 256]]}
