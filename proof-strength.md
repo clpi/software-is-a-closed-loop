@@ -1001,3 +1001,42 @@ rows: both were read by tree at their fresh heads, no
 proof-assistant source was found in either, and they
 remain proof-free by the named check, as their census
 entries record.
+
+## Watch refresh — 2026-11-18, the eighth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 565 repos, every head
+read individually (four transport failures re-read to
+matching heads), and read the moved repos by tree at their
+fresh heads. Evidence below rests on the tree and commit
+reads at both heads of the moved proof repo: no Lean file
+changed between them. Placements stand at the census pins
+named in each row; a full theorem-level re-census at each
+fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files
+  are unchanged between the last recorded head and the
+  fresh head, so no name was lost; this repo's eleven
+  names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved
+  proof repo has its row restated below in this same pass.
+  No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 22957bf6
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the seventh watch landed;
+  the commits between them are that watch's annex,
+  placement, ledger, and pins commits and carry no Lean
+  change. Controls and gate stand as the second watch
+  row records.
+
+The three other moved repos this watch, the compiler port,
+the relay, and the sites repo, are not proof repos and
+carry no ledger rows: all three were read by tree at their
+fresh heads, no proof-assistant source was found in any of
+them, and they remain proof-free by the named check, as
+their census entries record.
