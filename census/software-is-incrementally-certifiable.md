@@ -1,61 +1,62 @@
-# Census — software-is-incrementally-certifiable (clpi)
+# Census — software-is-incrementally-certifiable (clpi) — refresh draft
 
-Census date: 2026-11-18 ~01:20–01:35 PST. Method: live head read first via the gh route, then a shallow clone; clone head verified equal to the live head. Clone read only, never edited.
+Census date: 2026-11-18, ~02:10–02:40 PST. Method: live head read first via the gh route, then a shallow clone (depth 1); clone head verified equal to the live head. Clone read only, never edited. This draft replaces the census of the older pin; changes are marked in the Delta section.
 
 ## Pins
 
-- Live head (default branch `master`): `f3b9f896ac76a95e7104c98af66e41413e7e5b2d` — the repo's single commit, "Initial commit", 2026-11-18T08:55:11Z. Clone head matches exactly.
-- Visibility: private (GitHub API: `"private": true, "visibility": "private"`).
-- Toolchain pin: **none — the repo has no toolchain file at all.** (The other two repos in this set pin `leanprover/lean4:v4.19.0`; this one pins nothing.)
-- History: exactly 1 commit. Branches: `master` only. Pull requests: none, any state.
-- Complete file list at head (recursive tree, API-verified): **one file only** — a readme (159 bytes). No Lean module, no lakefile, no manifest, no git-ignore, no check log, no controls file.
+- Old census pin: `f3b9f896ac76a95e7104c98af66e41413e7e5b2d` — a single readme file, theorem count 0, thesis state claimed-not-proven.
+- Live head (default branch `master`): `c9ffd49a906038d29d3e0d726093c410b3db798e`. Clone head matches exactly. Head commit subject, plainly: add a checked before-and-after example for a tree repair.
+- Visibility: private.
+- Toolchain pin: **none — the repo still has no toolchain file, no lakefile, and no manifest.** The worked example's own runner states it needs Lean 4.19.0, but the repo pins nothing.
+- Files at head: the original readme (unchanged claim, two lines) plus one worked-examples folder holding a single standalone proof file, its readme, a runner script, an independent replay script in a second language, and a recorded verification transcript. Theorem total in tree: **7**, all inside the worked example. Library theorems: **0**.
 
-## Thesis (what the repo claims to prove)
+## Delta (old pin to this pin)
 
-- GitHub description: "Lean 4 proof that incremental monotonic certification is extensive and yields Pareto-optimal dominance across releases."
-- Readme, in full: "Lean 4 proof that incremental monotonic certification is extensive and yields Pareto-optimal dominance across releases."
-- Plain English: the claim on the tin is that the certification operator (the closure that adds every profile sitting below an already-certified one) is extensive — a certified thing stays certified — and that admission of a release can be decided by that closure together with a componentwise (Pareto) cost bound, giving a dominance order across releases in which a release that is no worse on any cost axis, and better on one, dominates.
+- **The thesis is still not proved in this repo.** No library, no package, and no theorem about certification, extensivity, or dominance has landed at the head. The headline claim's evidence state is unchanged: **claimed-not-proven**.
+- **What landed is a worked example, not the thesis.** A new examples folder carries one self-contained proof file (it imports only the standard library) about repairing one edited leaf in a balanced hash tree: 7 theorems, a recorded verification transcript, and a rejected control. It is evidence that an incremental-repair cost claim of the same family can be formalised and checked; it proves nothing about the certification closure or the dominance order named in the readme.
+- **A side branch exists but is not head content.** A pull request opened before this census proposes proving incremental certification from a spec; it remains open and unmerged, and nothing from it is in the head tree. This census counts only the head.
+
+## Thesis (what the repo claims to prove) — unchanged
+
+- Repo description and readme, in full substance: a Lean 4 proof that incremental monotonic certification is extensive and yields dominance across releases in the componentwise cost order.
+- Plain English: the claim on the tin is that the certification operator (the closure that adds every profile sitting below an already-certified one) is extensive — a certified thing stays certified — and that admission of a release can be decided by that closure together with a componentwise cost bound, giving a dominance order across releases.
+- Evidence state at this pin: **claimed-not-proven.** No file at the head defines the closure, the profile order, or the cost order, and no theorem states extensivity, monotonicity, idempotence, or any dominance fact.
 
 ## Theorem census at the live head
 
-**Theorem count at the live head: 0.** There is no Lean code in the repo at this pin: no theorem, no lemma, no definition, no example. A text search of the whole clone for theorem / lemma / sorry / axiom finds nothing.
+### Library: 0 theorems
 
-- Disproofs at head: none (nothing is proved or disproved).
-- Named premises at head: none stated in any file.
-- Side conditions at head: none stated.
-- Axiom dependencies at head: no claim of any kind; no print-axioms evidence, no check log, no build log in the repo.
-- Zero-sorries claim at head: no such claim is made in the repo; the absence of sorries is vacuous — there is no proof code to contain one.
+There is no library. A text search of the whole clone for theorem and lemma declarations finds them only in the worked example below. No disproof, no named premise, and no side condition about the thesis is stated anywhere at the head.
 
-## Explicit non-claims / boundaries at head
+### Worked example: the hash-tree repair (7 theorems)
 
-- The readme asserts a finished "Lean 4 proof"; the repo at this pin contains no artifact that could back that assertion, and not even a toolchain pin to build one against. That gap is the headline finding, stated here, not smoothed over.
-- Nothing in the repo states any boundary, limitation, or non-claim beyond the one readme sentence.
+Vocabulary, plainly: a balanced binary tree of leaves; a cache holding a digest at every node; building the cache from scratch costs one hash call per node; repairing after a single leaf edit rebuilds only the edited path, reusing cached sibling digests, and returns the list of levels at which fresh receipts were produced. The hash functions are arbitrary supplied functions — the example's own scope note states the equality proof needs no collision-resistance assumption.
 
-## Annex — the stand-in module on another repo's unmerged branch (NOT this repo's content)
+| Claim (one quoted name) | State | What it proves, plainly | Axioms (recorded transcript) |
+|---|---|---|---|
+| `build_cost` | proven | Building the cache for any tree of a given height costs exactly the full-work count for that height (the recurrence that doubles per level). | two of the standard three |
+| `clean_equivalence` | proven | For every tree, path, and replacement payload, the repaired cache equals the cache built cleanly from the edited tree. Repair and rebuild agree in full. | one standard axiom |
+| `repair_trace` | proven | The receipt levels reported by a repair are exactly the level list of the edited path. | one standard axiom |
+| `levels_exact` | proven | The level list of any path of a given height is exactly the descending list of that height's levels. | one standard axiom |
+| `least_receipts` | proven | Any receipt list complying with the audit contract (a fresh receipt at each changed path level) for a height-10 path has at least 11 entries. The exhibited count is a lower bound, not just an achieved one. | standard three |
+| `before_after` | proven | The worked numbers, by computation: full work at height 10 is 2047 hash calls, and the path level count is 11. | none |
+| `leaf_only_fails` | proven (boundary fact) | The root level is among the required levels of the leftmost height-10 path, and is not in a leaf-only receipt list — a leaf-only update misses the root, by computation. | two of the standard three |
 
-As with the composable repo: the only Lean code developing this thesis is a **stand-in module inside the safe repo's open pull request branch** (branch head `5c1006a6ae6ee41a4bc19247db3a95589f5a3e9e` at census time). That pull request's body states this repo at the pin above "has no Lake package, so it is not required", and that the stand-in carries equivalence obligations so a later real dependency could replace it if it exports the same closure, profile order, and cost order. The theorems below are **not** theorems of this repo. The stand-in also records this repo's live head as a string constant inside a sibling-pin structure — a string, not a machine-checked dependency.
+- The example readme's before-and-after table (2047 hash calls per full rebuild against 11 per repaired tree, for 1024 leaves) is exactly the content of the first and sixth rows; the replay script independently re-executes 1024 single-leaf edits and checks every cached digest against a clean rebuild, and the transcript records all matching.
+- Control: the transcript records a rejected mutation (retaining a stale subtree after an edit fails checking, exit 1).
+- Premises carried by the example, stated in its own scope note: the count covers a single edit using an existing, valid cache; cache acquisition, disk access, and multi-edit scheduling have separate costs and are not claimed.
 
-Stand-in module (file in the safe repo's branch, 14 theorems). Vocabulary, plainly: it imports the composable stand-in; a *profile* is as there; the *closure* of a property of profiles is the set of profiles sitting below some profile with the property; a *cost* is a pair of natural numbers (time, compute); one cost is below another when both components are; one cost *dominates* another when it is below it and strictly smaller on at least one axis.
+## Zero-sorries and gate evidence
 
-| # | Theorem (quoted name) | What it proves (hypotheses → conclusion) |
-|---|---|---|
-| 1 | `c_extensive` | **Extensivity (half the repo's thesis).** Premise: a profile has the property. Conclusion: the profile is in the closure of the property. (Witness: itself, via order reflexivity.) |
-| 2 | `c_monotone` | The closure is monotone in the property: premise — every profile with the first property has the second — turns membership in the first closure into membership in the second. |
-| 3 | `c_idempotent` | **Idempotence.** The closure of the closure of a property is exactly the closure of the property (equivalence, both directions). |
-| 4 | `paretoLE_refl` | The componentwise cost order is reflexive. |
-| 5 | `paretoLE_trans` | The componentwise cost order is transitive. |
-| 6 | `paretoDominates_le` | Dominance implies the componentwise order (dominating cost is no worse on either axis). |
-| 7 | `paretoDominates_irrefl` | **Disproof, flagged:** no cost dominates itself — dominance is irreflexive, because a strict inequality of a number with itself is impossible. This is the stand-in's one explicit "something is false" theorem. |
-| 8 | `equivalence_obligation_c` | The closure, as exported, is definitionally the stated existential form (some certified profile above the given one). Interface obligation, proved by reflexivity of the equivalence. |
-| 9 | `equivalence_obligation_pareto` | The exported "no worse" relation is definitionally the two componentwise inequalities. Interface obligation. |
-| 10 | `equivalence_obligation_paretoDominates` | The exported dominance relation is definitionally "no worse, and strictly better on time or on compute". Interface obligation. |
-| 11 | `admit_iff_closure_and_pareto` | Admission of a candidate (a profile plus a cost) under a safety property and a cost bound is equivalent to: the profile is in the closure of the safety property, **and** the cost is componentwise below the bound. This is a definitional unfolding of the admission predicate, proved by simplification. |
-| 12 | `admitted_downward` | Premises carried: a candidate is admitted; a second candidate's profile is below the first's; its cost is componentwise below the first's. Conclusion: the second candidate is also admitted. (Downward closure of admission — the "dominance across releases" workhorse.) |
-| 13 | `equivalence_obligation_closure` | The exported closure structure's operator is definitionally the closure. Interface obligation. (The structure packages extensivity, monotonicity, and idempotence — theorems #1–#3 — as its fields.) |
-| 14 | `equivalence_obligation_paretoExport` | The exported cost-order structure's relation is definitionally the componentwise order. Interface obligation. (The structure packages #4 and #5.) |
+- This census ran the token search on the clone: no sorry, admit, axiom-declaration, or native-decision token anywhere in the tree.
+- Gate at head: there is **no repo-level check script and no recorded whole-repo check log**. The example folder has its own runner (compile the one proof file with warnings as errors, then run the independent replay) and its own recorded transcript showing the version line, the computed pair (2047, 11), all seven axiom lines, the replay summary, and the rejected control. That transcript is the gate evidence, and it covers the example only.
+- This census did not run any build; the transcript is the repo's own recorded evidence, labelled as such.
 
-- Disproofs in the stand-in: #7 only. No counterexample construction anywhere.
-- Named premises carried rather than proved in the stand-in: (a) admission itself is a *definition* (closure membership plus cost bound) — no theorem shows any concrete release is admitted, and the safety property and the bound are inputs throughout; (b) the hypotheses of #12 are inputs; (c) five of the fourteen theorems (#8, #9, #10, #13, #14) are interface obligations that hold by definition, not substantive facts — the substantive content is #1, #2, #3, #6, #7, #11, #12.
-- Side conditions in the stand-in: the strictness disjunction in dominance (strict on time **or** strict on compute) in #7/#10; both cost components must satisfy the bound in #11.
-- On the thesis wording: the stand-in proves extensivity and idempotence of the closure and the basic order facts about dominance. It does **not** prove "Pareto-optimality" in the sense of an optimal element existing or being attained — no existence or maximality theorem is present. "Yields Pareto-optimal dominance" in the readme/description is stronger than what the stand-in's theorems state.
-- Axiom / sorry evidence for the stand-in: no sorry token in the file (text search), no axiom declaration, no per-theorem print-axioms output anywhere. The safe pull request's body claims headline axioms are only the three standard ones and quotes a successful build at toolchain v4.19.0 — sourced in the safe census. This census did not run a build (no Lean toolchain on this machine).
+## Explicit non-claims and boundaries at head
+
+- The readme still asserts a finished proof of the certification thesis; the repo at this pin contains no artifact that could back that assertion for the thesis itself. The gap is narrowed only in this sense: the repo now contains one fully checked worked example in the same problem family. The thesis gap itself is the headline finding, stated here, not smoothed over.
+- Nothing in the repo states any boundary for the thesis claim beyond the example's own scope note (single edit, valid cache, no collision-resistance assumption needed).
+
+## Annex — the stand-in module on another repo's unmerged branch (NOT this repo's content) — carried forward
+
+The only Lean code developing this thesis remains the stand-in module inside the safe sibling repo's open pull request branch (14 theorems: extensivity, monotonicity, and idempotence of the closure; reflexivity and transitivity of the componentwise cost order; dominance implying the order; irreflexivity of dominance as its one disproof; five interface-obligation theorems that hold by definition; the admission equivalence; and downward closure of admission). Those theorems are **not** theorems of this repo, that branch is still unmerged at this census, and the stand-in does not prove optimality in the sense of an optimal element existing or being attained. Full census of the stand-in is in the safe sibling's census file.
