@@ -236,6 +236,28 @@ files, a new prompt board space, with four files
 changed and the paper page file unchanged between the
 heads. No tree read was truncated this watch.
 
+## Watch update — 2026-11-18 (ninth hourly re-synthesis)
+
+A tenth enumeration the same night: 565 repos, every
+head read individually, no read errors. Two repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself, and one
+further idol-family repo (the compiler port). Fresh
+heads for every repo stand in the pins file at this
+re-synthesis. This repo's movement is the eighth watch
+landing itself: the four commits between the heads are
+that watch's annex, placement, ledger, and pins
+commits, no Lean file changed among them, and its
+eleven theorems stand unchanged, recorded in its annex
+delta. The compiler port was read by tree at its fresh
+head and carries no proof-assistant content, so it
+remains proof-free by the named check; its tree stands
+at the same file count as at its last recorded head,
+with no file added or removed and two files changed
+over ten commits. No tree read was truncated this
+watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
