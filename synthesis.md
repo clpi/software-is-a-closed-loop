@@ -1343,3 +1343,39 @@ found in either tree and neither tree read was
 truncated, so both remain proof-free by the named
 check. Their movement changes their pins only, not
 their placements.
+
+## 13. Watch update — 2026-11-18, the eighth hourly re-synthesis
+
+The eighth watch re-enumerated the estate completely: 565
+repos, every head read individually, no read errors in the
+final reads. Four repos had moved since the last recorded
+heads, none were new, none were gone, and the paper source
+hash was unchanged, so no paper re-sync was owed. One of
+the four is a proof repo — this repo itself — and the
+other three are idol-family repos; there was no long-tail
+movement this watch. The annex watch delta carries the
+tree evidence at the fresh head; the placements in
+section 3 stand at their census pins, with re-census owed
+at the new head.
+
+This repo's own head moved only by the seventh watch
+landing itself: the four commits between the two heads
+are that watch's annex, placement, ledger, and pins
+commits, and no Lean file changed among them, so its
+eleven theorems stand unchanged at the fresh head.
+
+The compiler port was read by tree at its fresh head:
+eighteen commits stand between the two heads, its tree
+gained one file, a semantic checker source, and two files
+changed, a slices record and a graph lowering source. The
+relay was read by tree at its fresh head: one file added,
+a dated audit note, and no file changed or removed. The
+sites repo was read by tree at its fresh head: seventy
+files added, a new prompt board space with its audits,
+and four files changed; the paper page file stands at the
+same tree entry at the two heads, which is the tree
+evidence behind the unchanged paper hash. No
+proof-assistant source was found in any of the three
+trees and no tree read was truncated, so all three remain
+proof-free by the named check. Their movement changes
+their pins only, not their placements.

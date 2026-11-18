@@ -208,6 +208,34 @@ the relay's tree gained one file, a dated coordination
 note, with no file changed or removed. No tree read
 was truncated this watch.
 
+## Watch update — 2026-11-18 (eighth hourly re-synthesis)
+
+A ninth enumeration the same night: 565 repos, every
+head read individually. Four first reads failed on
+transport stream errors; each of the four was re-read
+individually and matched its last recorded head, so the
+final reads carry no errors. Four repos had moved since
+the last recorded heads, none were new, none were gone,
+and the paper source hash was unchanged. The moved set:
+this repo itself, and three further idol-family repos
+(the compiler port, the relay, and the sites repo).
+Fresh heads for every repo stand in the pins file at
+this re-synthesis. This repo's movement is the seventh
+watch landing itself: the four commits between the
+heads are that watch's annex, placement, ledger, and
+pins commits, no Lean file changed among them, and its
+eleven theorems stand unchanged, recorded in its annex
+delta. The three further idol-family repos were read by
+tree at their fresh heads and carry no proof-assistant
+content, so they remain proof-free by the named check;
+the compiler port's tree gained one file and two files
+changed over eighteen commits, the relay's tree gained
+one file, a dated audit note, with no file changed or
+removed, and the sites repo's tree gained seventy
+files, a new prompt board space, with four files
+changed and the paper page file unchanged between the
+heads. No tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
