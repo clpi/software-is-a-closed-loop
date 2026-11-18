@@ -740,3 +740,56 @@ Restated rows, at their fresh heads:
   head, which is the head the second watch landed; the
   commits between them carry no Lean change. Controls
   and gate stand as the second watch row records.
+
+## High-impact proofs addendum — 2026-11-18
+
+Gate verdicts executed cold by the high-impact proofs
+lane, each the repo's own gate at the pin named. They
+replace the unknown or stale-pin gate states in the
+rows above until the next census carries them into
+the rows themselves. Full record: the high-impact
+proofs lane record of 2026-11-18 in the workspace
+research folder.
+
+- idol — the release tools development the watch
+  addendum above left at gate unknown is now gated.
+  At head 294c31b8 the repo's own release
+  qualification gate ran end to end: it fetches
+  software-is-quantifiable at c90ed607 and
+  software-optimality at 2bd3b419 (verifying each
+  fetched head equals its pin), builds both,
+  compiles the retention file, then compiles the
+  release qualification file against them, warnings
+  as errors throughout, with zero error, warning,
+  or sorry lines. The qualification file's five
+  theorems carry their full audit: one depends on
+  no axioms; the other four depend only on propext
+  and Quot.sound. With the release preparation
+  lane's standalone runs, all four Lean files in
+  the repo stand verified at this head.
+- software-frontier-is-solvable — gate GREEN at
+  22418d56.
+- software-testing-is-redundant — gate GREEN at
+  18feb7ab.
+- software-fuzzing-is-suboptimal — gate GREEN at
+  6ed7a596.
+- software-benchmarking-is-redundant-and-suboptimal
+  — gate GREEN at a85286ac, its first recorded main
+  gate run.
+- software-is-solvable — gate GREEN at 3053b78d
+  (root-module coverage, as its gate defines it).
+- software-compilers-lose-info — gates GREEN at
+  69358971, root and examples; the independent
+  re-check its landing record owed.
+- software-is-more-traceable-than-you-think —
+  gates GREEN at 8f6a1280, proof and examples; the
+  proof gate is the widened every-file form and its
+  axiom subset check passed on propext and
+  Quot.sound.
+- idol-semi and semi-persistent — gate at 508d7c66
+  still UNVERIFIED. The re-run is blocked on the
+  host disk quota: the Lean 4.35.0 toolchain
+  archive is staged, but its extraction was
+  refused at 174 MB (error 122, disk quota
+  exceeded). The run resumes at the extraction
+  step when quota lands.
