@@ -1,0 +1,7 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+([BatchTuning.Size.one, BatchTuning.Size.two, BatchTuning.Size.four, BatchTuning.Size.four], [8, 4, 2, 2])
+'BatchTuning.one_step' does not depend on any axioms
+'BatchTuning.fixed_optimum' does not depend on any axioms
+'BatchTuning.before_after' does not depend on any axioms
+
+Rejected control: advance to the cheaper pin beyond the cap (Lean exit 1).
