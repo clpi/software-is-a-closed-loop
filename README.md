@@ -129,6 +129,30 @@ private) through the authenticated listing, past the 300-repo
 public cap; every head read individually. Full pins in
 synthesis-pins.json; placements in census.md.
 
+Sweep update (2026-11-18, later the same night): the estate
+was re-enumerated at 565 repos (251 public, 314 private) and
+swept by content for provable results, under the ruling that
+the accounting is estate-wide and determined by content, not
+by name. Twenty repos are proof-bearing and censused in the
+annex: the nine above at refreshed pins (quantifiable
+f3709926, optimality b52c3170, composable a3058ba6,
+certifiable c9ffd49a, safe head 8ad1dd26, regress c36829da,
+review 40b1e885, solvable 5bbceee7, frontier 6a41c7be), plus
+software-compilers-lose-info f531e31a,
+software-is-more-traceable-than-you-think 4420fb1e,
+idol-theses d207be6e, software-testing-is-redundant 66f65b6f,
+software-fuzzing-is-suboptimal 18d9569b,
+software-benchmarking-is-redundant-and-suboptimal 4314a181,
+idol-semi and semi-persistent 508d7c66 (one tree, one pin),
+premise-retraction-playground 47f469a4, idol 561cf395
+(proof-bearing content only), and this repo at d8047804 (its
+own checked example). The other 465 non-empty repos are
+determined proof-free by the content check named in
+census.md; the 80 empty repos carry none. Five repos moved
+again during the sweep (optimality, composable, traceability,
+idol-theses, idol); their live heads are recorded in
+census.md and synthesis-pins.json, and re-census is owed.
+
 ## Keeping current
 
 A scheduled job under the idol-autonomous-work-loop goal

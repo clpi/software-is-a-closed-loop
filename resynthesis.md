@@ -31,9 +31,12 @@ affects.
 3. If moved, new, and gone are all empty and the paper MD5
   is unchanged: stop. Say nothing. The job is silent when
   nothing moved.
-4. For each moved or new PROOF repo (a name beginning with
-  "software", plus any repo a lane has promoted to the proof
-  family): re-census it at theorem level at its new head —
+4. For each moved or new PROOF repo — determined by content,
+  never by name (Chris's ruling, 2026-11-18 01:59 PST): any
+  repo carrying Lean sources, other proof-assistant sources,
+  proof scripts, or machine-checked result artifacts, found
+  by the content check named in census.md's sweep section —
+  re-census it at theorem level at its new head —
   theorems, axioms, disproofs, premises, side conditions,
   non-claims — replace its census annex file, and update
   only its placements in synthesis.md (its section, the pins

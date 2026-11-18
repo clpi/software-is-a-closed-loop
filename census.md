@@ -22,6 +22,59 @@ named project is a defect under the standing rule that repos
 are the canonical live source of truth, and each is colored
 unknown with that note.
 
+## Sweep update — 2026-11-18 (estate-wide, by content)
+
+A second enumeration the same night, under Chris's ruling
+that the accounting is estate-wide and determined by content:
+565 repos (251 public, 314 private), every head read again.
+Seven repos are new since the first census (named in the
+proof family list below and in the table). 80 repos are empty
+— accounted as carrying no provable results.
+
+Determination method (the named check): every non-empty repo
+was swept by content searches over the estate for
+proof-assistant sources and proof artifacts — Lean, Coq,
+Agda, Idris, Isabelle, F-star, SMT, TLA, Dafny, and Alloy
+file extensions; Verus macro content; Kani proof content —
+and every hit was resolved by direct tree inspection. Repos
+created or moved inside the sweep window, where search
+indexing lags, were inspected by direct tree read instead:
+the seven new repos and all eleven repos whose heads moved.
+Machine-checked result artifacts were counted where a repo's
+own stated purpose is a checked result (one case, below).
+
+Outcome: 20 repos are proof-bearing and are censused at
+theorem or evidence level in the annex (census/) and placed
+in synthesis.md — the original nine, plus
+software-compilers-lose-info, software-is-more-
+traceable-than-you-think, idol-theses,
+software-testing-is-redundant, software-fuzzing-is-suboptimal,
+software-benchmarking-is-redundant-and-suboptimal, idol-semi
+(with semi-persistent, the identical tree at the identical
+pin), premise-retraction-playground, idol (proof-bearing
+content only), and this repo itself. The remaining 465
+non-empty repos are determined proof-free by the named check
+above; their table rows below keep their first-census pins,
+and this section is their determination record. Named
+non-results the check resolved: the V-language example files
+in dfmac and pwiki (not Coq); the polyglot fixture samples in
+manus and idol-restored (test data, accounted in the idol
+annex); the SMT corpus inside idol (accounted in the idol
+annex as part of its checked-evidence tree).
+
+Refreshed and new pins from the sweep (census pin / live head
+at the sweep's close, where they differ): quantifiable
+f3709926; optimality b52c3170 / a2e492cb; composable
+a3058ba6 / 7d72fd08; certifiable c9ffd49a; safe head
+8ad1dd26; regress c36829da; review 40b1e885; solvable
+5bbceee7; frontier 6a41c7be; compilers-lose-info f531e31a;
+traceability 4420fb1e / 5f84b051; idol-theses d207be6e /
+ea7437ac; testing 66f65b6f; fuzzing 18d9569b; benchmarking
+4314a181; idol-semi and semi-persistent 508d7c66;
+premise-retraction-playground 47f469a4; idol 561cf395 /
+c8336841; this repo d8047804. A census pin with a differing
+live head carries re-census owed, per resynthesis.md.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -51,6 +104,39 @@ unknown with that note.
 - software-is-more-traceable-than-you-think — announced
   2026-11-18 01:30 PST, not landed at census time; enters on
   re-enumeration. Colored unknown.
+
+Added by the sweep (same placement depth — synthesis.md
+section 3.10 and the annex):
+
+- software-compilers-lose-info (private) — the topological
+  thesis: forgetting compilation loses provenance, proven;
+  derivation-carrying compilation loses nothing. Pin f531e31a.
+- software-is-more-traceable-than-you-think (private) — landed
+  after the first census; at pin 4420fb1e the repo carries a
+  readme and a fixture-scale example, its thesis recorded as
+  not yet landed in-repo.
+- idol-theses (public) — the Idol program's falsifiable
+  theses in Lean: 35 native theorems, a cited tranche, and a
+  named future-work remainder. Pin d207be6e.
+- software-testing-is-redundant (private) — the exact
+  redundancy criterion, proven; its name's unrestricted
+  reading refuted in-repo. Pin 66f65b6f.
+- software-fuzzing-is-suboptimal (private) — contract-bound
+  adaptive dominance, proven; the blanket reading refuted
+  in-repo. Pin 18d9569b.
+- software-benchmarking-is-redundant-and-suboptimal
+  (private) — conditional benchmark redundancy and dominance,
+  proven in source. Pin 4314a181.
+- idol-semi (private) and semi-persistent (public) — one tree
+  at one pin, 508d7c66: 2,053 Lean theorems and Verus proofs
+  over a congruence-closure and e-matching engine.
+- premise-retraction-playground (public) — retraction
+  exactness at executed-arithmetic level. Pin 47f469a4.
+- idol (private) — proof-bearing content only: 7 Lean theorems
+  of the elaboration frontier and a checked-evidence tree.
+  Pin 561cf395.
+- software-is-a-closed-loop (public) — this repo's own
+  checked example: 3 axiom-free theorems. Pin d8047804.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
@@ -694,3 +780,11 @@ same data, machine-readable, is synthesis-pins.json.
 | zig-wlroots | public | Zig bindings for wlroots | 0c3165f4 | 2023-01-24 | fork | unknown (unexamined) |
 | zig.vim | public | Vim configuration for Zig | 29ceb122 | 2022-01-17 | fork | unknown (unexamined) |
 | zpkg | public |  | 33c2dcb2 | 2022-04-24 |  | unknown (unexamined) |
+
+| idol-theses | public | The falsifiable theses of the Idol program, formalized in Lean at their strongest reachable forms, each with the observation that would refute it | d207be6e | 2026-11-18 |  | proof family — sweep placements |
+| software-benchmarking-is-redundant-and-suboptimal | private |  | 4314a181 | 2026-11-18 |  | proof family — sweep placements |
+| software-compilers-lose-info | private | The full proof of Idol's topological thesis: conventional compilation provably loses the derivation structure; derivation-carrying compilation loses nothing. | f531e31a | 2026-11-18 |  | proof family — sweep placements |
+| software-fuzzing-is-suboptimal | private |  | 18d9569b | 2026-11-18 |  | proof family — sweep placements |
+| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | d8047804 | 2026-11-18 |  | proof family — sweep placements |
+| software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. | 4420fb1e | 2026-11-18 |  | proof family — sweep placements |
+| software-testing-is-redundant | private |  | 66f65b6f | 2026-11-18 |  | proof family — sweep placements |
