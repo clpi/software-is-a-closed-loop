@@ -146,3 +146,7 @@ A standalone example in the examples folder. An immutable snapshot is already re
 - Recording a claim does not make it true; semantic truth follows only from valid roots and truth-preserving rules.
 - A native graph engine, ledger, database, compiler, telemetry adapter, external solver, or deployed release is not verified merely because it can emit this model.
 - Two modules are stated as reused from a sibling project (the closure core and the exhaustive evaluator) — and at this pin they remain byte-identical to that sibling's copies, per the Delta.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head 3053b78d24bd81299e998bc253c755ab4a5e9b43 and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 54 declarations (53 distinct short names) across 7 Lean files, no sorry token and no custom axiom declaration in any file, 0 example declarations. The same method at the last recorded head 5bbceee7e4270d838115dbfc8fb218ebee641638 counted 51 declarations (50 distinct short names). Name comparison, one mechanical method both times: 3 names gained, 0 lost. The prose placements in this annex stand at the census pin 5bbceee7e4270d838115dbfc8fb218ebee641638; a full re-census at the new head is owed and the owed mark in the ledger stands.

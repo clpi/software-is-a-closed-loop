@@ -73,3 +73,7 @@ The readme's own table of parts and evidence states at creation, carried without
 ## Watch delta — 2026-11-18, the hourly re-synthesis watch
 
 The watch re-read the live head at 5f84b051b165bcf12a42a66850cc6fec188f1728, past this annex's census pin 4420fb1e, and shallow-cloned it. Mechanical count at the live head: 37 theorem or lemma declarations across 3 Lean files (the traceability proof, its controls file, and the worked invoice example), no sorry token, no custom axiom declaration — the same declaration total the watch counted at the intermediate head 54bff506. The prose placements above stand at 4420fb1e; a full re-census at 5f84b051 is owed.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head 8f6a128069d0e68e97c4a69d78689c84350b0d2f and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 43 declarations (43 distinct short names) across 4 Lean files, no sorry token and no custom axiom declaration in any file, 0 example declarations. The same method at the last recorded head 5f84b051b165bcf12a42a66850cc6fec188f1728 counted 37 declarations (37 distinct short names). Name comparison, one mechanical method both times: 6 names gained, 0 lost. The prose placements in this annex stand at the census pin 4420fb1e5422d965668c66f93d9d352cc3cec982; a full re-census at the new head is owed and the owed mark in the ledger stands.

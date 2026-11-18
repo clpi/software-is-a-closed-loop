@@ -147,3 +147,9 @@ Each entry stands in the future work file with its evidence state and its closin
 ## Watch delta — 2026-11-18, the hourly re-synthesis watch
 
 The watch re-read the live head at ea7437acf90cbcb9a4cdc2e0d068b71d64dbc4a4, past this annex's census pin d207be6e, and shallow-cloned it. Mechanical count at the live head: 35 theorem or lemma declarations across 7 Lean files, no sorry token, no custom axiom declaration — the same declaration total the sweep census recorded at d207be6e. The prose placements above stand at d207be6e; a full re-census at ea7437ac is owed.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head c443ebe1936d2bfa68ba38eb085f7fe536371b8d and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 87 declarations (75 distinct short names) across 8 Lean files, no sorry token and no custom axiom declaration in any file, 0 example declarations. The same method at the last recorded head ea7437acf90cbcb9a4cdc2e0d068b71d64dbc4a4 counted 35 declarations (23 distinct short names). Name comparison, one mechanical method both times: 52 names gained, 0 lost. The prose placements in this annex stand at the census pin d207be6e23b2f9d72b5b16e1d85b7ea3003ec56c; a full re-census at the new head is owed and the owed mark in the ledger stands.
+
+One new file carries the growth: a solver dominance development. A full theorem-level census at the new pin is owed.

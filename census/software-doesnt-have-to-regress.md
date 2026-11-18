@@ -81,3 +81,7 @@ A standalone example in the examples folder: records are batched into fixed-capa
 - Nothing here is a measurement of the three named incidents, and nothing ranks one implementation against another.
 - Per-execution non-regression is disclaimed by two disproof rows: interval-bound admission controls bounds, not individual executions.
 - No separate implications prose is maintained; the generated dependency listing in the log is the source.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head 858a85e383fbecc9826186aee2cc0101aea5ea62 and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 137 declarations (137 distinct short names) across 14 Lean files, no sorry token and no custom axiom declaration in any file, 0 example declarations. The same method at the last recorded head c36829da6f687d52b7d7998edc5ef55f4c244077 counted 131 declarations (131 distinct short names). Name comparison, one mechanical method both times: 6 names gained, 0 lost. The prose placements in this annex stand at the census pin c36829da6f687d52b7d7998edc5ef55f4c244077; a full re-census at the new head is owed and the owed mark in the ledger stands.

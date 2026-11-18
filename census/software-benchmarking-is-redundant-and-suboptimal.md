@@ -95,3 +95,7 @@ The transcript records the computed tuple (8 shards, the changed shard alone in 
 - The check script is a source guard, not a general metaprogram security sandbox (its own description).
 - Independent review is required before publication (readme).
 - No recorded main-gate log stands in this repo: the gate's passing at this pin, and the readme's per-theorem axiom claims for the main modules, are not evidenced by a recorded run, and this census ran no build. The example transcript is the only recorded gate output in the repo, and the sums file does not cover it.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head a85286acc1f62c12992aa3a0ac8dee529b62927d and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 37 declarations (37 distinct short names) across 7 Lean files, no sorry token and no custom axiom declaration in any file, 17 example declarations. The same method at the last recorded head 4314a181bc3d1fb35972031273c796aca10d15f5 counted 34 declarations (34 distinct short names). Name comparison, one mechanical method both times: 3 names gained, 0 lost. The prose placements in this annex stand at the census pin 4314a181bc3d1fb35972031273c796aca10d15f5; a full re-census at the new head is owed and the owed mark in the ledger stands.

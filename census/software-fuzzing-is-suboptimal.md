@@ -110,3 +110,7 @@ The transcript records the computed triple (256 raw frames, 16 directed frames, 
 - These are model theorems, not fabricated benchmark results, and not proofs that a particular deployed engine is faster.
 - The standalone library creates no second authoritative graph and implements no Merkle-style authentication, lineage transfers, withdrawals, scheduler, or runtime instrumentation; findings can be recorded as derived views over an authoritative graph maintained elsewhere.
 - The example makes no estimate of random-search runtime or fault-finding power; its baseline is exhaustive raw enumeration and its objective is distinct successful commands only.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head 6ed7a59651ae9dab006b7903a98d3d598cca19ea and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 27 declarations (27 distinct short names) across 5 Lean files, no sorry token and no custom axiom declaration in any file, 18 example declarations. The same method at the last recorded head 18d9569b581a3d2900b0613b33fc00e4b464ffa5 counted 21 declarations (21 distinct short names). Name comparison, one mechanical method both times: 6 names gained, 0 lost. The prose placements in this annex stand at the census pin 18d9569b581a3d2900b0613b33fc00e4b464ffa5; a full re-census at the new head is owed and the owed mark in the ledger stands.

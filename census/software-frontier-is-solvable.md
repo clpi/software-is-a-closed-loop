@@ -96,3 +96,9 @@ A standalone example in the examples folder. It enumerates placement layouts for
 - Work of the exact finite reference calculation is stated as order m-squared times a for m candidates and a axes. **No empirical performance claim, no universal speedup.**
 - **No global optimum beyond the supplied candidate population**, and no automatic strict growth per witness follows from these theorems.
 - No second graph or evidence store is introduced; qualification happens at a named snapshot of the authoritative graph (interpretation section).
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head 22418d56604c96fdc1ba2875f3167e228b6ac6f3 and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 66 declarations (63 distinct short names) across 10 Lean files, no sorry token and no custom axiom declaration in any file, 15 example declarations. The same method at the last recorded head 6a41c7be3c1b01492f96b75cbf0a28b11ab9faff counted 18 declarations (18 distinct short names). Name comparison, one mechanical method both times: 45 names gained, 0 lost. The prose placements in this annex stand at the census pin 6a41c7be3c1b01492f96b75cbf0a28b11ab9faff; a full re-census at the new head is owed and the owed mark in the ledger stands.
+
+Five new library files stand beside the range example, so the growth is library growth, not example growth alone. A full theorem-level census at the new pin is owed.

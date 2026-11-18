@@ -4,6 +4,9 @@
 
 - Live head (read in this sweep, 2026-11-18):
   `d8047804b335d197e17a8f1249321320a45009e9`
+- Re-census pin (second watch, 2026-11-18):
+  `d558669b7cf556bb1d9653e6432c895c3ceb6cfd` — the head the
+  second watch fast-forwarded to and re-censused below.
 - Visibility: public. Default branch: master.
 - This repo is the synthesis host: the theorem statements it
   carries in its census annex are other repos' results, placed
@@ -36,3 +39,26 @@ State: PROVEN at the pin, axiom-free, with the run recorded in
 the tree. The example is a demonstration instance of the
 family's frontier and admission content at toy scale; it proves
 nothing about any other repo and is counted only as itself.
+
+## Re-census — 2026-11-18, the second hourly watch (pin d558669b)
+
+One commit past the sweep pin added a second checked example
+series: a range ledger case proving one verified range query
+across four read catalogs. Its Lean file carries 8 theorem
+declarations, no sorry token. The recorded verification
+transcript in the tree prints axiom dependencies for seven
+of the eight: six rest on subsets of the standard axioms
+(propositional extensionality, classical choice, quotient
+soundness), one depends on no axioms, and one — the exact
+publication result — has no printed axiom line in the
+transcript, so its axiom state is unrecorded. The transcript
+also records a rejected control: removing the orientation
+reversal in the integrated publisher is refused. The example
+imports seven sibling modules from byte-verified offline
+pins recorded in its own source bundle.
+
+State: PROVEN in source at the pin, with the run recorded in
+the tree, at the axiom states just named. This repo's own
+proven count is now 11 theorems (the three of the first
+example, axiom-free, plus these eight). Nothing else in the
+repo is claimed.

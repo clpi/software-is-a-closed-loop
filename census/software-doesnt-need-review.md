@@ -79,3 +79,7 @@ The proposal the old census found absent is present at this pin (short, one page
 - Review is not claimed redundant outside the narrow cone conditions; the proposal keeps the spec, the roots, the rules, and the cone analysis itself under human attention.
 - Nothing here measures reviewer behaviour in practice (the proposal says so itself).
 - The two boundary counterexamples are finite formal models of the named failure shapes, not measurements of the historical events.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at the enumeration head 1d504014be0c727b3f12e4d8e17f47dfceb118b6 and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 85 declarations (85 distinct short names) across 21 Lean files, no sorry token and no custom axiom declaration outside the controls the tree carries, 0 example declarations. The same method at the last recorded head 40b1e885658951fa3fd17f42f5017fed5765f22b counted 82 declarations (82 distinct short names). Name comparison, one mechanical method both times: 3 names gained, 0 lost. The prose placements in this annex stand at the census pin 40b1e885658951fa3fd17f42f5017fed5765f22b; a full re-census at the new head is owed and the owed mark in the ledger stands.

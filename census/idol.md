@@ -95,3 +95,7 @@ count.
 ## Watch delta — 2026-11-18, the hourly re-synthesis watch
 
 The watch re-read the live head at c8336841c100b04e369961fce5c83f8cd096baee, past this annex's census pin 561cf395. The one Lean source the content sweep found in this repo, the polyglot frontier file, still carries 7 theorem or lemma declarations at the live head, read through the gh route — the same count this annex recorded at its pin. The rest of the moved tree was not re-censused by the watch; the re-census owed mark stands for the remainder.
+
+## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+
+The watch re-read the live head at ef3dbcfa847579df2c839bb73240242fe5ebdd4e in the full enumeration. The one Lean source the content sweep found in this repo, the polyglot frontier file, is byte-identical at the enumeration head and at this annex's census pin: the same blob at both reads, 4,733 bytes, still carrying its 7 theorem declarations. The proof-bearing content of this repo did not change in this window. The rest of the moved tree was not re-censused by the watch; the re-census owed mark stands for the remainder.
