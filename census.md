@@ -163,6 +163,27 @@ no proof-assistant content, so they remain proof-free
 by the named check; no tree read was truncated this
 watch.
 
+## Watch update — 2026-11-18 (sixth hourly re-synthesis)
+
+A seventh enumeration the same night: 565 repos, every
+head read individually, no read errors. Two repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself, and one
+further idol-family repo (the compiler port). Fresh
+heads for every repo stand in the pins file at this
+re-synthesis. This repo's movement is the fifth watch
+landing itself: the four commits between the heads are
+that watch's annex, placement, ledger, and pins
+commits, no Lean file changed among them, and its
+eleven theorems stand unchanged, recorded in its annex
+delta. The compiler port was read by tree at its fresh
+head and carries no proof-assistant content, so it
+remains proof-free by the named check; its tree stands
+at the same file count as at its last recorded head,
+with no file added or removed and two files changed.
+No tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -243,7 +264,7 @@ that runs the loop on the engine side. Heads as read
   software of stage 0, the source of the executions stage 3
   witnesses, and the pin every improvement re-enters against.
   Active; moved during census night.
-- idol-compiler (5ca148f4) — the pure-Idol compiler port: an
+- idol-compiler (c374ef1c) — the pure-Idol compiler port: an
   improvement line whose pins are stage 8 candidates against
   the production compiler; its performance stands UNMEASURED
   in the wider record.
@@ -569,7 +590,7 @@ same data, machine-readable, is synthesis-pins.json.
 | idol | private |  | 586ff5a1 | 2026-11-18 |  | idol family — placements above |
 | idol-api | private | Idol-authored compiler and semantic graph API; native admission and production qualification tracked explicitly | 46b8f168 | 2026-11-08 |  | idol family — placements above |
 | idol-canary-7x3q | private | canary - do not delete | empty | 2026-09-25 | no commits | idol family — placements above |
-| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler | 5ca148f4 | 2026-11-18 |  | idol family — placements above |
+| idol-compiler | private | The Idol compiler, written in Idol — the pure-Idol port of clpi/idol's compiler | c374ef1c | 2026-11-18 |  | idol family — placements above |
 | idol-console | private |  | 7e25bda8 | 2026-10-30 |  | idol family — placements above |
 | idol-edit | private | Independent Idol source editor. Graph and Space are separate products. | 6f0d83dc | 2026-11-07 |  | idol family — placements above |
 | idol-eyes | private | Idol-native computer perception, control, and UI. Graph-owned semantics; verified outcomes; measured Peekaboo parity and dominance as release gates. | d7e7b009 | 2026-11-08 |  | idol family — placements above |
@@ -873,6 +894,6 @@ same data, machine-readable, is synthesis-pins.json.
 | software-benchmarking-is-redundant-and-suboptimal | private |  |  a85286ac  | 2026-11-18 |  | proof family — sweep placements |
 | software-compilers-lose-info | private | The full proof of Idol's topological thesis: conventional compilation provably loses the derivation structure; derivation-carrying compilation loses nothing. |  69358971  | 2026-11-18 |  | proof family — sweep placements |
 | software-fuzzing-is-suboptimal | private |  |  6ed7a596  | 2026-11-18 |  | proof family — sweep placements |
-| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | 68630ed9 | 2026-11-18 |  | proof family — sweep placements |
+| software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | 97d26e80 | 2026-11-18 |  | proof family — sweep placements |
 | software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. |  8f6a1280  | 2026-11-18 |  | proof family — sweep placements |
 | software-testing-is-redundant | private |  |  18feb7ab  | 2026-11-18 |  | proof family — sweep placements |
