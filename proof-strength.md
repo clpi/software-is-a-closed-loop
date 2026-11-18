@@ -468,3 +468,55 @@ New rows from the sweep:
   rejected control (advancing beyond the cap refused).
 - Absent: nothing else is claimed — the theorem statements in
   its annex are other repos' results, counted at their homes.
+
+## Watch addendum — 2026-11-18, the hourly re-synthesis watch
+
+The scheduled watch ran the full procedure on its own reads:
+the estate re-enumerated completely through the gh route at
+565 repos, every head read individually (no read errors),
+diffed against the first synthesis pins. Eleven repos had
+moved (the nine original proof repos, idol, and one long-tail
+repo that gained its first commit), seven were new (five new
+proof repos, idol-theses, and this repo itself), none were
+gone, and the paper source hash was unchanged at
+f5d709743cac11d937e7716b7f39c056, so no paper re-sync was
+owed. The estate-wide content sweep landed its re-censuses
+in this repo during the same window; the watch verified them
+against its own clones and counts and adds this addendum,
+the annex watch deltas, and one corrected census row.
+
+Defect-rule dispositions from the watch's same-method name
+comparison (theorem names at the first census pin against
+names at the live head, one mechanical method both times):
+
+- The composable in-tree shrink is flagged, not absorbed:
+  the whole-tree distinct name count fell (92 to 64) while
+  the repo's own proven set grew (47 to 60, no own name
+  lost). The fall is the removal of copied sibling modules,
+  whose claims now stand at their stronger homes. This
+  confirms the sweep's de-duplication disposition above.
+- Two quantifiable names from the first pin are absent as
+  theorem declarations at the new pin: the coverage name is
+  now an abbreviation of the premise's mediation field, with
+  new coverage theorems beside it, and the release-acceptance
+  name was superseded by the named release forms. Flagged
+  here; the sweep's refreshed row records the restructure.
+- Ten optimality names from the first pin are absent as
+  declarations at the sweep census pin; three still occur in
+  the tree and seven do not occur at all, among them the
+  earlier optimum-certificate forms, superseded in substance
+  by the linked-certificate results the sweep's refreshed row
+  records as discharged in their eligible specialization.
+  The proven set as a whole grew (134 to 428 distinct names
+  by the watch's method). Flagged here, not absorbed.
+- No other refreshed repo lost a name: solvable gained three
+  and lost none; frontier gained four and lost none; the
+  four repos that stood at zero proven (certifiable, safe at
+  head, regress, review) gained 7, 6, 131, and 82
+  declarations respectively.
+- Five repos moved past their sweep census pins during the
+  window (optimality, composable, traceability, idol-theses,
+  idol). The ledger rows for those repos stand at their
+  census pins with the owed mark; the annex watch deltas
+  record the watch's mechanical counts at the live heads.
+  No pin moved without a ledger entry saying so.
