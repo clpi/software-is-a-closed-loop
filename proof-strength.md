@@ -793,3 +793,69 @@ research folder.
   refused at 174 MB (error 122, disk quota
   exceeded). The run resumes at the extraction
   step when quota lands.
+
+## Watch refresh — 2026-11-18, the fourth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 565 repos, every head
+read individually with no errors, cloned the moved safe
+repo at its fresh head, and read the idol tree in full at
+its fresh head. Counts below are the watch mechanical
+method, one method at both heads: every theorem or lemma
+declaration in every Lean file, with distinct short names
+compared between the last recorded head and the fresh
+head. Placements stand at the census pins named in each
+row; a full theorem-level re-census at each fresh head
+is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The name comparison found zero
+  lost names in every moved proof repo: the safe repo
+  gained three names, the idol repo's recorded files are
+  byte-identical while a new file added ten declarations,
+  and this repo's eleven names stand unchanged. The safe
+  repo's premise set shrank by discharge — its string cone
+  hypothesis is proven in this window, per its merge
+  record — which is a strengthening, not a regression.
+  No regression is flagged.
+- No pin moved without this ledger moving: every moved
+  proof repo has its row restated below in this same pass.
+  No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-incrementally-safe — fresh head 97e55d28
+  (census pin 8ad1dd26). Proven by the watch method: 151
+  declarations, 149 distinct names (was 148 and 146 at
+  the last recorded head); 3 gained, none lost. The
+  growth is one new module on the natural-number text
+  representation, one audit module, and one example file.
+  On named premises: the string cone hypothesis is
+  discharged by the new module's injectivity proof, as
+  its merge record states; the audited-strength caveats
+  of the sweep row stand until a full census of the
+  library lands. Gate: no recorded check log stands in
+  the head tree — a passing gate at this head is
+  unrecorded.
+- idol — fresh head 107e52a9 (census pin 561cf395,
+  proof-bearing content only). Proven: the frontier file
+  is unchanged — byte-identical at both pins, 4,733
+  bytes, still carrying its 7 theorems on the premises
+  its row records; the release tools files are
+  byte-identical at both heads (retention 20
+  declarations, qualification 5), and their gate verdict
+  stands in the high-impact addendum above at its named
+  pin. A third development stands new at the fresh head:
+  a history file in the solver benchmarks incidence
+  folder carrying 10 declarations on witnessed derivation
+  histories and finite solver costs, no sorry token by
+  the watch scan. Gate: unknown for the new file — no
+  recorded check log covering it was read in this watch.
+  A full census of the new development is owed.
+- software-is-a-closed-loop — fresh head 65914d1a
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which stands one ledger addendum commit
+  past the head the third watch recorded; the commit
+  between them carries no Lean change. Controls and gate
+  stand as the second watch row records.
