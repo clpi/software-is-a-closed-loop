@@ -1,0 +1,135 @@
+# software-is-a-closed-loop
+
+A continuous synthesis of the clpi software proof estate, the
+live paper of the qualification of software, the structural
+implications of the construction, and the ordered next steps —
+kept current by machinery, not by intention.
+
+Created 2026-11-18 under Chris's directive: "Create
+software-is-a-closed-loop synthesizing all of the software*
+proofs continuously and hosting the live paper and all
+structural implications and next steps." The scope widened the
+same night to all of the repos: every repo in the estate
+appears in the census, and the nine landed software proof
+repos (plus a tenth announced) receive theorem-level
+synthesis.
+
+## The closed loop, in one paragraph
+
+Named software and named criteria are the only external
+inputs. Qualification colors the finite behavior space the
+names determine. Executions append witnesses to an append-only
+ledger. A fold — associative, commutative, idempotent —
+accounts the witnesses, so the accounting is a pure function
+of the surviving witness set. Bounds and a Pareto frontier are
+derived from the accounting. Improvement candidates are
+generated, qualified under the same criteria, and measured
+against the frontier. An accepted improvement re-enters as the
+named software at a new pin and is requalified. Every stage's
+inputs are the previous stage's outputs; the loop closes
+because requalification is the same qualification, applied to
+the new pin. The full statement, with every theorem of the
+proof estate placed at its stage, is in synthesis.md.
+
+## What is in this repo
+
+- README.md — this file: what the repo is, its evidence
+  discipline, and the synthesis pins.
+- synthesis.md — the closed loop stated precisely, and every
+  theorem of the proof repos placed in it: name, statement,
+  pin, axiom dependencies, loop stage. Duplicated claims cite
+  the stronger home. The composed claim is stated as a
+  composed claim, with its parts' states, never above its
+  evidence.
+- census/ — the theorem-level census files the synthesis was
+  built from, one per proof repo, carried verbatim as the
+  evidence annex.
+- census.md — the estate census: all 558 repos of the clpi
+  estate, each with what it is, its role in the loop, its head
+  pin, and its evidence state. Unexamined repos are colored
+  unknown — the construction applied to the estate itself.
+- paper.html — the live paper, "a proposal for the
+  qualification of software", hosted verbatim from its source
+  of record with a host note. PAPER-SYNC.md names the source,
+  its revision, and the sync rule.
+- implications.md — the structural implications: every
+  consequence the proofs and the construction carry, each with
+  what it follows from and its evidence state.
+- next-steps.md — the open work, ordered, each step with an
+  owner and a closing condition. Nothing is listed without a
+  closing condition.
+- resynthesis.md — the synthesis procedure: how a
+  re-synthesis is produced when a source head moves.
+- synthesis-pins.json — the machine-readable pins: every
+  censused repo's head at this synthesis, and for the proof
+  repos the pin the census was read at. The continuous job
+  diffs live heads against this file.
+
+## Evidence discipline
+
+Four states, never blurred: settled intent, proposed,
+implemented, verified. Inside the proof estate the working
+words are: proven (a Lean-checked proof at a named pin, with
+axiom dependencies named), premise (named and carried as an
+argument, never counted proven), proposed (a stated design
+with no proof yet), refuted (disproven, with the disproof
+checked or executed), asserted (a claim with neither spec nor
+proof — a work order, not a result), and unknown (unexamined).
+A claim sits no higher than its evidence. Where a source repo
+states a boundary — a non-claim — the synthesis carries the
+boundary with the claim.
+
+Pins: every placement names the pin it was read at. Heads
+moved repeatedly on the night this synthesis was made; where
+a repo's head at synthesis differs from the pin its census was
+read at, both are recorded, and the difference is the
+continuous job's first re-synthesis input.
+
+## Synthesis pins (2026-11-18, first synthesis)
+
+Proof repos — census pin / head at synthesis:
+
+- software-is-quantifiable (public, Lean 4.15.0): census
+  37917a4195efb1d0423a422ee954d767a9be1cd3 / head
+  ba27febf48c85bccaaccbace7cc3faba5eff879c
+- software-optimality (private, Lean 4.19.0): census
+  0ea4626b7806e9c53e9e742fde6a7d542fb85ee3 / head
+  aab49084e30757f39c7f9d7e4403522abf5ce46f
+- software-is-composable (private, Lean 4.19.0): census and
+  head 033c12c01299a9b28983bee410c230641adc7d1e
+- software-is-incrementally-certifiable (private): census and
+  head f3b9f896ac76a95e7104c98af66e41413e7e5b2d (readme only
+  at head; see synthesis.md)
+- software-is-incrementally-safe (private, Lean 4.19.0):
+  head 9466135815aa80e714d2a6999fd0aa8807375ff3 (toolchain
+  file only at head); proof content censused on the unmerged
+  pull-request branch at
+  5c1006a6ae6ee41a4bc19247db3a95589f5a3e9e
+- software-doesnt-have-to-regress (private): census and head
+  24d36c13414867e59ae67ccf47f83cc250ce55af (readme only)
+- software-doesnt-need-review (private): census and head
+  ae5f3918f7689267d07044a00e6a11b071510bba (readme only)
+- software-is-solvable (private, Lean 4.19.0): census and
+  head 815e125f6c7fd982cd5a66c4c1f98aa0a4ea5d33
+- software-frontier-is-solvable (private, Lean 4.19.0):
+  census and head c7ffc6d03e8bc4f795afcae983ee6bb3533a4e69
+- software-is-more-traceable-than-you-think: announced
+  2026-11-18, not yet landed when this synthesis was made
+  (read back 2026-11-18 01:32 PST: no such repo). It enters
+  the census on the continuous job's next re-enumeration.
+
+Estate: 558 repos enumerated completely (249 public, 309
+private) through the authenticated listing, past the 300-repo
+public cap; every head read individually. Full pins in
+synthesis-pins.json; placements in census.md.
+
+## Keeping current
+
+A scheduled job under the idol-autonomous-work-loop goal
+re-enumerates the estate, diffs every censused head against
+synthesis-pins.json, and on any movement runs the procedure
+in resynthesis.md and commits the result with both pins named
+in the commit message. It is silent when nothing moved and
+reports only a landed re-synthesis or a failure. Its job id
+is recorded in the lane record,
+~/workspace/research/software-closed-loop-2026-11-18.md.
