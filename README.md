@@ -305,3 +305,18 @@ the compiler port, and remains proof-free by the named
 check (fresh head 2962acdf). All census pins stand with
 re-census owed at the fresh heads recorded in the pins
 file.
+
+Tenth watch update (2026-11-18, later the same night): the
+estate was re-enumerated an eleventh time at 565 repos,
+every head read individually with no errors. Three repos
+had moved, none were new or gone, and the paper source
+hash was unchanged at the value recorded in the sync note,
+so no paper re-sync was owed. One proof repo moved: this
+repo itself, whose head moved only by the ninth watch
+landing — its four commits carry no Lean change, so its
+own eleven theorems stand unchanged (fresh head 10a786e7,
+census pin d558669b). Two further idol-family repos moved,
+the compiler port and the relay, and both remain
+proof-free by the named check (fresh heads cbd2f797 and
+673b7781). All census pins stand with re-census owed at
+the fresh heads recorded in the pins file.
