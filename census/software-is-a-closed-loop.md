@@ -62,3 +62,7 @@ the tree, at the axiom states just named. This repo's own
 proven count is now 11 theorems (the three of the first
 example, axiom-free, plus these eight). Nothing else in the
 repo is claimed.
+
+## Watch delta — 2026-11-18, the third hourly re-synthesis watch
+
+The watch re-read this repo's live head at 98761a1ae0f70eeda2edea25a790998dcdaaf323 in the full enumeration — the head the second watch landed. The theorem count is unchanged between the census pin d558669b7cf556bb1d9653e6432c895c3ceb6cfd and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The commits between the two pins are the second watch placements, its ledger refresh, and its pins bump; no Lean file changed among them. This repo's own proven count stands at eleven.
