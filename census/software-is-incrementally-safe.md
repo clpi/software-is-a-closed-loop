@@ -61,3 +61,7 @@ Vocabulary, plainly: an acceptance policy is a list of rules; each rule is a boo
 ## Explicit non-claims and boundaries at head
 
 - At the live head the repo claims nothing in its own files — no readme — so the thesis above is a description-field claim about a proof that, at the head's pin, is not in the repo. The worked example states its own boundaries (positional rows, correct-cache premise, uncounted check costs) and claims nothing about safety preservation, noninterference, or capabilities.
+
+## Watch delta — 2026-11-18, the hourly re-synthesis watch
+
+Branch listing read by the watch at its run, supplementing the merge answer above: the default head 8ad1dd26, plus two side branches — the cursor branch at 4a17787aadba1d023b10029cd52a20b7a23146ce (11 Lean files; 87 theorem or lemma declarations in this repo's own modules and 32 more in the two carried stand-in files) and the full-snapshot admission audit branch at c53eafe3698729a5158b3df89f9af3718606317d (13 Lean files; 112 declarations in its own modules and the same 32 in the stand-ins). The branch name that carried the first census pin 5c1006a6 no longer appears in the listing. Counts are the watch's mechanical declaration counts. Neither branch is merged into the head; the head state recorded above stands.

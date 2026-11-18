@@ -143,3 +143,7 @@ Each entry stands in the future work file with its evidence state and its closin
 - The algebraic half of the foundation claim is proved for the characteristic-function representation only; it is not a proof that any particular piece of software is faithfully represented by those classes, and it is not the state-machine half.
 - No recorded check log stands in this repo: the gate's passing at this pin is not evidenced by a recorded run, and this census ran no build.
 - The least-chars expectation is empirical; its presence here is as a falsifiable thesis with a closing condition, not as a Lean result.
+
+## Watch delta — 2026-11-18, the hourly re-synthesis watch
+
+The watch re-read the live head at ea7437acf90cbcb9a4cdc2e0d068b71d64dbc4a4, past this annex's census pin d207be6e, and shallow-cloned it. Mechanical count at the live head: 35 theorem or lemma declarations across 7 Lean files, no sorry token, no custom axiom declaration — the same declaration total the sweep census recorded at d207be6e. The prose placements above stand at d207be6e; a full re-census at ea7437ac is owed.

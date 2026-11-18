@@ -98,3 +98,7 @@ Dependency-provided results (not counted in the tree total): the build replays t
 - At the old pin the readme excluded the quantifiable sibling's wider modules as not typechecking and not proved; that exclusion is superseded at this pin — those modules are now imported through pinned dependencies, and this census makes no claim about them beyond what the recorded build replay prints.
 - The per-execution reading of cost bounds is explicitly disclaimed by the disproof row: admission controls upper bounds, not every individual execution value.
 - The bridge agreement is a single-symbol, converted-record agreement under side hypotheses — not a claim that the two repos' admission notions coincide in general; the companion counterexample is the stated boundary.
+
+## Watch delta — 2026-11-18, the hourly re-synthesis watch
+
+The watch re-read the live head at 7d72fd08f758d9faea76abe9777226846d7d80aa, past this annex's census pin a3058ba6, and shallow-cloned it. Mechanical count at the live head: 66 theorem or lemma declarations across 15 Lean files, no sorry token, no custom axiom declaration. Same-method name comparison against the first census pin 033c12c0, run by the watch: the repo's own module directory carried 47 distinct theorem names at the first pin and carries 60 at the live head, with no own name lost; the 44 names absent from the whole tree are exactly the removed root-level copied modules, which confirms the de-duplication disposition recorded in the ledger. The prose placements above stand at a3058ba6; a full re-census at 7d72fd08 is owed.

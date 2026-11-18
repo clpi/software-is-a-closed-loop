@@ -206,3 +206,7 @@ The v7 list (modules 1–8 in substance), the v9 list (the scoped evidence, scop
 - The strongest incremental result remains module 14's incremental exactness, now with its upstream admission boundary partly discharged by modules 22 and 23.
 - The widest new result is module 28: one shared contract deriving policy, obligations, and evidence-derived objective coordinates, with the complete admitted frontier characterized and the selection proven identical from incremental or full qualification.
 - The estate-order result is module 27 with module 29: every local dominance predicate in the repo is pinned to the one canonical profile order from the quantifiable repository, by equivalence or by refinement with a counterexample.
+
+## Watch delta — 2026-11-18, the hourly re-synthesis watch
+
+The watch re-read the live head at a2e492cba9cf44de92e83cb0f3b38bc54dcd954f, past this annex's census pin b52c3170, and shallow-cloned it. Mechanical count at the live head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 470 declarations across 55 Lean files, no sorry token and no custom axiom declaration outside any control the tree carries, 106 example declarations. The sweep census above counted 412 declarations at b52c3170 by its root-module method; the two methods differ, and both counts grew in the same direction. The prose placements above stand at b52c3170; a full re-census at a2e492cb is owed and the owed mark in the ledger stands.
