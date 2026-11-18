@@ -425,6 +425,17 @@ From the topology census, carried as rulings:
 
 ### 3.3 software-is-composable — census pin 033c12c0, Lean 4.19.0
 
+Evidence-state note (2026-11-18, relayed audit): an external
+audit relayed the same night audited this repo at the earlier
+pin 929d8e35 — the skeleton — and states it holds no Lean
+proof, claimed-not-proven. That verdict is true at the pin
+the audit names; the proof below landed after it, at the
+census pin. The audit is relayed and unverified, a
+verification lane is reproducing its executable core, and
+until that lane reports this repo's state is carried at the
+lower of the two readings wherever they conflict. See
+section 6.
+
 This repo moved during its census: at first read it was a
 skeleton (readme and toolchain, zero code); its pull request
 landed the full proof the same hour and this census is of the
@@ -516,9 +527,10 @@ Theorem count at the live head: 0. The repo at its pin is a
 single readme sentence asserting a finished Lean 4 proof
 that incremental monotonic certification is extensive and
 yields Pareto-optimal dominance across releases. No Lean
-code, no toolchain pin, no check log. State: ASSERTED — a
-claim with neither spec nor proof in the repo, hence a work
-order, not a result.
+code, no toolchain pin, no check log. State: CLAIMED, NOT
+PROVEN — a claim with neither spec nor proof in the repo,
+hence a work order, not a result. (The relayed external
+audit concurs at this pin; section 6.)
 
 Its intended content exists as a stand-in module (14
 theorems) on software-is-incrementally-safe's unmerged
@@ -667,7 +679,8 @@ Theorem count at head: 0, no readme — the repo states
 nothing at its pin; its thesis lives in the repo description:
 safety preserved incrementally across releases, with
 noninterference and monotone capability shrinkage, built on
-software-is-composable. State at head: ASSERTED.
+software-is-composable. State at head: CLAIMED, NOT PROVEN
+(the relayed external audit concurs at this pin; section 6).
 
 All proof content is on the unmerged pull-request branch
 (open pull request 1), censused at branch pin 5c1006a6 and
@@ -679,6 +692,10 @@ stated once: the branch has no check log and no printed
 axiom audit in the repo; no sorry token was found by search;
 the build and axiom claims rest on the pull-request body's
 quoted log — labelled as such, not independently re-run.
+Strength caveat, equally binding: the theorems of this
+section are carried at exactly the strength the relayed
+external audit states — section 6, findings F1–F5 — and
+nowhere above it.
 
 Stage 8 — the Increment module (6 theorems), the headline:
 given a safe base release and the closure hypothesis for a
@@ -740,7 +757,9 @@ monotonicity premise where it substitutes for checking.
 software-doesnt-have-to-regress (pin 24d36c13) and
 software-doesnt-need-review (pin ae5f3918) each contain a
 two-line readme and nothing else: no Lean files, no toolchain
-pin, no check log. Theorem count 0 in both. States: ASSERTED.
+pin, no check log. Theorem count 0 in both. States: CLAIMED,
+NOT PROVEN (the relayed external audit concurs at these pins;
+section 6).
 
 - doesnt-have-to-regress claims a release process with
   per-symbol observed-behavior certification never has to
@@ -782,3 +801,135 @@ witnessing and accounting, at the finest grain). Read back at
 as an announced entry, colored unknown, and enters at census
 depth on the continuous job's next re-enumeration after it
 lands.
+
+## 6. Evidence-state update — relayed external audit (unverified)
+
+An external audit of the nine proof repos was received from
+Chris on 2026-11-18 01:35 PST and is saved in the workspace
+(~/workspace/research/software-family-audit-2026-11-18.md).
+Status of everything in this section: RELAYED, UNVERIFIED at
+receipt. A verification lane is reproducing the audit's
+executable core (its counterexample file, kernel-checked at
+the audited pins); where this section and a firsthand census
+in section 3 conflict, the claim is carried at the lower
+state until the lane reports. The audit tied every verdict
+to a named pin and noted repos were being pushed during the
+audit; several of its pins are earlier than this synthesis's
+census pins, and the differences are recorded, not smoothed.
+
+Hygiene (relayed): across the family at the audited pins, no
+sorries, no admissions, no custom axioms, no
+kernel-skipping constructs — the only hits were two harmless
+resource options in one campaign module; every printed axiom
+set is a subset of the three standard axioms; all five
+buildable repos compile with warnings as errors. "The
+theorems are true as stated. The questions are what they
+state and what they assume."
+
+The four claimed-not-proven repos: the audit states
+software-is-composable (at its audited pin 929d8e35),
+software-is-incrementally-certifiable (f3b9f896),
+software-doesnt-need-review (ae5f3918), and
+software-doesnt-have-to-regress (24d36c13) hold no Lean proof
+at their default heads. For the last three this synthesis's
+firsthand census concurs exactly (sections 3.4 and 3.8,
+states updated to CLAIMED, NOT PROVEN). For composable the
+audit's pin predates the landing its census here records
+(section 3.3 carries both readings and the lower-state rule).
+The audit adds one deflation that applies to the composable
+content wherever it lives: the admission model's composition
+holds inside interaction closure — the model rules out
+emergent interaction by construction rather than checking
+it. This synthesis's census records the same boundary from
+the other side (the counterexample showing the side condition
+cannot be dropped).
+
+software-is-quantifiable (relayed): audited at ba27febf —
+this synthesis's head-at-synthesis pin — with 63 theorems
+and a passing lake build (the census here read 46 theorems
+at the earlier pin 37917a41; the growth is the topology
+lane's landed work between the two reads, and is the
+continuous job's re-synthesis input). The audit confirms the
+coverage claim is a named premise by the repo's own README:
+the coverage theorem is literally the premise structure's
+mediation field restated, and the sensor-below field is an
+arbitrary proposition that can be True. Section 3.1 already
+carries coverage as PREMISE; the audit concurs, and adds
+that the premise as stated is weaker than its name suggests.
+
+software-optimality (relayed): audited at af23f5d with 26
+files and 172 theorems, build passing (census here: 14
+modules at 0ea4626b; the repo grew between reads). Verdict:
+proven as stated; the name overclaims — "optimal" means
+nondominated within a supplied finite candidate list under a
+supplied integer cost model, which is exactly the boundary
+section 3.2 carries. Behavior preservation in the accepted-
+improvement theorem is a supplied soundness hypothesis passed
+straight through — carried here as the premise it is.
+
+software-is-solvable and software-frontier-is-solvable
+(relayed): proven as stated at the census pins. The audit
+confirms the byte-identity of solvable's two core modules
+with optimality's by hash. For frontier-is-solvable it adds:
+the repo does not import the hypergraph it says it is derived
+from — that link is by convention only.
+
+software-is-incrementally-safe — its theorems are carried at
+exactly this strength (relayed findings F1–F5, audited on the
+unmerged branch at de1b3071, an earlier branch pin than this
+census's 5c1006a6; the findings are about the model's
+definitions and so read across the branch's movement):
+
+- F1. Its "safety" is per-event allow-list membership. Traces
+  are lists, but the verdict asks only whether each element
+  is allowed; order is invisible. An ordering property —
+  never open before stop — cannot be expressed. Its safety-
+  property notion is downward closure of observation sets,
+  which coincides with allow-lists.
+- F2. Its "noninterference" is taint reachability: a low
+  symbol never reaches an observation tagged high. It is not
+  the pair-of-runs hyperproperty the name usually denotes;
+  two systems, one outputting a secret bit and one outputting
+  noise, can have identical profiles and are treated the
+  same. Timing channels and implicit flows are outside the
+  model.
+- F3. Every abstract preservation theorem rests on the
+  closure hypothesis — a complete and correct dependency
+  relation, static between symbols, which must include every
+  path by which behavior can change (data, configuration,
+  shared state, timing, hardware). Given sound dependencies,
+  the headline equivalence is the right theorem.
+- F4. The executable checker is not connected to the abstract
+  theorems: no theorem takes a checker acceptance to release
+  safety or to the NI property; the computed cone is proven
+  sound, not complete. The checker trusts the submitter: the
+  delta carries its own dependency edges, inspection set,
+  high/low labels, and both budgets, and the audit's
+  counterexamples show the same change refused with an honest
+  delta and accepted after dropping one edge, unlabelling one
+  observation, or raising one budget. Its change cost counts
+  observation-list lengths and calls them time and compute
+  (this synthesis's census records the same one-number fact
+  as a side condition).
+- F5. Nothing in the model requires liveness: the release
+  with no behavior satisfies every allow-list, every NI
+  condition, and the monotonicity premise. Doing nothing is
+  maximally safe in this model; liveness and availability are
+  out of scope.
+
+Cross-repo findings carried as structural facts (relayed):
+the family's two monotonicity directions point opposite ways
+— in the composable/safe line, the new release's behaviors
+must be a subset of the old (nothing new appears); in
+quantifiable, the candidate must contain every qualified
+behavior (nothing qualified disappears) — and no repo states
+which a release process should enforce or how they combine.
+And the safe branch pins its siblings at commits that hold
+no Lean code (composable 929d8e3, certifiable f3b9f89), with
+its quantifiable pin already behind that repo's head.
+
+What the auditor could not check (relayed): the Python
+experiments and evidence bundles behind the campaign timing
+claims were not opened — those claims stand unverified
+beyond the Lean arithmetic; four unmerged branches were not
+audited.
