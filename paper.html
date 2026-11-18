@@ -1,0 +1,756 @@
+<!-- HOST NOTE — this is the live copy of the paper, hosted in clpi/software-is-a-closed-loop. It is a verbatim copy of the source of record named in PAPER-SYNC.md, synced 2026-11-18. The paper text is hosted, not rewritten; the only addition is this note. -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:,">
+<title>a proposal for the qualification of software — living spec</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f5f0; --bg2:#efece4; --surface:#ffffff; --surface2:#f3f0e8; --ink:#161816; --ink2:#2b2e2a; --muted:#6b7268; --muted2:#8a9186;
+  --line:#e6e0d1; --line2:#d6cfbc;
+  --rust:#9a3412; --rust2:#7c2a0e; --rust-bg:#fff3e8; --amber:#92400e; --amber-bg:#fef8dc; --blue:#1e40af; --blue-bg:#eaf0ff; --green:#065f46; --green-bg:#e6f4ec; --red:#991b1b; --red-bg:#fdecec;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,monospace; --serif:"Spectral",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --radius:16px; --radius-sm:10px;
+  --shadow:0 1px 2px rgba(20,20,10,.04),0 8px 24px rgba(20,20,10,.05);
+  --shadow-lg:0 2px 4px rgba(20,20,10,.05),0 16px 40px rgba(20,20,10,.07);
+}
+@media(prefers-color-scheme:dark){
+  :root{--bg:#121311; --bg2:#1a1c19; --surface:#1c1e1b; --surface2:#242622; --ink:#f0ede3; --ink2:#d8d5c8; --muted:#a3a99e; --line:#2c2f2a; --line2:#3a3e37; --rust-bg:#2f1e12; --amber-bg:#2e2610; --blue-bg:#1a2340; --green-bg:#12291f; --red-bg:#2e1414; --shadow:0 1px 2px rgba(0,0,0,.2),0 8px 24px rgba(0,0,0,.25); --shadow-lg:0 2px 4px rgba(0,0,0,.25),0 16px 40px rgba(0,0,0,.3)}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--rust);text-underline-offset:3px}
+button,input,select{min-height:38px}
+.wrap{max-width:1160px;margin:0 auto;padding:28px 20px 72px}
+@media(max-width:640px){.wrap{padding:18px 14px 56px}}
+.top{position:relative;padding:8px 0 28px;border-bottom:1px solid var(--line)}
+.top::before{content:"";position:absolute;left:0;top:0;width:56px;height:4px;background:var(--rust);border-radius:99px}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);font-weight:600;margin-top:18px}
+h1{font-family:var(--serif);font-size:clamp(36px,6vw,62px);line-height:.95;margin:14px 0 14px;letter-spacing:-.03em;font-weight:700;max-width:820px}
+.sub{font-size:17px;line-height:1.6;color:var(--ink2);max-width:760px;margin:0}
+.sub strong{color:var(--ink)}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.meta span{font-family:var(--mono);font-size:12px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:7px 11px}
+.meta b{color:var(--ink);font-weight:600}
+.thesis{display:grid;grid-template-columns:1.15fr .85fr;gap:0;background:var(--ink);color:#f5f2e9;border-radius:var(--radius);overflow:hidden;margin:22px 0 18px;box-shadow:var(--shadow-lg)}
+@media(max-width:760px){.thesis{grid-template-columns:1fr}}
+.thesis-main{padding:24px 24px 22px}
+.thesis-main p{font-family:var(--serif);font-size:21px;line-height:1.35;margin:0}
+.thesis-main small{display:block;margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.7}
+.thesis-side{background:rgba(255,255,255,.08);padding:22px;border-left:1px solid rgba(255,255,255,.12);font-size:13.5px;line-height:1.6}
+.thesis-side b{color:#fff}
+@media(max-width:760px){.thesis-side{border-left:0;border-top:1px solid rgba(255,255,255,.12)}}
+@media(prefers-color-scheme:dark){.thesis{background:#ece9df;color:#171816}.thesis-side b{color:#111}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0 0 14px}
+@media(max-width:820px){.stats{grid-template-columns:1fr 1fr}}
+.stat{padding:18px 18px 16px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.stat strong{font-family:var(--serif);font-size:32px;display:block;line-height:1;letter-spacing:-.02em}
+.stat span{font-size:12.5px;line-height:1.45;color:var(--muted);display:block;margin-top:6px}
+.stat em{font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--rust);display:block;margin-bottom:8px}
+.legend{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.legend-title{font-weight:700;font-size:13px;letter-spacing:.02em;margin-bottom:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.legend-title span{font-weight:400;color:var(--muted);font-size:13px}
+.legend-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+@media(max-width:900px){.legend-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.legend-grid{grid-template-columns:1fr}}
+.legend-item{border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:var(--surface2)}
+.legend-item p{margin:7px 0 0;font-size:12.5px;line-height:1.45;color:var(--muted)}
+.pill{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;padding:4px 8px;border-radius:999px;border:1px solid;white-space:nowrap;font-weight:600;display:inline-flex}
+.p-settled{color:var(--rust);background:var(--rust-bg);border-color:#eec2a6} .p-proposed{color:var(--amber);background:var(--amber-bg);border-color:#e2cf7a}
+.p-impl{color:var(--blue);background:var(--blue-bg);border-color:#b3c2f2} .p-verified{color:var(--green);background:var(--green-bg);border-color:#9fd0b2}
+.p-gap{color:var(--red);background:var(--red-bg);border-color:#edaeae}
+.controls{position:sticky;top:12px;z-index:20;background:var(--surface);padding:10px;border:1px solid var(--line);border-radius:999px;box-shadow:var(--shadow-lg);display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:16px}
+@media(max-width:700px){.controls{border-radius:16px;top:8px}}
+.controls input{flex:1;min-width:170px;padding:9px 13px;border:1px solid var(--line2);border-radius:999px;background:var(--surface);color:var(--ink);font-size:14px;outline:none}
+.controls input:focus{border-color:var(--rust)}
+.chip{border:1px solid transparent;background:transparent;border-radius:999px;padding:7px 12px;cursor:pointer;font-size:13px;font-weight:500;color:var(--muted)}
+.chip:hover{color:var(--ink);background:var(--surface2)}
+.chip.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.layout{display:grid;grid-template-columns:218px 1fr;gap:32px;margin-top:28px;align-items:start}
+@media(max-width:860px){.layout{grid-template-columns:1fr} nav{display:none}}
+nav{position:sticky;top:84px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
+nav strong{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:8px;padding:0 6px}
+nav a{display:flex;justify-content:space-between;gap:8px;padding:8px 6px;color:var(--ink2);text-decoration:none;border-radius:8px;font-size:13.5px;line-height:1.3}
+nav a:hover{background:var(--surface2);color:var(--ink)}
+nav a span{font-family:var(--mono);font-size:11px;color:var(--muted)}
+main{min-width:0}
+section{scroll-margin-top:90px;margin-bottom:36px}
+h2{font-family:var(--serif);font-size:clamp(26px,3.5vw,34px);margin:0 0 6px;line-height:1.05;letter-spacing:-.02em;font-weight:700;display:flex;gap:12px;align-items:baseline}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--rust);letter-spacing:.08em}
+.sec-note{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 16px;max-width:720px}
+.entry{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px 20px 18px;margin-bottom:12px;box-shadow:var(--shadow)}
+.entry:hover{border-color:var(--line2)}
+.entry-head{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-start;justify-content:space-between;padding-bottom:12px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.entry-id{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.08em;color:var(--surface);background:var(--ink);padding:4px 7px;border-radius:6px}
+.entry-title{font-weight:650;font-size:16px;line-height:1.3;letter-spacing:-.01em}
+.entry-meta{font-family:var(--mono);font-size:11px;line-height:1.5;color:var(--muted);margin-top:6px}
+.entry p{margin:10px 0 0;font-size:14.5px;line-height:1.65;color:var(--ink2)} .entry ul{margin:8px 0 0;padding-left:19px;font-size:14.5px;line-height:1.65;color:var(--ink2)} .entry li{margin:5px 0} .entry li::marker{color:var(--rust)}
+.mono{font-family:var(--mono);font-size:12px;word-break:break-all}
+.quote{font-family:var(--serif);font-size:19px;line-height:1.45;border-left:3px solid var(--rust);padding:4px 0 4px 16px;margin:14px 0;color:var(--ink)}
+.bar-row{display:grid;grid-template-columns:118px 1fr 52px;gap:12px;align-items:center;font-size:13px;margin:7px 0}
+.bar{height:9px;background:var(--surface2);border-radius:99px;overflow:hidden} .bar i{display:block;height:100%;background:var(--ink);border-radius:99px}
+.table-wrap{overflow:hidden;border:1px solid var(--line);border-radius:12px;margin-top:12px}
+.table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--surface)}
+.table th,.table td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} .table th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--surface2)}
+.table tr:last-child td{border-bottom:0}
+@media(max-width:640px){.table thead{display:none}.table tr{display:block;border-bottom:1px solid var(--line2);padding:6px 0}.table td{display:flex;justify-content:space-between;gap:16px;border:0}.table td::before{content:attr(data-l);font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase}}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px} @media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.callout{border:1px solid var(--line);background:var(--surface2);border-radius:12px;padding:16px;font-size:14.5px;line-height:1.65}
+.hidden{display:none!important}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:16px;font-size:12px;line-height:1.7;color:var(--muted);font-family:var(--mono)}
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)} svg .axis{stroke:var(--line2)} svg .front{stroke:var(--rust);stroke-width:2.5;fill:none} svg circle{fill:var(--ink)} svg circle.dom{fill:var(--surface);stroke:var(--muted)}
+.imp-lead{font-family:var(--serif);font-size:20px;line-height:1.45;color:var(--ink)}
+.imp-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:760px){.imp-grid{grid-template-columns:1fr}}
+.imp-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+.imp-card h3{margin:0 0 8px;font-size:15px;line-height:1.3;letter-spacing:-.01em}
+.imp-card h3 span{font-family:var(--mono);font-size:11px;color:var(--rust);display:block;margin-bottom:5px;letter-spacing:.1em;text-transform:uppercase}
+.imp-card p,.imp-card li{font-size:14px;line-height:1.6;color:var(--ink2)}
+.imp-card ul{margin:6px 0 0;padding-left:18px}.imp-card li{margin:4px 0}
+.beforeafter{width:100%;border-collapse:collapse;font-size:13.5px}
+.beforeafter th,.beforeafter td{padding:11px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;line-height:1.5}
+.beforeafter th{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--surface2)}
+.checklist{list-style:none!important;padding-left:0!important}
+.checklist li{padding-left:26px;position:relative}
+.checklist li::before{content:"×";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:var(--red-bg);color:var(--red);display:grid;place-items:center;font-weight:700;font-size:12px;line-height:1}
+.checklist.ok li::before{content:"✓";background:var(--green-bg);color:var(--green)}
+.kicker2{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);font-weight:700}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <div class="kicker">Living spec · Revision 2026-11-17 · Idol / all projects</div>
+  <h1>A proposal for the qualification of software</h1>
+  <p class="sub"><strong>Qualification as an exact construction.</strong> Equivalences first, quality facts with provenance, dominance only on evidence — and every claim labelled by what it actually is: settled, proposed, implemented, or verified.</p>
+  <div class="meta"><span>Snapshot <b>clpi/idol @ 0387b214</b></span><span>Spec <b>§§1–17 · 94,060 B</b></span><span>Axis record <b>57 entries</b></span><span>Updated <b>17 Nov 2026, 17:26 PST</b></span></div>
+</header>
+
+<div class="thesis" aria-label="Thesis">
+  <div class="thesis-main"><p>“Better” is not a score. It is a frontier you can recompute — from witnesses anyone can check.</p><small>The claim in one line</small></div>
+  <div class="thesis-side"><b>What this page does now:</b> keeps the full living spec (§§0–8) exactly as filed, and adds §9 — a complete, plain-language spelling-out of the implications: who is affected, what changes day to day, what becomes forbidden, what it costs, and what it still cannot promise.</div>
+</div>
+
+
+<div class="stats">
+  <div class="stat"><em>Verified fold</em><strong>2,236</strong><span>witnesses folded — checker-verified</span></div>
+  <div class="stat"><em>Derived</em><strong>1,282</strong><span>accounting entries derived</span></div>
+  <div class="stat"><em>Frontier test</em><strong>67 / 908</strong><span>alternatives / pairs tested — 0 decided</span></div>
+  <div class="stat"><em>By design</em><strong>0</strong><span>backfill jobs required — the witness is definitional; the accounting is a pure fold</span></div>
+</div>
+
+<div class="legend">
+  <div class="legend-title">Four states — never blurred <span>Every entry carries one. If it isn’t verified, it doesn’t pretend to be.</span></div>
+  <div class="legend-grid">
+    <div class="legend-item"><span class="pill p-settled">Settled intent</span><p>Ruling by Chris. The target — not a claim it already runs.</p></div>
+    <div class="legend-item"><span class="pill p-proposed">Proposed</span><p>Spec text filed. No behaviour behind it yet.</p></div>
+    <div class="legend-item"><span class="pill p-impl">Implemented</span><p>Code or record exists on disk.</p></div>
+    <div class="legend-item"><span class="pill p-verified">Verified</span><p>Executed and read back by an independent check.</p></div>
+    <div class="legend-item"><span class="pill p-gap">Gap</span><p>Inside the finite space. Unoccupied — occupies on its next execution. Never zero, never a loss.</p></div>
+  </div>
+</div>
+
+<div class="controls" role="search">
+  <button class="chip active" data-f="all">All</button>
+  <button class="chip" data-f="settled">Settled</button>
+  <button class="chip" data-f="proposed">Proposed</button>
+  <button class="chip" data-f="impl">Implemented</button>
+  <button class="chip" data-f="verified">Verified</button>
+  <button class="chip" data-f="gap">Gaps</button>
+  <input id="q" type="search" placeholder="Search entries — e.g. widening, lz4, effects, Pareto…" aria-label="Search entries">
+  <span id="count" style="font-family:var(--mono);font-size:12px;color:var(--muted)"></span>
+</div>
+
+<div class="layout">
+<nav aria-label="Contents"><strong>Contents</strong>
+  <a href="#proposal">0 · The proposal</a>
+  <a href="#settled">1 · Settled intent</a>
+  <a href="#construction">2 · Construction</a>
+  <a href="#accounting">3 · Effect accounting</a>
+  <a href="#frontier">4 · Frontier</a>
+  <a href="#comparison">5 · Worked comparison</a>
+  <a href="#practice">6 · Practice today</a>
+  <a href="#axes">7 · Axes</a>
+  <a href="#gaps">8 · Unoccupied states</a>
+  <a href="#implications">9 · Implications — spelled out <span>NEW</span></a>
+  <a href="#sources">Sources</a>
+</nav>
+
+<main id="main">
+
+<!-- 0 PROPOSAL -->
+<section id="proposal"><h2><span class="num">00</span> The proposal</h2><p class="sec-note">Chris's dictation, verbatim. Unfinished — nothing inferred past the line breaks.</p>
+
+<article class="entry" data-state="proposed" data-text="proposal dictation pareto venues finite behaviors overlapping qualifications gates">
+  <div class="entry-head"><span><span class="entry-id">P-00</span> &nbsp;<span class="entry-title">Qualification gates, Pareto over venues</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">2026-11-17 ~17:02 PST · Dictation · Source: venue-pareto-dictation-2026-11-17.md</div>
+  <div class="quote">“Practice of qualification gates with implied and possibly / likely overlapping qualifications.”<br>“of a certain finite set of behavior.”<br>“I solve the Pareto optimal in parallel given a finite set of venues — solution for minimum time and compute.”</div>
+  <p><b>Reading, labeled as reading:</b> gates carry qualifications that may be implied by others and may overlap; the object is a <i>finite</i> set of behaviors; venues are finite; the solve is parallel and Pareto-optimal on two objectives — <b>time ↓</b> and <b>compute ↓</b>. No venue dominates unless it is no-worse on both and better on one. That is the same dominance rule as §1 below, applied to venues instead of programs.</p>
+  <div style="margin-top:12px;background:var(--surface2);padding:10px">
+  <svg viewBox="0 0 520 220" width="100%" height="200" role="img" aria-label="Pareto frontier diagram: venues plotted by time and compute, frontier venues connected">
+    <line x1="48" y1="10" x2="48" y2="185" class="axis"/><line x1="48" y1="185" x2="500" y2="185" class="axis"/>
+    <text x="48" y="205">time →</text><text x="4" y="20">compute ↑</text>
+    <polyline class="front" points="90,150 150,115 230,82 330,52"/>
+    <circle cx="90" cy="150" r="6"/><circle cx="150" cy="115" r="6"/><circle cx="230" cy="82" r="6"/><circle cx="330" cy="52" r="6"/>
+    <circle cx="180" cy="150" r="6" class="dom"/><circle cx="260" cy="120" r="6" class="dom"/><circle cx="360" cy="95" r="6" class="dom"/><circle cx="120" cy="70" r="6" class="dom"/>
+    <text x="78" y="168">A</text><text x="138" y="133">B</text><text x="218" y="100">C</text><text x="318" y="70">D</text>
+    <text x="150" y="168">hollow = dominated · solid = frontier</text>
+  </svg></div>
+  <p>Closing condition for this entry: dictation completes, or Chris rules the reading above settled. Until then it stays <b>proposed</b>.</p>
+</article>
+</section>
+
+<!-- 1 SETTLED -->
+<section id="settled"><h2><span class="num">01</span> Settled intent</h2><p class="sec-note">Rulings. Each is a target construction — stating one does not claim the graph is saturated or benchmarked.</p>
+
+<article class="entry" data-state="settled" data-text="quality space exact construction equivalence saturation premises dominance frontier completeness">
+  <div class="entry-head"><span><span class="entry-id">S-01</span> &nbsp;<span class="entry-title">Quality space is an exact construction over equivalences</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 16:10 PST · Chris ruling · Spec §16</div>
+  <ul>
+    <li>Seed: a <b>named release snapshot</b> — its expressions, observed behaviors, contracts, premises — each with an <b>immutable typed identity</b>.</li>
+    <li>Saturate equivalence <b>deterministically</b>; merge only equalities valid under the <b>same stated premises</b>; derivation + scope preserved per edge; cross-lineage transfer only when its conditions are checked.</li>
+    <li>Attach quality facts per alternative — capability, effects, correctness obligations, latency, memory, build cost, other named axes — each carrying <b>workload, environment, uncertainty, evidence</b>.</li>
+    <li><b>Unknown is not zero and not a loss.</b> Dominance only on no-worse on <i>every</i> required axis + better on ≥1, same scope. Nondominated set = <b>the frontier</b>. Incomparables kept. Content-ID tie-break orders display only.</li>
+    <li>Commit rule-set, term universe, evidence snapshot, premises, graph, frontier under <b>typed roots</b> in the snapshot. Retractions recompute the projection; earlier snapshot retained.</li>
+    <li><b>Completeness receipt:</b> “entire saturated space under these rules and this universe” is sayable <i>only</i> on an exhaustive fixed point over a finite, explicitly defined universe with all rules fairly applied. It never implies every equivalent program is contained. A budget stop is an exact <i>partial</i> record, remainder unknown.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="effect accounting witness set derived provenance venue difference signal">
+  <div class="entry-head"><span><span class="entry-id">S-02</span> &nbsp;<span class="entry-title">Effect accounting is derived from the witness set</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 16:33 PST · Chris ruling, rejecting 0-of-205 · Spec §17</div>
+  <ul>
+    <li>Full accounting across the whole equality-saturated lattice, over <b>append-only witnesses</b>, behavior joined across equivalent provable states + environments; trivially derivable + filterable across the unified set.</li>
+    <li>Witnessed behavior is <b>never voided</b> for lacking pre-attached workload / environment / uncertainty / evidence. Parts <b>derive from witness provenance</b> (venue, pin, run) carried by the store itself.</li>
+    <li><b>Per-venue behavioral difference is independently sufficient signal.</b> Only facts with <i>no witness at all</i> stay unknown; any underivable part is named per fact.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="compounding composes provably every run trivial derivation checker">
+  <div class="entry-head"><span><span class="entry-id">S-03</span> &nbsp;<span class="entry-title">Accounting composes + compounds provably</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 16:36 PST · Compounding clause · Spec §17.8</div>
+  <p>Across <b>every</b> run, even a trivially measured one. Each run joins the unified set and strengthens the accounting. Every composition step carries its derivation — compounding is <b>checkable, never asserted on trust</b>.</p>
+</article>
+
+<article class="entry" data-state="settled" data-text="decidability gate three valued proved disproved unresolved boundary">
+  <div class="entry-head"><span><span class="entry-id">S-04</span> &nbsp;<span class="entry-title">Gates are three-valued</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Living spec §1.23.9 · Spec §§1, 8 · Boundary is theorem-grade</div>
+  <p><span class="mono">PROVED / DISPROVED / UNRESOLVED</span> — unresolved is a <b>first-class verdict</b> under shepherd policy, never a failure to decide and never silently converted. It falls to contested / uncaptured, never to absent or proved. No work item closes by removing the boundary. Every UNRESOLVED names exactly one boundary: <b>budget</b> (cap fired) → <b>frontier</b> (residue left) → <b>rules</b> (rule set cannot derive it), in that priority.</p>
+</article>
+
+<article class="entry" data-state="settled" data-text="hypergraph finite subspace problem space intended qualified behavior framing correction no outside">
+  <div class="entry-head"><span><span class="entry-id">S-05</span> &nbsp;<span class="entry-title">Framing: a joined hypergraph over a finite, intended space</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 17:15 PST · Chris framing correction · Strengthens S-01 / S-02</div>
+  <ul>
+    <li>The problem space is <b>finite</b>: the set of behavior <b>intended to be qualified</b>, under-specified only with respect to the intended qualification.</li>
+    <li>There is <b>no infinite space outside it</b> — no unwitnessed, unintended, unqualified behavior beyond the boundary to appeal to.</li>
+    <li>The construction is a <b>joined hypergraph across qualified software</b>: that hypergraph <i>is</i> the problem space.</li>
+    <li>The solution — the <b>qualification set of behavior</b> — is a <b>finite subspace</b> of that hypergraph.</li>
+    <li>Coverage gaps are <b>inside</b> that boundary, never an outside. See S-06 and §8.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="no coverage gaps universal witness ledger symbolic profiling entire accounting defect unoccupied">
+  <div class="entry-head"><span><span class="entry-id">S-06</span> &nbsp;<span class="entry-title">No coverage gaps — universal witness ledger</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 17:15 PST · Chris ruling · Strengthens 16:33 ruling · Closure mechanism superseded by S-10 (17:24)</div>
+  <ul>
+    <li>There should be <b>no coverage gaps</b>.</li>
+    <li><b>Every single execution</b> of software forms an entry in the <b>append-only witness ledger</b>.</li>
+    <li>A coverage gap is a <b>defect to close</b>, not a named unknown to rest on. Underivable parts are still named per fact (S-02).</li>
+    <li><b>How a gap closes changed at 17:24:</b> not by a backfill job. An unrecorded execution is an <b>unoccupied state</b> in the graph, colored unresolved, and it <b>occupies on its next execution</b> — see S-10. The 17:15 “backfilled immediately” wording stands as history; the mechanism class it named is retired.</li>
+    <li>The accounting includes an <b>entire accounting of the symbolic profiling</b> — see SYM-01 / SYM-02 in §8.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="witness hook idol native constraints finest symbolic all executions environments no foreign bound">
+  <div class="entry-head"><span><span class="entry-id">S-07</span> &nbsp;<span class="entry-title">Witness hook — Chris's constraints</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 17:18 PST · Chris, direct — the ask / constraints, in his terms</div>
+  <ul>
+    <li>The hook is <b>Idol-native</b> and <b>tractable</b>, written in Idol — <b>expand Idol where needed</b> rather than accept a bound.</li>
+    <li><b>Never bounded by a foreign interface.</b></li>
+    <li>Representation at the <b>finest-grained symbolic resolution</b>, spanning <b>all executions and all environments</b>.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="witness hook mechanism derivation emits witness effect runner envelope scaffolding elimination proposed">
+  <div class="entry-head"><span><span class="entry-id">S-07b</span> &nbsp;<span class="entry-title">Witness hook — mechanism (design answer, not yet ruled)</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">2026-11-17 · Assistant design answer to S-07 · Proposed until Chris rules it settled</div>
+  <ul>
+    <li><b>Derivation emits the witness:</b> the derivation machinery itself emits it — a witness effect carried by executing a binding.</li>
+    <li>Symbolic at the <b>derivation step itself</b>; repeated structure shared in the graph, so maximal resolution costs the <b>size of the derivation</b>, not the size of a trace.</li>
+    <li>Foreign-produced executions covered by an <b>Idol-owned runner envelope only</b> — scaffolding, with an elimination order.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="foreign arbitrary software any language any kernel coverage constraint settled">
+  <div class="entry-head"><span><span class="entry-id">S-08</span> &nbsp;<span class="entry-title">Coverage extends to foreign + arbitrary software</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 17:20 PST · Chris, direct — scope constraint</div>
+  <p>The witness / qualification construction must cover <b>foreign and arbitrary software, in any language, on any kernel</b> — not Idol programs only. The mechanism for that scope is the proposed entry below, not settled by this entry.</p>
+</article>
+
+<article class="entry" data-state="proposed" data-text="lifting boundary sensing kernel syscall semantic graph colorings views proposed mechanism foreign">
+  <div class="entry-head"><span><span class="entry-id">S-08b</span> &nbsp;<span class="entry-title">Foreign coverage — mechanism: lifting + boundary sensing</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">2026-11-17 17:20 PST · Design answer for S-08 · Proposed until ruled settled</div>
+  <ul>
+    <li><b>Lifting:</b> the artifact is lifted into the semantic graph, so its behavior space exists symbolically.</li>
+    <li><b>Boundary sensing:</b> executions sensed at the kernel boundary every program must cross — process lifecycle + the syscall stream, the finest universally available grain. Occupied states append and join into the semi-lattice.</li>
+    <li>Qualification mapping + intent mapping are <b>colorings of that one graph</b>, derived as views, not separate stores.</li>
+    <li>The kernel sensor is the <b>one irreducible foreign contact</b> — kept thin, its output lifted into Idol-symbolic form immediately. <i>Widened by S-09 (17:22): collection may use any foreign hook necessary; what stays thin and Idol-owned is the representation, not the collection.</i></li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="robust across foreign baggage any hook kernel collection representation provably highest resolution finite determinable temporal ordering bounds collected once no second observation">
+  <div class="entry-head"><span><span class="entry-id">S-09</span> &nbsp;<span class="entry-title">Robust across foreign baggage — any hook, Idol-owned representation</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 17:22–17:26 PST · Chris, direct — correction: robust <i>across</i> foreign baggage, not free of it</div>
+  <div class="quote">“It has to be robust across foreign baggage. Idol can represent the execution environment that is most robust, most high resolution — and it should. It must provably be.”</div>
+  <ul>
+    <li><b>Collection may use any foreign hook necessary</b> — userland tracer, per-process / per-thread profiler, OS or kernel mechanism, whatever a given software and kernel require. No hook is refused for being foreign.</li>
+    <li><b>What Idol owns is the representation</b> of that execution environment, and it must <b>provably</b> be the most robust and highest-resolution one: <b>finite, determinable</b>, at the <b>highest possible physical resolution</b>, across the <b>highest-resolution temporal and ordering bounds</b> the platform affords.</li>
+    <li><b>Collected once, at the boundary.</b> The state is then known <b>by derivation</b> — it never has to be observed independently a second time. There is no separate observation step standing beside the collection.</li>
+    <li>Scope is unqualified: <b>any software, in any language, on any kernel</b> (S-08). The foreign trace and profiling themselves are what is collected — lifted into Idol-symbolic form, where repeated structure is shared in the graph (S-07b).</li>
+    <li><b>Proof obligation, named:</b> “most robust, highest resolution” is a claim to prove against the platform's actual bounds — finest grain, temporal bound, and ordering bound stated per environment — not an adjective. Until that proof exists for an environment, its resolution claim stays at the state its evidence supports.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="essentially stateless no backfill jobs witness definitional execution result pure fold content addressed associative commutative idempotent recomputable any order no coordination state unoccupied occupies next execution">
+  <div class="entry-head"><span><span class="entry-id">S-10</span> &nbsp;<span class="entry-title">Essentially stateless — no backfill jobs</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">2026-11-17 17:24–17:26 PST · Chris, direct · Supersedes the backfill mechanism in S-06 / B-01</div>
+  <div class="quote">“It shouldn't even require a backfill job. Is there not a tractable, essentially stateless way forward here?”</div>
+  <p><b>Answer, as ruled:</b> yes — remove the job, not the coverage. Nothing needs to be scheduled, swept, or coordinated, because there is no backlog state to manage:</p>
+  <ul>
+    <li><b>The witness is definitional to the execution.</b> An execution <b>carries its witness as part of its result</b>, emitted by the machinery itself — for foreign software, emitted at the single boundary collection of S-09 and lifted immediately. A witness is not a record someone later goes and fetches.</li>
+    <li><b>The accounting is a pure fold</b> over content-addressed witnesses. Its join is <b>associative, commutative, and idempotent</b>, so the accounting is <b>recomputable from scratch, exactly, in any order, with no coordination state</b>. Duplicate witnesses change nothing; arrival order changes nothing.</li>
+    <li><b>Historical records need no special path:</b> they enter by the <b>same derivation</b> applied to older inputs. Same fold, same result — not a one-off import job.</li>
+    <li><b>An execution with no record is an unoccupied state</b> in the graph, colored <b>unresolved</b>. It is not a queue entry. It <b>occupies on its next execution</b>, by the definitional rule above.</li>
+    <li><b>Evidence this is tractable, not just tidy:</b> the independent checker in §3 (V-A) already recomputes the whole fold from scratch and matches every step hash — full recomputation is demonstrated behavior, which is exactly what a stateless fold requires.</li>
+  </ul>
+</article>
+</section>
+
+<!-- 2 CONSTRUCTION -->
+<section id="construction"><h2><span class="num">02</span> Construction — engine + space</h2><p class="sec-note">How a qualification is built, in dependency order. Spec first, then engine, then frontier, then surfaces.</p>
+
+<article class="entry" data-state="proposed" data-text="decidability engine spec catalogue saturation generation joint loop questions verdict record proposed">
+  <div class="entry-head"><span><span class="entry-id">C-01</span> &nbsp;<span class="entry-title">Decidability engine — spec: catalogue → saturate → generate → decide</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">2026-11-17 · Spec §§1–16 (78,592 B before §17) · Semantics as filed; battery outcomes are not in this entry</div>
+  <ul>
+    <li><b>Catalogue (§4):</b> one record per catalogued state, SHA-256 over canonical text form as identity; append-only; bolster may widen coverage, never flip a decided verdict.</li>
+    <li><b>Saturation (§5, base-1):</b> algebraic identities (wrap-guarded) + congruence + transition-respecting merge condition + canonical representative. Premise track per merge. Fixpoint must be <i>demonstrated</i> by an actual final empty round. Budgets: node-cap 100k, round-cap 200, term-cap 32, merge-cap 50k, time-cap 600s.</li>
+    <li><b>Generation (§6):</b> 4 sources in priority — pending counterparts, successors, predecessors, boundary values — admitted only by the 3-check reachability test.</li>
+    <li><b>Joint loop (§7):</b> quiescent only when <i>all three</i> hold: 0 admitted + 0 merges + empty frontier.</li>
+    <li><b>Questions (§8):</b> exactly five forms — <span class="mono">reach · never · equal · always · leads</span>. <i>Equal</i> is DISPROVED only via a blocked-list witness; a failed proof is incompleteness, not difference.</li>
+    <li><b>Verdict record (§9):</b> exact field order + record hash; self-contained; independent recheck program must exist before any record is labeled <i>checked</i> — the engine never labels its own output checked.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="impl" data-text="engine implemented engine id bindings battery venue blocked staged">
+  <div class="entry-head"><span><span class="entry-id">C-01b</span> &nbsp;<span class="entry-title">Engine machinery — built, battery staged</span></span><span class="pill p-impl">Implemented</span></div>
+  <div class="entry-meta">2026-11-17 · engine.id, 34,373 B, 46 bindings · Record tooling: writer + independent recheck</div>
+  <p>Engine built venue-free against the §5 saturation contract (in-tree substrate extended: rule registration, premise tracks, named budgets). Eight run folders staged (subject + question each). <b>Battery unexecuted at filing</b> — all venues held; waiter armed. No verdict is claimed from this entry.</p>
+</article>
+
+<article class="entry" data-state="proposed" data-text="spec section 17 witness store tiers classes join filter faces probes">
+  <div class="entry-head"><span><span class="entry-id">C-02</span> &nbsp;<span class="entry-title">Spec §17 — witness store, join, filter faces</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">2026-11-17 · Spec now 94,060 B · §17 at line 1505 · 0 underscores</div>
+  <p>Witness store + unified set (17.2) · part derivation in 3 environment tiers (17.3) · classes per fact + join, contested carried never dropped (17.4) · axis mapping as filed data (17.5) · per-venue difference as signal (17.6) · five filter faces — by class, axis, venue/environment, state, project (17.7) · compounding fold with chained hashes + independent checker (17.8) · frontier over derived accounting (17.9) · probes 6–10 (17.10) · gaps (17.11) · claim discipline (17.12). <b>Still proposal-only inside §17:</b> tier-1 venue derivation for banded tables, input-digest parts, classes from committed saturated graphs.</p>
+</article>
+
+<article class="entry" data-state="impl" data-text="frontier computation procedure comparability gate unknown blocks dominance">
+  <div class="entry-head"><span><span class="entry-id">C-03</span> &nbsp;<span class="entry-title">Frontier computation (§16.10)</span></span><span class="pill p-impl">Implemented</span></div>
+  <div class="entry-meta">2026-11-17 · frontier.py, 4,920 B · Hash-verified axis record or refuse</div>
+  <p>Inputs only: committed graph (by root) + axis record (by hash) + fact set (by evidence). Per-pair, per-axis comparability gate in record order. Rule, verbatim: <i>“an unknown on a required axis blocks dominance in both directions for that pair, because a missing measurement is evidence of nothing about either alternative.”</i> No cross-project pairs are ever tested (§13.4).</p>
+</article>
+</section>
+
+<!-- 3 ACCOUNTING -->
+<section id="accounting"><h2><span class="num">03</span> Effect accounting — verified derivation</h2>
+
+<article class="entry" data-state="verified" data-text="effect accounting derivation witnesses join edges entries checker tamper hash">
+  <div class="entry-head"><span><span class="entry-id">V-A</span> &nbsp;<span class="entry-title">Derivation over the real store + independent checker</span></span><span class="pill p-verified">Verified</span></div>
+  <div class="entry-meta">Executed 2026-11-17 · Record: decidability-effects-2026-11-17.md · Accounting hash below</div>
+  <p><span class="mono">8fd13e655f840326f89fdbc94baf60009407d9706171ff8b2a761502b9403ed7</span></p>
+  <div style="margin-top:10px">
+    <div class="bar-row"><span>Plain</span><div class="bar"><i style="width:69%"></i></div><b>885</b></div>
+    <div class="bar-row"><span>Split</span><div class="bar"><i style="width:15%"></i></div><b>187</b></div>
+    <div class="bar-row"><span>Joined</span><div class="bar"><i style="width:14%"></i></div><b>174</b></div>
+    <div class="bar-row"><span>Dependence</span><div class="bar"><i style="width:3%"></i></div><b>34</b></div>
+    <div class="bar-row"><span>Contested</span><div class="bar"><i style="width:1%"></i></div><b>2</b></div>
+  </div>
+  <ul>
+    <li><b>Feed:</b> 2,236 witnesses — census fact states 1,808 · history projection 164 · freeze baselines 114 · banded per-commit 84 · banded release re-run 42 · certification run 21 · extra facts 3. <b>8,482</b> join edges. <b>11</b> fold steps, recorded order.</li>
+    <li><b>By axis (final, filed):</b> no required axis 683 · effects 483 · throughput 45 · capability 39 · correctness-obligations 26 · latency 4 · memory 2.</li>
+    <li><b>Checker:</b> independent implementation, imports nothing from the derivation. Recomputed the whole fold — <b>every step hash + changed set matches</b>. Tamper control fired: one altered value in a copy → <b>refused</b>. Compounding is checked, not asserted.</li>
+    <li><b>Supersession, stated plainly:</b> an earlier fold in the same record (487 witnesses → 376 entries, hash <span class="mono">e3f89dc5…</span>) stands as history. Standing figures are the checker-verified ones above.</li>
+    <li><b>Per project (witnesses / entries):</b> idol-sites 1,374 / 1,051 · idol-lib 761 / 153 · idol-wsp 42 / 35 · idol-model 24 / 14 · idiom 18 / 9 · idol-wide 14 / 17 · idol 3 / 3.</li>
+    <li><b>Filter faces confirmed by re-executed queries, exact match:</b> by project (idol-wsp) 35 · by axis (latency) 4 · by venue (this VM) 28 · by state (idol-lib freeze pin) 115 · by class (cbor decode @ freeze) 14.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="verified" data-text="per venue difference environment signature cbor lz4 json speed certification banded">
+  <div class="entry-head"><span><span class="entry-id">V-E</span> &nbsp;<span class="entry-title">Per-venue difference is signal — one environment signature</span></span><span class="pill p-verified">Verified</span></div>
+  <div class="entry-meta">Executed 2026-11-17 · All six shared speed facts · Previously: every one read unknown</div>
+  <table class="table"><thead><tr><th>Fact</th><th>Certification env</th><th>Banded re-run env</th></tr></thead><tbody>
+    <tr><td data-l="Fact">cbor decode</td><td data-l="Cert">0.94</td><td data-l="Banded">1.6–1.77 (range)</td></tr>
+    <tr><td data-l="Fact">cbor encode</td><td data-l="Cert">1.47</td><td data-l="Banded">2.27</td></tr>
+    <tr><td data-l="Fact">json parse</td><td data-l="Cert">0.44</td><td data-l="Banded">0.705</td></tr>
+    <tr><td data-l="Fact">json render</td><td data-l="Cert">1.94</td><td data-l="Banded">3.65</td></tr>
+    <tr><td data-l="Fact">lz4 pull</td><td data-l="Cert">7.5</td><td data-l="Banded">10.4</td></tr>
+    <tr><td data-l="Fact">lz4 press</td><td data-l="Cert">35.1</td><td data-l="Banded">53.6</td></tr>
+  </tbody></table>
+  <p>Headline join — cbor decode @ idol-lib freeze pin: throughput <b>lower bound 1.44</b>, latency <b>upper bound 27.63 ms</b>, from the recorded range + the contract's 41,723-byte corpus. The split pattern repeats on all six facts: the certification environment reads <b>systematically slower</b> — one coherent signature, derived from differences alone.</p>
+</article>
+
+<article class="entry" data-state="verified" data-text="probes six seven eight nine ten decidability controls">
+  <div class="entry-head"><span><span class="entry-id">V-C</span> &nbsp;<span class="entry-title">Probes 6–10 — all mandated outcomes hold</span></span><span class="pill p-verified">Verified</span></div>
+  <div class="entry-meta">Executed 2026-11-17 · Spec §17.10 · Exit 0 · Each fixture fold also checker-passed</div>
+  <ul>
+    <li><b>6 · Difference alone → split:</b> PASS — 2 split entries (one per venue) + 1 dependence entry; neither unknown.</li>
+    <li><b>7 · Parts derived; pair decided:</b> PASS — latency upper bound per class from lowest witnessed rate; lower bound dominates. <i>Proof the machinery decides when both sides carry the axis under a common environment.</i></li>
+    <li><b>8 · Negative control:</b> PASS — unwitnessed axis blocked the pair, named as reason; no dominance recorded anywhere.</li>
+    <li><b>9 · Compounding, proof checked:</b> PASS — trivial step (1 witness) changed exactly its own entries; altered copy refused by checker.</li>
+    <li><b>10 · Joined agreement:</b> PASS — 1 joined entry, environment = joined list of both venues; no dependence, no split.</li>
+    <li><b>Probes 4–5 (§11.5, frontier):</b> also PASS — 4: alpha dominates beta, both gamma pairs incomparable (memory), frontier = {alpha, gamma}, counts 3/1/2, gamma memory printed as the word <i>unknown</i>. 5: budget-stopped receipt reads <i>partial</i> (node-cap 4/4, round 1), permitted whole-space phrase absent everywhere (grep, 0 lines).</li>
+    <li><b>Engine probes 1–3 + negative control:</b> staged, <b>unexecuted</b> — venue-blocked. Not claimed. (1: counter, 16 states/16 classes/0 merges, PROVED by exhaustion. 2: hidden equality, PROVED via commute. 3: Collatz-shaped, UNRESOLVED only. Control: bound+1 loop, DISPROVED.)</li>
+  </ul>
+</article>
+</section>
+
+<!-- 4 FRONTIER -->
+<section id="frontier"><h2><span class="num">04</span> Frontier over the accounting</h2>
+
+<article class="entry" data-state="verified" data-text="frontier alternatives pairs blocked decided dominance coverage gaps">
+  <div class="entry-head"><span><span class="entry-id">V-B</span> &nbsp;<span class="entry-title">67 alternatives · 908 pairs · 0 decided · 908 blocked — every block named</span></span><span class="pill p-verified">Verified</span></div>
+  <div class="entry-meta">Executed 2026-11-17 · Spec §§16.10, 17.9 · Every completeness receipt: partial</div>
+  <table class="table"><thead><tr><th>Project</th><th>Alternatives</th><th>Pairs</th><th>Decided</th><th>Blocked — first failing axis</th></tr></thead><tbody>
+    <tr><td data-l="Project">idol-lib</td><td data-l="Alt">36</td><td data-l="Pairs">630</td><td data-l="Decided">0</td><td data-l="Blocked">effects 595 · correctness 35</td></tr>
+    <tr><td data-l="Project">idol-sites</td><td data-l="Alt">24</td><td data-l="Pairs">276</td><td data-l="Decided">0</td><td data-l="Blocked">capability 276</td></tr>
+    <tr><td data-l="Project">idiom</td><td data-l="Alt">2</td><td data-l="Pairs">1</td><td data-l="Decided">0</td><td data-l="Blocked">effects 1</td></tr>
+    <tr><td data-l="Project">idol-wsp</td><td data-l="Alt">2</td><td data-l="Pairs">1</td><td data-l="Decided">0</td><td data-l="Blocked">effects 1</td></tr>
+    <tr><td data-l="Project">idol · idol-model · idol-wide</td><td data-l="Alt">1 each</td><td data-l="Pairs">0</td><td data-l="Decided">0</td><td data-l="Blocked">—</td></tr>
+  </tbody></table>
+  <p><b>Baseline contrast:</b> prior method — 205 candidate facts, <b>0 attachable</b>, no alternatives existed, dominance never testable. Now the block has <i>moved</i>: from missing parts to named witness-coverage gaps (see §8 — now unoccupied states under S-10). <b>67 alternatives stood for testing; no dominance was decided — all 908 pairs blocked on named missing axes.</b> A blocked pair is unknown under §16.10, not proved nondominance. The entire-saturated-space phrase appears <b>nowhere</b>.</p>
+</article>
+</section>
+
+<!-- 5 COMPARISON -->
+<section id="comparison"><h2><span class="num">05</span> Worked comparison — no guessed winner</h2>
+
+<article class="entry" data-state="verified" data-text="semi persistent pristine fork frontier incomparable widening counterexample verification capability">
+  <div class="entry-head"><span><span class="entry-id">V-D</span> &nbsp;<span class="entry-title">Semi-persistent: pristine 508d7c6 vs fork 0d17632 — incomparable</span></span><span class="pill p-verified">Verified</span></div>
+  <div class="entry-meta">Executed 2026-11-17 · Same contract, same pinned verifier (0.2026.09.20 · toolchain 1.98.1) · Record: semi-persistent-comparison-frontier-2026-11-17.md</div>
+  <div class="grid2">
+    <div class="callout"><b>Capability — fork better.</b><br>Pristine has neither addition. Fork: congruence + facts work (56770f8) + egraph proof checker (0d17632). Gates: abstract-domains <b>197/0/1</b> vs 193/0/1 (+4 new tests); egraph <b>739/0/5</b> vs 731/0/5 (+8 checker tests). Failing set empty on both trees, both crates; no pre-existing test changed state.</div>
+    <div class="callout"><b>Verification — pristine better.</b><br>Pristine: <b>1,259 verified, 0 errors</b>. Fork: <b>1,251 verified</b> · verifier <b>summary: 15 errors</b> · <b>error-line census: 26 failures</b> (22 postcondition, 3 assertion, 1 precondition) — two counts, two units: the summary aggregates, the census counts lines. All from congruence obligations; reproduced exactly on re-run. Stdlib pass identical both sides: 2,059 / 0.</div>
+  </div>
+  <p><b>Real defect, not just missing proofs:</b> one obligation is <i>unprovable as implemented</i> — field-wise widening can produce a <b>non-reduced record</b>, concrete <b>8-bit counterexample</b>. Named fix: snap widened bounds inward to the widened grid inside the widening body (the construction meet already uses). Remainder carry a proof plan from facts already proved in-tree.</p>
+  <p><b>What moves it:</b> fork verification → 0 errors = no-worse on every measured axis + better on capability = <b>dominance on the measured scope</b> (suite + performance unknowns still printed). Lane fired for exactly that.</p>
+</article>
+</section>
+
+<!-- 6 PRACTICE -->
+<section id="practice"><h2><span class="num">06</span> Practice today — gates in production</h2>
+
+<article class="entry" data-state="verified" data-text="qualification practice pair verdicts head compile drift sentinel landing subset">
+  <div class="entry-head"><span><span class="entry-id">V-F</span> &nbsp;<span class="entry-title">Pair verdicts, head-compile gate, drift sentinel</span></span><span class="pill p-verified">Verified</span></div>
+  <div class="entry-meta">2026-11-17 · Fleet records, same day</div>
+  <ul>
+    <li><b>Pair verdicts gate landings:</b> a change is clean only when its failing set is a <b>subset of the base's</b> — implied qualification in practice: you inherit the base's qualifications, you may not add failures.</li>
+    <li><b>Head-compile gate:</b> each new main head verdicted — e.g. <span class="mono">21d4c405 COMPILES</span>.</li>
+    <li><b>Drift sentinel:</b> verdict <span class="mono">DRIFT</span> at <b>91 findings</b> (90 dirty trees, 1 clone-count note) → reconciliation retired <b>54</b> as contained, queued <b>36</b> unique-unlanded.</li>
+    <li><b>Overlap, observed:</b> the same change is routinely judged by several gates at once (tests, verifier, compile, drift) — qualifications overlap and imply each other; the frontier rule is what keeps overlapping verdicts from being collapsed into a single score.</li>
+  </ul>
+</article>
+</section>
+
+<!-- 7 AXES -->
+<section id="axes"><h2><span class="num">07</span> Axes — the space the frontier ranges over</h2>
+
+<article class="entry" data-state="impl" data-text="axis census record required capability effects latency memory build cost aliases named only">
+  <div class="entry-head"><span><span class="entry-id">A-01</span> &nbsp;<span class="entry-title">Census 90 → record 57 · Required 6</span></span><span class="pill p-impl">Implemented</span></div>
+  <div class="entry-meta">2026-11-17 · Census: 32 quality + 58 quantity, 15 alias pairs · Record hash below · decidability-frontier-2026-11-17.md</div>
+  <p><span class="mono">41172ead062223fa86b3ab126c13be2a0bddff574f2b476b956b1d817efc1131</span></p>
+  <ul>
+    <li><b>Axis record:</b> 57 entries (15 quality, 42 quantity) covering 60 census rows; 30 excluded, every exclusion reasoned. 17 named-only axes filed beside it — holes, not entries.</li>
+    <li><b>Required (release scope):</b> <span class="mono">capability · correctness-obligations · effects · latency · memory · build-cost</span></li>
+    <li><b>Bound forms (§1.23.2, settled):</b> latency = <i>lower upper bound</i> wins; throughput = <i>higher lower bound</i> wins; <b>proven bounds only</b> — raw ratios / raw times enter as unknown, never as bounds.</li>
+    <li><b>Alias rulings that matter:</b> capability absorbs power + expressiveness · correctness-obligations absorbs bugs + correctness · build-cost = machinery time + venue time · <b>mass NOT unified</b> (semantic-mass sole entry) · <b>velocity NOT unified</b> (semantic vs flow are two entries) · <b>power ≠ power-draw</b> (quality respect vs quantity, never merged) · <b>witness takes no entry</b> — per-fact property (§1.19); data-layer disagreement stated, not silently resolved.</li>
+    <li><b>Directionless axes:</b> 12+ rows (momentum, kinetic energy, entropies, ideal/filter size, …) carry no dominance direction on record — excluded rather than guessed. Closing condition: a fourth direction form, or a no-direction mark for optional entries.</li>
+  </ul>
+</article>
+</section>
+
+<!-- 8 GAPS -->
+<section id="gaps"><h2><span class="num">08</span> Unoccupied states — inside the finite space</h2><p class="sec-note">Restated under S-05 + S-06, mechanism under S-10 (2026-11-17 17:24). Every gap below is <b>inside</b> the intended, finite space — an in-universe behavior not yet occupied by a witness, not an outside unknown and not a backlog item. Each keeps its closing condition: it <b>occupies on its next execution</b>, or — for records already on disk — enters by the <b>same derivation</b> applied to those inputs, checked by the independent checker. Unknown ≠ zero ≠ loss still holds for reading a fact; it never licenses resting on the gap.</p>
+
+<article class="entry" data-state="settled" data-text="no backfill lane stateless closure superseded census symbolic profiling instrumentation definitional witness">
+  <div class="entry-head"><span><span class="entry-id">B-01</span> &nbsp;<span class="entry-title">No backfill lane — stateless closure replaces it</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Lane fired 2026-11-17 17:15 PST under S-06 · Mechanism class retired 17:24 by S-10</div>
+  <ul>
+    <li><b>What the lane was for, restated statelessly:</b> an execution-surface census (which surfaces emit complete witness parts), the symbolic profiling accounting (SYM-01 / SYM-02), and standing instrumentation so executions carry complete witnesses at run time.</li>
+    <li><b>What is no longer a mechanism:</b> a backfill job that sweeps old executions into the store. Historical records enter by the <b>same pure fold</b> over the same content-addressed witnesses (S-10) — a recomputation, not a scheduled job, and it runs under the independent checker whenever it runs.</li>
+    <li><b>What remains owed:</b> the instrumentation itself — the definitional witness emission (S-07b, proposed) and, for foreign software, the boundary collection of S-09 — so that the next execution of anything below occupies its state by construction.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="impl" data-text="symbolic profiling census spec complete profile as derivation six work items">
+  <div class="entry-head"><span><span class="entry-id">SYM-01</span> &nbsp;<span class="entry-title">Symbolic profiling — census + spec complete</span></span><span class="pill p-impl">Implemented</span></div>
+  <div class="entry-meta">2026-11-17 · State for the entire accounting required by S-06</div>
+  <p>Census and spec <b>complete</b>: <b>profile-as-derivation</b>, with <b>six named work items</b>. This entry is the record layer only — it does not claim a running profiler.</p>
+</article>
+
+<article class="entry" data-state="gap" data-text="symbolic profiling profiler unbuilt ledger cells absent unmeasured backfill">
+  <div class="entry-head"><span><span class="entry-id">SYM-02</span> &nbsp;<span class="entry-title">Symbolic profiling — profiler unbuilt; cells absent / unmeasured</span></span><span class="pill p-gap">Gap</span></div>
+  <div class="entry-meta">2026-11-17 · Unoccupied state (S-10)</div>
+  <p>The profiler itself is <b>unbuilt</b>. Ledger standing: <b>two cells absent</b>, the rest <b>unmeasured</b>. <b>Close:</b> build the profiler under its spec's six work items; measure the cells; absent cells enter as entrants or stand as named absences with witnesses — not rested on.</p>
+</article>
+
+<article class="entry" data-state="gap" data-text="gap effects coverage idol lib witnesses backfill obligation"><div class="entry-head"><span><span class="entry-id">G-01</span> &nbsp;<span class="entry-title">Effects — idol-lib 0 of 36 states · blocks 597 pairs</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Verified by inspection · Unoccupied state (S-10)</div><p>Effects witnesses exist only in idol-sites records (483 entries). <b>Close:</b> per-definition effect rows recorded as witnesses at their pins. Same obligation, smaller: idiom, idol, idol-model, idol-wide, idol-wsp carry none.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap capability idol sites witnesses backfill obligation"><div class="entry-head"><span><span class="entry-id">G-02</span> &nbsp;<span class="entry-title">Capability — idol-sites 0 of 24 states · blocks 276 pairs</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Unoccupied state (S-10)</div><p>Idol-sites effects are fully carried under a common environment — its pairs still all fail at capability first. <b>Close:</b> capability facts witnessed for sites states in the census records.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap build cost no witness wall time venue backfill"><div class="entry-head"><span><span class="entry-id">G-03</span> &nbsp;<span class="entry-title">Build-cost — no witness anywhere</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Unoccupied state (S-10)</div><p>No witness anywhere carries a recorded cost time, so build-cost is unknown for every class. <b>Close:</b> gate + bench runs carry wall time + venue in their witness; the first such witness compounds with no derivation change, and runs already recorded enter by the same fold (S-10).</p></article>
+
+<article class="entry" data-state="gap" data-text="gap memory two entries idol model backfill"><div class="entry-head"><span><span class="entry-id">G-04</span> &nbsp;<span class="entry-title">Memory — 2 entries total</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Unoccupied state (S-10)</div><p>Two entries in the whole accounting, both idol-model; no idol-lib or idol-sites state carries memory. <b>Close:</b> memory measurements recorded as witnesses.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap correctness obligations one state idol lib idol sites backfill"><div class="entry-head"><span><span class="entry-id">G-05</span> &nbsp;<span class="entry-title">Correctness obligations — 1 idol-lib state missing; idol-sites none</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Unoccupied state (S-10)</div><p>One idol-lib state of 36 carries no correctness fact (its 35 pairs block there first); idol-sites carries none at all. <b>Close:</b> obligations witnessed per state.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap latency idol lib only corpus backfill"><div class="entry-head"><span><span class="entry-id">G-06</span> &nbsp;<span class="entry-title">Latency — idol-lib only (4 entries, 25 of 36 states)</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Unoccupied state (S-10)</div><p><b>Close:</b> speed witnesses whose contracts name corpus sizes, for the other projects.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap uncertainty underivable idol idol sites spread ranges backfill"><div class="entry-head"><span><span class="entry-id">G-07</span> &nbsp;<span class="entry-title">Uncertainty underivable — 3 idol + 251 idol-sites entries</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Named per fact (S-02) · Unoccupied state (S-10)</div><p>Those witnesses record no spread, so uncertainty cannot be derived for them. <b>Close:</b> witnesses that record ranges for those facts.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap input digest nowhere supported backfill instrumentation"><div class="entry-head"><span><span class="entry-id">G-08</span> &nbsp;<span class="entry-title">Input digest — supported nowhere on disk (count 0)</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Unoccupied state (S-10) · Standing fix: definitional emission, B-01</div><p><b>Close:</b> producers carry input digests in the witness their runs emit; the definitional emission (B-01) makes that happen at run time.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap saturation committed graph classes classifications backfill engine battery"><div class="entry-head"><span><span class="entry-id">G-09</span> &nbsp;<span class="entry-title">Saturation — no committed saturated graph; no completeness claim</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Owed execution, inside the space — occupies when the battery runs (S-10)</div><p>Classes stand on recorded transition classifications + gate verdicts, not a committed graph under §16.7. Every receipt reads <i>partial</i>. <b>Close:</b> engine battery executes; each project's committed saturated graph replaces the classification join.</p></article>
+
+<article class="entry" data-state="gap" data-text="gap integration suites semi persistent quota checker binary backfill"><div class="entry-head"><span><span class="entry-id">G-10</span> &nbsp;<span class="entry-title">Integration suites — never completed on either semi-persistent tree</span></span><span class="pill p-gap">Gap</span></div><div class="entry-meta">2026-11-17 · Symmetric on both trees · Unoccupied state (S-10)</div><p>Every attempt died mid-compile on quota / restarts; the fork checker binary build died on the same quota write. No suite failure was ever observed. <b>Close:</b> one run in a working-quota window, full log captured; that execution carries its witness into the ledger like every other (S-10).</p></article>
+</section>
+
+<section id="implications"><h2><span class="num">09</span> Implications — completely spelled out</h2>
+<p class="sec-note">This section is new in this revision. It does not add new rulings. It spells out, in plain language, what §§0–8 already entail if you take them seriously — for the person writing code, the person reviewing it, the person paying for compute, and the person asked to trust a claim. Where an implication is a direct logical consequence it is marked <b>Settled intent</b>; where it is a practical consequence that still needs a ruling to enforce, it is marked <b>Proposed</b>. Read it as: “if the proposal above is true, then the following must also be true.”</p>
+
+<article class="entry" data-state="settled" data-text="implications overview what changes in one page before after summary">
+  <div class="entry-head"><span><span class="entry-id">I-00</span> &nbsp;<span class="entry-title">What changes, in one page</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Implication of S-01 – S-10 · Read this first if you read nothing else in §9</div>
+  <p class="imp-lead">The proposal replaces “we think it’s better” with “here is the frontier, here are the witnesses, here is what is still unknown — recompute it yourself.” Everything else in §9 is that sentence applied to a different job.</p>
+  <div class="table-wrap"><table class="beforeafter"><thead><tr><th style="width:28%">Question</th><th style="width:36%">Before — ordinary practice</th><th>After — under this proposal</th></tr></thead><tbody>
+    <tr><td><b>Is A better than B?</b></td><td>A score, a benchmark average, a reviewer’s impression.</td><td>Only if A is no-worse on <i>every</i> required axis and better on at least one, on the same scope, from witnessed facts. Otherwise: <b>incomparable</b> or <b>unknown</b> — both are honest answers.</td></tr>
+    <tr><td><b>What counts as evidence?</b></td><td>A screenshot, a log line, a number in a PR description.</td><td>A <b>witness</b>: a content-addressed record with venue, pin, and run in its provenance, that joins the append-only ledger and survives an independent re-check.</td></tr>
+    <tr><td><b>What does “unknown” mean?</b></td><td>Often treated as zero, as failure, or quietly dropped.</td><td>A first-class state. Unknown <b>blocks dominance</b>, is named per fact and per axis, and is never converted to a loss or a pass.</td></tr>
+    <tr><td><b>Who checks the checker?</b></td><td>The same tool that produced the result.</td><td>An <b>independent checker</b> that imports nothing from the derivation. If it cannot recompute the fold and match every hash, the claim is not “checked.”</td></tr>
+    <tr><td><b>What happens to history?</b></td><td>Old results are overwritten, imported by one-off jobs, or lost.</td><td>History enters by the <b>same pure fold</b> over the same witnesses. No backfill jobs, no special import path, no coordination state (S-10).</td></tr>
+    <tr><td><b>What about software you didn’t write?</b></td><td>Out of scope, trusted on its word, or excluded.</td><td>In scope by construction: lifted into the graph, sensed at the kernel boundary, represented in Idol’s form at the highest resolution the platform affords (S-08, S-09).</td></tr>
+  </tbody></table></div>
+  <p><b>Net effect:</b> fewer claims, stronger claims. Most pairs today will not be decided — §4 shows 908 of 908 blocked, each for a named reason. That is not the system failing. That is the system refusing to guess, and telling you exactly which witness would unblock it.</p>
+</article>
+
+<div class="imp-grid" style="margin-bottom:12px">
+  <div class="imp-card"><h3><span>For the author</span>You cannot hand-wave a win</h3><p>If you say “faster”, you must say on which axis, on which corpus, in which environment, with what uncertainty — and point to the witness. A raw time with no corpus is unknown, not a bound (A-01).</p></div>
+  <div class="imp-card"><h3><span>For the reviewer</span>You review the frontier, not a vibe</h3><p>Your question changes from “do I believe this?” to “which axis blocks this pair, and is that block real?” Every block in §4 is named — effects, capability, correctness — so review becomes checkable work, not taste.</p></div>
+  <div class="imp-card"><h3><span>For the team</span>No single score to game</h3><p>There is no leaderboard number to optimise at the expense of everything else. Improving one axis while silently regressing another does not produce dominance — it produces incomparability, printed as such.</p></div>
+  <div class="imp-card"><h3><span>For the reader later</span>Claims stay recomputable</h3><p>Because the fold is associative, commutative and idempotent, a reader in six months can recompute the accounting from scratch, in any order, and get the same result — or find exactly where it diverges.</p></div>
+</div>
+
+<article class="entry" data-state="settled" data-text="implications developers writing code daily workflow witness definitional execution">
+  <div class="entry-head"><span><span class="entry-id">I-01</span> &nbsp;<span class="entry-title">For anyone who writes or changes code</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Implication of S-06, S-07, S-10</div>
+  <ul>
+    <li><b>Every execution you cause is a witness.</b> Not just the benchmark you meant to run — the test run, the gate run, the trivial local run. Under S-10 the witness is <i>definitional</i> to the execution: it is part of the result, not a report you file afterwards if you remember.</li>
+    <li><b>“It worked on my machine” becomes data, not an anecdote.</b> A per-venue difference is independently sufficient signal (S-02, V-E). If your machine disagrees with CI, that disagreement is a split entry with an environment signature — it is kept, not averaged away.</li>
+    <li><b>You inherit qualifications.</b> In practice today (V-F) a landing is clean only if its failing set is a subset of the base’s. You may not add failures and call it a wash because other things improved.</li>
+    <li><b>Unfinished work stays visibly unfinished.</b> If your change has no effects witness, no memory witness, no build-cost witness, those axes read <i>unknown</i> for your alternative — and they will block any dominance claim you try to make for it. The gap is printed next to your change, not buried.</li>
+    <li><b>What you do <i>not</i> have to do:</b> run a backfill job, file a separate coverage report, or coordinate with anyone about ledger order. Duplicate witnesses change nothing; arrival order changes nothing.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="implications testing ci gates landing three valued proved disproved unresolved">
+  <div class="entry-head"><span><span class="entry-id">I-02</span> &nbsp;<span class="entry-title">For testing, CI, and landing changes</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Implication of S-04 · Gates are three-valued</div>
+  <ul>
+    <li><b>CI stops being pass/fail.</b> Every gate returns <span class="mono">PROVED / DISPROVED / UNRESOLVED</span>. UNRESOLVED is not a flaky failure to retry until green — it names one boundary, in priority order: <b>budget → frontier → rules</b>. You fix the named boundary, or you ship knowing it is unresolved, under shepherd policy. You do not silently convert it.</li>
+    <li><b>Overlapping gates are expected, not redundant.</b> The dictation in P-00 starts here: qualifications may be implied and may overlap. Tests, verifier, compile, and drift (V-F) judging the same change at once is the normal case. The frontier rule is what stops overlapping verdicts being collapsed into one misleading score.</li>
+    <li><b>A gate that cannot name its premises cannot merge its result.</b> Equalities merge only under the same stated premises (S-01). A green run under different premises is a different fact, not a stronger version of yours.</li>
+    <li><b>Flakiness gets a precise meaning.</b> Two witnesses for the same fact in different environments that disagree are <i>contested</i> or <i>split</i> — carried, never dropped (C-02, §17.4). “Re-run until it passes” destroys exactly the signal the accounting is built to keep.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="implications performance benchmarks bounds latency throughput corpus uncertainty">
+  <div class="entry-head"><span><span class="entry-id">I-03</span> &nbsp;<span class="entry-title">For performance work and benchmark claims</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Implication of A-01 bound forms · V-E per-venue signal</div>
+  <ul>
+    <li><b>Only proven bounds count.</b> Latency wins as a <i>lower upper bound</i>; throughput wins as a <i>higher lower bound</i>. A single raw timing, a ratio without a corpus, a best-of-N with no spread — all enter as <b>unknown</b>.</li>
+    <li><b>Every speed claim must name its corpus.</b> The headline join in V-E (cbor decode: throughput lower bound 1.44, latency upper bound 27.63 ms) is only sayable because the contract names a 41,723-byte corpus. Without that, the same numbers would be unusable.</li>
+    <li><b>Environment is part of the measurement, not metadata.</b> V-E shows the certification environment reading systematically slower on all six shared facts. Under this proposal that pattern is <i>derived from the differences alone</i> — you do not need to have pre-labelled the environments for the signature to appear.</li>
+    <li><b>Uncertainty is not optional decoration.</b> 251 idol-sites entries currently have underivable uncertainty because their witnesses record no spread (G-07). Those facts can be listed, but they cannot support a tight bound. Recording a range is what makes a performance fact usable.</li>
+    <li><b>Consequence for optimisation work:</b> the cheapest way to “win” a comparison is often not to optimise code — it is to <i>witness the axis that is currently blocking the pair</i>. §8 is, read this way, a prioritised optimisation backlog: effects for idol-lib (597 pairs), capability for idol-sites (276 pairs), build-cost everywhere (no witness at all).</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="implications choosing implementations frontier pareto incomparable no leaderboard ranking">
+  <div class="entry-head"><span><span class="entry-id">I-04</span> &nbsp;<span class="entry-title">For choosing between two implementations</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Implication of S-01 frontier rule · V-D worked example</div>
+  <ul>
+    <li><b>There is no total ranking.</b> Alternatives form a frontier, not a leaderboard. Two good implementations can both stay on the frontier, incomparable, because each is better on a different axis. Keeping both is a correct outcome, not indecision.</li>
+    <li><b>“Incomparable” is an actionable answer.</b> V-D is the template: pristine vs. fork is incomparable — fork better on capability, pristine better on verification (1,259 vs. 1,251 verified, 0 vs. 15 summary errors). The page does not pick a winner. It names <i>exactly what would move it</i>: fork verification to 0 errors, and the fork dominates on the measured scope.</li>
+    <li><b>Tie-breaks do not decide.</b> Content-ID ordering orders <i>display only</i> (S-01). Alphabetical, newest-first, or author preference must never be presented as a quality result.</li>
+    <li><b>Cross-project comparisons are never tested.</b> No cross-project pairs (§16.10, C-03). “Our library is faster than their unrelated tool” is not a frontier claim this system will ever produce.</li>
+    <li><b>Decision-making consequence:</b> if you must choose today with a blocked pair, you are choosing <i>under named ignorance</i>. The record shows which axis you are guessing about. That is a very different meeting from one where a single score hid the guess.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="implications releases shippable done completeness receipt partial saturated claim discipline">
+  <div class="entry-head"><span><span class="entry-id">I-05</span> &nbsp;<span class="entry-title">For releases — and for saying “done”, “better”, or “complete”</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">Implication of S-01 completeness receipt · §17.12 claim discipline</div>
+  <ul>
+    <li><b>“The entire saturated space” is a gated phrase.</b> It may be said only on an exhaustive fixed point over a finite, explicitly defined universe with all rules fairly applied — demonstrated by an actual final empty round, not asserted. Every receipt in §4 currently reads <b>partial</b>, and the phrase appears nowhere on this page. That restraint is the system working.</li>
+    <li><b>A budget stop is not a completion.</b> If saturation stopped at node-cap, round-cap, or time-cap, the receipt is an exact <i>partial</i> record and the remainder is unknown. Shipping notes that omit that are misclaiming, even if the code is fine.</li>
+    <li><b>Retraction is normal and does not erase history.</b> Retract a fact and the frontier recomputes; the earlier snapshot is retained (S-01). A release can therefore be corrected without pretending the earlier claim never existed.</li>
+    <li><b>A release snapshot is the unit of qualification.</b> Rule-set, term universe, evidence snapshot, premises, graph and frontier are committed together under typed roots. “Which version was better?” is only answerable snapshot-to-snapshot, never floating-head to floating-head.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="implications foreign legacy third party arbitrary software kernel lifting boundary sensing supply chain">
+  <div class="entry-head"><span><span class="entry-id">I-06</span> &nbsp;<span class="entry-title">For foreign, legacy, and third-party software</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Implication of S-08, S-09 · Mechanism in S-08b is still Proposed — the scope is not</div>
+  <ul>
+    <li><b>“Not our code” stops being an exemption.</b> The construction must cover any software, in any language, on any kernel. A dependency, a legacy binary, a vendor tool — each is lifted into the graph and sensed at the boundary every program must cross: process lifecycle and the syscall stream.</li>
+    <li><b>You may use any hook necessary — and you own the representation.</b> S-09 corrected an earlier, purist reading: collection may use any foreign hook a platform requires. What must be Idol-owned, and <i>provably</i> most robust and highest-resolution, is the representation: finite, determinable, at the highest physical, temporal and ordering resolution the platform affords, collected once and thereafter known by derivation.</li>
+    <li><b>Supply-chain consequence:</b> a third-party component’s qualification is not its vendor’s datasheet. It is the set of witnessed behaviours of that component, in your environments, joined into the same lattice as your own code — filterable by venue, state, and project like everything else.</li>
+    <li><b>Honest limit, printed:</b> “most robust, highest resolution” is a proof obligation per environment, not an adjective (S-09). Until that proof exists for a given kernel, that environment’s resolution claim stays at whatever state its evidence supports.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="implications venues time compute cost pareto parallel minimum dictation cloud spend">
+  <div class="entry-head"><span><span class="entry-id">I-07</span> &nbsp;<span class="entry-title">For venues, time, and compute cost</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">Implication of P-00 — Chris’s dictation, still Proposed until ruled settled</div>
+  <ul>
+    <li><b>Venue choice is itself a Pareto problem.</b> P-00 applies the same dominance rule to venues as S-01 applies to programs, on two objectives: <b>time ↓ and compute ↓</b>. A venue dominates only if it is no-worse on both and better on one. The diagram in §0 is the whole argument: A, B, C, D are all on the frontier; the hollow venues are dominated and should not be chosen for that workload.</li>
+    <li><b>“Fastest” and “cheapest” are different claims, and both can be true of different venues.</b> Collapsing them into cost-per-run or a single cloud bill hides the trade-off the frontier exists to show.</li>
+    <li><b>Parallel solving is part of the dictation, not an optimisation.</b> “I solve the Pareto optimal in parallel given a finite set of venues” — the solve is parallel because the venue set and the behaviour set are both finite. Finiteness (S-05) is what makes exhaustive, parallel frontier computation tractable at all.</li>
+    <li><b>Build-cost is currently the blind spot.</b> It is a required axis, and no witness anywhere carries a recorded cost time (G-03). Until gate and bench runs carry wall time + venue in their witness, every venue comparison that needs build-cost is blocked — exactly as the frontier in §4 is blocked today on effects and capability.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="implications operations incidents debugging reproducibility stateless fold recompute">
+  <div class="entry-head"><span><span class="entry-id">I-08</span> &nbsp;<span class="entry-title">For operations, incidents, and debugging</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">Practical consequence of S-09 (collected once) and S-10 (pure fold)</div>
+  <ul>
+    <li><b>You do not re-observe what you already collected.</b> State collected once at the boundary is known by derivation thereafter (S-09). An incident investigation that starts by re-running the failing thing under a different environment is destroying its own evidence — the first execution’s witness is the record.</li>
+    <li><b>Debugging becomes filtering, not archaeology.</b> The five filter faces (§17.7) — by class, axis, venue/environment, state, project — were re-executed and matched exactly in V-A. “Show me every latency fact for this state, on this venue, that is contested” is a query, not a week of log-diving.</li>
+    <li><b>Reproducibility is a property of the fold, not of discipline.</b> Because the join is associative, commutative and idempotent, two operators folding the same witnesses in different orders get the same accounting. “Works on my fold” is checkable in the same way a hash is.</li>
+    <li><b>Symbolic profiling is part of the same accounting — when it exists.</b> S-06 requires an entire accounting of it. Today the spec and census are complete (SYM-01) and the profiler is unbuilt, its cells absent or unmeasured (SYM-02). That gap is printed, not smoothed over — which is itself the operational implication: you currently cannot claim profile-level explanations for those cells.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="implications audit compliance trust external reviewer provenance checker independent">
+  <div class="entry-head"><span><span class="entry-id">I-09</span> &nbsp;<span class="entry-title">For audit, compliance, and anyone asked to trust a claim</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">Implication of C-01 verdict records and V-A independent checker</div>
+  <ul>
+    <li><b>An auditor does not need to trust the team, the tool, or this page.</b> A verdict record is self-contained, in exact field order, with its record hash (§9 of the engine spec). The independent recheck program must exist <i>before</i> any record may be labelled “checked” — and the engine never labels its own output checked.</li>
+    <li><b>Tampering is detectable by construction.</b> In V-A, one altered value in a copy of the fold was refused by the checker. That control is the compliance story in miniature: change a number, break a hash, get refused.</li>
+    <li><b>Provenance replaces attestation.</b> Instead of a person signing “we tested this”, each fact carries workload, environment, uncertainty and evidence — or derives them from witness provenance (venue, pin, run). Where a part cannot be derived, it is named per fact (S-02), so an auditor sees the hole rather than a signature covering it.</li>
+    <li><b>The four states are an audit control.</b> Settled / Proposed / Implemented / Verified, never blurred, means a roadmap item can never be read as a delivered capability without changing its label — and the label change is itself a visible act.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="implications product planning resourcing prioritisation gaps backlog what to build next">
+  <div class="entry-head"><span><span class="entry-id">I-10</span> &nbsp;<span class="entry-title">For product, planning, and what to build next</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">Reading §8 as a prioritised backlog</div>
+  <ul>
+    <li><b>§8 is a prioritisation, whether it was meant as one or not.</b> Rank gaps by pairs blocked: effects for idol-lib (597) → capability for idol-sites (276) → correctness for idol-lib (35) → everything in G-03–G-08. Witnessing one axis can unblock hundreds of comparisons at once; building a new feature unblocks none.</li>
+    <li><b>“Coverage” stops being a percentage someone estimates.</b> The space is finite and intended (S-05). A gap is an unoccupied state <i>inside</i> that space, with a closing condition. Planning can therefore say “these 10 states, closed by these executions” instead of “improve coverage.”</li>
+    <li><b>Every run compounds — including trivial ones.</b> S-03: even a trivially measured run joins the unified set and strengthens the accounting, with its derivation carried. There is no “too small to record” run. Conversely, an unrecorded run contributes nothing, however impressive it felt.</li>
+    <li><b>Resourcing consequence:</b> instrumentation work (definitional witness emission, B-01) is not overhead beside the product work. Under this proposal it <i>is</i> what makes every other team’s claims decidable. Deferring it defers every dominance decision that depends on it.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="settled" data-text="implications forbidden cannot do checklist anti patterns banned claims">
+  <div class="entry-head"><span><span class="entry-id">I-11</span> &nbsp;<span class="entry-title">What becomes forbidden</span></span><span class="pill p-settled">Settled intent</span></div>
+  <div class="entry-meta">Direct negations of S-01 – S-10 · If you do one of these, you have left the proposal</div>
+  <ul class="checklist">
+    <li>Treating unknown as zero, as a loss, or as a pass — in a table, a chart, or a sentence.</li>
+    <li>Claiming dominance from a single axis, a single benchmark, or a single venue.</li>
+    <li>Collapsing several axes into a weighted score and presenting the score as a quality fact.</li>
+    <li>Using a raw time or raw ratio as a bound.</li>
+    <li>Dropping a contested or split fact because it is inconvenient, or re-running until it agrees.</li>
+    <li>Labelling your own output “checked” without an independent checker.</li>
+    <li>Saying “the entire space” / “all equivalent programs” on a partial, budget-stopped, or uncommitted saturation.</li>
+    <li>Closing a gap by deleting it, renaming it as “out of scope”, or moving it outside a space that S-05 says has no outside.</li>
+    <li>Scheduling a backfill job as the mechanism for coverage — the mechanism class was retired in S-10.</li>
+    <li>Presenting a Proposed or Settled entry as Verified, in a slide, a release note, or a sales claim.</li>
+  </ul>
+  <p style="margin-top:12px"><b>And what becomes required instead:</b></p>
+  <ul class="checklist ok">
+    <li>Name the axis, scope, corpus, environment and uncertainty behind every comparative claim — or mark it unknown.</li>
+    <li>Keep incomparable alternatives on the frontier, printed, until a witness decides them.</li>
+    <li>Carry the derivation with every composition step, so compounding is checked, never asserted.</li>
+    <li>State the closing condition for every gap you file, in the same act as filing it.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="gap" data-text="implications costs risks limits does not promise honest tradeoffs overhead">
+  <div class="entry-head"><span><span class="entry-id">I-12</span> &nbsp;<span class="entry-title">Costs, risks, and what this does <i>not</i> promise</span></span><span class="pill p-gap">Gap</span></div>
+  <div class="entry-meta">Honest limits · Filing these does not weaken the proposal — hiding them would</div>
+  <ul>
+    <li><b>It is slower to claim anything.</b> Most comparisons will sit blocked for a long time — 908 of 908 today. Teams used to a quick “ship it, it’s faster” will experience this as friction. The friction is the point, but it is a real cost in speed of conversation.</li>
+    <li><b>Instrumentation must be built before it pays off.</b> Definitional witness emission (S-07b) and the symbolic profiler (SYM-02) are not yet built. Until they are, witnessing is partial and many axes stay unknown. The proposal does not conjure witnesses for free.</li>
+    <li><b>Storage and derivation are not free — they are bounded differently.</b> Symbolic witnesses share repeated structure in the graph, so maximal resolution costs the size of the derivation, not the size of a trace (S-07b). That is a strong claim about growth, and it holds only if sharing is actually implemented as specified.</li>
+    <li><b>It does not prove correctness of the underlying software.</b> It qualifies behaviour that has been witnessed and equivalences that have been saturated under stated premises. An unwitnessed behaviour is unoccupied, not safe. A saturated graph is complete only under its rule-set and universe (S-01).</li>
+    <li><b>It does not settle P-00 or the proposed mechanisms by spelling them out.</b> Venue-Pareto solving, lifting + boundary sensing, and the witness-hook mechanism remain <b>Proposed</b> until Chris rules them settled. This section must not be cited as that ruling.</li>
+    <li><b>It does not make incomparable decisions for you.</b> When two alternatives stay on the frontier, a human still chooses — on cost, on taste, on strategy — and now must do so openly, as a choice under named ignorance rather than as a computed result.</li>
+    <li><b>Adopting it partially is coherent, but the claims must shrink with it.</b> Use only the frontier rule, and you may claim only frontier results. Use only the witness ledger for one project, and cross-project claims stay untested by design. Partial adoption with full-size claims is the one incoherent option.</li>
+  </ul>
+</article>
+
+<article class="entry" data-state="proposed" data-text="implications closing test five questions ask any claim checklist reader">
+  <div class="entry-head"><span><span class="entry-id">I-13</span> &nbsp;<span class="entry-title">The closing test — five questions for any claim you meet</span></span><span class="pill p-proposed">Proposed</span></div>
+  <div class="entry-meta">For readers of this page, and of any claim made under it</div>
+  <p>When anyone — including this page — tells you something is better, faster, safer, or done, ask:</p>
+  <ul>
+    <li><b>1 · On which axes?</b> Name them. If an axis is required and missing, the claim is blocked, not made.</li>
+    <li><b>2 · On what scope and corpus?</b> Same snapshot, same contract, same premises — or it is a different fact.</li>
+    <li><b>3 · From which witnesses?</b> Point to them, with venue, pin and run. No witness, no fact — only unknown.</li>
+    <li><b>4 · Who checked it independently?</b> If the producer is the only checker, it is not checked yet.</li>
+    <li><b>5 · What is still unknown, and what would close it?</b> A claim that cannot answer this is hiding its gaps. A claim under this proposal answers it by construction — the gap list is §8, and it only shrinks when an execution occupies the state.</li>
+  </ul>
+  <p><b>If those five can be answered, you do not need to trust the claimant.</b> You can recompute the frontier yourself. That — not a new dashboard, not a new score — is the implication of the whole proposal.</p>
+</article>
+</section>
+
+<section id="sources"><h2><span class="num">—</span> Sources on disk</h2>
+<div class="callout" style="font-size:13px">
+Decidability engine spec §§1–17 — <span class="mono">spec-decidability-engine-2026-11-17.md</span> (94,060 B) · Effect-accounting record — <span class="mono">decidability-effects-2026-11-17.md</span> · Frontier / axis record — <span class="mono">decidability-frontier-2026-11-17.md</span> + <span class="mono">decidability-axis-census-2026-11-17.md</span> (32 Q / 58 M / 15 pairs) · Semi-persistent frontier — <span class="mono">semi-persistent-comparison-frontier-2026-11-17.md</span> · Coordinator record — <span class="mono">decidability-engine-2026-11-17.md</span> · Dictation — <span class="mono">venue-pareto-dictation-2026-11-17.md</span> · Framing + no-gaps ruling 17:15 PST · Robust-across-foreign-baggage ruling 17:22 PST · Stateless / no-backfill ruling 17:24–17:26 PST — standing memory record, 2026-11-17. All dated 2026-11-17, workspace research folder. This page is a snapshot of those records at build time; a living spec is updated by rebuilding it as new findings land.
+</div>
+</section>
+
+</main>
+</div>
+<footer>Living spec · a proposal for the qualification of software · Rev 2026-11-17 (17:26) · Design + §9 Implications added 2026-11-17 · States: settled intent / proposed / implemented / verified — never blurred · Unknown is not zero and not a loss · No backfill jobs — the witness is definitional, the fold is stateless</footer>
+</div>
+<script>
+var chips=document.querySelectorAll('.chip'), q=document.getElementById('q'), entries=document.querySelectorAll('.entry'), count=document.getElementById('count'), cur='all';
+function apply(){
+  var term=(q.value||'').toLowerCase(), n=0;
+  entries.forEach(function(e){
+    var states=(e.getAttribute('data-state')||'').split(' ');
+    var okS = cur==='all' || states.indexOf(cur)>-1;
+    var okQ = !term || (e.textContent+' '+(e.getAttribute('data-text')||'')).toLowerCase().indexOf(term)>-1;
+    var show=okS&&okQ; e.classList.toggle('hidden',!show); if(show)n++;
+  });
+  count.textContent=n+' shown';
+  document.querySelectorAll('main section').forEach(function(s){
+    var vis=s.querySelectorAll('.entry:not(.hidden)').length;
+    s.classList.toggle('hidden', vis===0 && s.id!=='sources');
+  });
+}
+chips.forEach(function(c){c.addEventListener('click',function(){chips.forEach(function(x){x.classList.remove('active')});c.classList.add('active');cur=c.getAttribute('data-f');apply();});});
+q.addEventListener('input',apply); apply();
+</script>
+</body>
+</html>
