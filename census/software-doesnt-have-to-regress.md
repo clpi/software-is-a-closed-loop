@@ -1,35 +1,83 @@
-# Census — software-doesnt-have-to-regress
+# Census — software-doesnt-have-to-regress — refresh draft
+
+Census date: 2026-11-18, ~02:10–02:40 PST. Method: live head read first via the gh route, shallow clone (depth 1), clone head verified equal, every file read. Clone read only, never edited. This draft replaces the census of the older pin; changes are marked in the Delta section.
 
 ## Pin and identity
 
-- Live head (gh API, read first): `24d36c13414867e59ae67ccf47f83cc250ce55af`
-- Clone head (shallow clone, depth 1): same as live head — verified match.
-- Visibility (gh API): private. Default branch: master (only branch).
-- Toolchain pin: **none** — no lean-toolchain file exists.
-- Contents at head (recursive tree, confirmed by API and clone): exactly one file, `README.md`, 2 lines. No Lean modules, no check script, no check log, no controls file.
+- Old census pin: `24d36c13414867e59ae67ccf47f83cc250ce55af` — exactly one file (a two-line readme), theorem count 0, no toolchain.
+- Live head (default branch `master`): `c36829da6f687d52b7d7998edc5ef55f4c244077`. Clone head matches exactly. Head commit subject, plainly: add a checked before-and-after example for log batching.
+- Visibility: private.
+- Toolchain pin: Lean 4.19.0. Core Lean only; two sibling repositories are pinned git dependencies (below).
+- Files at head: a substantial readme with a claims table, a check script, a recorded check log, a lakefile plus manifest, a gate executable, the package library (root module plus 8 submodules), and a worked-examples folder with one proved example. Theorem total in tree: **131** (125 in the package library, 6 in the worked example).
+
+## Delta (old pin to this pin)
+
+- **Shell to full proof package.** At the old pin this was a title-and-one-line stub: theorem count 0, no toolchain, no evidence, thesis state claimed-not-proven. At this pin the thesis is developed in full: 125 library theorems, a claims table with explicit proven and disproven rows, named premises carried openly, a recorded gate log with rejected controls, and pinned dependencies on the two sibling repos whose results it builds on. This is the largest change in this refresh set.
+- **Dependencies are pinned at older sibling pins.** The lakefile requires the composable sibling at its old census pin and the quantifiable sibling at a named older commit. The proofs therefore rest on those pins, not on the siblings' current heads; the composable sibling's newer bridge results are not used here (one headline row below re-proves the needed agreement locally).
+- **A worked example landed with the package** (6 theorems on batching log writes), censused at the end.
 
 ## Thesis (as stated)
 
-The README's single descriptive line, in plain English: a Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress. That is the entire stated claim. There is no further prose, no definitions, no scope statement.
+Plain English: a release process with per-symbol observed-behaviour certification never has to regress. Developed form at this pin: an executable per-symbol gate accepts a candidate step only for a strict gain that drops no qualified behaviour and worsens no bound endpoint (otherwise it keeps the incumbent); shipped releases therefore stay related by the no-regression relation, and a finite search over a candidate universe ships an undominated release when a strict improvement exists. Separately: a baseline-guarded selection never returns a release worse than the baseline on any authorised axis, and a recheck cone that includes context, data, configuration, and deployment nodes catches regressions that a symbol-only cone provably misses.
 
-## Theorem census
+## Headline census (the readme claims table; axiom evidence from the recorded check log)
 
-- Theorem / lemma count: **0**.
-- There are no `.lean` files, so there are no theorems, lemmas, definitions, examples, or guards to census. Nothing in the repo formalizes "release process", "per-symbol", "observed behavior", "certification", or "regress".
+The recorded log prints axiom sets for 28 headline theorems (the implications module); every set is within the standard three or empty. States below are the readme's own, checked against the sources.
 
-## Evidence claims
+| Claim (one quoted name per row) | State | What it proves, plainly, and its premises |
+|---|---|---|
+| `baseline_is_witness` | proven from premises | On the selected axes, an eligible baseline with consistent interval measurements is no worse than itself, including on every authorised axis. Premises carried: the baseline stays eligible; the authorised axes are the selected ones; the measurements are valid. |
+| `select_never_regresses` | proven from premises | The selection returns the baseline or the first guarded candidate; on every authorised axis the result's upper bound is at most the baseline's, the baseline interval stays consistent, and the baseline predicate stays true. Same three premises. |
+| `select_keeps_baseline_available` | proven from premises | If the baseline is also in the candidate list, it survives the guarded filter. Premises: baseline stays eligible; measurements valid. |
+| `not_per_execution_dominance` | refuted (disproof) | Overlapping interval bounds do not imply every in-bound execution is faster. This row restates the quantifiable sibling's disproof of the same shape. |
+| `accepted_not_per_execution` | refuted (disproof) | A gate acceptance on the stated bounds still allows a slower individual execution (18 against 10). Per-execution non-regression is disproved for this gate. |
+| `unchanged_symbol_context_recheck` | proven | An unchanged symbol that depends on a changed context node is in the cone, and the symbol is not itself a changed seed. |
+| `ariane_symbol_only_misses` (pair with its context-catch companion) | proven | A finite model graph of the stated incident shape: the symbol-only cone misses the unchanged symbol; the context edge puts it in the cone. The readme states these graphs are finite models, not incident narratives and not measurements. |
+| `crowdstrike_symbol_only_misses` (pair with its data-catch companion) | proven | Same shape with a changed data node: symbol-only cone misses, data edge catches. |
+| `knight_symbol_only_misses` (with two catch companions) | proven | Same shape with changed configuration and deployment nodes: each puts the unchanged symbol in the cone; the symbol-only cone misses it. |
+| `accepted_strict` (with the step-witness and completeness companions) | proven | Acceptance holds only for a strict gain that drops no qualified behaviour and worsens no bound endpoint; the step otherwise keeps the incumbent; and the acceptance predicate is complete for that definition. |
+| `shipped_chain` (with the two ascend companions) | proven | On a stream, shipped releases stay no-regression related; if the finite universe contains a strict improvement, the ascending search ships one and is undominated by that universe after the stated number of steps. |
+| `not_every_gate_complete` (pair with its decider companion) | refuted (for the universal claim) | Keeping every release is non-regressing yet refuses a strict improvement — so not every gate is complete; the companion construction turns any boolean gate that matches a relation into a decider for that relation. |
+| `not_unobserved_nonregression` (pair with its coverage companion) | refuted without the premise; implication proven | Qualified behaviour never in the prior qualified set can disappear while acceptance holds. The companion implication is proved: if the upstream no-loss predicate holds for the prior set against the incumbent's offered behaviours, that set is still offered by the candidate. The upstream coverage notion itself is a premise, not a theorem (readme states this). |
+| `finer_bounds` (with the behaviour and strict companions) | proven | Per-symbol strict acceptance implies the summed axis bounds and tagged behaviour sets of a block do not regress, and stay strict when symbol ids are unique. |
+| `coarse_admits_symbol_regression` | refuted (for the universal claim) | One merged block can accept a step the per-symbol gate refuses — a coarse gate does not refuse every per-symbol regression. |
 
-- Zero-sorries claim: **none made, and none checkable** — there is no proof code in which a sorry could occur, and no check log or control asserting absence.
-- Axiom dependencies: none stated anywhere (no print-axioms output, no README claim).
-- Checksums / controls: none present.
+## Full theorem census by module (125 library theorems)
 
-## Flagged items
+Name lists quote each theorem's name once, as evidence; descriptions are grouped in plain English.
 
-- DISPROOFS: none.
-- PREMISES carried rather than proven: none stated — but note the whole thesis is itself an unbacked premise at this head: the certification process it conditions on is not defined, let alone proved sufficient.
-- Side conditions: none stated.
-- NON-CLAIMS / boundaries: **none stated**. The README does not say what the (absent) proof does not assert, what "regress" means, or what the certification must guarantee.
+- **Profiles** (0 theorems): definitions only — bound intervals, symbol profiles with behaviour lists, the example profiles used by the controls, block coarsening, and the gate's stream fixtures.
+- **Gate** (46): the acceptance core. Bound-order facts (the order is exactly componentwise on both endpoints; reflexivity, transitivity, antisymmetry; strictness is the order plus a strict endpoint, and is irreflexive and lifts through extensions); behaviour-keeping equivalence and transitivity; new-behaviour characterisation and lifting; summed-bound non-regression and strictness facts; the profile-level no-regression and strict-gain characterisations with their order facts; acceptance decomposed into its parts, irreflexivity of acceptance, the strictness headline, completeness, and lifting; the step function's no-regression and witness properties. Names, in file order: `band_eq`, `bor_eq`, `bnot_eq`, `behaviorsKept_iff`, `behaviorsKept_trans`, `newBehavior_iff`, `newBehavior_of_kept`, `newBehavior_lift`, `Bound.noWorse_iff`, `Bound.strict_iff`, `Bound.ok_iff`, `Bound.noWorse_refl`, `Bound.strict_irrefl`, `Bound.noWorse_trans`, `Bound.strict_lift`, `Bound.noWorse_antisym`, `addBound_ok`, `addBound_noWorse`, `addBound_strict_right`, `addBound_strict_left`, `boundsNoWorse_refl`, `boundsNoWorse_trans`, `boundsStrict_irrefl`, `boundsStrict_lift`, `boundsNoWorse_antisym`, `profileNoRegress_iff`, `profileStrict_iff`, `profileNoRegress_refl`, `profileStrict_irrefl`, `profileNoRegress_trans`, `profileStrict_lift`, `profileNoRegress_antisym`, `noRegress_refl`, `strictGain_irrefl`, `noRegress_trans`, `strictGain_lift`, `strictGain_of_antisym`, `releaseOk_cons_iff`, `accepts_iff_parts`, `accepts_irrefl`, `accepted_strict`, `accepts_complete`, `accepts_lift`, `step_noRegress`, `step_witness`, `bool_eq_false_of_ne_true`.
+- **Policy** (19): the stream policy. The ascending search over a candidate list: its unfolding lemmas, fuel characterisation, the facts that a step accepts or refuses as the gate dictates, that acceptance implies the no-regression relation, stuck and maximal states, the shipping lemmas, the chain headline, and existence of a policy. Names: `ascend_cons`, `ascend_noRegress`, `ascendFuel_zero`, `ascendFuel_succ_nil`, `ascendFuel_succ_cons`, `ascend_fuel`, `step_accepts`, `step_refuses`, `accepts_ok_inc`, `accepts_noRegress_of`, `ascend_stuck`, `ascend_maximal`, `ascend_ships`, `ascend_ships_of_exists`, `ascend_frontier`, `shipped_step`, `shipped_add`, `shipped_chain`, `policy_exists`.
+- **Boundary** (15): the disproof and boundary module. The two per-execution disproofs and the two coverage rows from the headline table; the always-keep policy is non-regressing; a better candidate is an improvement; the gate-completeness disproof and its decider companion; and computed refusal facts for the example profiles (pure, equal, and trade candidates refused, with the refusing symbol named; the stream keeps a regressor and an equal candidate, and ships an improvement). Names: `not_per_execution_dominance`, `accepted_not_per_execution`, `not_unobserved_nonregression`, `nonregression_if_coverage`, `alwaysKeep_noRegress`, `better_is_improvement`, `not_every_gate_complete`, `refuse_pure`, `refuse_pure_symbol`, `refuse_equal`, `refuse_trade`, `refuse_trade_symbol`, `stream_keeps_regressor`, `stream_keeps_equal`, `stream_ships_improvement`. The readme table's decider companion is, on inspection, a definition in this module rather than a theorem: it builds a decidability instance for a relation from any boolean gate that matches it, so its content holds by construction; the log's axiom print for it records no axiom dependencies.
+- **Resolution** (22): block resolution. Pairwise checking over symbol pairs: all-pairs characterisation, membership and uniqueness helpers, per-axis monotonicity of sums, sum unfolding and comparison lemmas, kept and new behaviour under pairing, existence of a strict axis, the three finer-grain headlines, the coarse-gate disproof, and refusal by named symbol. Names: `pairs_all_ok`, `notElem_iff`, `nodup_cons`, `sym_unique`, `axis_mono`, `foldl_add`, `sumLo_cons`, `sumHi_cons`, `sumLo_le`, `sumHi_le`, `sumLo_lt`, `sumHi_lt`, `seen_kept`, `seen_new`, `fine_pairs_ok`, `fine_has_strict`, `exists_axis_strict`, `finer_bounds`, `finer_behaviors`, `finer_strict`, `coarse_admits_symbol_regression`, `refuse_named_symbol`.
+- **Baseline** (8): the guarded-selection module. The local agreement with the composable sibling's behaviour-keeping (proved here against the pinned dependency), the bridge from both-endpoint non-regression to the sibling's upper-bound inequality, and the three premise-carrying headlines with their supporting guard lemmas. Names: `behaviorsKept_eq_composable`, `composable_hi_of_boundsNoWorse`, `axes_baseline_ok`, `baseline_guard`, `baseline_is_witness`, `filter_head_guard`, `select_never_regresses`, `select_keeps_baseline_available`.
+- **Context cone** (15): the cone module. The cone has five node kinds (symbol, context, data, configuration, deployment); the symbol-only projection drops every non-symbol node. The empty-cone fact, the general recheck headline, and for each of the three incident-shaped model graphs: the symbol seed and dependency facts, the miss fact, and the catch facts. Names: `cone_empty`, `unchanged_symbol_context_recheck`, `ariane_symbol_seeds`, `ariane_symbol_deps`, `ariane_symbol_only_misses`, `ariane_context_cone_catches`, `crowd_symbol_seeds`, `crowd_symbol_deps`, `crowdstrike_symbol_only_misses`, `crowdstrike_data_cone_catches`, `knight_symbol_seeds`, `knight_symbol_deps`, `knight_symbol_only_misses`, `knight_config_cone_catches`, `knight_deployment_cone_catches`.
+- **Checks** (0 theorems): 16 kernel guards by direct computation over the example profiles and the stream fixtures (refusals, named refusing symbols, acceptances, step and ascend outcomes, and the coarse-gate acceptance used by the disproof).
+- **Implications** (0 theorems): prints, for each of 28 headline theorems, its upstream-plus-local dependency listing and its axiom set. Those axiom lines are the per-theorem evidence cited above.
+- **Gate executable and root module** (0 theorems): the executable runs the gate over a stream file; the root imports the library.
 
-## Verdict
+### Worked example: batching log writes (6 theorems)
 
-At the live head this is a title-and-one-line stub, not a proof repo. The headline result is absent: theorem count 0, no toolchain, no evidence.
+A standalone example in the examples folder: records are batched into fixed-capacity writes. It proves the batched contents equal the original record stream, that every batch fits capacity, the capacity bound is tight, and the minimum write count for the stated sizes — with a before-and-after computation (4096 records go from 4096 writes to 64). The example transcript records axiom sets for four of the six theorems (all within the standard three) and a rejected control (dropping one record at a batch boundary fails). Names: `contents`, `fits`, `capacity`, `tight`, `minimum_writes`, `before_after`.
+
+## Premises and side conditions — consolidated flags
+
+- The three baseline headlines carry three named premise structures (baseline stays eligible; authorised axes are the selected axes; measurements valid, meaning the baseline's intervals are consistent). The readme states the sibling frontier results it builds on take neither a named axis list nor a measurement-validity premise; the two selection theorems here add both, openly.
+- The coverage row's upstream coverage notion is a premise, not a theorem (readme's own words); the proved content is the implication from the no-loss predicate, and the disproof that acceptance alone suffices.
+- The acceptance predicate here is stricter than the composable sibling's symbol admission (it also requires a strict gain); the readme states the two are not the same predicate, and the one agreement that is claimed (behaviour-keeping) is proved as its own headline.
+- The frontier existence used by the ascend results is over a supplied finite candidate universe; no claim is made about candidates outside it.
+- Incident-shaped rows are finite model graphs, not measurements and not narratives (readme's own boundary).
+
+## Zero-sorries and controls — evidence
+
+- The check script first verifies the composable dependency pin in the lakefile and manifest, then source-guards the whole tree against the sorry, admit, axiom-declaration, and native-decision tokens. This census independently re-ran the token search: no hits anywhere in the tree.
+- Recorded check log: two red controls rejected (an admitted proof and a sorry proof, each failing with the expected error), a third red control rejected (a scratch proof that the regressed example candidate is accepted fails by computation, after printing the named refusing symbol), then the green build completing successfully with no diagnostics, and the gate executable's output on the example stream matching the expected file line for line. Log state: **recorded pass at this pin.**
+- Axiom evidence: the log's 28 headline axiom lines, all within the standard three or empty; the example transcript adds 4 more. Theorems outside those 32 prints have no per-theorem axiom record in the tree.
+- This census did not re-run the build; gate evidence is the repo's own recorded log, labelled as such.
+
+## Explicit non-claims and boundaries (readme)
+
+- Nothing here is a measurement of the three named incidents, and nothing ranks one implementation against another.
+- Per-execution non-regression is disclaimed by two disproof rows: interval-bound admission controls bounds, not individual executions.
+- No separate implications prose is maintained; the generated dependency listing in the log is the source.
