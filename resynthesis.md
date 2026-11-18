@@ -51,16 +51,24 @@ affects.
   push, flags) and its pin. Depth stays at listing depth —
   unknown — unless a lane examines it; examination, when it
   happens, is recorded in the row.
-7. Paper: if the source MD5 changed, re-copy the page
+7. Refresh the proof-strength ledger (proof-strength.md) in
+  the same pass: for every proof repo, restate its row at its
+  new pin — proven set, premise set, absent set, controls,
+  gate state — from the fresh census. Two defect rules: a
+  proven set that shrank since the last refresh is flagged
+  in the run record as a regression; a proof repo whose pin
+  moved while its ledger row did not is a synthesis defect,
+  flagged in the run record. Neither is silently absorbed.
+8. Paper: if the source MD5 changed, re-copy the page
   verbatim with the host note, and update PAPER-SYNC.md
   (size, MD5, revision markers) per its sync rule.
-8. Bump synthesis-pins.json to the fresh heads and the new
+9. Bump synthesis-pins.json to the fresh heads and the new
   census pins. Commit per piece, as the first synthesis did.
   The final commit of a re-synthesis names, in its message,
   both pins — old and new — of every proof repo that moved,
   and the paper's old and new MD5s if it moved. Push, and
   read the remote head back after the push.
-9. Report only: a landed re-synthesis (what moved, old pin
+10. Report only: a landed re-synthesis (what moved, old pin
   to new pin, what placements changed) or a failure (what
   step failed and what state the repo was left in). Nothing
   else is reported.

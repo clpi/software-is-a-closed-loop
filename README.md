@@ -60,6 +60,12 @@ proof estate placed at its stage, is in synthesis.md.
   closing condition.
 - resynthesis.md — the synthesis procedure: how a
   re-synthesis is produced when a source head moves.
+- proof-strength.md — the proof-strength ledger for the
+  proof family: per repo at its current pin, claims proven,
+  claims on named premises, claims absent, controls in tree,
+  and gate state — refreshed on every re-synthesis, with two
+  defect rules (a shrinking proven set, or a pin that moves
+  without the ledger moving, is flagged in the run record).
 - synthesis-pins.json — the machine-readable pins: every
   censused repo's head at this synthesis, and for the proof
   repos the pin the census was read at. The continuous job
