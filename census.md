@@ -583,7 +583,7 @@ same data, machine-readable, is synthesis-pins.json.
 | mcpy | public | mcpython | ac804697 | 2026-05-16 |  | unknown (unexamined) |
 | mcpython | private |  | 2d61fefb | 2026-05-24 |  | unknown (unexamined) |
 | mdal | public | md lang srv | fc469f72 | 2022-05-27 |  | unknown (unexamined) |
-| mdd | public |  | empty | 2024-10-02 | no commits | unknown (unexamined) |
+| mdd | public |  | bd7709dd | 2024-10-02 |  | unknown (unexamined) |
 | me | private |  | 6e65ff56 | 2024-10-02 |  | unknown (unexamined) |
 | meta | public | Artifacts from a Meta AI session building a from-scratch self-hosted compiler (zeroc/idolic/clpi_meta) | 4c50b92f | 2026-09-16 |  | unknown (unexamined) |
 | mf | private |  | aec613d2 | 2024-10-08 |  | unknown (unexamined) |
