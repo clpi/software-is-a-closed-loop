@@ -1,35 +1,81 @@
-# Census — software-doesnt-need-review
+# Census — software-doesnt-need-review — refresh draft
+
+Census date: 2026-11-18, ~02:10–02:40 PST. Method: live head read first via the gh route, shallow clone (depth 1), clone head verified equal, every file read. Clone read only, never edited. This draft replaces the census of the older pin; changes are marked in the Delta section.
 
 ## Pin and identity
 
-- Live head (gh API, read first): `ae5f3918f7689267d07044a00e6a11b071510bba`
-- Clone head (shallow clone, depth 1): same as live head — verified match.
-- Visibility (gh API): private. Default branch: master (only branch).
-- Toolchain pin: **none** — no lean-toolchain file exists.
-- Contents at head (recursive tree, confirmed by API and clone): exactly one file, `README.md`, 2 lines. No Lean modules, no check script, no check log, no controls file, no proposal document.
+- Old census pin: `ae5f3918f7689267d07044a00e6a11b071510bba` — exactly one file (a two-line readme), theorem count 0, no toolchain, no proposal text.
+- Live head (default branch `master`): `40b1e885658951fa3fd17f42f5017fed5765f22b`. Clone head matches exactly. Head commit subject, plainly: add a checked before-and-after example for migration review.
+- Visibility: private.
+- Toolchain pin: Lean 4.19.0. Core Lean only; the composable sibling is a pinned git dependency (below).
+- Files at head: a readme with a claims table, a separate proposal document, a check script, an upstream-dependency listing script, a lakefile plus manifest, the package library (root module plus 12 submodules, 19 Lean files in the tree in total), a planted-controls folder, and a worked-examples folder with one proved example. Theorem total in tree: **82** — 76 in the package library, 4 in the worked example, and 2 inside the planted controls, which are deliberate failures and are not results (see the gate section).
+
+## Delta (old pin to this pin)
+
+- **Shell to full proof package.** At the old pin this was a title-and-one-line stub: the redundancy conditions were unstated, the replacement proposal was absent, theorem count 0, thesis state claimed-not-proven. At this pin both halves of the old claim now exist in the repo: a proved narrow redundancy theorem with its exact conditions stated, and the proposal document the old census found missing. The broad claim (review is redundant given certification, full stop) is **refuted** in the repo's own claims table; only the narrow form is proven.
+- **The conditions are the result.** Redundancy is proved only for a change inside a sound cone whose spec, roots, and rules are unchanged; the proposal assigns everything outside that cone (the spec, the roots, the rules, and qualification of the dependency analysis itself) to human attention, with two worked boundary failures showing the certifier accepting exactly where only a spec review rejects.
+- **Gate evidence is weaker than the sibling packages in one respect:** the check script is complete (source guard, build, axiom allowlist audit, upstream-dependency check, four controls), but **no recorded run log is kept in the tree** — there is no check-log file at this pin. The only recorded transcript is the worked example's. Gate state is therefore: script present and inspected, no recorded pass at this pin.
 
 ## Thesis (as stated)
 
-The README's single descriptive line, in plain English: a Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it. That is the entire stated claim. Neither the redundancy conditions, nor the replacement proposal, appears anywhere in the repo.
+Plain English: a Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it. Developed form at this pin: for a change inside a sound cone (the context-aware call closure) whose spec, roots, and rules are unchanged, rechecking the machine-checked property is equivalent to re-reviewing that property, and the review bit then adds nothing beyond the certifier's bit. Outside those conditions the claim fails, and the repo proves that it fails: certification rests on premises (valid roots, valid rules) that a wrong spec violates while the certifier still accepts.
 
-## Theorem census
+## Headline census (the readme claims table)
 
-- Theorem / lemma count: **0**.
-- There are no `.lean` files, so there are no theorems, lemmas, definitions, examples, or guards to census. Nothing formalizes "manual review", "redundant", "per-symbol certification", or any condition under which review could be dropped.
+Axiom evidence: the audit module prints 48 theorems (the headlines among them); the script's audit step refuses any set outside the standard three and refuses the sorry axiom outright. Because no run log is recorded in the tree, per-theorem axiom sets are **unknown from recorded evidence** at this pin; the states below rest on the sources plus the script's design.
 
-## Evidence claims
+| Claim (one quoted name per row) | State | What it proves, plainly, and its premises |
+|---|---|---|
+| `narrow_recheck_iff` | proven | The narrow redundancy theorem. Premises: the change lies inside a sound cone (the cone hypothesis, discharged by the closure result below), and the spec, roots, and rules are unchanged. Conclusion: rechecking the machine-checked property on the cone is equivalent to re-reviewing that property. |
+| `narrow_rubber` | proven | Under the same conditions, the review bit is then exactly the certifier's bit — the review outcome adds no information beyond the certification outcome. |
+| `closureHyp_of_affected` | proven | The cone hypothesis itself holds for the context-aware call closure: the locally defined closure is the upstream affected set, importing the composable sibling's closure equivalence at its pinned commit. |
+| `sound_needs_premises` | proven | A derivation is true only when the roots are valid and the rules are valid (from the upstream soundness theorem, whose truth premises are carried, never discharged). This is the load-bearing boundary: certification cannot discharge its own premises. |
+| Broad redundancy (review redundant given certification, including when the spec is wrong) | refuted | Marked disproven in the readme's own claims table; the two boundary rows below are the concrete refutations. |
+| `mco_boundary` (with its rule-invalid companion) | refuted (counterexample pair) | An opaque unit token: the allow-list accepts the change while the two sides denote different physical units, and the governing rule is invalid. The certifier accepts; only a review of the spec rejects. |
+| `mcas_boundary` (with its two companions) | refuted (counterexample pair) | A single-sensor rule: the rule accepts while two sensors are required, and the rule is invalid. Same shape: certification passes, the premise is wrong. |
 
-- Zero-sorries claim: **none made, and none checkable** — there is no proof code, check log, or control.
-- Axiom dependencies: none stated anywhere.
-- Checksums / controls: none present.
+## Full theorem census by module (76 library theorems)
 
-## Flagged items
+Name lists quote each theorem's name once, as evidence; descriptions are grouped in plain English.
 
-- DISPROOFS: none.
-- PREMISES carried rather than proven: none stated — but the thesis's key condition ("given per-symbol certification") is undefined in the repo, so the conditional is unbacked at this head.
-- Side conditions: none stated. In particular, the "when" in the thesis — the exact conditions for redundancy — is not stated in any form.
-- NON-CLAIMS / boundaries: **none stated**. The README does not delimit where review would still be needed, nor what the proposal does not cover.
+- **Profile** (13): the finite profile space. Completeness of the symbol, axis, and status enumerations; list-length and membership helpers; the assignment enumeration is complete and its length is as stated; the profile space is finite; any predicate on it is decidable by enumeration; profile predicates are total. Names: `sym_complete`, `ax_complete`, `status_complete`, `map_length`, `assignments_length`, `mem_append_left`, `mem_append_right`, `mem_map`, `length_cons_inj`, `assignments_complete`, `profile_space_finite`, `decided_on_finite_space`, `profile_pred_total`.
+- **Certifier** (5): refusal propagates from a firing test; boolean equality of symbols and of axes is reflexive by case analysis; the mechanisation headline — a profile criterion enforced by an installed test names its refusal exactly when the test fires on the read statuses; and a mechanised predicate value is always a row of the finite table. Names: `refuses_of_mem`, `beq_self`, `beq_self_ax`, `profile_criterion_mechanizable`, `mechanized_value_is_table_row`. (The third name's suffix refers to the axis type; the item is an ordinary proved theorem, not an axiom — verified by inspection.)
+- **Chain** (9): the certification chain. A coverage theorem in the quantifiable namespace (the mediated-coverage premise made explicit); an unrestricted-witness fact; the empty case; guarded acceptance characterised; the closure over certified profiles is extensive, in both implication and equivalence form; regression and safety characterised as equivalences; safety follows from admission. Names: `coverage`, `unrestricted_witness`, `missing_empty`, `acceptsGuarded_iff`, `extensive`, `extensive_equiv`, `regress_equiv`, `safe_equiv`, `safe_of_admitted`.
+- **Reviewer** (0 theorems): definitions only — the reviewer model the rubber-stamp module reasons about.
+- **Rubber stamp** (9): when review adds nothing. A constant verdict factors; a review that merely echoes certification carries zero information; a veto empties the accepted set; a reviewer either agrees or acts as a pure veto; the always-reject reviewer factors and respects the guard as a veto; the always-approve reviewer factors; and the guarded outcome is independent of the approval bit. Names: `verdict_constant`, `zero_information`, `veto_empties`, `agrees_or_pure_veto`, `alwaysReject_factors`, `alwaysReject_respects`, `constant_reject_is_veto`, `alwaysApprove_factors`, `guarded_independent_of_approval`.
+- **Mechanise** (6): limits of mechanisation. A profile becomes an axis; a semantic criterion is not a total axis and stays a premise; an approximation is not a total axis either, keeps the gap, and the gap is named. Names: `profile_becomes_axis`, `semantic_not_total_axis`, `semantic_stays_premise`, `approx_not_total_axis`, `approx_keeps_gap`, `approx_gap_named`.
+- **Replacement** (5): the replacement process. It terminates, adds no new watched item semantically while the watched set grows as stated, is monotone, and never loses the criterion. Names: `process_terminates`, `semantic_adds_no_watch`, `watched_grows`, `process_monotone`, `criterion_never_lost`.
+- **Boundary** (10): where certification stops. A boundary case is missed by the certifier; the legacy witness is insufficient; a roster case is not mediated; no platform premise covers the boundary; a residual cell is unwatched; an outside case does not go through the facts; a bad cell is not qualified; redundancy holds under the stated premises and on the stated hard case; an empty release is not observed. Names: `boundary_missed_by_certifier`, `boundary_legacy_witness_insufficient`, `boundary_roster_not_mediated`, `boundary_no_platform_premise`, `residual_unwatched_cell`, `outside_not_through_facts`, `bad_cell_not_qualified`, `redundant_under_premises`, `redundant_on_unicodeBad`, `empty_release_not_observed`.
+- **Controls** (10, library module — distinct from the planted-controls folder): worked control cases. The before-state misses what the predicate catches; the after-state refuses by name; the control predicate is a finite table; a human approves, and a human regression is refused with its equivalence; an incomplete check passes (a stated limitation); safety refusal by name and the safety equivalence. Names: `control_before_misses`, `control_predicate_catches`, `control_after_refuses_by_name`, `control_predicate_is_finite_table`, `control_human_approves`, `control_human_regression_refused`, `control_human_regression_equiv`, `control_incomplete_passes`, `safety_refused_by_name`, `safety_equiv`.
+- **Narrow** (4): the headline module — the cone-hypothesis discharge, the recheck equivalence, the rubber-stamp corollary, and the premises boundary, as censused in the headline table. Names: `closureHyp_of_affected`, `narrow_recheck_iff`, `narrow_rubber`, `sound_needs_premises`.
+- **Spec boundary** (5): the two counterexample pairs of the headline table. Names: `mco_boundary`, `mco_rule_invalid`, `mcas_boundary`, `mcas_not_two`, `mcas_rule_invalid`.
+- **Audit** (0 theorems): one print-axioms command for each of 48 theorems across the modules above — the audit surface the check script verifies.
+- **Root module** (0 theorems): imports the library including the audit module.
 
-## Verdict
+### Worked example: migration review triage (4 theorems)
 
-At the live head this is a title-and-one-line stub, not a proof repo. The headline result is absent: theorem count 0, no toolchain, no proposal text, no evidence.
+A standalone example in the examples folder: a migration's columns are triaged, and only the unresolved ones escalate to a human decision (6 items down to 2 owner decisions in the recorded run). It proves triage soundness, that review happens exactly when needed, that escalation is minimal, and the before-and-after computation. The example transcript records axiom sets for three of the four (one standard axiom at most; two with none) and a rejected control (approving an unresolved column drop fails). Names: `triage_sound`, `review_exactly_when_needed`, `minimal_escalation`, `before_after`.
+
+### The proposal document
+
+The proposal the old census found absent is present at this pin (short, one page in substance). Plainly: human review of a diff is removed only inside the narrow theorem; human attention moves to the spec, the roots, the rules, and qualification of the dependency analysis that computes the cone (in the style of tool qualification) — that qualification is of the analysis, not a second reading of a diff already inside a qualified cone. It states two non-claims explicitly: nothing here says how often reviewers rubber-stamp in practice, and nothing here says review is redundant once a certifier has run (only inside the cone conditions).
+
+## Premises and side conditions — consolidated flags
+
+- The narrow theorem's premises are the result's boundary: sound cone membership, and unchanged spec, roots, and rules. Drop any of them and the repo claims nothing — the broad form is refuted in its own table.
+- Soundness carries its truth premises (valid roots, valid rules) throughout; no theorem discharges them, and the boundary modules exhibit certified-but-wrong cases built exactly on their failure.
+- The upstream dependency is the composable sibling at its old census pin; the narrow module's cone discharge and recheck equivalence rest on that pin's closure and recheck theorems, and the check script verifies the dependency structure mechanically (each headline must actually depend on the named upstream results, and no dependency outside the allowed namespaces may appear).
+- Coverage in the chain module is the mediated form — a premise, consistent with the sibling censuses.
+
+## Zero-sorries and controls — evidence
+
+- Source guard: the check script scans the library, the root module, the lakefile, and the scripts for the sorry and admit tokens and for axiom declarations, and refuses on any hit. The scan deliberately excludes the planted-controls folder. This census ran its own token search over the whole tree: the only hits anywhere are inside that folder — one sorry proof, one admit proof, and one custom axiom declaration — which are the planted controls described next, present by design.
+- Planted controls (gate design): the script requires the sorry control and the admit control to fail compilation, requires a warning control to fail under warnings-as-errors, requires the custom-axiom control to be caught by the same axiom allowlist the audit uses, and finally requires its own source scan to detect all three planted files. A tree in which any control passes is refused.
+- Axiom audit (gate design): the script runs the audit module and refuses any theorem whose axiom set leaves the standard three, refuses the sorry axiom, and refuses if either headline family is missing from the report.
+- **Recorded evidence at this pin: no whole-repo run log exists in the tree.** The recorded transcripts are the worked example's only (version line, computed triage result, three axiom lines, the independent database replay summary, and the rejected control). Gate state is therefore recorded as: script present and inspected; library clean on this census's own token search; recorded pass **unknown** (no transcript). This census did not run the build.
+
+## Explicit non-claims and boundaries
+
+- Review is not claimed redundant outside the narrow cone conditions; the proposal keeps the spec, the roots, the rules, and the cone analysis itself under human attention.
+- Nothing here measures reviewer behaviour in practice (the proposal says so itself).
+- The two boundary counterexamples are finite formal models of the named failure shapes, not measurements of the historical events.
