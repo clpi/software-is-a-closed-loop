@@ -1203,3 +1203,25 @@ the same file count as at its last recorded head, with no
 file added or removed and two files changed, a slices
 record and a code generation source, over eight commits.
 No tree read was truncated this watch.
+
+## Watch update — 2026-11-19 (nineteenth hourly re-synthesis)
+
+A twentieth enumeration: 566 repos, every head read, none
+new, none gone, and the paper source hash was unchanged.
+The moved set: this repo itself, and two further
+idol-family repos (the compiler port and the relay). Fresh
+heads for every repo stand in the pins file at this
+re-synthesis. This repo's movement is the eighteenth watch
+landing itself: the four commits between the heads are
+that watch's annex, placement, ledger, and pins commits,
+no Lean file changed among them, and its eleven theorems
+stand unchanged, recorded in its annex delta. The compiler
+port and the relay were read by tree at their fresh heads
+and carry no proof-assistant content, so they remain
+proof-free by the named check; the compiler port's tree
+stands at the same file count as at its last recorded
+head, with no file added or removed and two files changed,
+a slices record and a code generation source, over six
+commits, and the relay's tree gained one file, a dated
+relay note, with no file changed or removed over one
+commit. No tree read was truncated this watch.

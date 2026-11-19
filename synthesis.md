@@ -1725,3 +1725,34 @@ and a code generation source. No proof-assistant source
 was found in its tree and its tree read was not
 truncated, so it remains proof-free by the named check.
 Its movement changes its pin only, not its placement.
+
+## 24. Watch update — 2026-11-19, the nineteenth hourly re-synthesis
+
+The nineteenth watch re-enumerated the estate completely:
+566 repos, every head read, none new, none gone, and the
+paper source hash was unchanged, so no paper re-sync was
+owed. Three repos had moved since the last recorded heads.
+One of the three is a proof repo — this repo itself — and
+the other two are idol-family repos; there was no long-tail
+movement this watch. The annex watch delta carries the tree
+evidence at the fresh head; the placements in section 3
+stand at their census pins, with re-census owed at the new
+head.
+
+This repo's own head moved only by the eighteenth watch
+landing itself: the four commits between the two heads
+are that watch's annex, placement, ledger, and pins
+commits, and no Lean file changed among them, so its
+eleven theorems stand unchanged at the fresh head.
+
+The compiler port was read by tree at its fresh head:
+six commits stand between the two heads, no file was
+added or removed, and two files changed, a slices record
+and a code generation source. The relay was read by tree
+at its fresh head: one commit stands between the two
+heads, and its tree gained one file, a dated relay note,
+with no file changed or removed. No proof-assistant source
+was found in either tree and neither tree read was
+truncated, so both remain proof-free by the named check.
+Their movement changes their pins only, not their
+placements.
