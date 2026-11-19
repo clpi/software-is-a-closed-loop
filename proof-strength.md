@@ -1698,3 +1698,126 @@ bidirectional repo, stands empty at its first
 enumeration, carries no provable results, and carries
 no ledger row; it enters this ledger on the enumeration
 that first sees its content.
+
+## Watch refresh — 2026-11-19, the twenty-second hourly re-synthesis watch
+
+The watch re-enumerated the estate at 569 repos, every head
+read individually with no errors, read the moved repos by
+tree at their fresh heads, read every Lean file of the two
+moved library proof repos in full at both heads, and
+censused the one newly proof-bearing repo in full at its
+head. Evidence below rests on the tree and file reads at
+both heads of the moved proof repos and on the new repo's
+full census in its annex. Placements stand at the census
+pins named in each row; a full theorem-level re-census at
+each fresh head is owed, except for the new repo, censused
+in full at its head in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The theses repo gained fourteen
+  names and lost none between its last recorded head and
+  its fresh head, the frontier repo gained thirty-eight
+  and lost none, and this repo's Lean files are unchanged
+  between the last recorded head and the fresh head, with
+  its theorem name set identical at both heads, so no name
+  was lost; this repo's eleven names stand unchanged. The
+  newly proof-bearing repo enters with its full set at its
+  first pin; it has no earlier set to shrink against. No
+  regression is flagged.
+- No pin moved without this ledger moving: every moved
+  proof repo has its row restated below in this same pass,
+  and the newly proof-bearing repo's row is added below in
+  this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 3baddd44
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the twenty-first watch
+  landed; the six commits between them are that watch's
+  census, re-census, delta, placement, ledger, and pins
+  commits and carry no Lean change. Controls and gate
+  stand as the second watch row records.
+- idol-theses — fresh head b6e810c5 (census pin
+  d207be6e). Proven: 101 declarations, 82 distinct names
+  (was 87 and 75 at the last recorded head); 14 gained,
+  none lost. The growth is the synthesis pass landing in
+  this repo: a synthesis module of composition glue (7)
+  and a compose module carrying the composer theorem,
+  its lemmas, and one control (7), beside a third cited
+  group that grows the cited tranche from seventeen
+  theses to thirty-four at the pins the pass read back,
+  and a campaign document. The audit file prints axioms
+  for the fourteen new theorems. Premises and absent set
+  stand as the sweep row records, with the pass's
+  composed claims not landed carried in the future work
+  file at proposed state. Gate: still no recorded check
+  log in the repo, as its row records; the check script
+  now compiles both new modules.
+- software-frontier-is-solvable — fresh head cdeae4ad
+  (census pin 6a41c7be). Proven: 104 declarations, 94
+  distinct names (was 66 and 63 at the last recorded
+  head); 38 gained, none lost — one new search module
+  proving the general search layer of the bounded
+  technique: join laws, least saturation, compounding
+  and tightening bounds, the exact nondominated
+  qualified frontier, premise-tracked speculation, and
+  order-independent weighting with a sound trace, beside
+  three new controls proved as negations. Premises stand
+  as its row records; the finiteness of the qualified
+  space is cited from the quantifiable home, not
+  re-proved. Gate: a recorded check log stands at the
+  fresh head, printing axioms for 23 of the 38 new
+  declarations, all standard or empty as printed there;
+  the other 15 are unprinted, their axiom states
+  unrecorded there.
+
+New row, at its census pin, which is its head:
+
+- software-is-bidirectional — pin b14fc92b. Proven: 73
+  theorem declarations across three Lean files — the
+  core model (the hyperlattice of states up to
+  equivalence, derivability closure, the analysis and
+  synthesis maps with both round trips and the
+  reengineering round trip, independent derivability
+  under a complete recording, smallness against the
+  power of two, premise-cone speculation, bounds over
+  candidate lists attained and compounding and
+  tightening under joins with certified optima, the
+  finite candidate grid, and the named measures with
+  their characterizations, including the exact
+  suboptimality forms for scheduling, venue, and test
+  sets), the composition (the losses core mirrored and
+  discharged, the persistence elimination result and
+  the recorded-state lattice discharged in this
+  vocabulary, and the joined theorem assembling the
+  method), and four standing controls. Of the 74
+  declarations the recorded log prints — the 73
+  theorems plus the optimum decision definition — 19
+  depend on no axioms, 27 on propositional
+  extensionality only, and 28 on the standard pair, with
+  no classical choice anywhere. On named premises: the
+  joined theorem's six (contract fidelity, record
+  fidelity, re-measure, coverage, spec authority, and
+  witness faithfulness), with the family's remaining
+  results carried as restated hypotheses at their homes'
+  pins. Absent, at the repo's own states: the content
+  bound under injectivity, the visibility vector, and
+  time-varying re-solving are proposed; a ten-entry gap
+  register stands in its specification, each gap owned
+  with its closing route. Controls in tree: the four
+  adversarial controls, each a proved negation over a
+  concrete counterexample proving its weakened condition
+  load bearing. Gate: the check script stands in the
+  tree in the family gate form and the recorded check
+  log at the pin ends in its axiom subset check passing
+  — green on the recorded log; this watch ran no build.
+
+The three other moved repos this watch, the library, the
+relay, and the sites repo, are not proof repos and carry
+no ledger rows: all three were read by tree at their fresh
+heads, no proof-assistant source was found in any of them,
+and they remain proof-free by the named check, as their
+census entries record.
