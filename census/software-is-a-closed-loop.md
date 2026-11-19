@@ -187,3 +187,7 @@ pin. The five commits between them are the twentieth
 watch's own census, annex, placement, ledger, and pins
 commits; no Lean file changed among them. This repo's
 own proven count stands at eleven.
+
+## Watch delta — 2026-11-19, the twenty-second hourly re-synthesis watch
+
+The watch re-read this repo's live head at 3baddd446c91f7a8e4b1b815e1ac35110787b50d in the full enumeration — the head the twenty-first watch landed with its pins bump. The theorem count is unchanged between the last recorded head f2c3b6d643bba02e90fb16381d20c9b891210e65 and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The six commits between them are the twenty-first watch's own census, re-census, delta, placement, ledger, and pins commits; both Lean files are byte-identical between the heads, so no Lean file changed among them. This repo's own proven count stands at eleven.
