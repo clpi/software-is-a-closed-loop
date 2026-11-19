@@ -313,6 +313,31 @@ its tree gained one file, a dated relay note, with no
 file changed or removed over one commit. No tree read
 was truncated this watch.
 
+## Watch update — 2026-11-18 (twelfth hourly re-synthesis)
+
+A thirteenth enumeration the same night: 565 repos, every
+head read individually. Three first reads failed; each of
+the three was re-read individually — two matched their
+last recorded heads and one proved empty, matching its
+recorded empty state — so the final reads carry no
+errors. Two repos had moved since the last recorded
+heads, none were new, none were gone, and the paper
+source hash was unchanged. The moved set: this repo
+itself, and one further idol-family repo (the compiler
+port). Fresh heads for every repo stand in the pins file
+at this re-synthesis. This repo's movement is the
+eleventh watch landing itself: the four commits between
+the heads are that watch's annex, placement, ledger, and
+pins commits, no Lean file changed among them, and its
+eleven theorems stand unchanged, recorded in its annex
+delta. The compiler port was read by tree at its fresh
+head and carries no proof-assistant content, so it
+remains proof-free by the named check; its tree gained
+one file, a type checking source, and two files changed,
+a slices record and a semantic checking source, over
+twelve commits, with no file removed. No tree read was
+truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,

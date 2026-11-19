@@ -1471,3 +1471,34 @@ was found in either tree and neither tree read was
 truncated, so both remain proof-free by the named check.
 Their movement changes their pins only, not their
 placements.
+
+## 17. Watch update — 2026-11-18, the twelfth hourly re-synthesis
+
+The twelfth watch re-enumerated the estate completely: 565
+repos, every head read individually. Three first reads
+failed; each was re-read individually — two matched their
+last recorded heads and one proved empty, matching its
+recorded empty state — so the final reads carry no errors.
+Two repos had moved since the last recorded heads, none
+were new, none were gone, and the paper source hash was
+unchanged, so no paper re-sync was owed. One of the two
+is a proof repo — this repo itself — and the other is an
+idol-family repo; there was no long-tail movement this
+watch. The annex watch delta carries the tree evidence
+at the fresh head; the placements in section 3 stand at
+their census pins, with re-census owed at the new head.
+
+This repo's own head moved only by the eleventh watch
+landing itself: the four commits between the two heads
+are that watch's annex, placement, ledger, and pins
+commits, and no Lean file changed among them, so its
+eleven theorems stand unchanged at the fresh head.
+
+The compiler port was read by tree at its fresh head:
+twelve commits stand between the two heads, one file was
+added, a type checking source, and two files changed, a
+slices record and a semantic checking source, with no
+file removed. No proof-assistant source was found in its
+tree and the tree read was not truncated, so it remains
+proof-free by the named check. Its movement changes its
+pin only, not its placement.
