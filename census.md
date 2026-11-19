@@ -1158,3 +1158,27 @@ same data, machine-readable, is synthesis-pins.json.
 | software-is-a-closed-loop | public | The closed loop of software qualification: a continuous synthesis of the clpi software proof repos, hosting the live paper, the structural implications, and the next steps. | b07314d3 | 2026-11-18 |  | proof family — sweep placements |
 | software-is-more-traceable-than-you-think | private | The historical witness hypergraph of software at symbol grain: exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language. |  8f6a1280  | 2026-11-18 |  | proof family — sweep placements |
 | software-testing-is-redundant | private |  |  18feb7ab  | 2026-11-18 |  | proof family — sweep placements |
+
+## Watch update — 2026-11-18 (seventeenth hourly re-synthesis)
+
+An eighteenth enumeration the same night: 566 repos, every
+head read individually, no read errors. Three repos had
+moved since the last recorded heads, none were new, none
+were gone, and the paper source hash was unchanged. The
+moved set: this repo itself, and two further idol-family
+repos (the compiler port and the relay). Fresh heads for
+every repo stand in the pins file at this re-synthesis.
+This repo's movement is the sixteenth watch landing
+itself: the four commits between the heads are that
+watch's annex, placement, ledger, and pins commits, no
+Lean file changed among them, and its eleven theorems
+stand unchanged, recorded in its annex delta. The compiler
+port and the relay were read by tree at their fresh heads
+and carry no proof-assistant content, so they remain
+proof-free by the named check; the compiler port's tree
+stands at the same file count as at its last recorded
+head, with no file added or removed and two files changed,
+a slices record and a code generation source, over eight
+commits, and the relay's tree gained one file, a dated
+relay note, with no file changed or removed over one
+commit. No tree read was truncated this watch.
