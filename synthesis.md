@@ -831,6 +831,54 @@ admission. State: PROVEN at the new pin on the recorded,
 hash-bound evidence. The re-census stands in its annex
 file.
 
+### 3.16 Placement from the thirty-fourth watch (2026-11-19) — a new proof repo
+
+Stage 3, 5, and 7 — software-redundant-compute-expands,
+census pin 1ea28648. A new repo, entered on the
+thirty-fifth enumeration and censused at theorem level
+on its first sighting, by content: the proved model of
+redundant compute under expansion-only growth of a
+behavioral hypergraph, directed by Chris on 2026-11-19
+as the growth half of the universal behavioral
+hypergraph campaign. Thirty-seven theorem declarations
+in four Lean files on Lean 4.19.0: the redundancy
+measure of a list and of a graph (the exact append
+split, monotonicity in the seen list, superadditivity,
+the strict unit gained wherever the parts share an
+element, appearance of redundancy at a join of
+irredundant parts, and positivity exactly when an
+explicit duplicate witness exists); derivability under
+expansion (the persistence criterion mirrored at its
+pin and proved again here — monotone in the store and
+in the recorded edges — with the graph measure monotone
+under expansion, witnessed redundancy persistent,
+expansion transitive, and the measure non-decreasing
+along every chain); compounding into joined structures
+(the joined measure at least the sum of the parts, and
+one unit more wherever the parts share a node or an
+incidence value); and the touch kernel of witness
+reconstruction (the touched count monotone in the
+sample and under expansion of the graph, the inside
+count never above the touched count), assembled in one
+joined theorem whose only unproved antecedent is the
+named empirical yield premise. Six standing controls
+stand in the tree: the zero graph, the refuted
+universal form, removal destroying redundancy, the
+absent strict gain without overlap, touching not
+containing, and the empty sample. The recorded gate
+log at the pin ends in its axiom subset check passing,
+with all 37 declarations printed: 2 axiom-free, 4 on
+propositional extensionality only, and 31 on the
+standard pair. Carried at the repo's own states: three
+named premises (the empirical yield rate, the listing
+reading of growth, and mirror fidelity), the universal
+form refuted in the tree and carried as no claim, a
+compounding rate beyond the proved bound as not
+claimed, and premise-closed reconstruction as
+proposed. State: PROVEN at the pin on the recorded
+log, for the core above. The full census stands in its
+annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2362,3 +2410,15 @@ The compiler port moved by two commits, one slice landing and its merge: its tre
 The thirty-third watch re-enumerated the estate completely: 569 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. The one moved repo is a proof repo — this repo itself. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
 
 This repo's own head moved only by the thirty-second watch landing itself: the four commits between the two heads are that watch's delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+## 39. Watch update — 2026-11-19, the thirty-fourth hourly re-synthesis
+
+The thirty-fourth watch re-enumerated the estate completely: 570 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Two of the moved repos are proof repos — this repo itself and, by its first sighting, the new repo placed in section 3.16 — and the other two are idol-family repos. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the thirty-third watch landing itself: the four commits between the two heads are that watch's delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The new repo, the redundant compute repo, landed in one commit at its head, which is its census pin: four Lean files, thirty-seven theorem declarations, six standing controls, and a recorded gate log in its tree — entered in the proof family, censused at theorem level in its annex, and placed in the synthesis in section 3.16.
+
+The compiler port moved by two commits, one slice landing and its merge: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.

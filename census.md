@@ -784,6 +784,21 @@ synthesis placement section for this watch and the annex):
   kernel-checked receipt) joined the two earlier files
   unchanged, for sixty-five theorems in total.
 
+Added by the thirty-fourth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-redundant-compute-expands (public) — the
+  redundant compute growth model: the redundancy measure
+  over a behavioral hypergraph under expansion-only
+  growth (the exact append split, superadditivity, the
+  strict overlap unit, appearance at a join, and the
+  duplicate witness characterization), derivability and
+  witnessed redundancy persistent under expansion,
+  compounding into joined structures, and the touch
+  kernel of witness reconstruction, with six standing
+  controls and the universal form refuted in the tree.
+  Pin 1ea28648.
+
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
 also named software inside the loop — their pins re-enter at
@@ -1582,3 +1597,35 @@ between the heads are that watch's delta, placement,
 ledger, and pins commits, no Lean file changed among
 them, and its eleven theorems stand unchanged, recorded
 in its annex delta. No tree read was truncated this watch.
+
+## Watch update — 2026-11-19 (thirty-fourth hourly re-synthesis)
+
+A thirty-fifth enumeration: 570 repos, every head read
+individually, no read errors. Three repos had moved
+since the last recorded heads, one was new, none were
+gone, and the paper source hash was unchanged. The
+moved set: this repo itself, and two further
+idol-family repos (the compiler port and the relay).
+The new repo is the redundant compute proof repo,
+public, at 1ea28648: four Lean files, thirty-seven
+theorem declarations, six standing controls, and a
+recorded gate log in its tree — entered in the proof
+family below, censused at theorem level in its annex,
+and placed in the synthesis at its head, which is its
+census pin. Fresh heads for every repo stand in the
+pins file at this re-synthesis. This repo's movement
+is the thirty-third watch landing itself: the four
+commits between the heads are that watch's delta,
+placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The compiler
+port and the relay were read by tree at their fresh
+heads and carry no proof-assistant content, so they
+remain proof-free by the named check; the compiler
+port's tree stands at the same file count as at its
+last recorded head, with no file added or removed and
+two files changed, a slices record and a code
+generation source, over two commits, and the relay's
+tree gained one file, a dated minimax note, with no
+file changed or removed over one commit. No tree read
+was truncated this watch.
