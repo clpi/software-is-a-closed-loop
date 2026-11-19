@@ -2139,3 +2139,17 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 4b34e16b (census pin d558669b). Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the thirty-second watch landed; the four commits between them are that watch's delta, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+## Watch refresh — 2026-11-19, the thirty-fourth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 570 repos, every head read individually, no read errors, and read the moved and new repos by tree at their fresh heads. Evidence below rests on the tree reads at both heads of the moved proof repo and on the full census of the new proof repo in its annex. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files are byte-identical between the last recorded head and the fresh head, so its eleven names stand unchanged, counted by the watch method over the tree at each pin with the same name set at both. The new proof repo enters with its full set at its first pin; there is no earlier set for it to shrink from. No regression is flagged.
+- No pin moved without this ledger moving: every moved or new proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head ab1531f9 (census pin d558669b). Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the thirty-third watch landed; the four commits between them are that watch's delta, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+- software-redundant-compute-expands — new census pin 1ea28648. Proven: 37 theorems in four Lean files — the redundancy measure and its append algebra (the exact split, monotonicity in the seen list, superadditivity, the strict overlap unit, appearance at a join, and the duplicate witness characterization), derivability monotone in the store and in the recorded edges, the graph measure monotone under expansion with witnessed redundancy persistent and expansion transitive, compounding into joined structures with strict units for shared nodes and shared incidence values, and the touch kernel of witness reconstruction (monotone in the sample and under expansion, the inside count bounded by the touched count), assembled in one joined theorem. Of the 37 printed declarations: 2 depend on no axioms, 4 on propositional extensionality only, and 31 on the standard pair. On named premises: the empirical yield rate, carried as the joined theorem's explicit antecedent; the listing reading of growth; and mirror fidelity for the derivability development mirrored from the persistence home. Refuted in the tree: the universal form — not every graph is witnessed redundant — by its standing control, beside five further controls (the zero graph, removal destroying redundancy, the absent strict gain without overlap, touching not containing, and the empty sample). Absent: a compounding rate beyond the proved bound, not claimed; premise-closed reconstruction, proposed and not formalized. Gate: the recorded check log at the pin ends in its axiom subset check passing; this watch ran no build of its own.
