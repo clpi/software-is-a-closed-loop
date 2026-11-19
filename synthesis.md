@@ -806,6 +806,31 @@ pin on the recorded, hash-bound evidence, for the
 theorems above. The full census stands in its annex
 file.
 
+Restated by the twenty-fourth watch (2026-11-19) at the
+new census pin 4dee2311: the campaign landed its Pareto
+release condition in three commits — a new proof package
+of 27 theorems in one Lean file, proving Pareto
+unimprovability in its abstract models (the strict
+relation, the global witness and its coverage forms, the
+weighted score results, five standing counterexamples
+among them the zero-weight and composition negations,
+bounded uncertainty, and the retention model with its
+concrete optimal instance), with its recorded receipt
+kernel-checked and hash-bound, its source and checker
+hashes verified firsthand by that watch, and five
+recorded negative controls rejected. The 38 theorems at
+the first pin stand unchanged, every earlier Lean file
+byte-identical at the new head, so the repo now carries
+65 theorems in three theorem files beside the six
+checked witness examples. Carried at the repo's own
+states: the abstract-model scope as its premise, and
+actual-software release admission under the new
+requirement as open — the model certificates satisfy
+their named obligations and the release command refuses
+admission. State: PROVEN at the new pin on the recorded,
+hash-bound evidence. The re-census stands in its annex
+file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2202,3 +2227,62 @@ proof-assistant source was found in any of them and no
 tree read was truncated, so all three remain proof-free
 by the named check. Their movement changes their pins
 only, not their placements.
+
+## 29. Watch update — 2026-11-19, the twenty-fourth hourly re-synthesis
+
+The twenty-fourth watch re-enumerated the estate
+completely: 569 repos, every head read individually, no
+read errors. Three repos had moved since the last
+recorded heads, none were new, none were gone, and the
+paper source hash was unchanged, so no paper re-sync
+was owed. Two of the moved repos are proof repos — this
+repo itself and the library repo — and the third is an
+idol-family repo. The annex files carry the evidence at
+the fresh heads; the placements in section 3 stand at
+their census pins, with the library placement restated
+at its new census pin in section 3.15 in this pass.
+
+This repo's own head moved only by the twenty-third
+watch landing itself: the five commits between the two
+heads are that watch's census, annex, placement,
+ledger, and pins commits, and both Lean files are
+byte-identical between the heads, so its eleven
+theorems stand unchanged at the fresh head.
+
+The library repo moved by three commits, the Pareto
+release condition landing in its campaign: a new proof
+package requiring proved Pareto unimprovability for a
+qualified optimal release, with its specification
+section, its release record, and its views — twenty-eight
+files added and seventeen changed, none removed. Its
+three earlier Lean files are byte-identical at the
+fresh head, so its 38 theorems and six checked witness
+examples stand unchanged, and the one added Lean file
+carries 27 new theorems: the strict domination
+relation, the global witness with its finite, cone,
+normalization, and cell-cover forms, the weighted score
+results, the standing counterexamples (a zero-weight
+scalar minimum that is not Pareto optimal, an omitted
+alternative, and component optima that need not
+compose), bounded uncertainty, and the retention model
+proved optimal with its concrete instance. Its recorded
+receipt at the fresh head is kernel-checked and
+hash-bound — 14 theorems on no axioms, 2 on
+propositional extensionality only, 10 on propositional
+extensionality and quotient soundness, and 1 on the full
+standard set — and this watch verified its source and
+checker hashes against the tree firsthand. Five
+recorded negative controls for the new package stand
+rejected. It was re-censused at theorem level in full
+at its fresh head in this pass, and its census pin
+moves to the fresh head, recorded in its annex.
+
+The compiler port moved by two commits, one slice
+landing and its merge: its tree stands at the same file
+count as at its last recorded head, with no file added
+or removed and two files changed, a slices record and a
+code generation source. It was read by tree at its
+fresh head; no proof-assistant source was found in it
+and its tree read was not truncated, so it remains
+proof-free by the named check. Its movement changes its
+pin only, not its placement.

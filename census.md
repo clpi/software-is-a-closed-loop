@@ -598,6 +598,44 @@ catalogue, and four files changed over one commit, with
 the paper page file byte-identical between its heads.
 No tree read was truncated this watch.
 
+## Watch update — 2026-11-19 (twenty-fourth hourly re-synthesis)
+
+A twenty-fifth enumeration: 569 repos, every head read
+individually, no read errors. Three repos had moved
+since the last recorded heads, none were new, none were
+gone, and the paper source hash was unchanged. The
+moved set: this repo itself; one proof repo of the Idol
+family (the library repo); and one further idol-family
+repo (the compiler port). Fresh heads for every repo
+stand in the pins file at this re-synthesis. This repo's
+movement is the twenty-third watch landing itself: the
+five commits between the heads are that watch's census,
+annex, placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The library repo
+landed its Pareto release condition in three commits at
+4dee2311: a new proof package of twenty-seven theorems
+proving Pareto unimprovability in its abstract models —
+the strict relation, the global witness and its coverage
+forms, the weighted score results, the standing
+counterexamples, bounded uncertainty, and the retention
+model with its concrete instance — beside its
+specification section and release record; twenty-eight
+files added and seventeen changed, none removed, its
+three earlier Lean files byte-identical at the fresh
+head, so its thirty-eight theorems stand unchanged and
+its total is now sixty-five theorems in three theorem
+files beside six checked witness examples. It was
+re-censused at theorem level in full at its fresh head
+in its annex, and its census pin moves to 4dee2311 in
+this pass. The compiler port was read by tree at its
+fresh head and carries no proof-assistant content, so it
+remains proof-free by the named check; its tree stands
+at the same file count as at its last recorded head,
+with no file added or removed and two files changed, a
+slices record and a code generation source, over two
+commits. No tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -723,7 +761,12 @@ synthesis placement section for this watch and the annex):
   the minimax certificate), and six witness examples
   checked by decision, with five recorded negative
   controls and a hash-bound kernel-checked receipt.
-  Pin ad22a681.
+  Pin ad22a681. Restated by the twenty-fourth watch at
+  pin 4dee2311: a 27-theorem Pareto package (Pareto
+  unimprovability in its abstract models, with its own
+  five recorded negative controls and hash-bound
+  kernel-checked receipt) joined the two earlier files
+  unchanged, for sixty-five theorems in total.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are

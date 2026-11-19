@@ -562,3 +562,24 @@ all remain proof-free by the named check (fresh heads
 d4622612, 7f5bd08b, and 4544afac). All other census pins
 stand with re-census owed at the fresh heads recorded in the
 pins file.
+Twenty-fourth watch update (2026-11-19): the estate was
+re-enumerated a twenty-fifth time at 569 repos, every head
+read individually, no read errors. Three repos had moved,
+none were new, none were gone, and the paper source hash was
+unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. Two proof repos moved: this repo
+itself, whose head moved only by the twenty-third watch
+landing — its five commits carry no Lean change, so its own
+eleven theorems stand unchanged (fresh head 91adf89, census
+pin d558669b); and the library repo, which landed its Pareto
+release condition in three commits — a new 27-theorem proof
+package proving Pareto unimprovability in its abstract
+models, with a recorded, hash-bound kernel-checked receipt
+and five recorded negative controls, its source and checker
+hashes verified firsthand by this watch — re-censused at
+theorem level at its head (4dee2311, its new census pin),
+for sixty-five theorems in total with its earlier thirty-eight
+unchanged. One further idol-family repo moved, the compiler
+port, and it remains proof-free by the named check (fresh
+head fc5d20bf). All other census pins stand with re-census owed
+at the fresh heads recorded in the pins file.
