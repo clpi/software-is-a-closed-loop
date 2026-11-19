@@ -382,3 +382,25 @@ idol-family repo moved, the compiler port, and it remains
 proof-free by the named check (fresh head c797c1b8). All
 census pins stand with re-census owed at the fresh heads
 recorded in the pins file.
+
+Fifteenth watch update (2026-11-18, later the same night): the
+estate was re-enumerated a sixteenth time at 566 repos,
+every head read individually (one first read failed on a
+transport error and was re-read to its recorded empty
+state). Three repos had moved, one was new, none were
+gone, and the paper source hash was unchanged at the value
+recorded in the sync note, so no paper re-sync was owed.
+One proof repo moved: this repo itself, whose head moved
+only by the fourteenth watch landing — its four commits
+carry no Lean change, so its own eleven theorems stand
+unchanged (fresh head fe96c58f, census pin d558669b). The
+new repo is a proof repo, the profiling proof repo, entered
+and censused at theorem level at its head (a53c4bf5, its
+census pin): twenty declarations, three controls, and a
+recorded gate log passing at the head, with one carried
+premise and its proposed and open items at its own stated
+states. Two further idol-family repos moved, the compiler
+port and the relay, and both remain proof-free by the named
+check (fresh heads 12110aae and 08af9acc). All other census
+pins stand with re-census owed at the fresh heads recorded
+in the pins file.

@@ -382,6 +382,38 @@ tree gained four files, all checking sources, and one file
 changed, a slices record, over sixteen commits, with no
 file removed. No tree read was truncated this watch.
 
+## Watch update — 2026-11-18 (fifteenth hourly re-synthesis)
+
+A sixteenth enumeration the same night: 566 repos, every
+head read individually. One first read failed on a
+transport error; it was re-read individually and proved
+empty, matching its recorded empty state, so the final
+reads carry no errors. Three repos had moved since the
+last recorded heads, one was new, none were gone, and
+the paper source hash was unchanged. The moved set: this
+repo itself, and two further idol-family repos (the
+compiler port and the relay). The new repo is the
+profiling proof repo, public, at a53c4bf5: three Lean
+files, twenty theorem declarations, three adversarial
+controls, and a recorded gate log in its tree — entered
+in the proof family below, censused at theorem level in
+its annex, and placed in the synthesis at its head, which
+is its census pin. Fresh heads for every repo stand in
+the pins file at this re-synthesis. This repo's movement
+is the fourteenth watch landing itself: the four commits
+between the heads are that watch's annex, placement,
+ledger, and pins commits, no Lean file changed among
+them, and its eleven theorems stand unchanged, recorded
+in its annex delta. The compiler port and the relay were
+read by tree at their fresh heads and carry no
+proof-assistant content, so they remain proof-free by the
+named check; the compiler port's tree gained two files,
+the lowering and code generation sources, and one file
+changed, the slices record, over ten commits, with no
+file removed, and the relay's tree gained one file, a
+dated relay note, with no file changed or removed over
+one commit. No tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -444,6 +476,16 @@ section 3.10 and the annex):
   Pin 561cf395.
 - software-is-a-closed-loop (public) — this repo's own
   checked example: 3 axiom-free theorems. Pin d8047804.
+
+Added by the fifteenth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-profiling-is-synthesizable (public) — the
+  measurement proof model: baseline independence, finiteness
+  derived from the contract, witness compounding with
+  distinctness and sufficiency, incremental accounting,
+  elimination, and the solved configuration, with three
+  load bearing controls. Pin a53c4bf5.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are

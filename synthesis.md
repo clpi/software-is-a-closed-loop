@@ -561,6 +561,43 @@ and a rejected control. State: PROVEN at the pin. The theorem
 statements this repo carries in its annex are other repos'
 results and are counted at their homes, never here.
 
+### 3.11 Placement from the fifteenth watch (2026-11-18) — a new proof repo
+
+Stage 3, 5, and 7 — software-profiling-is-synthesizable,
+census pin a53c4bf5. A new repo, entered on the sixteenth
+enumeration and censused at theorem level on its first
+sighting, by content: the measurement proof model for
+software profiling, dictated by Chris on 2026-11-18. Twenty
+theorem declarations in three Lean files on Lean 4.19.0:
+baseline independence (the constructed measure is a function
+of the overlap and the certified witnesses alone, invariant
+under any choice of external baseline); finiteness derived
+from the contract (the configuration count is the product of
+the venue and ordering counts); witness compounding (the
+assignments of that many witness positions number exactly
+two to that power), distinctness, and combinatorial
+sufficiency, with freedom at one coordinate; incremental
+accounting equal to full accounting; idempotence and the
+swapping of commuting effects; elimination of a step inert
+on every state; the optimum and solved results (a least-cost
+configuration exists over a nonempty finite configuration
+set under any cost assignment); standing carried under
+subsets and killed by one falsifying witness; and invariance
+of comparisons under relabeling, with verdicts parametric in
+the contract. Three adversarial controls stand in the tree,
+each proving a weakened condition load bearing: baseline
+dependence, non-idempotence, and witness dependence. The
+recorded gate log at the pin ends in its axiom subset check
+passing, with 9 of the 19 printed theorems axiom-free and
+the rest on subsets of the standard set. Carried at the
+repo's own states: one premise (facts about a runtime or a
+job enter only as certified witness states; the Lean
+development carries none of its own), the campaign bridge
+and the visibility vector as proposed, and re-solving over a
+sequence of cost assignments as open. State: PROVEN at the
+pin on the recorded log, for the core above. The full census
+stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -1561,3 +1598,46 @@ a slices record, with no file removed. No proof-assistant
 source was found in its tree and the tree read was not
 truncated, so it remains proof-free by the named check.
 Its movement changes its pin only, not its placement.
+
+## 20. Watch update — 2026-11-18, the fifteenth hourly re-synthesis
+
+The fifteenth watch re-enumerated the estate completely: 566
+repos, every head read individually. One first read failed
+on a transport error; it was re-read individually and proved
+empty, matching its recorded empty state, so the final reads
+carry no errors. Three repos had moved since the last
+recorded heads, one was new, none were gone, and the paper
+source hash was unchanged, so no paper re-sync was owed. One
+of the moved repos is a proof repo — this repo itself — the
+new repo is a proof repo, and the other two moved repos are
+idol-family repos; there was no long-tail movement this
+watch. The annex files carry the evidence at the fresh
+heads; the placements in section 3 stand at their census
+pins, with re-census owed at the new head of this repo, and
+the new repo's placement stands in section 3.11 at its
+census pin, which is its head.
+
+This repo's own head moved only by the fourteenth watch
+landing itself: the four commits between the two heads are
+that watch's annex, placement, ledger, and pins commits, and
+no Lean file changed among them, so its eleven theorems
+stand unchanged at the fresh head.
+
+The new repo, the profiling proof repo, was read in full at
+its head and censused at theorem level in its annex: twenty
+declarations, three controls, a recorded gate log passing
+at the head, one carried premise, and its proposed and open
+items at the states its own spec states. It is
+proof-bearing by content, found on its first enumeration.
+
+The compiler port was read by tree at its fresh head: ten
+commits stand between the two heads, two files were added,
+the lowering and code generation sources, and one file
+changed, the slices record, with no file removed. The relay
+was read by tree at its fresh head: one commit stands
+between the two heads, one file was added, a dated relay
+note, and no file changed or removed. No proof-assistant
+source was found in either tree and neither tree read was
+truncated, so both remain proof-free by the named check.
+Their movement changes their pins only, not their
+placements.
