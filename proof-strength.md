@@ -1923,3 +1923,88 @@ no ledger rows: all three were read by tree at their fresh
 heads, no proof-assistant source was found in any of them,
 and they remain proof-free by the named check, as their
 census entries record.
+
+## Watch refresh — 2026-11-19, the twenty-fourth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 569 repos, every head
+read individually with no errors, read the moved repos by
+tree at their fresh heads, and re-censused the one moved
+proof repo with new proof content in full at its head.
+Evidence below rests on the tree reads at both heads of
+the moved repos, on the blob comparison of this repo's two
+Lean files between its heads, and on the library repo's
+full re-census in its annex, including the firsthand hash
+verification recorded there. Placements stand at the
+census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. This repo's Lean files are
+  byte-identical between the last recorded head and the
+  fresh head, so its eleven names stand unchanged. The
+  library repo's proven set grew from thirty-eight
+  theorems to sixty-five: its three earlier Lean files
+  are byte-identical at the fresh head, so no name was
+  lost, and the added file carries twenty-seven new
+  names. No regression is flagged.
+- No pin moved without this ledger moving: both moved
+  proof repos have their rows restated below in this
+  same pass, and the library repo's census pin moves in
+  this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 91adf89e
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the twenty-third watch
+  landed; the five commits between them are that watch's
+  census, annex, placement, ledger, and pins commits and
+  carry no Lean change. Controls and gate stand as the
+  second watch row records.
+- idol-lib — new census pin 4dee2311, which is its fresh
+  head. Proven: 65 theorem declarations across three
+  Lean files — the campaign kernel (25) and the atlas
+  proofs (13) unchanged at the axiom states their row
+  above records, beside the six witness examples checked
+  by decision, and a new Pareto package (27) proving
+  Pareto unimprovability in its abstract models: the
+  strict domination relation, the global witness with
+  its finite, cone, normalization, and cell-cover forms,
+  the weighted score results, the standing
+  counterexamples (a zero-weight scalar minimum that is
+  not Pareto optimal, an omitted alternative, and
+  component optima that need not compose), bounded
+  uncertainty, and the retention model with its concrete
+  optimal instance. Of the new package's 27, its recorded
+  receipt prints all: 14 depend on no axioms, 2 on
+  propositional extensionality only, 10 on propositional
+  extensionality and quotient soundness, and 1 on the
+  full standard set. On named premises: the package's
+  own scope — natural-valued abstract models only, no
+  software or measured-cost refinement proved there —
+  beside the campaign's standing trust boundary from its
+  row above. Absent: that refinement, unchanged, and, at
+  the repo's own state, actual-software release admission
+  under the new Pareto requirement, which stands open
+  with the release command refusing it. Controls in
+  tree: the kernel gate's five recorded negative
+  controls and the atlas gate's controls stand as their
+  row above records, and the new package carries five
+  recorded negative controls of its own, each rejected
+  as required (an empty proof file, a missing robust
+  scenario family, a missing axiom audit, an admitted
+  proof hole, and a custom axiom). Gate: the new
+  package's recorded receipt at the pin is
+  kernel-checked with exit 0, and this watch verified
+  its source and checker hashes against the tree at the
+  pin firsthand; the kernel receipt was re-recorded in
+  this window at a fresh time stamp with the same source
+  and checker hashes and the same kernel-checked status.
+  This watch ran no build.
+
+The one other moved repo this watch, the compiler port,
+is not a proof repo and carries no ledger row: it was
+read by tree at its fresh head, no proof-assistant source
+was found in it, and it remains proof-free by the named
+check, as its census entry records.
