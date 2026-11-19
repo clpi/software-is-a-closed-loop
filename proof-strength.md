@@ -1271,3 +1271,80 @@ is not a proof repo and carries no ledger row: it was
 read by tree at its fresh head, no proof-assistant
 source was found, and it remains proof-free by the
 named check, as its census entry records.
+
+## Watch refresh — 2026-11-18, the fifteenth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 566 repos, every head
+read individually (one transport failure re-read to its
+recorded empty state), read the moved repos by tree at their
+fresh heads, and censused the one new repo in full at its
+head. Evidence below rests on the tree and commit reads at
+both heads of the moved proof repo: no Lean file changed
+between them, and the theorem name set is identical at both
+heads. Evidence for the new repo rests on its full census in
+its annex. Placements stand at the census pins named in each
+row; a full theorem-level re-census at each fresh head is
+owed, except for the new repo, censused in full at its head
+in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files
+  are unchanged between the last recorded head and the
+  fresh head, and its theorem name set is identical at
+  both heads, so no name was lost; this repo's eleven
+  names stand unchanged. The new proof repo enters with
+  its full set at its first pin; it has no earlier set to
+  shrink against. No regression is flagged.
+- No pin moved without this ledger moving: the one moved
+  proof repo has its row restated below in this same pass,
+  and the new proof repo's row is added below in this same
+  pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head fe96c58f
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the fourteenth watch
+  landed; the commits between them are that watch's annex,
+  placement, ledger, and pins commits and carry no Lean
+  change. Controls and gate stand as the second watch
+  row records.
+
+New row, at its census pin, which is its head:
+
+- software-profiling-is-synthesizable — pin a53c4bf5.
+  Proven: 20 theorem declarations across three Lean files
+  — the measurement core (baseline independence, finiteness
+  derived from the contract, compounding, distinctness,
+  incremental accounting, idempotence, elimination, the
+  optimum and solved results, and falsification), the
+  completion results (sufficiency, freedom at one
+  coordinate, standing carried under subsets, invariance
+  under relabeling, parametric verdicts, and the swapping
+  of commuting effects), one grid length helper, and three
+  adversarial controls. Of the 19 declarations the recorded
+  log prints, 9 depend on no axioms, 3 on propositional
+  extensionality only, and 7 on the standard pair; the
+  helper is not printed in the log, so its axiom state is
+  unrecorded there. On named premises: one premise of the
+  model — facts about a runtime or a job enter only as
+  certified witness states; the Lean development carries
+  no premise of its own. Absent, at the repo's own states:
+  the visibility vector has no formalization yet
+  (proposed), the campaign bridge is proposed semantics
+  discharged per campaign, and re-solving over a sequence
+  of cost assignments is open. Controls in tree: the three
+  adversarial controls, each a concrete counterexample
+  proving its weakened condition load bearing. Gate: the
+  check script stands in the tree and the recorded check
+  log at the pin ends in its axiom subset check passing —
+  green on the recorded log; this watch ran no build.
+
+The two other moved repos this watch, the compiler port
+and the relay, are not proof repos and carry no ledger
+rows: both were read by tree at their fresh heads, no
+proof-assistant source was found in either, and they
+remain proof-free by the named check, as their census
+entries record.
