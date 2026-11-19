@@ -598,6 +598,51 @@ sequence of cost assignments as open. State: PROVEN at the
 pin on the recorded log, for the core above. The full census
 stands in its annex file.
 
+### 3.12 Placement from the twentieth watch (2026-11-19) — a new proof repo
+
+Stage 3, 5, and 7 — software-losses-are-compositional,
+census pin d1159dc1. A new repo, entered on the
+twenty-first enumeration and censused at theorem level on
+its first sighting, by content: the constructive proved
+model of structural loss fixing, directed by Chris on
+2026-11-19. Seventeen theorem declarations in two Lean
+files on Lean 4.19.0: additive recording (the derived
+contract level of a composition is the sum of the levels
+of its parts); compositional projection, per axis, with
+its three way form over part, interaction, and part; the
+gap reading (gap zero is loss freeness); composition of
+loss freeness, in two part form and in the three way
+structural fix form (components loss free against their
+shares, and the interaction recorded and loss free
+against its share, give the whole loss free against the
+sum of the shares); compounding (the gap of a composition
+is at most the sum of the component gaps and the
+interaction gap); monotonicity of the gap in each
+component; localization (a gap in a whole is a gap in a
+component or in the recorded interaction — no fourth
+place for a loss to hide); finiteness derived from the
+qualification contract (the problem space size is the
+product of the two list sizes); and method soundness, per
+axis and over a finite axis list. Three adversarial
+controls stand in the tree, each a proved negation over a
+concrete counterexample: an unrecorded interaction breaks
+the compositionality of the gap, a non additive recording
+breaks the projection law, and component wise loss
+freeness does not save a composition whose interaction is
+unrecorded. The recorded gate log at the pin ends in its
+axiom subset check passing, with 3 of the 15 printed
+theorems axiom-free, 4 on propositional extensionality
+only, 7 on the standard pair, and 1 on the full standard
+set; the two helper results are not printed in the log,
+so their axiom states are unrecorded there. Carried at
+the repo's own states: two named premises (record
+fidelity, the evidence of a concrete campaign; and
+re-measure — the model flips no beat cell), and three
+proposed items (richer derivations, weighted axes, and
+continuous axes), none formalized. State: PROVEN at the
+pin on the recorded log, for the core above. The full
+census stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -1756,3 +1801,40 @@ was found in either tree and neither tree read was
 truncated, so both remain proof-free by the named check.
 Their movement changes their pins only, not their
 placements.
+
+## 25. Watch update — 2026-11-19, the twentieth hourly re-synthesis
+
+The twentieth watch re-enumerated the estate completely:
+567 repos, every head read individually, no read errors.
+Two repos had moved since the last recorded heads, one
+was new, none were gone, and the paper source hash was
+unchanged, so no paper re-sync was owed. One of the moved
+repos is a proof repo — this repo itself — the new repo
+is a proof repo, and the other moved repo is an
+idol-family repo; there was no long-tail movement this
+watch. The annex files carry the evidence at the fresh
+heads; the placements in section 3 stand at their census
+pins, with re-census owed at the new head of this repo,
+and the new repo's placement stands in section 3.12 at
+its census pin, which is its head.
+
+This repo's own head moved only by the nineteenth watch
+landing itself: the four commits between the two heads
+are that watch's annex, placement, ledger, and pins
+commits, and no Lean file changed among them, so its
+eleven theorems stand unchanged at the fresh head.
+
+The new repo, the losses proof repo, was read in full at
+its head and censused at theorem level in its annex:
+seventeen declarations, three controls, a recorded gate
+log passing at the head, two named premises, and its
+proposed items at the states its own spec states. It is
+proof-bearing by content, found on its first enumeration.
+
+The compiler port was read by tree at its fresh head:
+six commits stand between the two heads, no file was
+added or removed, and two files changed, a slices record
+and a code generation source. No proof-assistant source
+was found in its tree and its tree read was not
+truncated, so it remains proof-free by the named check.
+Its movement changes its pin only, not its placement.

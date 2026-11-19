@@ -435,6 +435,34 @@ head, with no file added or removed and two files changed,
 a slices record and a code generation source, over sixteen
 commits. No tree read was truncated this watch.
 
+## Watch update — 2026-11-19 (twentieth hourly re-synthesis)
+
+A twenty-first enumeration: 567 repos, every head read
+individually, no read errors. Two repos had moved since
+the last recorded heads, one was new, none were gone,
+and the paper source hash was unchanged. The moved set:
+this repo itself, and one further idol-family repo (the
+compiler port). The new repo is the losses proof repo,
+public, at d1159dc1: two Lean files, seventeen theorem
+declarations, three adversarial controls, and a recorded
+gate log in its tree — entered in the proof family
+below, censused at theorem level in its annex, and
+placed in the synthesis at its head, which is its census
+pin. Fresh heads for every repo stand in the pins file
+at this re-synthesis. This repo's movement is the
+nineteenth watch landing itself: the four commits
+between the heads are that watch's annex, placement,
+ledger, and pins commits, no Lean file changed among
+them, and its eleven theorems stand unchanged, recorded
+in its annex delta. The compiler port was read by tree
+at its fresh head and carries no proof-assistant
+content, so it remains proof-free by the named check;
+its tree stands at the same file count as at its last
+recorded head, with no file added or removed and two
+files changed, a slices record and a code generation
+source, over six commits. No tree read was truncated
+this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -507,6 +535,16 @@ synthesis placement section for this watch and the annex):
   distinctness and sufficiency, incremental accounting,
   elimination, and the solved configuration, with three
   load bearing controls. Pin a53c4bf5.
+
+Added by the twentieth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-losses-are-compositional (public) — the
+  structural loss fixing model: additive recording,
+  compositional projection per axis, compounding gaps,
+  loss freeness compositional, and every loss localizing
+  to a gap at a named contract or composition site, with
+  three load bearing controls. Pin d1159dc1.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are

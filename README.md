@@ -464,3 +464,22 @@ and both remain proof-free by the named check (fresh heads
 c2fa1ada and 2ab0e5bd). All census pins stand with
 re-census owed at the fresh heads recorded in the pins
 file.
+
+Twentieth watch update (2026-11-19): the estate was
+re-enumerated a twenty-first time at 567 repos, every head
+read individually, no read errors. Two repos had moved, one
+was new, none were gone, and the paper source hash was
+unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. One proof repo moved: this repo
+itself, whose head moved only by the nineteenth watch
+landing — its four commits carry no Lean change, so its own
+eleven theorems stand unchanged (fresh head ec47f7e, census
+pin d558669b). The new repo is a proof repo, the losses
+proof repo, entered and censused at theorem level at its
+head (d1159dc1, its census pin): seventeen declarations,
+three controls, and a recorded gate log passing at the
+head, with two named premises and its proposed items at its
+own stated states. One further idol-family repo moved, the
+compiler port, and it remains proof-free by the named check
+(fresh head 4411fbe4). All census pins stand with re-census
+owed at the fresh heads recorded in the pins file.
