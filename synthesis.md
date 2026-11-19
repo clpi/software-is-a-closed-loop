@@ -2286,3 +2286,13 @@ fresh head; no proof-assistant source was found in it
 and its tree read was not truncated, so it remains
 proof-free by the named check. Its movement changes its
 pin only, not its placement.
+
+## 30. Watch update — 2026-11-19, the twenty-fifth hourly re-synthesis
+
+The twenty-fifth watch re-enumerated the estate completely: 569 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. One of the moved repos is a proof repo — this repo itself — and the other two are idol-family repos. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the twenty-fourth watch landing itself: the five commits between the two heads are that watch's re-census, delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The compiler port moved by two commits, one slice landing and its merge: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
