@@ -643,6 +643,56 @@ continuous axes), none formalized. State: PROVEN at the
 pin on the recorded log, for the core above. The full
 census stands in its annex file.
 
+### 3.13 Placement from the twenty-first watch (2026-11-19) — a new proof repo
+
+Stage 3, 5, and 7 — software-persistence-is-minimal,
+census pin eb01cf2e. A new repo, entered on the
+twenty-second enumeration and censused at theorem level
+on its first sighting, by content: the proved model of
+redundant computation and Pareto-optimal compression of
+persistent data to its minimum representation, directed
+by Chris on 2026-11-19. Fifty-three theorem declarations
+in three Lean files on Lean 4.19.0: derivability from
+persistent state (step closure, monotonicity in the
+store and in the edges, and elimination of the already
+derivable with the derivable set unchanged in both
+directions); certificates for redundancy (run soundness
+and monotonicity, checker soundness and monotonicity,
+and composition at the run and checker levels); finite
+candidate spaces (the candidate count a computed power
+of the alphabet size); cost additivity over segments;
+the domination bridge and the minimality checker's
+soundness; minima by construction (the choice fold's
+invariant, its output a minimum, existence in any
+nonempty candidate list), with domination of a segment
+lifting to the whole and a minimum of the whole having
+minimum parts; and semi-persistence (readability
+monotone in the store, version cost splitting, the kept
+premise). Four adversarial controls stand in the tree
+beside a general no-derivation result: axis relativity
+of minimality, the unrecorded premise, the dropped
+shared premise, and the cross-part tradeoff that part
+minima need not compose. A synthesis file assembles the
+family over the same definitions: the losses core
+mirrored and discharged, baseline independence and
+least cost from the profiling development proved here,
+fold membership and retraction from the traceability
+development proved here, and a joined theorem carrying
+the remaining family results as restated hypotheses and
+five named premises. The recorded gate log at the pin
+ends in its axiom subset check passing, with 11 of the
+52 printed theorems axiom-free, 19 on propositional
+extensionality only, and 22 on the standard pair; the
+one unprinted declaration is the sum append helper, its
+axiom state unrecorded there. Carried at the repo's own
+states: two campaign premises (edge faithfulness and
+cost fidelity), candidate completeness and the
+end-to-end methodology as proposed, and one executed
+application whose full Pareto verdict stands unmeasured
+with its blocking step named. State: PROVEN at the pin
+on the recorded log, for the core above. The full
+census stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -1838,3 +1888,73 @@ and a code generation source. No proof-assistant source
 was found in its tree and its tree read was not
 truncated, so it remains proof-free by the named check.
 Its movement changes its pin only, not its placement.
+## 26. Watch update — 2026-11-19, the twenty-first hourly re-synthesis
+
+The twenty-first watch re-enumerated the estate
+completely: 569 repos, every head read individually, no
+read errors. Four repos had moved since the last
+recorded heads, two were new, none were gone, and the
+paper source hash was unchanged, so no paper re-sync
+was owed. Two of the moved repos are proof repos — this
+repo itself and the losses repo — one of the new repos
+is a proof repo, and the other two moved repos are
+idol-family repos; there was no long-tail movement this
+watch. The annex files carry the evidence at the fresh
+heads; the placements in section 3 stand at their
+census pins, with re-census owed at the new head of
+this repo, the losses placement restated at its new
+census pin in this pass, and the new repo's placement
+standing in section 3.13 at its census pin, which is
+its head.
+
+This repo's own head moved only by the twentieth watch
+landing itself: the five commits between the two heads
+are that watch's census, annex, placement, ledger, and
+pins commits, and no Lean file changed among them, so
+its eleven theorems stand unchanged at the fresh head.
+
+The losses repo moved by one commit past its census
+pin: a single theorem was added, the tightness of the
+compounding bound — at the no-surplus point the gap of
+a composition is exactly the sum of the component and
+interaction gaps — and the repo's own counts were
+restated to match. The watch re-read both Lean files
+and the recorded log in full at both heads: eighteen
+declarations at the fresh head against seventeen at the
+census pin, one gained and none lost, the controls file
+byte-identical, and the recorded log at the fresh head
+ending in its axiom subset check passing. Its census
+pin moves to the fresh head on this re-census, recorded
+in its annex.
+
+The new proof repo, the persistence repo, was read in
+full at its head and censused at theorem level in its
+annex: fifty-three declarations, four controls beside
+a general no-derivation result, a recorded gate log
+passing at the head, two campaign premises, and its
+proposed items at the states its own spec states. It
+is proof-bearing by content, found on its first
+enumeration.
+
+The second new repo, the bidirectional repo, stands
+empty at its first enumeration: no commits, no tree,
+accounted as carrying no provable results and colored
+unknown, with the standing note that an empty repo for
+a named project is a defect. Its listing description
+announces a proved model and an empirical campaign for
+the bidirectional claim; at this head there is no
+in-repo content to census, and it enters the proof
+family on the enumeration that first sees its content.
+
+The compiler port was read by tree at its fresh head:
+four commits stand between the two heads, no file was
+added or removed, and two files changed, a slices
+record and a code generation source. The relay was
+read by tree at its fresh head: two commits stand
+between the two heads, two files were added, a dated
+minimax note and a dated grok audit note, and no file
+changed or removed. No proof-assistant source was
+found in either tree and neither tree read was
+truncated, so both remain proof-free by the named
+check. Their movement changes their pins only, not
+their placements.

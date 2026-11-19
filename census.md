@@ -463,6 +463,48 @@ files changed, a slices record and a code generation
 source, over six commits. No tree read was truncated
 this watch.
 
+## Watch update — 2026-11-19 (twenty-first hourly re-synthesis)
+
+A twenty-second enumeration: 569 repos, every head read
+individually, no read errors. Four repos had moved since
+the last recorded heads, two were new, none were gone,
+and the paper source hash was unchanged. The moved set:
+this repo itself, one further proof repo (the losses
+repo), and two further idol-family repos (the compiler
+port and the relay). The new repos are the persistence
+proof repo, public, at eb01cf2e — three Lean files,
+fifty-three theorem declarations, four adversarial
+controls beside a general no-derivation result, and a
+recorded gate log in its tree — entered in the proof
+family below, censused at theorem level in its annex,
+and placed in the synthesis at its head, which is its
+census pin; and the bidirectional repo, public, standing
+empty at its first enumeration — no commits and no tree,
+accounted as carrying no provable results, colored
+unknown with the standing empty-repo note, and recorded
+here until content lands. Fresh heads for every repo
+stand in the pins file at this re-synthesis. This repo's
+movement is the twentieth watch landing itself: the five
+commits between the heads are that watch's census,
+annex, placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The losses repo
+moved by one commit and gained one theorem, the
+tightness of its compounding bound, with no name lost
+and its controls file byte-identical; it was re-censused
+in full at its fresh head in its annex, and its census
+pin moves to 12ee66e9 in this pass. The compiler port
+and the relay were read by tree at their fresh heads and
+carry no proof-assistant content, so they remain
+proof-free by the named check; the compiler port's tree
+stands at the same file count as at its last recorded
+head, with no file added or removed and two files
+changed, a slices record and a code generation source,
+over four commits, and the relay's tree gained two
+files, a dated minimax note and a dated grok audit note,
+with no file changed or removed over two commits. No
+tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -545,6 +587,18 @@ synthesis placement section for this watch and the annex):
   loss freeness compositional, and every loss localizing
   to a gap at a named contract or composition site, with
   three load bearing controls. Pin d1159dc1.
+
+Added by the twenty-first watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-persistence-is-minimal (public) — the
+  persistence minimality model: derivability and
+  certificates over recorded edges, finite candidate
+  spaces with minima by construction and independent
+  minimality checking, composition of segment minima
+  with interactions held fixed, and semi-persistent
+  version readability, with four load bearing controls.
+  Pin eb01cf2e.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
