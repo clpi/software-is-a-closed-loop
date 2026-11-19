@@ -693,6 +693,63 @@ with its blocking step named. State: PROVEN at the pin
 on the recorded log, for the core above. The full
 census stands in its annex file.
 
+### 3.14 Placement from the twenty-second watch (2026-11-19) — a new proof repo
+
+Stage 0 through 9 — software-is-bidirectional, census
+pin b14fc92b. A repo that stood empty at the
+twenty-second enumeration, entered on the twenty-third
+and censused at theorem level on the first sighting of
+its content, by content: the proved model of the
+bidirectionality claim directed by Chris on 2026-11-19
+— contracts, vanishingly and compoundingly small and
+possibly independently derivable, bidirectionally
+produce an optimally and speculatively optimizable
+engineering and reengineering analysis for any set of
+qualifications. Seventy-three theorem declarations in
+three Lean files on Lean 4.19.0: the core model
+(states up to equivalence as a join-semilattice, the
+hyperlattice; derivability closure over recorded
+steps; the analysis and synthesis maps with both round
+trips and the reengineering round trip; independent
+derivability of the contract by two routes under a
+complete recording; smallness against the power of
+two; speculation tracked by premise cones; bounds over
+candidate lists, attained at both ends, compounding
+and tightening monotonically under joins, with
+certified optima at certified floors; the finite
+candidate grid with its computed size and the decidable
+optimum question; and every named measure with its
+characterization — semantic mass, velocity as exact
+mass change, the sound one-step redundancy test,
+ordering optimality as the absence of descents, and
+the exact suboptimality forms for scheduling, venue,
+and test sets); the composition (the losses core
+mirrored and discharged over identical definitions,
+the persistence elimination result discharged in this
+vocabulary, the recorded-state lattice discharging for
+its class the general join-semilattice premise, and
+the joined theorem assembling the whole method from
+this model's theorems and the family's restated
+hypotheses under six named premises); and four
+standing controls (smallness can fail, the two routes
+disagree on an incomplete recording, a join inside the
+bounds tightens nothing, the content bound fails
+without injectivity). The recorded gate log at the pin
+ends in its axiom subset check passing: 74 audited
+declarations printed — the 73 theorems plus the optimum
+decision definition — 19 axiom-free, 27 on propositional
+extensionality only, 28 on the standard pair, and no
+classical choice anywhere. Carried at the repo's own
+states: contract fidelity as the standing premise its
+empirical census arm tests row by row (its first
+tranche executed over three sibling inventories, round
+trips passing), the content bound under injectivity,
+the visibility vector, and time-varying re-solving as
+proposed, and a ten-entry gap register, each gap owned
+with its closing route. State: PROVEN at the pin on
+the recorded log, for the model above. The full census
+stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -1958,3 +2015,78 @@ found in either tree and neither tree read was
 truncated, so both remain proof-free by the named
 check. Their movement changes their pins only, not
 their placements.
+## 27. Watch update — 2026-11-19, the twenty-second hourly re-synthesis
+
+The twenty-second watch re-enumerated the estate
+completely: 569 repos, every head read individually, no
+read errors. Seven repos had moved since the last
+recorded heads, none were new, none were gone, and the
+paper source hash was unchanged, so no paper re-sync
+was owed. Three of the moved repos are proof repos —
+this repo itself, the theses repo, and the frontier
+repo — one moved repo is a repo that stood empty at the
+last enumeration and now carries proof content for the
+first time, and the other three moved repos are
+idol-family repos; there was no long-tail movement this
+watch. The annex files carry the evidence at the fresh
+heads; the placements in section 3 stand at their
+census pins, with re-census owed at the new heads of
+the theses and frontier repos, and the newly
+proof-bearing repo's placement standing in section 3.14
+at its census pin, which is its head.
+
+This repo's own head moved only by the twenty-first
+watch landing itself: the six commits between the two
+heads are that watch's census, re-census, delta,
+placement, ledger, and pins commits, and both Lean
+files are byte-identical between the heads, so its
+eleven theorems stand unchanged at the fresh head.
+
+The theses repo moved by four commits, the landing of
+the synthesis pass of 2026-11-19 in its own tree: two
+new native modules (composition glue and a rewrite
+composer, fourteen theorems between them, none lost),
+a third cited group growing the cited tranche from
+seventeen theses to thirty-four at the pins the pass
+read back, a campaign document carrying the composed
+synthesis, and a future work section holding the
+composed claims that landed neither way at proposed
+state. Its census stands in its annex delta; no
+recorded check log stands in its tree yet.
+
+The frontier repo moved by one commit, the bounded
+search layer: one new library module of thirty-eight
+theorems (none lost) proving the general search layer
+of the structural bounded technique — join laws,
+least saturation, compounding and tightening bounds,
+the exact nondominated qualified frontier, premise-
+tracked speculation, and order-independent weighting —
+with three new controls, specified in a new search
+document. Its recorded check log stands at the fresh
+head. Its census stands in its annex delta.
+
+The bidirectional repo, which stood empty at the last
+enumeration with its thesis announced and no in-repo
+content, landed its full content in three commits: the
+proved model, the composition, and the specification
+with its first census tranche. It is proof-bearing by
+content and was censused at theorem level in full at
+its head in this pass: seventy-three theorems, four
+controls, a recorded gate log passing at the head, six
+named premises under its joined theorem, and its
+proposed items and ten-entry gap register at its own
+stated states. Its placement stands in section 3.14.
+
+The library repo moved by one commit, the ninth day's
+first slot: a flatbuffer reader and verifier port slice
+of seventeen added files and its ledger entry. The
+relay moved by one commit, a dated follow-up note on
+the library's third slot. The sites repo moved by two
+commits, cataloguing the redundancy campaign surfaces:
+thirty-seven files added, five changed, and the paper
+page file byte-identical between the heads. All three
+were read by tree at their fresh heads; no
+proof-assistant source was found in any of them and no
+tree read was truncated, so all three remain proof-free
+by the named check. Their movement changes their pins
+only, not their placements.

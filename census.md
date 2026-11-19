@@ -505,6 +505,52 @@ files, a dated minimax note and a dated grok audit note,
 with no file changed or removed over two commits. No
 tree read was truncated this watch.
 
+## Watch update — 2026-11-19 (twenty-second hourly re-synthesis)
+
+A twenty-third enumeration: 569 repos, every head read
+individually, no read errors. Seven repos had moved
+since the last recorded heads, none were new, none were
+gone, and the paper source hash was unchanged. The
+moved set: this repo itself; two further proof repos
+(the theses repo and the frontier repo); one repo that
+stood empty at the last enumeration and now carries
+proof content (the bidirectional repo); and three
+further idol-family repos (the library, the relay, and
+the sites repo). Fresh heads for every repo stand in
+the pins file at this re-synthesis. This repo's
+movement is the twenty-first watch landing itself: the
+six commits between the heads are that watch's census,
+re-census, annex, placement, ledger, and pins commits,
+no Lean file changed among them, and its eleven
+theorems stand unchanged, recorded in its annex delta.
+The theses repo gained fourteen declarations and lost
+none — two new native modules of composition glue and
+a rewrite composer, a third cited group growing its
+cited tranche from seventeen theses to thirty-four, and
+a campaign document — recorded in its annex delta. The
+frontier repo gained thirty-eight declarations and
+lost none, all in one new search module proving the
+general search layer of its bounded technique, with a
+recorded check log at its fresh head — recorded in its
+annex delta. The bidirectional repo landed its first
+content in three commits at b14fc92b: three Lean files,
+seventy-three theorem declarations, four standing
+controls, and a recorded gate log in its tree — entered
+in the proof family below, censused at theorem level in
+its annex, and placed in the synthesis at its head,
+which is its census pin. The library, the relay, and
+the sites repo were read by tree at their fresh heads
+and carry no proof-assistant content, so they remain
+proof-free by the named check; the library's tree
+gained seventeen files, a flatbuffer port slice, and
+one file changed, its ledger, over one commit, the
+relay's tree gained one file, a dated follow-up note,
+over one commit, and the sites repo's tree gained
+thirty-seven files, the redundancy campaign surfaces,
+and five files changed over two commits, with the paper
+page file byte-identical between its heads. No tree
+read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -599,6 +645,20 @@ synthesis placement section for this watch and the annex):
   with interactions held fixed, and semi-persistent
   version readability, with four load bearing controls.
   Pin eb01cf2e.
+
+Added by the twenty-second watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-is-bidirectional (public) — the
+  bidirectionality model: contracts bidirectionally
+  produce engineering and reengineering analysis, with
+  the hyperlattice of possible states, both round
+  trips, smallness against the power of two, bounds
+  compounding and tightening over candidate lists, the
+  finite candidate grid, every named measure with its
+  characterization, and the joined theorem assembling
+  the family method under six named premises, with four
+  load bearing controls. Pin b14fc92b.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are

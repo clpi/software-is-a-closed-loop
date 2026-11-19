@@ -509,3 +509,33 @@ moved, the compiler port and the relay, and both remain
 proof-free by the named check (fresh heads ba59a3e6 and
 c560a390). All other census pins stand with re-census owed
 at the fresh heads recorded in the pins file.
+Twenty-second watch update (2026-11-19): the estate was
+re-enumerated a twenty-third time at 569 repos, every head
+read individually, no read errors. Seven repos had moved,
+none were new, none were gone, and the paper source hash was
+unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. Three proof repos moved: this repo
+itself, whose head moved only by the twenty-first watch
+landing — its six commits carry no Lean change, so its own
+eleven theorems stand unchanged (fresh head 3baddd4, census
+pin d558669b); the theses repo, which gained fourteen
+theorems and lost none — two new native modules of
+composition glue and a rewrite composer, a third cited group
+growing its cited tranche from seventeen theses to
+thirty-four, and a campaign document (fresh head b6e810c);
+and the frontier repo, which gained thirty-eight theorems
+and lost none, all in one new search module proving the
+general search layer of its bounded technique, with a
+recorded check log at its fresh head (fresh head cdeae4a).
+One repo that stood empty at the last enumeration landed
+its first content and is a proof repo, the bidirectional
+proof repo, entered and censused at theorem level at its
+head (b14fc92b, its census pin): seventy-three theorems,
+four controls, and a recorded gate log passing at the head,
+with six named premises under its joined theorem and its
+proposed items at its own stated states. Three further
+idol-family repos moved, the library, the relay, and the
+sites repo, and all remain proof-free by the named check
+(fresh heads f01da7a, 4fdbf2e, and 4de6ab6). All other census
+pins stand with re-census owed at the fresh heads recorded
+in the pins file.
