@@ -1506,3 +1506,78 @@ rows: both were read by tree at their fresh heads, no
 proof-assistant source was found in either, and they
 remain proof-free by the named check, as their census
 entries record.
+
+## Watch refresh — 2026-11-19, the twentieth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 567 repos, every head
+read individually with no errors, read the moved repos by
+tree at their fresh heads, and censused the one new repo in
+full at its head. Evidence below rests on the tree and
+commit reads at both heads of the moved proof repo: no Lean
+file changed between them, and the theorem name set is
+identical at both heads. Evidence for the new repo rests on
+its full census in its annex. Placements stand at the census
+pins named in each row; a full theorem-level re-census at
+each fresh head is owed, except for the new repo, censused
+in full at its head in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files
+  are unchanged between the last recorded head and the
+  fresh head, and its theorem name set is identical at
+  both heads, so no name was lost; this repo's eleven
+  names stand unchanged. The new proof repo enters with
+  its full set at its first pin; it has no earlier set to
+  shrink against. No regression is flagged.
+- No pin moved without this ledger moving: the one moved
+  proof repo has its row restated below in this same pass,
+  and the new proof repo's row is added below in this same
+  pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head ec47f7e
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the nineteenth watch
+  landed; the commits between them are that watch's annex,
+  placement, ledger, and pins commits and carry no Lean
+  change. Controls and gate stand as the second watch
+  row records.
+
+New row, at its census pin, which is its head:
+
+- software-losses-are-compositional — pin d1159dc1.
+  Proven: 17 theorem declarations across two Lean files —
+  the composition core (additive recording, compositional
+  projection in its two part and three way forms, the gap
+  reading, composition of loss freeness in its two part
+  and three way forms, compounding, monotonicity,
+  localization, finiteness derived from the contract, and
+  method soundness per axis and over all axes), two helper
+  results carrying the additive and finiteness theorems,
+  and three adversarial controls. Of the 15 declarations
+  the recorded log prints, 3 depend on no axioms, 4 on
+  propositional extensionality only, 7 on the standard
+  pair, and 1 on the full standard set; the two helpers
+  are not printed in the log, so their axiom states are
+  unrecorded there. On named premises: two premises of
+  the model — record fidelity, which is a concrete
+  campaign's evidence, and re-measure, the model flipping
+  no beat cell; the Lean development carries no premise
+  of its own. Absent, at the repo's own states: richer
+  derivations, weighted axes, and continuous axes are
+  proposed, none formalized. Controls in tree: the three
+  adversarial controls, each a proved negation over a
+  concrete counterexample proving its weakened condition
+  load bearing. Gate: the check script stands in the tree
+  and the recorded check log at the pin ends in its axiom
+  subset check passing — green on the recorded log; this
+  watch ran no build.
+
+The one other moved repo this watch, the compiler port,
+is not a proof repo and carries no ledger row: it was
+read by tree at its fresh head, no proof-assistant
+source was found, and it remains proof-free by the
+named check, as its census entry records.
