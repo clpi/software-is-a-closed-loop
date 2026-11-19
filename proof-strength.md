@@ -1581,3 +1581,120 @@ is not a proof repo and carries no ledger row: it was
 read by tree at its fresh head, no proof-assistant
 source was found, and it remains proof-free by the
 named check, as its census entry records.
+## Watch refresh — 2026-11-19, the twenty-first hourly re-synthesis watch
+
+The watch re-enumerated the estate at 569 repos, every head
+read individually with no errors, read the moved repos by
+tree at their fresh heads, re-censused the one moved proof
+repo whose content changed in full at its fresh head, and
+censused the one new proof repo in full at its head.
+Evidence below rests on the tree and commit reads at both
+heads of the moved proof repos, on the full file reads at
+both heads of the losses repo, and on the new repo's full
+census in its annex. Placements stand at the census pins
+named in each row; a full theorem-level re-census at each
+fresh head is owed, except for the losses repo, re-censused
+in full at its fresh head in this pass, and the new repo,
+censused in full at its head in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The losses repo gained one name
+  and lost none between its census pin and its fresh
+  head, and this repo's Lean files are unchanged between
+  the last recorded head and the fresh head, with its
+  theorem name set identical at both heads, so no name
+  was lost; this repo's eleven names stand unchanged.
+  The new proof repo enters with its full set at its
+  first pin; it has no earlier set to shrink against. No
+  regression is flagged.
+- No pin moved without this ledger moving: both moved
+  proof repos have their rows restated below in this
+  same pass, and the new proof repo's row is added below
+  in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head f2c3b6d6
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the twentieth watch
+  landed; the five commits between them are that watch's
+  census, annex, placement, ledger, and pins commits and
+  carry no Lean change. Controls and gate stand as the
+  second watch row records.
+- software-losses-are-compositional — new census pin
+  12ee66e9 (was d1159dc1). Proven: 18 theorem
+  declarations across two Lean files (was 17) — one
+  gained, none lost: the tightness of the compounding
+  bound, standing beside the compounding result it
+  sharpens, on the standard pair in the recorded log.
+  The recorded check log at the new pin prints 16
+  declarations (was 15): 3 depend on no axioms, 4 on
+  propositional extensionality only, 8 on the standard
+  pair, and 1 on the full standard set; the two helpers
+  remain unprinted, their axiom states unrecorded there.
+  The controls file is byte-identical at both pins, so
+  the three adversarial controls stand unchanged. On
+  named premises and absent items: unchanged from the
+  twentieth watch row — record fidelity and re-measure
+  carried as premises, richer derivations, weighted
+  axes, and continuous axes proposed. Gate: the recorded
+  check log at the new pin ends in its axiom subset
+  check passing — green on the recorded log; this watch
+  ran no build.
+
+New row, at its census pin, which is its head:
+
+- software-persistence-is-minimal — pin eb01cf2e.
+  Proven: 53 theorem declarations across three Lean
+  files — the core (derivability closed under recorded
+  edges and monotone in the store and the edges,
+  elimination of the derivable with the derivable set
+  unchanged, certificate run and checker soundness with
+  monotonicity and composition, the candidate count as
+  a computed power, cost additivity, the domination
+  bridge, minimality checker soundness, domination
+  irreflexive and transitive, minima by construction
+  with existence in any nonempty candidate list,
+  domination lifting and whole minima having minimum
+  parts, and semi-persistent readability with version
+  cost splitting and the kept premise), the controls
+  file's general no-derivation result, and the synthesis
+  file (the losses core mirrored and discharged,
+  baseline independence and least cost proved here, fold
+  membership and retraction proved here, the
+  only-carrying recovery limit, and the joined theorem
+  assembling the method). Of the 52 declarations the
+  recorded log prints, 11 depend on no axioms, 19 on
+  propositional extensionality only, and 22 on the
+  standard pair; the sum append helper is not printed in
+  the log, so its axiom state is unrecorded there. On
+  named premises: two campaign premises (edge
+  faithfulness and cost fidelity), and inside the joined
+  theorem's antecedent five premises labeled by their
+  sources (coverage, spec authority, the general
+  join-semilattice claim, witness faithfulness, and
+  record fidelity), with the remaining family results
+  carried as restated hypotheses of that theorem.
+  Absent, at the repo's own states: candidate
+  completeness and the end-to-end methodology are
+  proposed, and the profiling development's visibility
+  vector and re-solving over cost sequences are
+  inherited as open. Controls in tree: four adversarial
+  controls, each a proved negation over concrete numbers
+  proving its weakened condition load bearing. Gate: the
+  check script stands in the tree and the recorded check
+  log at the pin ends in its axiom subset check passing
+  — green on the recorded log; this watch ran no build.
+
+The two other moved repos this watch, the compiler port
+and the relay, are not proof repos and carry no ledger
+rows: both were read by tree at their fresh heads, no
+proof-assistant source was found in either, and they
+remain proof-free by the named check, as their census
+entries record. The second new repo this watch, the
+bidirectional repo, stands empty at its first
+enumeration, carries no provable results, and carries
+no ledger row; it enters this ledger on the enumeration
+that first sees its content.
