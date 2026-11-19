@@ -539,3 +539,26 @@ sites repo, and all remain proof-free by the named check
 (fresh heads f01da7a, 4fdbf2e, and 4de6ab6). All other census
 pins stand with re-census owed at the fresh heads recorded
 in the pins file.
+Twenty-third watch update (2026-11-19): the estate was
+re-enumerated a twenty-fourth time at 569 repos, every head
+read individually, no read errors. Five repos had moved,
+none were new, none were gone, and the paper source hash was
+unchanged at the value recorded in the sync note, so no
+paper re-sync was owed. One proof repo moved: this repo
+itself, whose head moved only by the twenty-second watch
+landing — its five commits carry no Lean change, so its own
+eleven theorems stand unchanged (fresh head b0fd67d, census
+pin d558669b). One moved repo carries proof content for the
+first time, the library repo, which landed the Redundant
+campaign in ten commits — a 25-theorem proof kernel with a
+recorded, hash-bound kernel-checked receipt and five
+recorded negative controls, a 13-theorem atlas development,
+and six witness examples checked by decision — entered and
+censused at theorem level at its head (ad22a681, its census
+pin), its tree at the last recorded head re-verified
+proof-free in this pass. Three further idol-family repos
+moved, the compiler port, the relay, and the sites repo, and
+all remain proof-free by the named check (fresh heads
+d4622612, 7f5bd08b, and 4544afac). All other census pins
+stand with re-census owed at the fresh heads recorded in the
+pins file.

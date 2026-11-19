@@ -551,6 +551,53 @@ and five files changed over two commits, with the paper
 page file byte-identical between its heads. No tree
 read was truncated this watch.
 
+## Watch update — 2026-11-19 (twenty-third hourly re-synthesis)
+
+A twenty-fourth enumeration: 569 repos, every head read
+individually, no read errors. Five repos had moved
+since the last recorded heads, none were new, none were
+gone, and the paper source hash was unchanged. The
+moved set: this repo itself; one repo of the Idol
+family that now carries proof content for the first
+time (the library repo); and three further idol-family
+repos (the compiler port, the relay, and the sites
+repo). Fresh heads for every repo stand in the pins
+file at this re-synthesis. This repo's movement is the
+twenty-second watch landing itself: the five commits
+between the heads are that watch's census, annex,
+placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The library
+repo landed the Redundant empirical reconstruction
+campaign in ten commits at ad22a681: behavioral
+hypergraphs for the libraries, per-symbol contract
+extraction, the campaign with its checked proof kernel,
+and the measured reconstruction atlas — 159 files added
+and one changed, its readme, with three Lean files
+under the campaign folder (a 25-theorem kernel with a
+recorded, hash-bound kernel-checked receipt and five
+recorded negative controls, a 13-theorem atlas
+development, and a witness file with six examples
+checked by decision). Its tree at the last recorded
+head was re-read in this pass and carries no
+proof-assistant content, so the repo is newly
+proof-bearing by the named check — entered in the proof
+family below, censused at theorem level in its annex,
+and placed in the synthesis at its head, which is its
+census pin. The compiler port, the relay, and the sites
+repo were read by tree at their fresh heads and carry
+no proof-assistant content, so they remain proof-free
+by the named check; the compiler port's tree stands at
+the same file count as at its last recorded head, with
+no file added or removed and two files changed, a
+slices record and a code generation source, over four
+commits, the relay's tree gained one file, a dated
+minimax note, over one commit, and the sites repo's
+tree gained twenty-one files, a new Muse Dash space
+catalogue, and four files changed over one commit, with
+the paper page file byte-identical between its heads.
+No tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -659,6 +706,24 @@ synthesis placement section for this watch and the annex):
   characterization, and the joined theorem assembling
   the family method under six named premises, with four
   load bearing controls. Pin b14fc92b.
+
+Added by the twenty-third watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- idol-lib (private) — the Redundant campaign proof
+  content inside the library ports repo: a 25-theorem
+  campaign kernel (reconstruction, intent axes,
+  simulation and safety transfer, the joined effect
+  bound, the rewrite composer, the keyed ledger,
+  certified economics, contract cover, hypergraph
+  derivation soundness and reuse, and the finite
+  minimum), a 13-theorem atlas development (gathering
+  and the batch composer, the work lower bound, frontier
+  exactness, state abstraction, the Adler scan laws, and
+  the minimax certificate), and six witness examples
+  checked by decision, with five recorded negative
+  controls and a hash-bound kernel-checked receipt.
+  Pin ad22a681.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are

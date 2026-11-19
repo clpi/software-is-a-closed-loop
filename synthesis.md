@@ -750,6 +750,62 @@ with its closing route. State: PROVEN at the pin on
 the recorded log, for the model above. The full census
 stands in its annex file.
 
+### 3.15 Placement from the twenty-third watch (2026-11-19) — a repo newly proof-bearing
+
+Stage 3 and 5 — idol-lib, census pin ad22a681. A repo
+of the Idol family (the library ports) that stood
+proof-free at every earlier enumeration, entered in the
+proof family on the twenty-fourth enumeration and
+censused at theorem level on the first sighting of its
+proof content, by content: the Redundant empirical
+reconstruction campaign landed in its tree in ten
+commits, carrying a checked proof kernel and a measured
+reconstruction atlas. Thirty-eight theorem declarations
+in two Lean files on Lean 4.19.0, plus six checked
+witness examples: the campaign kernel (25 theorems —
+reconstruction injectivity under a round trip and the
+history obstruction, intent axes under a factorization,
+simulation and safety transfer, the joined effect
+bound, the rewrite composer for contract and budget,
+the commuting swap, idempotence composing under
+commutation with the unconditional reading disproven by
+a three-state counterexample, the keyed ledger quartet,
+weighted cost monotonicity and the robust economic
+bound, contract cover soundness, hypergraph derivation
+soundness and witness reuse under retention, and the
+finite minimum with its feasibility and declared-
+universe optimality), and the atlas proofs (13 theorems
+— gathering and the batch composer, the deduplicated
+work lower bound, frontier exactness, sufficient state
+and the distinguishing lower bound, the score update
+and break-even laws, the Adler scan laws, and the
+Bellman lower bound with its minimax certificate),
+beside a generated witness file whose six examples are
+checked by decision over the two recorded snapshots.
+The kernel's recorded receipt at the pin is green and
+hash-bound: 15 of its theorems depend on no axioms and
+10 on propositional extensionality only, and this
+census verified the receipt's source and checker hashes
+against the tree. The atlas file's recorded axiom text
+prints 10 of its 13 theorems (2 axiom-free, 1 on
+propositional extensionality only, 5 on propositional
+extensionality and quotient soundness, 2 on the full
+standard set); the other three are unprinted there.
+Five recorded negative controls stand rejected for the
+kernel gate. Carried at the repo's own states: the
+trust boundary as its standing premise — the theorems
+concern the abstract campaign model, and every concrete
+application owes the named hypotheses plus an
+implementation-to-model refinement witness, which is
+absent from the tree — and the wider campaign program
+(the Ocean execution model carried end to end, the
+public surface) as proposed, with the atlas
+measurements standing as measured and constructed
+evidence at their recorded scopes. State: PROVEN at the
+pin on the recorded, hash-bound evidence, for the
+theorems above. The full census stands in its annex
+file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2084,6 +2140,62 @@ relay moved by one commit, a dated follow-up note on
 the library's third slot. The sites repo moved by two
 commits, cataloguing the redundancy campaign surfaces:
 thirty-seven files added, five changed, and the paper
+page file byte-identical between the heads. All three
+were read by tree at their fresh heads; no
+proof-assistant source was found in any of them and no
+tree read was truncated, so all three remain proof-free
+by the named check. Their movement changes their pins
+only, not their placements.
+## 28. Watch update — 2026-11-19, the twenty-third hourly re-synthesis
+
+The twenty-third watch re-enumerated the estate
+completely: 569 repos, every head read individually, no
+read errors. Five repos had moved since the last
+recorded heads, none were new, none were gone, and the
+paper source hash was unchanged, so no paper re-sync
+was owed. One of the moved repos is a proof repo — this
+repo itself — and one moved repo, the library repo of
+the Idol family, carries proof content for the first
+time; the other three moved repos are idol-family
+repos. The annex files carry the evidence at the fresh
+heads; the placements in section 3 stand at their
+census pins, with the newly proof-bearing repo's
+placement standing in section 3.15 at its census pin,
+which is its head.
+
+This repo's own head moved only by the twenty-second
+watch landing itself: the five commits between the two
+heads are that watch's census, annex, placement,
+ledger, and pins commits, and both Lean files are
+byte-identical between the heads, so its eleven
+theorems stand unchanged at the fresh head.
+
+The library repo moved by ten commits, the Redundant
+campaign landing in its tree: behavioral hypergraphs
+for the libraries in joined and universal forms,
+per-symbol contract extraction with two-way search, the
+campaign with its checked proof kernel, and the
+measured reconstruction atlas with certified witnesses —
+159 files added and one changed, its readme. Its tree
+at the last recorded head carried no proof-assistant
+source, re-verified by tree read in this pass; at the
+fresh head it carries three Lean files under the
+campaign folder — a 25-theorem kernel with a recorded,
+hash-bound kernel-checked receipt and five recorded
+negative controls, a 13-theorem atlas development, and
+a generated witness file with six examples checked by
+decision. It is proof-bearing by content and was
+censused at theorem level in full at its head in this
+pass; its placement stands in section 3.15.
+
+The compiler port moved by four commits, two slice
+landings and their merges: its tree stands at the same
+file count as at its last recorded head, with no file
+added or removed and two files changed, a slices record
+and a code generation source. The relay moved by one
+commit, a dated minimax note. The sites repo moved by
+one commit, cataloguing a new Muse Dash space:
+twenty-one files added and four changed, and the paper
 page file byte-identical between the heads. All three
 were read by tree at their fresh heads; no
 proof-assistant source was found in any of them and no
