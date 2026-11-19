@@ -1,0 +1,217 @@
+# Census — software-redundant-compute-expands
+
+## Pin and identity
+
+- Census pin and live head (read in the thirty-fifth
+  enumeration, 2026-11-19):
+  1ea286488cd4fecb7edb7f5debe407db04456b88
+- Visibility: public. Default branch: main.
+- Description (the repo's own): redundant compute under
+  expansion-only hypergraph growth — measure
+  monotonicity, join compounding, and the touch kernel,
+  proved in Lean.
+- Created in this window: the repo is new since the
+  thirty-fourth enumeration; one commit stands at the
+  head, carrying the whole development.
+- Toolchain: Lean 4.19.0, pinned in the proof folder's
+  toolchain file. No Mathlib; the development is four
+  Lean files in one proof folder, beside a check script
+  and a recorded check log, with a readme, a spec file,
+  and a definitions file at the root — eleven files in
+  the tree.
+- Determination: proof-bearing by content — Lean sources
+  and a recorded gate log stand in the tree, found by
+  the content check on its first enumeration, not by
+  its name.
+
+## Thesis, in plain English
+
+Under expansion-only growth of a behavioral hypergraph —
+nodes and hyperedges appended, nothing removed —
+redundant compute, once witnessed, never disappears.
+The redundancy measure of a graph counts the non-first
+occurrences in its node list and in its incidence list
+(every hyperedge flattened to its premises followed by
+its conclusion). The measure splits exactly over append,
+is superadditive over joins, and gains one further unit
+wherever the joined parts share a node or an incidence
+value, so redundancy can appear at a join of two parts
+that each carry none. A graph's measure is positive
+exactly when an explicit duplicate witness exists, and
+a computation whose conclusion is already derivable —
+the persistence home's redundancy criterion, mirrored
+here — stays derivable under every expansion. Witness
+reconstruction from an overlap is carried by the touch
+kernel: enlarging the sample or expanding the graph
+never un-touches a hyperedge, and the hyperedges fully
+inside a sample are always among the touched ones. The
+model was directed by Chris on 2026-11-19 as the growth
+half of the universal behavioral hypergraph campaign;
+the repo's spec file states the claim in full, with its
+executable six step method, its premise labels, and its
+falsification protocols.
+
+## Theorem census — 37 declarations in four Lean files
+
+Counted by the watch method in this census: every
+theorem declaration in every Lean file at the pin. No
+admitted-proof token stands in any file, by this
+census's own scan. Axiom states are from the repo's
+recorded check log, which prints all 37 declarations:
+2 depend on no axioms, 4 on propositional
+extensionality only, and 31 on the standard pair.
+
+### The core file — 19 declarations
+
+The counter and the measure:
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| counter append split | The duplicate counter over a joined list is the count over the first part plus the count over the second part against the first part as seen list. | the standard pair |
+| counter monotone | The counter is monotone in the seen list: a larger seen list counts at least as much over the same list. | the standard pair |
+| counter positive | A seen element that occurs in the list is counted at least once. | the standard pair |
+| counter witness | A positive count over any seen list yields a split of the list at an occurrence whose value lies in the seen list joined with the part before it. | the standard pair |
+| first split | A list splits at the first occurrence of any of its elements, the head part free of it. | propositional extensionality only |
+| measure append split | The measure of a joined list is the measure of the first part plus the count of the second part against the first. | the standard pair |
+| measure left | The measure of the first part never exceeds the measure of the joined list. | the standard pair |
+| measure right | The measure of the second part never exceeds the measure of the joined list. | the standard pair |
+| measure sum | Superadditivity: the measure of a joined list is at least the sum of the measures of its parts. | the standard pair |
+| measure strict | An element occurring in both parts adds one further unit to the joined measure, beyond the sum of the parts. | the standard pair |
+| measure appear | An element shared by two parts makes the joined list redundant even when each part alone carries no redundancy. | the standard pair |
+| measure witness | The measure is positive exactly when an explicit duplicate witness exists. | the standard pair |
+
+Derivability, mirrored from the persistence home at its
+pin, with the proofs this development's own:
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| derivability in the store | Derivability is monotone in the store: a larger store derives at least as much. | none |
+| derivability in the edges | Derivability is monotone in the recorded edges: recording more edges derives at least as much. | none |
+
+Graphs and expansion:
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| graph growth | The graph measure is monotone under expansion: appended nodes and hyperedges never decrease it. | the standard pair |
+| graph witness | Witnessed redundancy persists under expansion: a graph carrying a duplicate witness carries one at every expansion. | the standard pair |
+| expansion transitive | Expansion is transitive: expansions compose into an expansion. | propositional extensionality only |
+| chain monotone | Along any expansion chain the measure is non-decreasing, in the two step form from which every finite chain follows. | the standard pair |
+| derivability under expansion | A derivable fact stays derivable under expansion: a computation witnessed redundant stays redundant at every later step. | propositional extensionality only |
+
+### The join file — 11 declarations
+
+Joining:
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| join incidence | The incidence list of a join is the append of the incidence lists of the parts. | propositional extensionality only |
+| join measure | The measure of a join, in components: the measure of the joined node lists plus the measure of the joined incidence lists. | the standard pair |
+| join left | The measure of the first part never exceeds the measure of the join. | the standard pair |
+| join right | The measure of the second part never exceeds the measure of the join. | the standard pair |
+| join sum | Compounding: the measure of the join is at least the sum of the measures of the parts. | the standard pair |
+| join strict by node | A node occurring in both parts adds one further unit to the joined measure, beyond the sum of the parts. | the standard pair |
+| join strict by incidence | A value occurring in the incidence of both parts adds one further unit to the joined measure. | the standard pair |
+
+The touch kernel of witness reconstruction:
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| filter monotone | Filtering with a weaker predicate keeps at least as many elements: the filtered length is monotone in the predicate. | the standard pair |
+| touch monotone | Enlarging the sample never un-touches a hyperedge: the touched count is monotone in the sample. | the standard pair |
+| touch growth | Expanding the graph never un-touches a hyperedge at a fixed sample. | the standard pair |
+| touch bound | Every hyperedge fully inside a sample is touched by it: the inside count never exceeds the touched count. | the standard pair |
+
+### The controls file — 6 declarations
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| zero control | A graph with no redundancy at all exists in the model: its measure is zero and it is not witnessed redundant. | the standard pair |
+| universal control | The universal existence claim is false in the model: not every graph is witnessed redundant. | the standard pair |
+| shrink control | Removal destroys redundancy: the list with a duplicate has measure one, the same list with the duplicate removed has measure zero. | the standard pair |
+| free control | With no overlap the strict compounding gain is absent: two single-node graphs on distinct nodes join to measure zero, and the sum-plus-one bound fails. | the standard pair |
+| exact control | Touching is not containing: the sample node touches the single hyperedge, yet no hyperedge is fully inside the sample. | the standard pair |
+| sample control | The empty sample touches nothing in the sample graph: sample growth is necessary for the touch results. | the standard pair |
+
+### The synthesis file — 1 declaration
+
+| Token | Hypotheses to conclusion | Axioms (recorded log) |
+|---|---|---|
+| joined | The joined theorem: along an expansion chain the measure never decreases; witnessed redundancy persists to the end of the chain; a computation redundant at the start stays redundant at the end; the first two graphs of the chain compound into their join at least additively, and strictly by one further unit where they share the named node; and the touch kernel holds at the first graph — a larger sample touches at least as much, and what is fully inside a sample is always among what it touches. Its only unproved antecedent is the named empirical yield premise below; no conjunct's proof uses it. | the standard pair |
+
+## Controls and gate evidence
+
+- Six standing controls stand in the controls file,
+  each a proved statement over concrete data, proving
+  by execution that the condition it weakens is load
+  bearing: the zero graph (the closed loop analogue —
+  the family subject with zero duplicate groups under
+  the campaign protocol), the refuted universal form,
+  removal destroying redundancy, the absent strict gain
+  without overlap, touching not containing, and the
+  empty sample touching nothing.
+- Gate: the check script in the proof folder compiles
+  every Lean file in the tree with warnings as errors,
+  rejects every proof escape token, prints axiom
+  dependencies per theorem, and fails if any printed
+  axiom lies outside the allowed set of propositional
+  extensionality, classical choice, and quotient
+  soundness. The recorded check log in the tree ends in
+  its axiom subset check passing, with all 37 printed
+  declarations' axioms within the standard set: 2
+  depend on no axioms, 4 on propositional
+  extensionality only, and 31 on the standard pair; no
+  printed theorem uses the choice axiom. Gate state at
+  the pin: green on the recorded log; this census ran
+  no build of its own.
+
+## Premises carried rather than proven
+
+Three premises, all outside the Lean development, named
+in the repo's spec:
+
+- Yield, an empirical rate: the touched yield of a
+  random overlap compounds at a measured multiplier of
+  about two and a half at a fifth overlap, on the
+  traceability hypergraph at its named pin. Campaign
+  evidence at a pin, not a theorem; the development
+  proves the proved skeleton only — monotonicity and
+  the inside bound — and no rate above one is claimed
+  in Lean. The joined theorem carries this premise as
+  an explicit antecedent. Its falsification route is
+  stated in the spec.
+- Listing, a modeling premise: growth is read in append
+  order. The development does not prove the measure
+  invariant under re-listing, so a reading of a real
+  system's growth as expansion rests on the recorded
+  order being the growth order.
+- Mirror fidelity, a reading premise: the derivability
+  definition and its two monotonicity theorems are the
+  persistence home's definitions and statements at its
+  pin, mirrored and proved again here; only the claim
+  that the mirror is faithful rests on reading.
+
+## Absent and proposed, at the repo's own states
+
+- Universal existence — any software is redundant — is
+  refuted, twice over: by the closed loop subject under
+  the campaign protocol, and in the model by the
+  universal control. It is not a claim of this
+  development in any form; the surviving form is the
+  witnessed form the theorems state.
+- A rate for compounding of the measure itself — for
+  example, that joined redundancy grows by a fixed
+  factor per shared element beyond the first — is not
+  claimed. The proved strict form is one unit per join
+  per shared component kind; the faster question is
+  empirical, for the campaign's next round.
+- Premise-closed reconstruction — a sample closed under
+  premises reconstructs exactly — is proposed by the
+  empirical lane as its next protocol: not run there
+  and not formalized here, with its closing condition
+  stated in the spec.
+
+State: PROVEN at the pin for the 37 declarations above,
+on the recorded gate log, with the three named premises
+carried at exactly the states the repo itself states,
+the universal form refuted in the tree, and the two
+further forms carried as not claimed and proposed.
