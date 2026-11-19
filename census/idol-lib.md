@@ -271,3 +271,146 @@ decision at the recorded data; the model-to-program
 refinement ABSENT — an obligation the repo itself names,
 not a result; the wider campaign program PROPOSED at the
 repo's own states.
+
+## Re-census — 2026-11-19, the twenty-fourth hourly re-synthesis watch (pin 4dee2311)
+
+Three commits past the census pin ad22a681 landed the
+campaign's Pareto release condition: a new proof package
+requiring proved Pareto unimprovability for a qualified
+optimal release, its specification section, its release
+record, and its views. The watch read the trees at both
+heads in full and compared every file: twenty-eight
+files added, seventeen changed, none removed, and the
+tree stands at 1,180 files (was 1,152). Of the three
+Lean files at the census pin, every one is byte-identical
+at the new head, so the thirty-eight theorems and the
+six checked witness examples of the census above stand
+unchanged; the kernel receipt and its controls record
+were re-recorded in this window at a fresh time stamp
+with the same source and checker hashes and the same
+kernel-checked status. One Lean file was added, censused
+in full below, and the census pin moves to the new head
+on this re-census.
+
+### The Pareto package — 27 theorems in one new Lean file
+
+One Lean file in the campaign's Pareto folder (20,192
+bytes, Lean 4.19.0, importing only the standard
+distribution), with a printed axiom audit for every
+theorem in the file itself. Its subject is Pareto
+unimprovability: a candidate is optimal when it is
+feasible and no feasible alternative is no worse on
+every declared cost axis and strictly better on one.
+
+- The strict relation (2): no candidate dominates
+  itself, and domination cannot run in both directions
+  between two candidates.
+- The global witness (2): a feasible candidate with a
+  certificate excluding every feasible dominator is
+  optimal; and the per-alternative form, where each
+  alternative is excluded by a worse axis or by equality
+  on every axis.
+- Coverage forms (4): optimality transfers from a
+  finite enumeration when every feasible alternative
+  stands in it; from an enumeration covering only the
+  dominance cone, the alternatives no worse everywhere;
+  from normal forms, when every feasible concrete
+  alternative maps to a feasible normal form at no
+  greater cost and the candidate's costs are preserved
+  exactly; and from a finite cell cover, when every
+  feasible alternative belongs to a cell and each cell
+  excludes domination, in its direct form and in its
+  lower-bound form, where valid cell lower bounds
+  separate the candidate from every member.
+- The weighted score (3): a weighted score over a
+  finite axis list is monotone in the values; it is
+  strict when every listed weight is positive and one
+  value strictly improves; and a global minimum of such
+  a score, over a list covering every axis with every
+  weight positive, is Pareto optimal.
+- The standing counterexamples (5, proved results at
+  the strength stated): a scalar minimum under a zero
+  weight exists by decision, yet that minimum is not
+  Pareto optimal, because the ignored axis carries the
+  domination (a proved negation, with the combined
+  counterexample beside it: a singleton list internally
+  free of domination whose candidate is still not
+  optimal, its dominator omitted); and a standalone
+  choice is optimal while the component optima need not
+  compose — the jointly fused alternative dominates the
+  composed candidate under the coupled cost (a proved
+  negation).
+- Bounded uncertainty (2): valid candidate upper bounds
+  and competitor lower bounds that separate exclude
+  domination; and a certificate for every admitted
+  scenario proves optimality scenario by scenario.
+- The retention model (8): normalization of a retention
+  plan — dropping its extra evaluations and extra slots —
+  stays feasible, is no worse on every axis (work,
+  retained values, and the linear tariff), and its
+  normal form stands in the finite representative list;
+  a competitor no worse in both primary resources is
+  the normal form itself, so the normal form is Pareto
+  optimal in the model, with the concrete instance
+  proved optimal at its exact recorded costs; the
+  feasible domain carries arbitrary redundancy — plans
+  with any extra work at all are feasible and distinct —
+  so the domain is no finite search box; and the single
+  batch case is a proved negation: with one batch the
+  full retention plan can be dominated, so repeated use
+  is load bearing.
+
+Recorded evidence at the new pin: the package carries
+its checker, its recorded receipt, its raw run output,
+and its controls record. The receipt records
+kernel-checked status on Lean 4.19.0 with exit 0, the
+full twenty-seven name inventory present with none
+missing and none unexpected, the axiom audit complete —
+14 theorems depending on no axioms, 2 on propositional
+extensionality only, 10 on propositional extensionality
+and quotient soundness, and 1, the interval exclusion,
+on the full standard set — the source gate clean, and
+no native-evaluation axioms. This census verified the
+binding firsthand: the receipt's recorded source hash
+equals the hash of the Pareto file in the tree at the
+pin, and its recorded checker hash equals the hash of
+the package's checker script in the tree at the pin.
+Five recorded negative controls for this package's gate
+stand rejected as required: an empty proof file, a
+missing robust scenario family, a missing axiom audit,
+an admitted proof hole, and a custom axiom.
+
+### Premises and the absent set, restated at the new pin
+
+- On named premises: the package's own scope line is
+  its standing premise — its theorems concern the
+  natural-valued abstract models only, and no software
+  or measured-cost refinement is proved there. Its
+  retention results rest on the model's stated premises
+  (a stationary retention discipline, at least two
+  batches, the recorded cost equations), carried in its
+  readme as model premises, not derived from any
+  operational trace.
+- Absent, at the repo's own states: the release
+  admission of actual software under the new requirement
+  stands open in the repo — its readme states the model
+  certificates satisfy their named model obligations
+  while actual-software release admission remains open
+  and the release command refuses it. The refinement
+  absence of the census above stands unchanged: no
+  theorem connects any of these models to the library's
+  ports or the measured systems.
+
+State: PROVEN in source at the new pin, on the recorded
+and hash-bound evidence, for 65 theorems in total across
+the repo's three theorem files (the 38 of the census
+above, unchanged, plus these 27), at the axiom states
+named; the six witness examples CHECKED by decision, as
+above; the model-to-program refinement and the
+actual-software release admission ABSENT — obligations
+the repo itself names, not results. The census pin
+moves to the new head,
+4dee23111e7d356c79958bd69e77c775faeecfbb, on this
+re-census; the placements in the synthesis and the
+ledger row are restated at the new pin in this same
+pass.
