@@ -1821,3 +1821,105 @@ no ledger rows: all three were read by tree at their fresh
 heads, no proof-assistant source was found in any of them,
 and they remain proof-free by the named check, as their
 census entries record.
+## Watch refresh — 2026-11-19, the twenty-third hourly re-synthesis watch
+
+The watch re-enumerated the estate at 569 repos, every head
+read individually with no errors, read the moved repos by
+tree at their fresh heads, and censused the one newly
+proof-bearing repo in full at its head. Evidence below rests
+on the tree reads at both heads of the moved repos, on the
+blob comparison of this repo's two Lean files between its
+heads, and on the new repo's full census in its annex.
+Placements stand at the census pins named in each row; a
+full theorem-level re-census at each fresh head is owed,
+except for the new repo, censused in full at its head in
+this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. This repo's Lean files are
+  byte-identical between the last recorded head and the
+  fresh head, with its theorem name set identical at both
+  heads, so no name was lost; this repo's eleven names
+  stand unchanged. The newly proof-bearing repo enters
+  with its full set at its first pin; it has no earlier
+  set to shrink against. No regression is flagged.
+- No pin moved without this ledger moving: the one moved
+  proof repo has its row restated below in this same pass,
+  and the newly proof-bearing repo's row is added below in
+  this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head b0fd67d9
+  (census pin d558669b). Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at the
+  fresh head, which is the head the twenty-second watch
+  landed; the five commits between them are that watch's
+  census, annex, placement, ledger, and pins commits and
+  carry no Lean change. Controls and gate stand as the
+  second watch row records.
+
+New row, at its census pin, which is its head:
+
+- idol-lib — pin ad22a681 (proof-bearing content only,
+  inside the campaign folder of the library ports repo).
+  Proven: 38 theorem declarations across two Lean files —
+  the campaign kernel (25: reconstruction injectivity
+  under a round trip and the history obstruction, intent
+  axes under a factorization, simulation and safety
+  transfer, the joined effect bound, the rewrite
+  composer for contract and budget, the commuting swap,
+  idempotence composing under commutation with the
+  unconditional reading disproven by a three-state
+  counterexample, the keyed ledger quartet, weighted cost
+  monotonicity and the robust economic bound, contract
+  cover soundness, hypergraph derivation soundness and
+  witness reuse under retention, and the finite minimum
+  with feasibility and declared-universe optimality) and
+  the atlas proofs (13: gathering and the batch composer,
+  the deduplicated work lower bound, frontier exactness,
+  sufficient state and the distinguishing lower bound, the
+  score update and break-even laws, the Adler scan laws,
+  and the Bellman lower bound with its minimax
+  certificate) — plus six witness examples checked by
+  decision over the two recorded snapshots, counted as
+  checked examples, not theorems. Of the kernel's 25, the
+  recorded receipt prints all: 15 depend on no axioms and
+  10 on propositional extensionality only. Of the atlas
+  file's 13, the recorded check text prints 10: 2 on no
+  axioms, 1 on propositional extensionality only, 5 on
+  propositional extensionality and quotient soundness, and
+  2 on the full standard set; the other three (gathering,
+  the shifted scan, the Bellman lower bound) are unprinted
+  there, their axiom states unrecorded. On named premises:
+  the repo's own trust boundary stands as the campaign's
+  premise — the theorems concern an abstract model, and
+  every concrete application owes the named hypotheses
+  plus an implementation-to-model refinement witness.
+  Absent: that refinement — no theorem connects the model
+  to the library's ports or the measured systems; the
+  wider campaign program (the Ocean execution model
+  carried end to end, the public surface) stands proposed
+  at the repo's own states, and the atlas measurements
+  stand as measured and constructed evidence with their
+  unmeasured cells recorded. Controls in tree: five
+  recorded negative controls for the kernel gate, each
+  rejected as required (an empty proof file, a missing
+  effect-bound family, a missing axiom audit, an admitted
+  proof hole, and a custom axiom asserting falsity), beside
+  the atlas gate's own controls and receipt-mutation
+  checks in the recorded campaign log. Gate: the kernel
+  gate is green on its recorded receipt at the pin —
+  kernel-checked, exit 0 — and this census verified the
+  receipt's source and checker hashes against the tree at
+  the pin; the atlas gate stands in the tree in the form
+  its annex records, with a recorded campaign check log.
+  This watch ran no build.
+
+The three other moved repos this watch, the compiler port,
+the relay, and the sites repo, are not proof repos and carry
+no ledger rows: all three were read by tree at their fresh
+heads, no proof-assistant source was found in any of them,
+and they remain proof-free by the named check, as their
+census entries record.
