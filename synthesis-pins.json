@@ -25,6 +25,7 @@
   "software-optimality": "b52c3170a6e108345bd5ada44ca7355dae55b395",
   "software-persistence-is-minimal": "eb01cf2e33a20bfbda5a03aba7a48c70fbd10741",
   "software-profiling-is-synthesizable": "a53c4bf5aa83e8677ecb66571d61ed4c11e2d88d",
+  "software-redundant-compute-expands": "1ea286488cd4fecb7edb7f5debe407db04456b88",
   "software-testing-is-redundant": "66f65b6f44ac0249d11451cac089283aa1756240"
  },
  "date": "2026-11-18",
@@ -294,7 +295,7 @@
   "idol": "586ff5a1b6903dd46517afa5c11767a682f7b0ef",
   "idol-api": "46b8f1689561f5bc17a4c781b36b67b00665b5ed",
   "idol-canary-7x3q": null,
-  "idol-compiler": "207b6ac6a76229bf9aaaf896baae1702f551324b",
+  "idol-compiler": "2a477f595e23b59e837cb9b418087d787b5b299d",
   "idol-console": "7e25bda82aed1ddcf851e7dd73fdd405d1376fff",
   "idol-edit": "6f0d83dc520b2e405e78898d282829f8d6247384",
   "idol-eyes": "d7e7b009e735334bb2cbcff25db41320450ab051",
@@ -313,7 +314,7 @@
   "idol-observatory": "7ec2600e54b8b106323ee43d5bfed98a68d1c5e9",
   "idol-ocean": "0ba07f62e83ecf4104777ffc016914bd8a98fb32",
   "idol-os": "a9ffe819b06bb80d0ceaee4afe1246a2ba4f06bf",
-  "idol-relay": "b0a12620322024d585fe3802af53fbfec3634fc3",
+  "idol-relay": "9811b46ad3033b0e1c47ee818a70d6931369f27c",
   "idol-release-observability": null,
   "idol-restored": "1c4ef7fd625cbaacfd635449c1a67516feaaadc1",
   "idol-semi": "238717ba59922d04d59ee4fb1dfd165108fc03f2",
@@ -532,7 +533,7 @@
   "software-doesnt-need-review": "1d504014be0c727b3f12e4d8e17f47dfceb118b6",
   "software-frontier-is-solvable": "cdeae4ad749bb7cc1fc6ea15ee698e1b293b41e2",
   "software-fuzzing-is-suboptimal": "6ed7a59651ae9dab006b7903a98d3d598cca19ea",
-  "software-is-a-closed-loop": "4b34e16b1e21c9c9f02f06e36b71fe46841e861d",
+  "software-is-a-closed-loop": "ab1531f993afce62306923558f0a77b472ffb52d",
   "software-is-bidirectional": "b14fc92b77d27411775be1a6a64428ff8fad247a",
   "software-is-composable": "7b1746467a410e9e5ae309f2a86bc4cd37700989",
   "software-is-incrementally-certifiable": "3690167318cf4d41b51d0945f4fccc7f043e8412",
@@ -544,6 +545,7 @@
   "software-optimality": "95df5fb7e922e7316b0ebe90b7847fd45a208d88",
   "software-persistence-is-minimal": "eb01cf2e33a20bfbda5a03aba7a48c70fbd10741",
   "software-profiling-is-synthesizable": "a53c4bf5aa83e8677ecb66571d61ed4c11e2d88d",
+  "software-redundant-compute-expands": "1ea286488cd4fecb7edb7f5debe407db04456b88",
   "software-testing-is-redundant": "18feb7ab60d542007124405fd8e1dc209c68361a",
   "solo-provisioner": "675b3315cd84d390c769221cb162fea4561af3f4",
   "station8-landing": "3bf54e2444fe6082aa763eefe66bdc69b7738c70",
@@ -599,5 +601,5 @@
   "zig.vim": "29ceb12298015dfb59a6e06706c9005f76153238",
   "zpkg": "d6c1c7678340513805961bca667ddb035877e13b"
  },
- "sweep": "estate-wide content sweep, second enumeration: 565 repos; third enumeration (second watch): 565 repos, 20 moved, none new, none gone; fourth enumeration (third watch): 565 repos, 36 moved, none new, none gone; fifth enumeration (fourth watch): 565 repos, 88 moved, none new, none gone; sixth enumeration (fifth watch): 565 repos, 6 moved, none new, none gone; seventh enumeration (sixth watch): 565 repos, 2 moved, none new, none gone; eighth enumeration (seventh watch): 565 repos, 3 moved, none new, none gone; ninth enumeration (eighth watch): 565 repos, 4 moved, none new, none gone; tenth enumeration (ninth watch): 565 repos, 2 moved, none new, none gone; eleventh enumeration (tenth watch): 565 repos, 3 moved, none new, none gone; twelfth enumeration (eleventh watch): 565 repos, 3 moved, none new, none gone; thirteenth enumeration (twelfth watch): 565 repos, 2 moved, none new, none gone; fourteenth enumeration (thirteenth watch): 565 repos, 3 moved, none new, none gone; fifteenth enumeration (fourteenth watch): 565 repos, 2 moved, none new, none gone; sixteenth enumeration (fifteenth watch): 566 repos, 3 moved, one new, none gone; seventeenth enumeration (sixteenth watch): 566 repos, 2 moved, none new, none gone; eighteenth enumeration (seventeenth watch): 566 repos, 3 moved, none new, none gone; nineteenth enumeration (eighteenth watch): 566 repos, 2 moved, none new, none gone; twentieth enumeration (nineteenth watch): 566 repos, 3 moved, none new, none gone; twenty-first enumeration (twentieth watch): 567 repos, 2 moved, one new, none gone; twenty-second enumeration (twenty-first watch): 569 repos, 4 moved, two new, none gone; twenty-third enumeration (twenty-second watch): 569 repos, 7 moved, none new, none gone; twenty-fourth enumeration (twenty-third watch): 569 repos, 5 moved, none new, none gone; twenty-fifth enumeration (twenty-fourth watch): 569 repos, 3 moved, none new, none gone; twenty-sixth enumeration (twenty-fifth watch): 569 repos, 3 moved, none new, none gone; twenty-seventh enumeration (twenty-sixth watch): 569 repos, 1 moved, none new, none gone; twenty-eighth enumeration (twenty-seventh watch): 569 repos, 4 moved, none new, none gone; twenty-ninth enumeration (twenty-eighth watch): 569 repos, 2 moved, none new, none gone; thirtieth enumeration (twenty-ninth watch): 569 repos, 3 moved, none new, none gone; thirty-first enumeration (thirtieth watch): 569 repos, 2 moved, none new, none gone; thirty-second enumeration (thirty-first watch): 569 repos, 2 moved, none new, none gone; thirty-third enumeration (thirty-second watch): 569 repos, 2 moved, none new, none gone; thirty-fourth enumeration (thirty-third watch): 569 repos, 1 moved, none new, none gone"
+ "sweep": "estate-wide content sweep, second enumeration: 565 repos; third enumeration (second watch): 565 repos, 20 moved, none new, none gone; fourth enumeration (third watch): 565 repos, 36 moved, none new, none gone; fifth enumeration (fourth watch): 565 repos, 88 moved, none new, none gone; sixth enumeration (fifth watch): 565 repos, 6 moved, none new, none gone; seventh enumeration (sixth watch): 565 repos, 2 moved, none new, none gone; eighth enumeration (seventh watch): 565 repos, 3 moved, none new, none gone; ninth enumeration (eighth watch): 565 repos, 4 moved, none new, none gone; tenth enumeration (ninth watch): 565 repos, 2 moved, none new, none gone; eleventh enumeration (tenth watch): 565 repos, 3 moved, none new, none gone; twelfth enumeration (eleventh watch): 565 repos, 3 moved, none new, none gone; thirteenth enumeration (twelfth watch): 565 repos, 2 moved, none new, none gone; fourteenth enumeration (thirteenth watch): 565 repos, 3 moved, none new, none gone; fifteenth enumeration (fourteenth watch): 565 repos, 2 moved, none new, none gone; sixteenth enumeration (fifteenth watch): 566 repos, 3 moved, one new, none gone; seventeenth enumeration (sixteenth watch): 566 repos, 2 moved, none new, none gone; eighteenth enumeration (seventeenth watch): 566 repos, 3 moved, none new, none gone; nineteenth enumeration (eighteenth watch): 566 repos, 2 moved, none new, none gone; twentieth enumeration (nineteenth watch): 566 repos, 3 moved, none new, none gone; twenty-first enumeration (twentieth watch): 567 repos, 2 moved, one new, none gone; twenty-second enumeration (twenty-first watch): 569 repos, 4 moved, two new, none gone; twenty-third enumeration (twenty-second watch): 569 repos, 7 moved, none new, none gone; twenty-fourth enumeration (twenty-third watch): 569 repos, 5 moved, none new, none gone; twenty-fifth enumeration (twenty-fourth watch): 569 repos, 3 moved, none new, none gone; twenty-sixth enumeration (twenty-fifth watch): 569 repos, 3 moved, none new, none gone; twenty-seventh enumeration (twenty-sixth watch): 569 repos, 1 moved, none new, none gone; twenty-eighth enumeration (twenty-seventh watch): 569 repos, 4 moved, none new, none gone; twenty-ninth enumeration (twenty-eighth watch): 569 repos, 2 moved, none new, none gone; thirtieth enumeration (twenty-ninth watch): 569 repos, 3 moved, none new, none gone; thirty-first enumeration (thirtieth watch): 569 repos, 2 moved, none new, none gone; thirty-second enumeration (thirty-first watch): 569 repos, 2 moved, none new, none gone; thirty-third enumeration (thirty-second watch): 569 repos, 2 moved, none new, none gone; thirty-fourth enumeration (thirty-third watch): 569 repos, 1 moved, none new, none gone; thirty-fifth enumeration (thirty-fourth watch): 570 repos, 3 moved, one new, none gone"
 }
