@@ -142,3 +142,44 @@ State: PROVEN at the pin for the 17 declarations above,
 on the recorded gate log, with the two named premises,
 the three proposed items carried at exactly the states
 the repo itself states.
+## Re-census — 2026-11-19, the twenty-first hourly re-synthesis watch (pin 12ee66e9)
+
+One commit past the census pin d1159dc1 added a single
+theorem and restated the repo's own counts to match. The
+watch re-read both Lean files and the recorded check log
+in full at both heads and compared the declaration name
+sets by the watch method: 18 declarations at the new head
+(15 in the main file, 3 in the controls file), against 17
+at the census pin — one gained, none lost. The controls
+file is byte-identical at both heads, and no
+admitted-proof token stands in either file at either
+head.
+
+The gained theorem is the tightness of the compounding
+bound: when no component and no interaction runs a
+surplus over its share, the gap of the composition is
+exactly the sum of the component gaps and the
+interaction gap — the bound is attained, not merely
+safe, and any strictness in the general bound is
+exactly the surplus that masks a gap. It stands in the
+main file beside the compounding result it sharpens.
+The recorded check log at the new head prints it on the
+standard pair (propositional extensionality and quotient
+soundness), and the log still ends in its axiom subset
+check passing: 16 printed declarations at the new head,
+3 depending on no axioms, 4 on propositional
+extensionality only, 8 on the standard pair, and 1 on
+the full standard set. The repo's own proven list now
+counts thirteen core theorems (was twelve), with the
+two helper results and the three controls unchanged.
+The readme and the spec were updated in the same commit
+to the new counts.
+
+State: PROVEN at the new pin for the 18 declarations,
+on the recorded gate log, with the two named premises
+and the three proposed items of the census above
+unchanged. The census pin moves to the new head,
+12ee66e9c9cdaeec4bea5eb8fb1fd61e6df780fb, on this
+re-census; the placements in the synthesis and the
+ledger row are restated at the new pin in this same
+pass.
