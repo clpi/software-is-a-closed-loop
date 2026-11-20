@@ -2626,3 +2626,11 @@ The compiler port moved by three commits, one slice landing and its merge beside
 The operating system repo moved by one commit, recording its boot image as built at the compiler pin: two files changed, its readme and its signing spec, with no file added or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The one long-tail repo, the personal site repo, moved by one commit staging a minimal two-view personal journal: four files added, its front page, its routes, its journal styling, and a front test, and one file changed, its index page. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 46. Watch update — 2026-11-19, the forty-first hourly re-synthesis
+
+The forty-first watch re-enumerated the estate completely: 572 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. One of the moved repos is a proof repo — this repo itself — and the other is an idol-family repo. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the fortieth watch landing itself: the four commits between the two heads are that watch's delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.

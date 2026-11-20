@@ -1868,3 +1868,24 @@ signing spec, over one commit, and the personal
 site repo gained four files, a two-view journal
 front, over one commit. No tree read was truncated
 this watch.
+
+## Watch update — 2026-11-19 (forty-first hourly re-synthesis)
+
+A forty-second enumeration: 572 repos, every head
+read individually, no read errors. Two repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself, and one
+further idol-family repo (the relay). Fresh heads
+for every repo stand in the pins file at this
+re-synthesis. This repo's movement is the fortieth
+watch landing itself: the four commits between the
+heads are that watch's delta, placement, ledger,
+and pins commits, no Lean file changed among them,
+and its eleven theorems stand unchanged, recorded
+in its annex delta. The relay was read by tree at
+its fresh head and carries no proof-assistant
+content, so it remains proof-free by the named
+check; its tree gained one file, a dated minimax
+note, with no file changed or removed over one
+commit. No tree read was truncated this watch.
