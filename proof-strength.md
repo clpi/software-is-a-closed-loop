@@ -2387,3 +2387,97 @@ Restated rows, at their fresh heads:
 - software-is-a-closed-loop — fresh head c123715b (census pin d558669b). Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the thirty-eighth watch landed; the four commits between them are that watch's delta, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The two other moved repos this watch, the compiler port and the relay, are not proof repos and carry no ledger rows: both were read by tree at their fresh heads, no proof-assistant source was found in either, and they remain proof-free by the named check, as their census entries record.
+
+## Watch refresh — 2026-11-19, the fortieth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 572 repos, every
+head read individually with no errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated. Evidence below rests on the tree and
+commit reads at both heads of each moved proof repo,
+and on the recorded check log read in full at the
+redundant compute repo's fresh head. Placements stand
+at the census pins named in each row; a full
+theorem-level re-census at each fresh head is owed
+where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The library repo's Lean files
+  are byte-identical between its census pin and its
+  fresh head, and this repo's are byte-identical
+  between its last recorded head and its fresh head,
+  so no name was lost in either; the redundant compute
+  repo's original four files are byte-identical and
+  its count grew from 37 to 194 declarations with no
+  name lost. No regression is flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol-lib — fresh head 0052f16e (census pin
+  4dee2311). Proven: unchanged — all four Lean files
+  are byte-identical between the census pin and the
+  fresh head, so the campaign kernel, the atlas
+  development, the Pareto package, and the witness
+  examples stand exactly as their rows record: 65
+  declarations, the same name set, no name gained and
+  none lost. The movement is a realization route in
+  five commits — five hash batteries run without the
+  compiler, one further hash entry with its generator,
+  vectors, and verifier, and transcript hardening —
+  twelve files added and the ledger changed, none of
+  them proof content. Premises, absent set, controls,
+  and gate stand as the census records.
+- software-redundant-compute-expands — fresh head
+  559f308b (census pin 1ea28648). Proven: 194
+  declarations in thirteen Lean files by the watch
+  method (was 37 in four files at the census pin);
+  157 gained, none lost, the original four files
+  byte-identical. The growth is the canonical layer —
+  one record log with the mirrored derivability
+  definitions proved again and an equivalence of terms
+  at each level — the measure restated on that log as
+  redundant support, the append-only coloring, intent
+  composition, the case hierarchy, the resolution
+  algorithm with its Pareto result over its stated
+  objective set, and the further measurement units.
+  On named premises: the yield premise and the mirror
+  fidelity premise stand as its census row records;
+  the listing premise is discharged at this head by
+  the re-listing file, which proves the measure
+  invariant under every re-listing. Absent restated:
+  the premise-closed reconstruction its census carried
+  as proposed is proven at this head in kernel form by
+  the sample file; its measured protocol run remains
+  outside the repo, not a result here. Controls: the
+  original six stand unchanged in their file, beside
+  the new files' own concrete controls. Gate: the
+  recorded check log in the tree at the fresh head,
+  read in full by this watch, prints axiom lines for
+  189 of the 194 declarations — 15 on no axioms, 32 on
+  propositional extensionality only, 118 on the
+  standard pair, 24 on the full standard set — and
+  ends in its axiom subset check passing; five counted
+  declarations carry no printed line, among them the
+  canonical file's three equivalence properties, so
+  their axiom state is unrecorded from the log. A full
+  theorem-level re-census at the fresh head is owed.
+- software-is-a-closed-loop — fresh head 00ed9e0f
+  (census pin d558669b). Proven: 11 theorems, unchanged
+  — the same name set at the last recorded head and at
+  the fresh head, which is the head the thirty-ninth
+  watch landed; the four commits between them are that
+  watch's delta, placement, ledger, and pins commits
+  and carry no Lean change. Controls and gate stand as
+  the second watch row records.
+
+The three other moved repos this watch, the compiler
+port, the operating system repo, and the personal
+site repo, are not proof repos and carry no ledger
+rows: all three were read by tree at their fresh
+heads, no proof-assistant source was found in any of
+them, and they remain proof-free by the named check,
+as their census entries record.
