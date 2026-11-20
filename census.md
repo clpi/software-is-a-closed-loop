@@ -1780,3 +1780,38 @@ recorded head, with no file added or removed and two
 files changed, a slices record and a code generation
 source, over four commits. No tree read was truncated
 this watch.
+
+## Watch update — 2026-11-19 (thirty-eighth hourly re-synthesis)
+
+A thirty-ninth enumeration: 572 repos, every head
+read individually, no read errors. Three repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself; one
+further proof repo (the semi repo); and one further
+idol-family repo (the compiler port). Fresh heads
+for every repo stand in the pins file at this
+re-synthesis. This repo's movement is the
+thirty-seventh watch landing itself: the five commits
+between the heads are that watch's re-census, delta,
+placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The semi
+repo moved by seventeen commits — dependency updates,
+a native Idol publication projection with refusal
+controls, a native role incidence view with replay
+controls, and a parity outcome folder; fifteen files
+added and twenty changed, none removed — and was
+read by tree in full at its fresh head: all 156 of
+its Lean files are byte-identical between its census
+pin, its last recorded head, and its fresh head, and
+no Rust source file changed, so its proven set
+stands unchanged at 1,865 declarations by the watch
+method, recorded in its annex delta; its mirror did
+not move and still stands at the shared census pin.
+The compiler port was read by tree at its fresh head
+and carries no proof-assistant content, so it remains
+proof-free by the named check; its tree gained three
+files, all lowering sources, and one file changed,
+its slices record, over fourteen commits. No tree
+read was truncated this watch.
