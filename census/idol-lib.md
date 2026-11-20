@@ -418,3 +418,177 @@ pass.
 ## Watch delta — 2026-11-19, the fortieth hourly re-synthesis watch
 
 The watch re-read the live head at 0052f16e6883620a77ab3cab067b8cdaf96ebdb1 in the full enumeration and read the tree at that head in full. The movement since the census pin is five commits: a realization route that runs five hash batteries without the compiler, a new entry for one further hash with its generator, its vectors, and its verifier, added edge coverage for one battery, and hardening that rejects a short transcript and an unrun differential. Twelve files were added and one changed, none removed; no tree read was truncated. Every one of the four Lean files is byte-identical between the census pin and the fresh head, blob for blob across the whole tree read, so the proof content this census records — the campaign kernel, the atlas development, the Pareto package, and the witness examples — stands unchanged at the fresh head: 65 declarations, the same name set at both heads, no name gained and none lost, counted by the watch method. The added files are realizations in a systems language, their supporting scripts, and a dated port note, and the one changed file is the ledger; none of them carries proof content beyond the four Lean files already censused. Premises, the absent set, and gate state stand as the census above records; a full census at the fresh head adds nothing while the proof files stand identical, and the census pin stands at 4dee23111e7d356c79958bd69e77c775faeecfbb with the fresh head recorded here.
+
+## Re-census — 2026-11-20, the forty-fifth hourly re-synthesis watch (pin 578b8b3a)
+
+Six commits past the last recorded head 0052f16e
+landed a new proof package beside the campaign: the
+space development — Lean proofs and falsifications
+over the behavioral hypergraphs the repo carries for
+its fourteen witnessed libraries. The watch read the
+trees at both heads in full and compared every file:
+twenty-five files added, none changed, none removed,
+and the tree stands at 1,217 files (was 1,192). Every
+one of the four Lean files at the last recorded head
+is byte-identical at the new head, so the sixty-five
+theorems and six checked witness examples of the
+censuses above stand unchanged. Sixteen Lean files
+were added under the space folder — two generated data
+files, a core definitions file, ten theorem files, an
+axioms audit file, and the package's build files —
+censused in full below, and the census pin moves to
+the new head on this re-census.
+
+### The space package — 55 theorems in ten Lean files
+
+One package on Lean 4.19.0, importing only the
+standard distribution. Its data files are generated
+from the repo's hypergraph records by the package's
+own generators: the level two file carries the current
+source projections of the fourteen libraries, and the
+level one file carries the earlier version's graphs
+frozen, so the two levels can be reconciled in the
+kernel rather than by reading. Most data theorems are
+proved by kernel decision over that generated data.
+No escape token stands in any theorem file, by this
+census's own scan; the data files' name strings are
+data, as the package's check script itself records.
+
+- The level two witnessed file (10): the filter chain
+  nests — qualified inside measured inside source — at
+  the definition level and at the count level; every
+  node is a source record; nothing anywhere is
+  measured or qualified, and no library carries an
+  execution or proof receipt; the definition count,
+  444 definitions over the fourteen libraries; one
+  named library's 133 definitions stand none of them
+  measured or qualified; 70 names are shared between
+  libraries, 26 of them with an identical body in two
+  or more homes and 44 with a different body in every
+  home; and the joined graph is exactly the disjoint
+  sum of its libraries, its counts the sums of theirs.
+- The level one witnessed file (9): the same chain at
+  the earlier level, with qualification read as
+  observed plus the gate; qualification is exactly
+  observation under the gate; 155 definitions are
+  observed, 9 of them on substring matches only; the
+  named library has no directly observed definition
+  while its qualified node count stands at 1,320; 56
+  names are shared and every one differs in shape
+  across its homes; and 14 names leaked qualification
+  through the old joined graph.
+- The reconciliation file (8): the two levels carry
+  the same library list and the level two names extend
+  the level one names, within the packing bound the
+  file states; the 155 definitions qualified at level
+  one are all present at level two and all unqualified
+  there — level two admits qualification only from a
+  receipt, so the earlier status is retracted by the
+  level change itself; 318 of the 321 level one keys
+  are kept and 106 keys are new, the three missing keys
+  recorded in the package readme as compiler evidence
+  fixtures outside the source manifest; 29 level two
+  definitions are nested bindings, and the named
+  library's only one is its loop-local binding.
+- The observer file (4): a reading is determined by a
+  battery exactly when it factors through the battery's
+  observations, in general; the helper of an observed
+  root is not determined — a proved refutation; an
+  unrecorded input of an observed root is not
+  determined — a proved refutation carrying the
+  coverage premise; and the observed root on its
+  recorded input is determined.
+- The host file (4): in the joined graph with host
+  edges, a host change reaches every library; reach in
+  the per-library relation alone forces the host
+  itself, that relation being empty; the joined
+  semantics is local; and the falsification package —
+  per-library graphs miss the host: a quality reading
+  that holds of the old host semantics and is preserved
+  along per-library reach fails at the named symbol
+  under the new host, while the joined reach stands.
+- The merging file (4): the toy semantics is local;
+  merging by name is unsound — a proved refutation;
+  merging by identical body is unsound — a proved
+  refutation, the callees differing; and merging by
+  whole dependency closure is sound, given the
+  locality premise the file names.
+- The effects file (3): derived effects are monotone
+  in the dependency relation; a symbol is free of an
+  effect exactly when no symbol in its closure owns it;
+  and joining effects over a list is order free, the
+  joined reading invariant under permutation.
+- The economics file (6): a constructed dominance
+  transfers to a measured one when our constructed
+  bounds stand above our measurements and theirs below
+  theirs; the wrong direction fails — a proved
+  refutation by decision; a serial pipeline's total is
+  bounded below by the kept stages' costs under the
+  stated keeping condition; every stage's cost is
+  bounded by the total; money is monotone in the
+  amount; and one named rewrite's measured loss — its
+  own recorded readings are slower on every run, a
+  measured loss printed as a loss and proved by
+  decision over the record.
+- The temporal file (3): an appended verdict stays at
+  its recorded position — history is append only; no
+  monotone verdict law holds — a pass followed by a
+  failure history exists, a proved refutation; and a
+  verdict carries to a later snapshot only when the
+  closure is unchanged, under the locality premise.
+- The realized file (4): the realized batteries pass
+  on their receipts — 307 passed lines over five homes
+  with no oracle or differential mismatch, the
+  differential running for three of the homes; the
+  realized counts and the cover of the library list
+  are as recorded; and a realized run qualifies
+  nothing — it executes a foreign implementation of
+  the contract, not the library source, proved over
+  the same data that shows nothing measured or
+  qualified anywhere.
+
+### Premises, gate, and the absent set at the new pin
+
+- On named premises: the locality premise — a
+  definition depends only on its declared closure —
+  carried as a named hypothesis where the merging and
+  temporal results use it, and unproven for the
+  repo's graphs, whose edges are a name scan, as the
+  package readme itself states; battery coverage; the
+  price of compute; and which fields of an observation
+  are public. Each enters as a named hypothesis in the
+  files that use it.
+- Gate evidence: the package's check script
+  regenerates both data files and fails on any drift,
+  builds with warnings as errors, and runs an axioms
+  file printing lines for 44 of the 55 theorems — the
+  eleven unprinted are the general helpers and model
+  results the audit does not name. No recorded run of
+  the script stands in the tree, so a passing gate at
+  this pin is unrecorded; the receipts file in the
+  package records the realized batteries' executed
+  runs (five homes, every line passed, exit zero), which
+  is executed evidence for those batteries, not a Lean
+  gate log.
+- Absent, at the repo's own states: per-symbol
+  profiles and bottlenecks stand UNMEASURED — only
+  whole-library benchmarks exist; the per-symbol
+  contract extraction scaffolding is constructed and
+  unexecuted, and this package does not read it. The
+  refinement absence of the earlier censuses stands
+  unchanged.
+
+State: PROVEN in source at the new pin, on this
+re-census's full reading, for 120 theorems in total
+across the repo (the 65 of the earlier censuses,
+unchanged, plus these 55), at the axiom states the
+package's audit file names in source; the six witness
+examples CHECKED by decision, as above; the gate at
+this pin UNRECORDED — one step below the kernel and
+Pareto packages' recorded, hash-bound strength; the
+locality premise CARRIED as named; per-symbol profiles
+UNMEASURED. The census pin moves to the new head,
+578b8b3a7e212082bf0d1f8a5a582cca63af3a19, on this
+re-census; the placements in the synthesis and the
+ledger row are restated at the new pin in this same
+pass.
