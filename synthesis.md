@@ -1101,6 +1101,44 @@ stated states. The full census stands in its annex
 file.
 
 Restated by the forty-sixth watch at pin fcb95953: the root development stands at forty-two declarations — the general symmetric form named above, carried there as an unproved lemma, stands proved in three parts (the segment form, the frontier form, and the canonical form), and the overlay collapse lemma joins the tensor edit results — with its axioms file printing all forty-two and the repo's own census recording a cold gate pass at that count, carried at the same strength as before. Four example developments join the tree beside the unchanged scoped development: an action consensus development (nine theorems, recorded log: five axiom-free, four on propositional extensionality only), a product frontier development (five, recorded log: three axiom-free, two on propositional extensionality only), a suffix page development (ten, recorded log printing seven on subsets of the standard pair, the remaining three unprinted), and a compositional pruning development (eleven, print lines in source for seven, gate unrecorded). The worklist equality lemma and the execution layer cell stand at their stated states. State: PROVEN in source at the new pin for the ninety-four declarations, at the per-development strengths its annex re-census records.
+
+### 3.20 Placement from the forty-seventh watch (2026-11-20) — a new proof repo
+
+software-is-a-parametric-language-model (public, Lean
+4.19.0) — census pin ca4ca2b3, its head at entry. A
+language model whose behavior is a totally
+deterministic function of its content and its
+parameters, the parameters being named, legible axes
+rather than an obscure weight vector, and behavior
+tailored by rewriting parameters incrementally instead
+of retraining or sampling. Its Lean core carries 40
+theorems in one file: the fraction arithmetic the
+scores run on; the selection machinery, whose champion
+specification has at most one satisfier; the decoder,
+whose answer is the unique satisfier of its
+specification — determinism as a theorem; certification
+soundness under its named coverage premise, with the
+blocking direction proved outright; the overlay round
+trip restoring every weight and path score exactly,
+with cone invariance off the edited keys; route one
+locality for single axis reweighting; and two standing
+controls, greedy uncertified on its control table and
+an unresolved bound blocking certification. Of the 40,
+9 depend on no axioms and the rest on subsets of the
+standard three, as its recorded gate log prints them;
+the gate stands green at the pin on that log. Carried
+at the repo's own states: the coverage premise, named
+with its falsification route; the six pipeline premises
+carried over; the fixture scale measurements, executed
+results counted nowhere in the proven column; and the
+unmeasured cells — the real checkpoint cells under a
+named access blocker, code generation beyond fixture
+scale, live serving, and the demo surface's conformance
+— standing as named work, with the compression horizon
+proposed and the registry append of its extract owed.
+State: PROVEN in source at the pin for the 40 theorems,
+at the strengths its annex census records. The full
+census stands in its annex file.
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2804,3 +2842,31 @@ The compiler port moved by two commits: its slices record and its demand source 
 The relay moved by one commit, a dated muse note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The sites repo moved by three commits, the frontier before weights space sources and real wasm modules for four demos: thirty-six files added and thirteen changed, none removed, and the paper page file is unchanged between its two heads. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 52. Watch update — 2026-11-20, the forty-seventh hourly re-synthesis
+
+The forty-seventh watch re-enumerated the estate completely: 574 repos, every head read individually, no read errors. Eleven repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Seven of the moved repos are proof repos — this repo itself, the compiler repo, the library repo, the reversible repo, the review repo, the frontier repo, and the certifiable repo — beside one new proof repo entered at its first sighting and placed in section 3.20, and the other four moved repos are idol-family repos. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins, beside the new placement in section 3.20.
+
+This repo's own head moved only by the forty-sixth watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The compiler repo moved by four commits of compiler and gate work: one evidence file added and four files changed, none of them Lean, and all five of its Lean files are byte-identical between the heads, so its recorded proof-bearing content stands unchanged — the frontier file with its 7 declarations, the release tools files with their 20 and 5, and the solver history file with its 10. Its census pin stands with the full census of the release tools and solver developments still owed.
+
+The library repo moved by eight commits extending the realization route to every verifier home: twelve files added and three changed, none of them Lean, and all twenty of its Lean files are byte-identical between the heads, so its one hundred twenty theorems stand unchanged at the fresh head. Its census pin stands at the head the forty-fifth watch re-censused, with its gate at that pin unrecorded.
+
+The reversible repo moved by one commit, its own census addendum: no file but that census changed, and all seven of its Lean files are byte-identical between the heads, so its 94 declarations stand unchanged at the fresh head. The addendum records that the worklist equality lemma — the one named unproved lemma its re-census carried — stands proved in the frontier home at its fresh head in this same window, so no named unproved lemma from its census remains. Its census pin stands at the head the forty-sixth watch re-censused.
+
+The review repo moved by two commits landing a statement package in its own isolated build beside its byte-identical legacy library: the three original propositions, unchanged as definitions, now stand inhabited — the full closure, relevant, and omission claims proved axiom-free, with the exact absorption characterization, the stronger prospective core and application forms, the redundancy characterizations, and the finite checker correctness — 23 new non-control theorems — beside 18 standing counterexample theorems, ten retained and eight new. Counted by the watch method, the tree now carries 126 declarations where the last recorded head carries 86 — 42 gained and 2 lost, the lost pair being the planted admitted proof controls, renamed out of the Lean inventory into non-Lean fixture files where they stand as explicit rejection controls, flagged in its annex delta as controls leaving the inventory, not proven results lost. A recorded publisher log at the fresh head states the gate passed there over both packages; the independent exact pin recheck its verification record requires stands owed. Its census pin stands with a full re-census owed.
+
+The frontier repo moved by one commit landing the canonical bridge: two new files — the canonical view file, carrying the canonical definitions verbatim from their home with the resolution level chain stated and proved, 24 declarations, and the bridge file, 10 declarations, proving the worklist equality lemma the reversible home carried as named work, in its stated bridge form, with the append form at every prefix and a non-vacuity control. Counted by the watch method, the tree now carries 240 declarations where the last recorded head carries 206 — 34 gained and none lost. A recorded check log at the fresh head ends in a successful build and prints axiom lines for all 10 bridge declarations and 20 of the 24 canonical ones. Its census pin stands with a full re-census owed.
+
+The certifiable repo moved by two commits landing a proof and falsification duet: the historical model recovered from the safe home's audited branch pin under a documented namespace transformation, its bridge to the canonical interface, the legacy sequence results — the unrestricted thesis refuted by a checked counterexample, then repaired exactly: adjacent nonregression exactly equivalent to all pairs nonregression, strict improvement exactly witnessed, and the guarded step form under a fixed requirement set — the canonical release sequence results, and 26 standing control theorems. Counted by the watch method, the tree now carries 187 declarations where the last recorded head carries 89 — 99 gained and 1 lost, the lost name being the planted admitted proof control, renamed out of the Lean inventory into a non-Lean fixture file, flagged in its annex delta as a control leaving the inventory, not a proven result lost. Its new gate contract stands in the tree with no recorded run at the fresh head, and its duet record names the five application premises and the correction that temporal nonregression replaces unqualified global optimality. Its census pin stands with a full re-census owed.
+
+The new repo is a proof repo, the parametric language model repo, entered and censused at theorem level at its head, which is its census pin: 40 theorems in one Lean file — the fraction arithmetic, the selection machinery and the decoder's determinism, certification soundness under its named coverage premise with blocking proved outright, the overlay round trip and cone invariance, route one locality, and two standing controls — on a recorded gate log passing at the pin, its measured cells at fixture strength, and its unmeasured cells standing as named work. Its placement stands in section 3.20.
+
+The api repo moved by four commits finishing its pure Idol rewrite on the pinned compiler: five files changed and none added or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The compiler port moved by four commits, two demand slices: its slices record and its demand source changed, with no file added or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The operating system repo moved by two commits hardening its signing judgement: one tool file added and five files changed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
