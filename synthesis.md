@@ -2870,3 +2870,13 @@ The compiler port moved by four commits, two demand slices: its slices record an
 The operating system repo moved by two commits hardening its signing judgement: one tool file added and five files changed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 53. Watch update — 2026-11-20, the forty-eighth hourly re-synthesis
+
+The forty-eighth watch re-enumerated the estate completely: 574 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Two of the moved repos are proof repos — this repo itself and the compiler repo — and the other is an idol-family repo. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the forty-seventh watch landing itself: the five commits between the two heads are that watch's annex, placement, ledger, correction, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The compiler repo moved by four commits of compiler, library, and gate work: ninety-three files changed and none added or removed, none of them Lean, and all five of its Lean files are byte-identical between the heads, so its recorded proof-bearing content stands unchanged — the frontier file with its 7 declarations, the release tools files with their 20 and 5, and the solver history file with its 10. Its census pin stands with the full census of the release tools and solver developments still owed.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
