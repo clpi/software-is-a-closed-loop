@@ -974,6 +974,43 @@ the recorded log; the model and its claims PROPOSED,
 none proven. The full census stands in its annex
 file.
 
+Restated by the thirty-seventh watch (2026-11-19) at
+the new census pin 37514fb7: the rebuild landed in
+five commits — the canonical model implemented in
+Lean (the core, growth operations, registry, and
+derived views files), all eight claims of the
+specification proved in the claims file under the
+names the specification assigns (monotonicity under
+expansion, compounding as accumulation of effective
+joins, appearance with its control direction, coloring
+with the two-filter rule, bounds with the reading and
+the record kept apart, reconciliation in either order,
+scope widening as growth only, and the registry
+clauses), the five standing controls proved over
+concrete data, and the two inherited premise labels
+stated as explicit premise definitions that no theorem
+depends on — 217 declarations in eight Lean files,
+with a recorded gate log at the pin printing
+thirty-eight axiom audits, all within the standard
+three, its subset check passing. The specification,
+definitions record, and readme are byte-identical at
+both pins, so the claims proved are the claims the
+first placement carried as proposed. Beside the proof:
+a resolution algorithm specification and its case
+register, carried as proposed at their own stated
+states, and a built registry carried as measured —
+fifteen entries over 321 witnessed terms, its second
+epoch solved by exhaustive search over the searched
+set alone. One name loss is flagged in the annex: the
+seed fact is not restated in the rewritten core file,
+a skeleton placeholder replaced by the model's own
+development, the proven set growing from one
+declaration to 217. State: PROVEN at the new pin on
+the recorded log, for the claims above; the algorithm
+specification and register PROPOSED; the built
+registry MEASURED at its named pins. The re-census
+stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2543,3 +2580,13 @@ This repo's own head moved only by the thirty-fifth watch landing itself: the se
 The compiler port moved by four commits, two slice landings and their merges: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 42. Watch update — 2026-11-19, the thirty-seventh hourly re-synthesis
+
+The thirty-seventh watch re-enumerated the estate completely: 572 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Two of the moved repos are proof repos — this repo itself, and the equivalence repo, re-censused in full at its fresh head and restated in section 3.18 — and the other is an idol-family repo. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins, beside the restated equivalence placement.
+
+This repo's own head moved only by the thirty-sixth watch landing itself: the four commits between the two heads are that watch's delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The equivalence repo moved by five commits past its census pin: the theory rebuilt on the canonical model, the resolution algorithm specified with its case register seeded, and the registry built on the model with its second epoch solved. Its specification, definitions record, and readme are byte-identical at both pins, and the claims its first census carried as proposed stand proved in the tree at the fresh head — 217 declarations in eight Lean files, the five standing controls proved over concrete data, and a recorded gate log at the fresh head with thirty-eight axiom prints, all within the standard three, its subset check passing. It was re-censused at theorem level in full in its annex, and its census pin moves to the fresh head in this pass. One name loss is flagged in its annex and in the ledger, not absorbed: the seed fact of the skeleton pin, a fact of the logic that stood only so the gate had a compiled development to check, is not restated in the rewritten core file, whose audit now prints the model's own theorems.
+
+The compiler port moved by four commits, two slice landings and their merges: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.

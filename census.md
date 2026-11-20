@@ -823,7 +823,16 @@ synthesis placement sections for this watch and the annex):
   at settled intent with eight proposed claims and five
   proposed controls, and a proof skeleton of one seed
   declaration with a recorded gate log passing. Pin
-  14992281.
+  14992281. Restated by the thirty-seventh watch at
+  pin 37514fb7: the rebuild landed — the model
+  implemented in Lean, all eight claims proved, the
+  five controls proved over concrete data, 217
+  declarations in eight Lean files, and a recorded
+  gate log passing at the pin, beside an algorithm
+  specification and case register carried as proposed
+  and a built registry carried as measured; the seed
+  fact of the skeleton pin is not restated, flagged in
+  its annex as a name loss at skeleton strength.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
@@ -1731,3 +1740,43 @@ generation source, over four commits, and the relay's
 tree gained one file, a dated minimax note, with no
 file changed or removed over one commit. No tree read
 was truncated this watch.
+
+## Watch update — 2026-11-19 (thirty-seventh hourly re-synthesis)
+
+A thirty-eighth enumeration: 572 repos, every head
+read individually, no read errors. Three repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself; one
+further proof repo (the equivalence repo); and one
+further idol-family repo (the compiler port). Fresh
+heads for every repo stand in the pins file at this
+re-synthesis. This repo's movement is the thirty-sixth
+watch landing itself: the four commits between the
+heads are that watch's delta, placement, ledger, and
+pins commits, no Lean file changed among them, and its
+eleven theorems stand unchanged, recorded in its annex
+delta. The equivalence repo moved by five commits past
+its census pin — the theory rebuilt on the canonical
+model, an algorithm specification with its case
+register, and a built registry with its second epoch
+solved — and was re-censused at theorem level in full
+at its fresh head in its annex: 217 declarations in
+eight Lean files, all eight claims of its
+specification proved, its five standing controls
+proved over concrete data, and a recorded gate log at
+the fresh head passing its axiom subset check; its
+census pin moves to 37514fb7 in this pass. One name
+loss is flagged in its annex: the seed fact of the
+skeleton pin is not restated in the rewritten core
+file — a fact of the logic that stood only as the
+gate's placeholder, replaced by the model's own
+development, the proven set growing from one
+declaration to 217. The compiler port was read by
+tree at its fresh head and carries no proof-assistant
+content, so it remains proof-free by the named check;
+its tree stands at the same file count as at its last
+recorded head, with no file added or removed and two
+files changed, a slices record and a code generation
+source, over four commits. No tree read was truncated
+this watch.
