@@ -1819,3 +1819,52 @@ read was truncated this watch.
 ## Watch update — 2026-11-19 (thirty-ninth hourly re-synthesis)
 
 A fortieth enumeration: 572 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and two further idol-family repos (the compiler port and the relay). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the thirty-eighth watch landing itself: the four commits between the heads are that watch's delta, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler port and the relay were read by tree at their fresh heads and carry no proof-assistant content, so they remain proof-free by the named check; the compiler port's tree gained one file, a lowering source, and one file changed, its slices record, over nine commits, with no file removed, and the relay's tree gained one file, a dated minimax note, with no file changed or removed over one commit. No tree read was truncated this watch.
+
+## Watch update — 2026-11-19 (fortieth hourly re-synthesis)
+
+A forty-first enumeration: 572 repos, every head
+read individually, no read errors. Six repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself; two
+further proof repos (the library repo and the
+redundant compute repo); and three further repos
+(the compiler port, the operating system repo, and
+the personal site repo). Fresh heads for every repo
+stand in the pins file at this re-synthesis. This
+repo's movement is the thirty-ninth watch landing
+itself: the four commits between the heads are that
+watch's delta, placement, ledger, and pins commits,
+no Lean file changed among them, and its eleven
+theorems stand unchanged, recorded in its annex
+delta. The library repo landed a realization route
+in five commits — five hash batteries run without
+the compiler, one further hash entry, and transcript
+hardening; twelve files added and its ledger
+changed — and was read by tree in full at its fresh
+head: all four of its Lean files are byte-identical
+between its census pin and its fresh head, so its
+sixty-five theorems stand unchanged, recorded in
+its annex delta. The redundant compute repo grew
+by addition in five commits: nine new Lean files
+beside its original four, byte-identical, and its
+recorded check log replaced — 194 declarations by
+the watch method where its census pin carries 37,
+no name lost; its re-listing file discharges the
+listing premise its census carried, its sample file
+proves the premise-closed reconstruction in kernel
+form, and its recorded log prints 189 declarations
+within the standard set with its subset check
+passing, recorded in its annex delta, with a full
+re-census at the fresh head owed. The compiler
+port, the operating system repo, and the personal
+site repo were read by tree at their fresh heads
+and carry no proof-assistant content, so they
+remain proof-free by the named check; the compiler
+port's tree stands at the same file count with two
+files changed over three commits, the operating
+system repo changed two files, its readme and its
+signing spec, over one commit, and the personal
+site repo gained four files, a two-view journal
+front, over one commit. No tree read was truncated
+this watch.
