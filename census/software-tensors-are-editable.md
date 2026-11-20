@@ -146,3 +146,11 @@ unknown as named above. The census pin is set to the
 fresh head on this first census; the placements in the
 synthesis and the ledger row are entered at the pin in
 this same pass.
+
+## Watch delta — 2026-11-20, the fifty-fourth hourly re-synthesis watch
+
+The watch re-read this repo's live head at eb0c79ae5c78f4d46f03d0baa5d3891e6d994300 in the full enumeration, against the last recorded head 9d7afd54bf8e7c8dbd335b6530d4cdc6b6d14d18, which is its census pin. One commit stands between the heads, and it changes only the repo's own census file; every other file in the tree is byte-identical between the heads, including both Lean files, the gate script, the recorded gate log, and the specification. The theorem count is therefore unchanged: 14 theorems in the core file, the same name set at both heads, with no name gained and none lost, counted by the watch method over the tree at each pin.
+
+The one change is a census correction in the source repo. Its founding census missed a checkpoint held in a local model store, because the store's blobs carry no file extension and an extension-based search could not see them, and it wrongly recorded that no such store exists on disk. The corrected census records that checkpoint — a 1.5 billion parameter instruct checkpoint in the named store, in the named container format, at just under one billion bytes with 338 tensors, its full hash computed and matching its content-addressed name — as verified firsthand on disk at the repo's own strength, an executed census result counted nowhere in the proven column here. The correction states plainly that no blocked item depends on that checkpoint: it is not any blocked experiment's fixture. The paired sign-flip behavioral claim and the causal mask reconstruction with its fixture receipt therefore remain blocked on their own missing fixtures, the owed and proposed items stand as this annex records them, and every behavioral effect of every concrete delta remains unknown.
+
+State at the fresh head stands as at the census pin: proven in source for the 14 theorems on the recorded gate log at the pin, the specification's further sections at their labeled proposed states, and the behavioral cells blocked or unknown as named above. A full theorem-level re-census at the fresh head is owed; this delta records the tree evidence and the source correction.
