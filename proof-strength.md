@@ -2306,3 +2306,69 @@ port, is not a proof repo and carries no ledger row:
 it was read by tree at its fresh head, no
 proof-assistant source was found in it, and it remains
 proof-free by the named check.
+
+## Watch refresh — 2026-11-19, the thirty-eighth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 572 repos, every
+head read individually, no read errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated. Evidence below rests on the tree
+reads at both heads of the moved proof repos: every
+Lean file in each is byte-identical between the last
+recorded head and the fresh head. Placements stand
+at the census pins named in each row; a full
+theorem-level re-census at each fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Every Lean file in both moved
+  proof repos is byte-identical between the last
+  recorded head and the fresh head, so no name was
+  lost in either; the semi repo's counts by the watch
+  method stand unchanged at 1,865 declarations and
+  1,736 distinct names, and this repo's eleven names
+  stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol-semi — fresh head 0d730e5b (census pin
+  508d7c66). Proven: unchanged — all 156 Lean files
+  are byte-identical between the census pin, the last
+  recorded head, and the fresh head, and no Rust file
+  changed in source, so the congruence closure,
+  matching, and fidelity development and the Rust
+  verification stand exactly as the sweep row
+  records. Counted at the fresh head by the watch
+  method: 1,865 declarations, 1,736 distinct short
+  names, no name gained and none lost. The movement
+  is fifteen added files — a native Idol projection
+  folder and a parity outcome folder — beside twenty
+  changed files of integration workflows and Rust
+  manifests, over seventeen commits. Absent: a
+  recorded check log still stands nowhere in the
+  tree, so a passing gate at the fresh head remains
+  claimed, not proven; the gate re-run at the shared
+  pin remains blocked on host disk quota, as the
+  high-impact addendum records. Placement note: the
+  mirror repo did not move and still stands at
+  508d7c66, so the two repos' heads stand further
+  apart; their proof content remains identical, and
+  this row tracks the semi repo's head, with the
+  mirror's head recorded here until it moves.
+- software-is-a-closed-loop — fresh head 8a230cf9
+  (census pin d558669b). Proven: 11 theorems, unchanged
+  — the same name set at the last recorded head and at
+  the fresh head, which is the head the thirty-seventh
+  watch landed; the five commits between them are that
+  watch's re-census, delta, placement, ledger, and pins
+  commits and carry no Lean change. Controls and gate
+  stand as the second watch row records.
+
+The one other moved repo this watch, the compiler
+port, is not a proof repo and carries no ledger row:
+it was read by tree at its fresh head, no
+proof-assistant source was found in it, and it remains
+proof-free by the named check.
