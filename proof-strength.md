@@ -3436,3 +3436,63 @@ fresh head: no proof-assistant source stands in it
 and its tree read was not truncated, so it remains
 proof-free by the named check and carries no ledger
 row.
+
+## Watch refresh — 2026-11-20, the forty-ninth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 574 repos, every
+head read individually with no errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated. Evidence below rests on the tree and
+commit reads at both heads of each moved proof repo.
+Placements stand at the census pins named in each row;
+a full theorem-level re-census at each fresh head is
+owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The name comparison found zero
+  lost names in every moved proof repo: both moved
+  proof repos carry every Lean file byte-identical
+  between the last recorded head and the fresh head, so
+  no name was gained and none lost in either. No
+  regression is flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head
+  9bd2735a98e9d3478610e3aa31f042261fe3ae3a, census pin
+  d558669b standing. Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at
+  the fresh head, which is the head the forty-eighth
+  watch landed; the four commits between them are that
+  watch's annex, placement, ledger, and pins commits
+  and carry no Lean change. Controls and gate stand as
+  the second watch row records.
+- idol — fresh head
+  e9d05c2a4b0fbb439456f0fe88492f8cbca6c996, census pin
+  561cf395 standing (proof-bearing content only).
+  Proven: unchanged — all five Lean files are
+  byte-identical between the last recorded head and
+  the fresh head, counted at forty-five declarations
+  by the watch method: the frontier file with its 7
+  theorems on the premises its row records, the
+  release tools files with their 20 and 5, the solver
+  history file with its 10, and the proof data sample
+  that remains test data, counted nowhere. The
+  movement is two commits of specification and
+  compiler work, three files added and five changed
+  and none of them Lean. Gate: the release
+  tools verdict stands in the high-impact addendum
+  above at its named pin; the solver history file's
+  gate remains unknown, and the full census of the
+  release tools and solver developments remains
+  owed.
+
+The compiler port also moved and was read by tree at
+its fresh head: no proof-assistant source stands in
+it and its tree read was not truncated, so it remains
+proof-free by the named check and carries no ledger
+row.
