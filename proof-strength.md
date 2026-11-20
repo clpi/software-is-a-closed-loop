@@ -2990,3 +2990,156 @@ moved and were read by tree at their fresh heads: no
 proof-assistant source stands in any of them and no
 tree read was truncated, so all three remain proof-free
 by the named check and carry no ledger row.
+
+## Watch refresh — 2026-11-20, the forty-sixth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 573 repos, every
+head read individually with no errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated; the reversible repo's seven proof files
+were read in full and re-censused at theorem level, as
+its annex records. Evidence below rests on the tree and
+commit reads at both heads of each moved proof repo.
+Placements stand at the census pins named in each row;
+a full theorem-level re-census at each fresh head is
+owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Name comparison at both heads
+  of every moved proof repo, one mechanical method at
+  both heads, shows no name lost: the reversible repo
+  gained thirty-nine distinct names beside a
+  byte-identical scoped development, and the compiler
+  repo, the eyes repo, the library repo, the
+  equivalence repo, and this repo have every Lean file
+  byte-identical between heads. No regression is
+  flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass, and the reversible repo's census pin moves
+  with its row. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head
+  bc63b1dff892ec981514910e4334ecd704ca3e74, census pin
+  d558669b standing. Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at
+  the fresh head, which is the head the forty-fifth
+  watch landed; the four commits between them are that
+  watch's annex, placement, ledger, and pins commits
+  and carry no Lean change. Controls and gate stand as
+  the second watch row records.
+- idol — fresh head
+  8705d4cfb40cfa006fb94ce637c6179f6d49aa3a, census pin
+  561cf395 standing (proof-bearing content only).
+  Proven: unchanged — all five Lean files are
+  byte-identical between the last recorded head and
+  the fresh head, counted at forty-five declarations
+  by the watch method: the frontier file with its 7
+  theorems on the premises its row records, the
+  release tools files with their 20 and 5, the solver
+  history file with its 10, and the proof data sample
+  that remains test data, counted nowhere. The
+  movement is two commits of compiler work, four files
+  changed and none of them Lean. Gate: the release
+  tools verdict stands in the high-impact addendum
+  above at its named pin; the solver history file's
+  gate remains unknown, and the full census of the
+  release tools and solver developments remains owed.
+- idol-eyes — fresh head
+  1b0e92d37f87c62197486e812ab90ba28dd381a7, census pin
+  1dc24f4f standing. Proven: 61 theorems, unchanged —
+  all four Lean files are byte-identical between the
+  census pin and the fresh head, the same name set at
+  both. The movement is two commits of harness
+  evidence work: one retained offline evidence record
+  added and the harness document changed. Premises,
+  absent set, and controls stand as its census row
+  records. Gate: a passing run at the fresh head is
+  unrecorded, as its census row records for the pin.
+- idol-lib — fresh head
+  a76bd4f922a4dc4737d49705248dfbeb9c380fa4, census pin
+  578b8b3a standing. Proven: 120 theorems, unchanged —
+  all twenty Lean files are byte-identical between
+  the census pin and the fresh head, the same name
+  set at both, in three theorem files beside six
+  checked witness examples and the space package's
+  sixteen files. The movement is two commits landing
+  a protocol buffers port slice of thirteen files and
+  its ledger record, none of them Lean. Premises,
+  absent set, and controls stand as its re-census row
+  records. Gate: unrecorded at the census pin, as
+  that row records.
+- software-is-reversible — census pin moves to the
+  fresh head fcb9595310d8a0782cb7fca1b2203d80b28c8d8c
+  on the full re-census in this pass. Proven: 94
+  declarations in seven Lean files (was 55 in three
+  at the last census pin), thirty-nine gained and
+  none lost — the root development at 42, its four
+  gains closing named work: the general symmetric
+  form of the never-selected result, stated and
+  unproved at the last pin, proved in three parts
+  (the segment form, the frontier form, and the
+  canonical form), and the overlay collapse lemma;
+  the scoped development at 17, byte-identical; and
+  four new example developments — action consensus 9
+  (the fiber exact under append, certification
+  preserved under refinement, the countermodel
+  exactness, the alias obstruction control), product
+  frontier 5 (the coordinate law, the product
+  frontier exact, replay under a frozen bridge, and
+  the coupled join control), suffix page 10 (block
+  enumeration, selection, mass, and paging exact
+  against the reference, with duplicate freeness),
+  and compositional pruning 11 (dominance composition,
+  the additive continuation exact, the kept frontier
+  and its image exact under coverage, and the status
+  forms). On named premises: the repo's premise
+  register stands as its census row records, carried
+  at its stated strengths. Absent: reversibility at
+  the execution layer, UNMEASURED in the repo's own
+  census; and the worklist equality against the
+  canonical home's view semantics, still stated and
+  unproved as a named lemma — the one of the two
+  named lemmas that remains, its sibling now proved.
+  Controls: the threshold refutation and the
+  never-selected results stand proved in the root
+  file, joined by the alias obstruction and coupled
+  join controls in the new developments. Gate state:
+  the root development's axioms file prints all 42
+  in source and its cold pass at that count is
+  recorded as a claim in the repo's own census, with
+  no recorded log file in the tree; the scoped
+  development's recorded audit stands as its row
+  records; the action consensus log prints all nine
+  (five axiom-free, four on propositional
+  extensionality only) and the product frontier log
+  prints all five (three axiom-free, two on
+  propositional extensionality only); the suffix
+  page log prints seven of its ten on subsets of the
+  standard pair, the remaining three unprinted; and
+  the compositional pruning file prints seven of its
+  eleven in source with no recorded log, so its gate
+  stands unrecorded.
+- software-redundancy-is-equivalence — fresh head
+  37794d7492c1d2c0b01546e4762b3059007e68a3, census pin
+  37514fb7 standing. Proven: 217 declarations,
+  unchanged — all nine Lean files are byte-identical
+  between the census pin and the fresh head, the
+  same name set at both. The movement is two commits
+  of registry and approach space work: the first
+  witnessed join entered in the registry, the third
+  epoch solved there, and the approach space founded
+  by its semantic axes, all registry and document
+  content at their own states. Premises, absent set,
+  and controls stand as its census row records.
+  Gate: green at the census pin by the repo's
+  recorded log, as its census row records.
+
+The compiler port, the relay, and the sites repo also
+moved and were read by tree at their fresh heads: no
+proof-assistant source stands in any of them and no
+tree read was truncated, so all three remain proof-free
+by the named check and carry no ledger row.
