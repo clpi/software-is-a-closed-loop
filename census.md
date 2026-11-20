@@ -834,6 +834,23 @@ synthesis placement sections for this watch and the annex):
   fact of the skeleton pin is not restated, flagged in
   its annex as a name loss at skeleton strength.
 
+Added by the forty-fourth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- idol-eyes (private) — the perception campaign's
+  certification law over one canonical record log: the
+  derivability and hypergraph definitions restated with
+  the resolution-chain model and its view laws; the gate
+  that admits a candidate over its predecessor exactly
+  when every registered dimension is measured on both
+  sides and no reading regresses, with refusal by
+  regression final; and meeting the union of the
+  incumbents as exactly admission over each incumbent
+  and domination of the pooled peak list, with the
+  ceiling form — sixty-one theorems in four Lean files,
+  newly proof-bearing in this window, its gate run at
+  the pin unrecorded. Pin 1dc24f4f.
+
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
 also named software inside the loop — their pins re-enter at
@@ -1938,3 +1955,64 @@ twenty-eight commits, with no file removed, and the
 relay's tree gained one file, a dated minimax note,
 with no file changed or removed over one commit. No
 tree read was truncated this watch.
+
+## Watch update — 2026-11-20 (forty-fourth hourly re-synthesis)
+
+A forty-fifth enumeration: 572 repos, every head
+read individually, no read errors. Eight repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: six proof repos (this repo
+itself, the safe repo, the library repo, the
+redundant compute repo, the compiler repo, and the
+eyes repo, newly proof-bearing in this window) and
+two further repos (the compiler port and the relay).
+Fresh heads for every repo stand in the pins file at
+this re-synthesis. This repo's movement is the
+forty-third watch landing itself: the four commits
+between the heads are that watch's delta, placement,
+ledger, and pins commits, no Lean file changed among
+them, and its eleven theorems stand unchanged,
+recorded in its annex delta. The safe repo grew by a
+whole new family development in two commits —
+sixteen Lean files added beside its earlier files,
+byte-identical — 277 declarations by the watch
+method where its last recorded head carries 151,
+ninety-seven distinct names gained and none lost,
+its audit file printing forty-seven family names and
+no recorded check log at the fresh head, recorded in
+its annex delta, with a full re-census owed. The
+library repo added an oracle slice and portable
+evidence in three commits, thirty-one files added
+and no library file among them: its proven set
+stands unchanged, and the mechanical gain of eight
+names is oracle fixtures — six kernel fixture
+theorems at fixture strength with recorded evidence,
+beside an admitted-proof control and a
+planted-false-axiom control, neither a proven
+result — recorded in its annex delta. The redundant
+compute repo added one Lean file in two commits,
+proving reachability is not qualification over a
+two-seed joint rule: 202 declarations where its last
+recorded head carries 195, seven gained and none
+lost, its other thirteen files byte-identical,
+recorded in its annex delta. The compiler repo
+moved by twenty-two commits of compiler and gate
+work with every one of its five Lean files
+byte-identical, so its recorded proof-bearing
+content stands unchanged, recorded in its annex
+delta. The eyes repo is newly proof-bearing: no
+proof-assistant source at its last recorded head,
+and sixty-one theorems in four Lean files at its
+fresh head — the canonical log and resolution-chain
+model, the certification gate with regression
+finality, and the union meeting law — censused at
+theorem level in its new annex, its census pin set
+to its fresh head, and its entry added to the proof
+family above. The compiler port and the relay were
+read by tree at their fresh heads and carry no
+proof-assistant content, so they remain proof-free
+by the named check; the compiler port gained six
+lowering sources over thirty-six commits and the
+relay one dated fleet note over two. No tree read
+was truncated this watch.
