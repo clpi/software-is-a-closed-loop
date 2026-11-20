@@ -799,6 +799,32 @@ synthesis placement section for this watch and the annex):
   controls and the universal form refuted in the tree.
   Pin 1ea28648.
 
+Added by the thirty-fifth watch (same placement depth — the
+synthesis placement sections for this watch and the annex):
+
+- software-certification-is-monotone (public) — the
+  monotonic certification pipeline: chain evidence
+  proving the endpoint comparison and composing over
+  consecutive increments, so incremental evidence
+  provably covers the full check; a certificate checker
+  that requires chain evidence behind every certified
+  verdict and recomputes endpoint values, so a regressed
+  dimension can carry no verdict but regressed; and the
+  assembled standing control refuting endpoint-only
+  comparison, beside the pipeline's first certificate
+  artifact, whose recomputed reading is not certified.
+  Pin 4539760e.
+- software-redundancy-is-equivalence (public) — the
+  redundant compute program re-founded on the canonical
+  model: the one hypergraph of equivalent terms at
+  symbolic resolution, redundancy as a property of
+  equivalence classes, and excess as collected terms
+  minus edges — carried at this pin as a specification
+  at settled intent with eight proposed claims and five
+  proposed controls, and a proof skeleton of one seed
+  declaration with a recorded gate log passing. Pin
+  14992281.
+
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
 also named software inside the loop — their pins re-enter at
@@ -1629,3 +1655,53 @@ generation source, over two commits, and the relay's
 tree gained one file, a dated minimax note, with no
 file changed or removed over one commit. No tree read
 was truncated this watch.
+
+## Watch update — 2026-11-19 (thirty-fifth hourly re-synthesis)
+
+A thirty-sixth enumeration: 572 repos, every head read
+individually, no read errors. Four repos had moved
+since the last recorded heads, two were new, none were
+gone, and the paper source hash was unchanged. The
+moved set: this repo itself; one further proof repo
+(the frontier repo); and two further idol-family repos
+(the perception harness repo and the relay). The two
+new repos are both proof repos, entered in the proof
+family below at their first sighting. Fresh heads for
+every repo stand in the pins file at this
+re-synthesis. This repo's movement is the
+thirty-fourth watch landing itself: the five commits
+between the heads are that watch's census, delta,
+placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The frontier
+repo moved by one commit, the candidate space landing:
+one new Lean file carrying twenty-three declarations
+with none lost, every earlier Lean file byte-identical
+at the fresh head, and a recorded check log at the
+fresh head whose build ends in success — recorded in
+its annex delta, its census pin standing with
+re-census owed. The new certification repo is public,
+at 4539760e: three Lean files beside an audit file,
+nineteen theorem declarations, one assembled standing
+control, and its first certificate artifact with a
+recorded consistent checker output — entered in the
+proof family above, censused at theorem level in its
+annex, and placed in the synthesis at its head, which
+is its census pin. The new equivalence repo is
+public, at 14992281: a specification of the canonical
+model at settled intent, eight claims and five
+controls as proposed semantics, and a proof skeleton
+of one seed declaration with a recorded gate log
+passing — entered in the proof family above, censused
+at theorem level in its annex, and placed in the
+synthesis at its head, which is its census pin, at
+skeleton strength. The perception harness repo and the
+relay were read by tree at their fresh heads and carry
+no proof-assistant content, so they remain proof-free
+by the named check; the perception harness repo's tree
+gained four files, the harness document, its protocol
+source, and its two test files, with two files
+changed, its makefile and its readme, over two
+commits, and the relay's tree gained one file, a dated
+minimax note, with no file changed or removed over one
+commit. No tree read was truncated this watch.

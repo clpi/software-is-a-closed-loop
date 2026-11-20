@@ -879,6 +879,101 @@ proposed. State: PROVEN at the pin on the recorded
 log, for the core above. The full census stands in its
 annex file.
 
+### 3.17 Placement from the thirty-fifth watch (2026-11-19) — a new proof repo
+
+Stage 3 — software-certification-is-monotone, census
+pin 4539760e. A new repo, entered on the thirty-sixth
+enumeration and censused at theorem level on its first
+sighting, by content: the monotonic certification
+pipeline, a general construction that certifies a
+qualified subject as monotone over a fixed set of
+semantic dimensions by a single checkable artifact
+between two named states, from incremental evidence
+that provably covers the full check. Nineteen theorem
+declarations in two Lean files on Lean 4.19.0: chain
+evidence between two states proves the endpoint
+comparison (the incremental covers full property at
+transition grain, axiom-free), and chains over
+consecutive increments compose to chain evidence over
+their join (the property at chain grain, axiom-free);
+the artifact's checker requires chain evidence behind
+every certified verdict and recomputes the endpoint
+values, so an accepted certificate's certified
+dimension is monotone between its states, a regressed
+dimension can carry no verdict but regressed and never
+reads certified, two accepted certificates over
+consecutive increments certify the outer endpoints,
+and a certificate under the overall certified reading
+is sound on every dimension. One standing control
+stands in the tree, assembled from ten declarations:
+the endpoint-only checker accepts a three state
+transition whose interior regresses, no chain evidence
+for it exists, and the pipeline's checker rejects the
+matching claim — endpoint-only comparison refuted as a
+certification method. The tree also carries the
+pipeline's first issuance, for the perception harness
+repo between its baseline pin and its previous head:
+an artifact whose recomputed reading is not certified,
+consistent by its own checker, with three dimensions
+improving under stated discharges, one flat, and three
+unmeasured with their gaps named — executed evidence
+at its own strength, counted nowhere as proof. Carried
+at the repo's own states: four named premises about
+the world (the measure as a function of state, the
+increment relation as the recorded history, a step's
+record as an executed check, and orientation), each
+with its falsification route. Axiom states stand as
+the repo's specification and readme record them from
+the audit file's prints — the chain results
+axiom-free, the checker results and the control on
+propositional extensionality and quotient soundness
+only — and the gate verdict at the pin rests on the
+specification's recorded cold pass statement, no build
+log file standing in the tree. State: PROVEN at the
+pin on the repo's recorded evidence, for the core
+above. The full census stands in its annex file.
+
+### 3.18 Placement from the thirty-fifth watch (2026-11-19) — a new proof repo, at skeleton strength
+
+Stage 3 and 5 — software-redundancy-is-equivalence,
+census pin 14992281. A new repo, entered on the
+thirty-sixth enumeration and censused at theorem level
+on its first sighting, by content: the redundant
+compute program re-founded on the canonical model —
+the one hypergraph of equivalent terms at symbolic
+resolution, resolved information appended only, and
+redundancy as a property of equivalence classes, the
+excess of a graph being its collected terms minus its
+edges. At this pin the repo carries the model as a
+specification at settled intent, its eight claims
+(monotonicity under expansion, compounding as
+accumulation of effective joins, appearance at a cross
+join, coloring, bounds, reconciliation, scope, and
+the registry clauses) and its five standing controls
+as proposed semantics, two inherited premise labels
+(witness honesty and reading fidelity), and a proof
+tree holding a bare skeleton only: one Lean
+declaration, a seed fact of the logic itself — two
+propositions joined by a two way implication are
+equal, on propositional extensionality only — standing
+so the family gate has a compiled development to
+check, and no definition of the model and no theorem
+of the program implemented yet, at the repo's own
+stated strength. The recorded gate log at the pin
+prints the seed fact and ends in its axiom subset
+check passing. The repo's readme dispositions its
+predecessor, the expands repo at 1ea28648, as founded
+on a list counting construction whose theorems are not
+a foundation here; that predecessor's census and
+ledger rows stand at their pins as the record of what
+it proved about its construction, and the disposition
+is carried here as the repo's own recorded ruling,
+relayed until a firsthand check of the program record
+replaces it. State: the seed fact PROVEN at the pin on
+the recorded log; the model and its claims PROPOSED,
+none proven. The full census stands in its annex
+file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2420,5 +2515,21 @@ This repo's own head moved only by the thirty-third watch landing itself: the fo
 The new repo, the redundant compute repo, landed in one commit at its head, which is its census pin: four Lean files, thirty-seven theorem declarations, six standing controls, and a recorded gate log in its tree — entered in the proof family, censused at theorem level in its annex, and placed in the synthesis in section 3.16.
 
 The compiler port moved by two commits, one slice landing and its merge: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 40. Watch update — 2026-11-19, the thirty-fifth hourly re-synthesis
+
+The thirty-fifth watch re-enumerated the estate completely: 572 repos, every head read individually, no read errors. Four repos had moved since the last recorded heads, two were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Three of the moved repos are proof repos — this repo itself, and the frontier repo — beside two new proof repos entered at their first sighting and placed in sections 3.17 and 3.18, and the other moved repos are idol-family repos. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the thirty-fourth watch landing itself: the five commits between the two heads are that watch's census, delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The frontier repo moved by one commit, the candidate space landing: one new Lean file, the candidate module, carrying 23 declarations with none lost — the candidate record and its structural measures, the gap as a first-class object with its exact scan, the solved set under a weighting epoch proved exactly the nondominated qualified set under that epoch's measures, weighting independence given the axes, exact update forms for qualified and disqualified appends, joins, and retraction, and two proved refutation controls on a named demo space. A recorded check log stands at the fresh head, its build ending in success, printing axioms for 21 of the 23 new declarations. Its census pin stands with re-census owed at the fresh head recorded in the pins file.
+
+The new certification repo landed in one commit at its head, which is its census pin: three Lean files beside an audit file, nineteen theorem declarations, one assembled standing control refuting endpoint-only comparison, and its first certificate artifact with a recorded consistent checker output — entered in the proof family, censused at theorem level in its annex, and placed in the synthesis in section 3.17.
+
+The new equivalence repo landed in one commit at its head, which is its census pin: a specification of the canonical model at settled intent, eight claims and five controls as proposed semantics, and a proof skeleton of one seed declaration with a recorded gate log passing at the pin — entered in the proof family, censused at theorem level in its annex, and placed in the synthesis in section 3.18, at skeleton strength.
+
+The perception harness repo moved by two commits, a harness semantic layer landing and its merge: its tree gained four files, the harness document, its protocol source, and its two test files, with two files changed, its makefile and its readme. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
