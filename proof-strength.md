@@ -2804,3 +2804,189 @@ read by tree at their fresh heads: no proof-assistant
 source stands in either and no tree read was
 truncated, so both remain proof-free by the named
 check and carry no ledger row.
+
+## Watch refresh — 2026-11-20, the forty-fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 573 repos, every
+head read individually with no errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated; the new reversible repo's three proof
+files and the library repo's new space package were
+read in full and censused at theorem level, as their
+annex records. Evidence below rests on the tree and
+commit reads at both heads of each moved proof repo.
+Placements stand at the census pins named in each row;
+a full theorem-level re-census at each fresh head is
+owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Name comparison at both heads
+  of every moved proof repo, one mechanical method at
+  both heads, shows no name lost: the frontier repo
+  gained seventy-nine distinct names by addition beside
+  byte-identical earlier files, the redundant compute
+  repo gained thirty-nine beside byte-identical files,
+  the library repo gained fifty-two distinct names in a
+  wholly new package beside byte-identical earlier
+  files, this repo has every Lean file byte-identical
+  between heads, and the reversible repo is new with
+  nothing to lose. One counting note is flagged here
+  rather than absorbed: the redundant compute repo's
+  last recorded head reads 201 declarations by this
+  watch's method, one below the forty-fourth watch's
+  recorded 202 for the same head; the file identity
+  evidence governs, and the gain and loss figures in
+  its row are computed at one method at both heads. No
+  regression is flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass, and the new reversible repo has its row
+  added. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-frontier-is-solvable — fresh head
+  eb29b7de88e8ee7145f876f13d6a18c355dba60a, census pin
+  6a41c7be standing with a full theorem-level
+  re-census at the fresh head owed. Proven: 206
+  declarations, 190 distinct names by the watch method
+  (was 127 and 111 at the last recorded head); 79
+  gained, none lost. The growth is two new library
+  modules: the pipeline module (28 — determinism of the
+  derived view, the selected action's frontier
+  standing, incremental reevaluation equal to full,
+  compensation restoring the solved set, stop soundness
+  in both faces, and three proved refutation controls,
+  on six premises its header labels and carries), with
+  a recorded check log at the fresh head ending in a
+  successful build and printing all 28 declarations —
+  7 on no axioms, 6 on propositional extensionality
+  only, 13 on the standard pair, 2 on the full standard
+  set; and the worklist module (51 — the indexed
+  closure exactly the least full closure at every
+  append prefix, with four closing controls), with a
+  recorded check log at the fresh head ending in a
+  successful build and printing 13 of the 51 — the
+  other 38 carry no printed line, so their axiom state
+  is unrecorded from the log. Premises and the absent
+  set stand as the earlier rows record, beside the
+  pipeline module's own six labeled premises.
+- software-redundant-compute-expands — fresh head
+  4da720a704151c92c7ee28278ba8538703638271, census pin
+  1ea28648 standing with a full theorem-level
+  re-census at the fresh head owed. Proven: 240
+  declarations, 192 distinct names by the watch method
+  (was 201 and 153 at the last recorded head by the
+  same method); 39 gained, none lost. The growth is
+  three new files beside fourteen byte-identical ones:
+  certified action selection over the canonical layer
+  (13, its stop exact and invariant under reweighting),
+  the canonical closure worklist (15, its drained run
+  exactly the canonical closure, with its resume
+  forms), and the intelligence join (11, convergence at
+  a delivered cut and exact reconstruction from a
+  delivered set). Each new file prints its own
+  declarations in source — the closure and join files
+  all of theirs, the action file twelve of thirteen —
+  and the recorded check log in the proof folder is
+  byte-identical between the heads and predates all
+  three, so no recorded gate run covering them stands
+  in the tree. Premises restated: the yield premise and
+  the mirror fidelity premise stand as the census row
+  records; the listing premise stands discharged, as
+  the fortieth watch recorded.
+- idol-lib — new census pin and fresh head
+  578b8b3a7e212082bf0d1f8a5a582cca63af3a19. Proven:
+  120 declarations in total, every one with a distinct
+  name at this head — the 65 of the earlier censuses
+  unchanged in four byte-identical files, plus 55 in a
+  new space package of ten theorem files over the
+  behavioral hypergraphs of the fourteen witnessed
+  libraries, re-censused at theorem level in full in
+  this pass, as its annex records: the two data levels
+  reconciled in the kernel (the chain nesting at both
+  levels, nothing at the current level measured or
+  qualified, the earlier level's 155 qualified
+  definitions retracted by the level change, 318 of
+  321 keys kept with 106 new), determination exactly
+  factorization through a battery with the helper and
+  unseen input forms refuted, merging by name and by
+  body refuted and merging by whole closure sound
+  under the named locality premise, the host cone
+  spanning in the joined graph with the per-library
+  form refuted, constructed dominance transferring
+  only in the proved direction with the wrong direction
+  refuted and one named rewrite's measured loss proved
+  over its own record, verdicts append only and
+  carrying only under an unchanged closure, and the
+  realized batteries passing on their receipts while
+  qualifying nothing. On named premises: the locality
+  premise, battery coverage, the price of compute, and
+  the public fields of an observation, as the annex
+  restates. Absent: per-symbol profiles, UNMEASURED at
+  the repo's own state, and the model to program
+  refinement of the earlier rows. Controls: the
+  package's data regeneration check stands in its
+  check script; the refutations above stand as proved
+  controls inside the development. Gate state: the
+  check script stands in the tree and its axioms file
+  prints 44 of the 55 new theorems in source, but no
+  recorded run of the script stands in the tree, so a
+  passing gate at this pin is unrecorded — one step
+  below the kernel and Pareto packages' recorded,
+  hash-bound strength.
+- software-is-reversible — new row, census pin and
+  fresh head 984f1faf3d0f74116a4b38b550b11e7c56237faa.
+  Proven: 55 declarations in three Lean files, read in
+  full and censused at theorem level in this pass, as
+  its annex records — the root development's 38 (the
+  frontier before weights counterexample at two scales,
+  the break-even rule in full cost form, the closure
+  worklist count laws, the one-append update and
+  compensation in place, the reversible action
+  structure with its refusal form, stop soundness in
+  its acceptable and certified faces with the threshold
+  form refuted, the powerset count law, and tensor
+  edits as overlays) and the scoped development's 17
+  (the finite inverse theory — an inverse exactly under
+  injectivity, collisions impossible, composition, the
+  residual form — with its fiber and rank results and
+  five helpers). On named premises: the repo's premise
+  register — the canonical premise, extraction fidelity,
+  execution fidelity, witness honesty, reading fidelity,
+  axis meaning, threshold choice, progress, and counted
+  cost — carried at its stated strengths. Absent:
+  reversibility at the execution layer, UNMEASURED in
+  the repo's own census until its validation system
+  demonstrates the round trip per action; the general
+  symmetric form of the never-selected result and the
+  worklist equality against the canonical home's view
+  semantics, both stated and unproved as named lemmas
+  with owners; and the resolution algorithm's carried
+  gaps. Controls: the threshold refutation and the two
+  never-selected results stand proved in the root file.
+  Gate state: the scoped development carries a recorded
+  axiom audit in its tree printing 12 of its 17 — 4 on
+  no axioms, 4 on propositional extensionality only, 4
+  on the standard pair, the five helpers unprinted; the
+  root development's axioms file prints all 38 in
+  source and its gate pass is recorded as a claim in
+  the repo's own census, with no recorded log file in
+  the tree, so that pass stands claimed at the repo's
+  stated strength, not proven from a log.
+- software-is-a-closed-loop — fresh head
+  5cb332bb1bb2b50481bade8c9f38277ce4337a58, census pin
+  d558669b standing. Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at
+  the fresh head, which is the head the forty-fourth
+  watch landed; the four commits between them are that
+  watch's annex, placement, ledger, and pins commits
+  and carry no Lean change. Controls and gate stand as
+  the second watch row records.
+
+The compiler port, the relay, and the sites repo also
+moved and were read by tree at their fresh heads: no
+proof-assistant source stands in any of them and no
+tree read was truncated, so all three remain proof-free
+by the named check and carry no ledger row.
