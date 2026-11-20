@@ -1139,6 +1139,43 @@ proposed and the registry append of its extract owed.
 State: PROVEN in source at the pin for the 40 theorems,
 at the strengths its annex census records. The full
 census stands in its annex file.
+### 3.21 Placement from the fifty-third watch (2026-11-20) — a new proof repo
+
+software-tensors-are-editable (public, Lean 4.19.0) —
+census pin 9d7afd54, its head at entry. The semantics
+and proof home of the editable tensors program: a
+deterministic view of a model checkpoint is edited, the
+edit lands on the actual tensor bytes of an editable
+copy, the next view is constructed from the edited
+state, and that view drives the next edit. Its Lean
+core carries 14 theorems in one file: the delta
+algebra of the overlay form; reversal exactness — a
+delta applied and then its recorded inverse applied
+restores the original state at every coordinate;
+admissibility, protecting every protected coordinate
+and composing under exactly one side condition, cross
+agreement at tied coordinates, with the unconditional
+form refuted by a standing control, as is the
+state-dependent change condition; and the view, whose
+obscurity depends on the universe and the evidence
+alone and which two states agreeing on the evidenced
+coordinates share. Of the 14, one depends on no
+axioms, seven on propositional extensionality only,
+one on quotient soundness only, and five on that pair,
+as its recorded gate log prints them; the gate stands
+green at the pin on that log. Carried at the repo's
+own states: the specification's further sections —
+policies and typed view edits, the recurrence step,
+and the receipt contract — proposed with their proof
+obligations named; the scale transport, the per-schema
+check, and the tie evidence method owed or blocked as
+its census names them; and every behavioral effect of
+every concrete delta unknown, with two fixture-bound
+behavioral cells blocked on fixtures not on the
+machine. State: PROVEN in source at the pin for the
+14 theorems, at the strengths its annex census
+records. The full census stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -2914,3 +2951,13 @@ The sites repo moved by two commits updating two space sources: its tree gained 
 The fifty-second watch re-enumerated the estate completely: 574 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. The one moved repo is a proof repo — this repo itself. The annex files carry the evidence at the fresh head; the placements in section 3 stand at their census pins.
 
 This repo's own head moved only by the fifty-first watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+## 58. Watch update — 2026-11-20, the fifty-third hourly re-synthesis
+
+The fifty-third watch re-enumerated the estate completely: 575 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. One of the moved repos is a proof repo — this repo itself — beside one new proof repo entered at its first sighting and placed in section 3.21, and the other moved repo is an idol-family repo. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins, beside the new placement in section 3.21.
+
+This repo's own head moved only by the fifty-second watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The new repo is a proof repo, the editable tensors repo, entered and censused at theorem level at its head, which is its census pin: 14 theorems in one Lean file — the delta algebra, reversal exactness for the overlay form, admissibility under its one cross-tie side condition with the two unconditional forms refuted as standing controls, and view determinism in its agreement form — on a recorded gate log passing at the pin, its specification's further sections proposed, and its behavioral cells blocked or unknown as named. Its placement stands in section 3.21.
+
+The compiler port moved by eight commits, four tail slices: its tree gained two files, the tail model and tail result lowering sources, and three files changed — its slices record, its demand source, and its observer source — with no file removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.

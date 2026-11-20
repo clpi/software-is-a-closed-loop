@@ -920,6 +920,25 @@ synthesis placement section for this watch and the annex):
   its measured cells at fixture strength and its
   unmeasured cells standing as named work. Pin ca4ca2b3.
 
+Added by the fifty-third watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-tensors-are-editable (public) — the editable
+  tensors model: a deterministic view of a model
+  checkpoint is edited, the edit lands on the actual
+  tensor bytes of an editable copy, and the next view,
+  constructed from the edited state, drives the next
+  edit — fourteen theorems in one Lean file (the delta
+  algebra, reversal exactness for the overlay form,
+  admissibility protecting protected coordinates and
+  composing under the one cross-tie side condition, and
+  view determinism in its agreement form), with two
+  standing controls refuting the unconditional forms,
+  on a recorded gate log passing at the pin, its
+  specification's further sections proposed and its
+  behavioral cells blocked or unknown as named.
+  Pin 9d7afd54.
+
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
 also named software inside the loop — their pins re-enter at
@@ -2113,3 +2132,7 @@ A fifty-second enumeration: 574 repos, every head read individually, no read err
 ## Watch update — 2026-11-20 (fifty-second hourly re-synthesis)
 
 A fifty-third enumeration: 574 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the fifty-first watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. No tree read was truncated this watch.
+
+## Watch update — 2026-11-20 (fifty-third hourly re-synthesis)
+
+A fifty-fourth enumeration: 575 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and one further idol-family repo (the compiler port). The new repo is the editable tensors repo, public, at 9d7afd54: fourteen theorem declarations in one Lean file — the delta algebra, reversal exactness for the overlay form, admissibility under its one cross-tie side condition, and view determinism — with two standing controls and a recorded gate log in its tree, entered in the proof family above, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the fifty-second watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler port was read by tree at its fresh head and carries no proof-assistant content, so it remains proof-free by the named check; its tree gained two files, the tail model and tail result lowering sources, and three files changed, its slices record, its demand source, and its observer source, over eight commits, with no file removed. No tree read was truncated this watch.
