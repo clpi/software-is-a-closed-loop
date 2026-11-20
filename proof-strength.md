@@ -2600,3 +2600,207 @@ ledger rows: both were read by tree at their fresh
 heads, no proof-assistant source was found in either
 of them, and they remain proof-free by the named
 check, as their census entries record.
+
+## Watch refresh — 2026-11-20, the forty-fourth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 572 repos, every
+head read individually with no errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated; the eyes repo's four proof files were
+read in full and censused at theorem level, as its new
+annex records. Evidence below rests on the tree and
+commit reads at both heads of each moved proof repo.
+Placements stand at the census pins named in each row;
+a full theorem-level re-census at each fresh head is
+owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Name comparison at both heads
+  of every moved proof repo shows no name lost: the
+  safe repo gained ninety-seven distinct names by
+  addition beside byte-identical earlier files, the
+  redundant compute repo gained seven beside
+  byte-identical files, the library repo and the
+  compiler repo and this repo have every Lean file
+  byte-identical between heads, and the eyes repo is
+  newly proof-bearing with nothing to lose. One
+  counting clarification is flagged here rather than
+  absorbed: of the library repo's eight mechanically
+  gained names, six are isolated oracle fixture
+  theorems at fixture strength and two are not proven
+  results at all — a false statement proven by an
+  admitted proof and a conditional result on a planted
+  false axiom, both planted controls with their
+  dependence recorded in the tree — so the library's
+  proven set is recorded unchanged below, not grown.
+  No regression is flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass, and the newly proof-bearing eyes repo has
+  its row added. No synthesis defect is flagged.
+
+Restated rows at the fresh heads:
+
+- software-is-a-closed-loop — fresh head
+  54cb6a491f14e90ae022d0420d0489832305f16f, census pin
+  d558669b standing. Proven: the eleven declarations
+  of the two-paper development, unchanged — both Lean
+  files are byte-identical between the last recorded
+  head baab58d7 and the fresh head, the four commits
+  between them being the forty-third watch landing
+  itself. Premise, absent, controls, and gate state
+  stand as the last full row records.
+- software-is-incrementally-safe — fresh head
+  32174a7cbf2b12f7390a07ccdb7041fbf6043886, census pin
+  8ad1dd26 standing with a full theorem-level
+  re-census at the fresh head owed. Proven: 277
+  declarations in thirty-two Lean files by the watch
+  method, 246 distinct names, where the last recorded
+  head carries 151 and 149 — ninety-seven distinct
+  names gained, none lost, every earlier file
+  byte-identical. The gain is a whole new family
+  development: necessary dominance with the least
+  sound cone contained in the necessary one, dataflow
+  locality, an executable cone checker proven in both
+  directions with its least closed cone, partition
+  fineness as key occupation, saturation, an exact
+  parallel unknown result, and six worked examples
+  each proving their good change admitted and their
+  bad change refused. Premise: the audited-strength
+  caveats of the last full row stand for the earlier
+  developments and extend to the family development,
+  whose strength rests on this watch's reading and
+  its in-tree audit file printing axiom lines for
+  forty-seven family names, not on a recorded gate
+  run. Absent: a recorded check log at the fresh head
+  — none stands in the tree. Controls: the worked
+  examples' refused bad changes stand as proved
+  refusal results in form. Gate state: no recorded
+  log at the fresh head, so a passing gate there is
+  unrecorded, as at the last recorded head.
+- software-optimality — fresh head
+  0bbc1f3b8aa38afe17e02ccbd7ddd0e7722b3cb0, census pin
+  b52c3170 standing with a full re-census at the
+  fresh head owed. Proven: the library's proven set
+  is unchanged — every library Lean file is
+  byte-identical between the last recorded head
+  95df5fb7 and the fresh head. The mechanical count
+  rose from 684 declarations and 588 distinct names
+  to 692 and 596, and all eight gained names stand in
+  new oracle fixture files: six kernel fixture
+  theorems proven at fixture strength, their recorded
+  evidence printing five depending on no axioms and
+  one on propositional extensionality only; one
+  admission fixture proven by an admitted proof, a
+  planted control, not a proven result; and one
+  conditional fixture on a planted explicit false
+  axiom, likewise a control. Premise: no library
+  premise moved; the two fixture controls carry their
+  planted premises on their face, recorded in the
+  tree's evidence files. Absent: nothing new — the
+  absent set of the last full row stands. Controls:
+  the oracle slice adds its own expected-outcome
+  controls — the admission warning and strict error,
+  the axiom dependence, the invalid fixture's expected
+  type mismatch, and the runtime result — asserted by
+  the oracle script with the evidence files standing
+  as the recorded run; its readme states the slice is
+  a noncompeting read-only inventory, not an
+  implementation or a parity certificate. Gate state:
+  the library's recorded logs stand at the census
+  pin; the oracle evidence and the two portable
+  evidence check logs of nine passing tests each are
+  recorded runs at the fresh head for their own
+  slices only.
+- software-redundant-compute-expands — fresh head
+  05e0584eb5f0f7f43bd2274a92d5dcfde1122e16, census pin
+  1ea28648 standing with a full theorem-level
+  re-census at the fresh head owed. Proven: 202
+  declarations in fourteen Lean files by the watch
+  method with comments stripped, 154 distinct names,
+  where the last recorded head carries 195 and 147 —
+  seven gained, none lost, the other thirteen files
+  byte-identical. The new candidate impact file
+  proves, over a two-seed joint rule, that
+  reachability is not qualification: each seed
+  necessary, the qualification form exact,
+  complementarity of the two seeds, agreement of the
+  canonical log view with the direct form, and the
+  appended joint consequence in the log view.
+  Premise: the yield premise and the mirror fidelity
+  premise stand as the last full row records. Absent:
+  a recorded gate run covering the new file — the
+  recorded check log in the tree predates it and
+  stands unchanged. Controls: the non-closed and
+  single-seed refusals stand as proved results in the
+  developments. Gate state: the recorded log covers
+  the earlier tree within the standard set; the new
+  file's gate rests on its own print lines for its
+  last three results and this watch's reading.
+- idol — fresh head
+  a4720380558bf2a5349258d4e410592f26b24c07, census pin
+  561cf395 standing. Proven: unchanged — all five
+  Lean files are byte-identical between the last
+  recorded head 586ff5a1 and the fresh head, read by
+  tree in full with no read truncated: the frontier
+  file's seven declarations, the retention file's
+  twenty and the qualification file's five in the
+  release tools development, and the solver history
+  file's ten, with the proof data sample standing as
+  test data counted nowhere. The movement is
+  twenty-two commits of compiler and gate work, the
+  wholesale directive ratchet landing among them, no
+  Lean file among the files added or changed.
+  Premise, absent, controls, and gate state stand as
+  the last full row records, including the owed full
+  census of the release tools and solver
+  developments.
+- idol-eyes — new row, census pin and fresh head
+  1dc24f4fcd8240ab6fbc9056dba7726e5c62bd98. Proven:
+  sixty-one declarations in four Lean files, read in
+  full and censused at theorem level in this pass, as
+  its annex records — the canonical file's
+  twenty-four (the derivability core proven again
+  from the mirrored definitions, the resolution-chain
+  model, and the view laws over the one append-only
+  record log), the certification file's twenty-three
+  (the admission decision exact, permutation and
+  sublist invariance, regression finality in both
+  forms, the unmeasured refusal, witnessed admission,
+  transitivity over steps, dimension antitonicity,
+  and the beat results with the tie and loss
+  controls), and the union file's fourteen (meeting
+  the union as exactly admission over each incumbent
+  and exactly pooled domination, the unmeasured
+  incumbent refusal, the ceiling form, and union
+  regression finality), beside an axioms file printing
+  lines for twenty-nine of the sixty-one. Premise:
+  four named premises carried on the files' own
+  headers, not proved — faithful score normalization
+  at ingest, measurement records stating what was
+  measured under the campaign's same-contract rules,
+  the declared maximum as the true maximum of the
+  normalized score with a failed run ingested at zero
+  on every cost dimension, and mirror fidelity of the
+  restated definitions. Absent: axiom lines for the
+  canonical file's twenty-four theorems, which carry
+  none in the axioms file, so their axiom state is
+  unrecorded; and a recorded run of the repo's check
+  script at the pin. Controls: no dedicated controls
+  file; the refusal theorems stand as proved controls
+  inside the developments, and the check script's
+  escape scan stands as a gate control — the watch
+  scan found no escape token in the three proof
+  files. Gate state: the check script stands in the
+  proof folder at the named Lean version, compiling
+  the three files and running the axioms file, but no
+  recorded run stands in the tree, so a passing gate
+  at the pin is claimed by the script's presence, not
+  proven.
+
+The compiler port and the relay also moved and were
+read by tree at their fresh heads: no proof-assistant
+source stands in either and no tree read was
+truncated, so both remain proof-free by the named
+check and carry no ledger row.
