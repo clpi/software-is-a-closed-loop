@@ -2169,3 +2169,42 @@ Restated rows, at their fresh heads:
 - software-is-a-closed-loop — fresh head 2df09d7b (census pin d558669b). Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the thirty-fourth watch landed; the five commits between them are that watch's census, delta, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 - software-certification-is-monotone — new census pin 4539760e. Proven: 19 theorems in two Lean files — chain soundness and chain composition (the incremental covers full property at transition grain and at chain grain, both axiom-free on the repo's record), the certificate checker's clause, soundness, regression honesty and its not certified corollary, chain certification of endpoints, and overall certified soundness, beside the control file's nine supporting results and its assembled control refuting endpoint-only comparison (the endpoint-only checker accepts a transition whose interior regresses, no chain evidence for it exists, and the pipeline's checker rejects the matching claim). On named premises: the four world premises the specification names, each with its falsification route (the measure as a function of state, the increment relation as the recorded history, a step's record as an executed check, and orientation). Absent: nothing in the repo's own proved list lacks a statement; its first certificate artifact reads not certified, with three dimensions unmeasured and their gaps named on the artifact — executed evidence, counted nowhere in the proven column. Controls in tree: the assembled control and its supporting results. Gate: the check script stands in the tree; the specification records a cold pass at the landing pin and no build log file stands in the tree, so the gate verdict at this pin is carried at the specification's recorded strength.
 - software-redundancy-is-equivalence — new census pin 14992281. Proven: 1 theorem, the seed fact of the logic (two propositions joined by a two way implication are equal), on propositional extensionality only by the recorded log — a skeleton fact, not a theorem of the program, at the repo's own stated strength. On named premises: the two inherited labels the specification states (witness honesty and reading fidelity), which bind where the model is applied. Absent as proven, and carried as proposed at exactly that strength: the model's definitions in Lean form, and all eight claims of the specification's claims section (monotonicity under expansion, compounding, appearance, coloring, bounds, reconciliation, scope, and the registry clauses) with its five standing controls — none has a Lean statement yet. Controls in tree: none standing; the five controls are proposed. Gate: the recorded gate log at the pin prints the seed fact and ends in its axiom subset check passing — green at the pin for the skeleton alone.
+
+## Watch refresh — 2026-11-19, the thirty-sixth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 572 repos, every
+head read individually, no read errors. The moved
+repos were read by tree at their fresh heads. Evidence
+below rests on the tree reads at both heads of the
+moved proof repo and on the blob comparison of this
+repo's two Lean files between its heads. Placements
+stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. This repo's Lean files are
+  byte-identical between the last recorded head and the
+  fresh head, so its eleven names stand unchanged,
+  counted by the watch method over the tree at each pin
+  with the same name set at both. No regression is
+  flagged.
+- No pin moved without this ledger moving: the one
+  moved proof repo has its row restated below in this
+  same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head f93c5fcc
+  (census pin d558669b). Proven: 11 theorems, unchanged
+  — the same name set at the last recorded head and at
+  the fresh head, which is the head the thirty-fifth
+  watch landed; the seven commits between them are that
+  watch's census, delta, placement, ledger, and pins
+  commits and carry no Lean change. Controls and gate
+  stand as the second watch row records.
+
+The two other moved repos this watch, the compiler
+port and the relay, are not proof repos and carry no
+ledger rows: both were read by tree at their fresh
+heads, no proof-assistant source was found in either,
+and they remain proof-free by the named check.
