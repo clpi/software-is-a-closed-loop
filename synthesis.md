@@ -831,6 +831,40 @@ admission. State: PROVEN at the new pin on the recorded,
 hash-bound evidence. The re-census stands in its annex
 file.
 
+Restated by the forty-fifth watch (2026-11-20) at the
+new census pin 578b8b3a: the repo landed a second new
+proof package in six commits — the space development,
+55 theorems in ten Lean files over the behavioral
+hypergraphs of its fourteen witnessed libraries, every
+earlier Lean file byte-identical at the new head. The
+two generated data levels are reconciled in the
+kernel: the filter chain nests at both levels, nothing
+at the current level is measured or qualified, the 155
+definitions qualified at the earlier level stand
+retracted at the current one by the level change
+itself, and 318 of 321 earlier keys are kept with 106
+new. A battery determines exactly the readings that
+factor through it, with the helper and unseen input
+forms refuted; merging by name and by identical body
+is refuted, merging by whole closure is sound under
+the named locality premise; per-library graphs are
+refuted as capturing host dependencies while the
+joined graph's host cone spans; constructed dominance
+transfers only in the proved direction, with the wrong
+direction refuted and one named rewrite's measured
+loss proved over its own record; and the realized
+batteries pass on their receipts while qualifying
+nothing. Its check script regenerates the data and
+fails on drift and prints axioms for 44 of the 55, but
+no recorded run stands in the tree, so its gate at the
+pin is unrecorded — one step below the earlier
+packages' hash-bound strength. The repo now carries
+120 theorems beside the six checked witness examples.
+State: PROVEN in source at the new pin on the
+re-census's full reading; the locality premise
+CARRIED; per-symbol profiles UNMEASURED. The
+re-census stands in its annex file.
+
 ### 3.16 Placement from the thirty-fourth watch (2026-11-19) — a new proof repo
 
 Stage 3, 5, and 7 — software-redundant-compute-expands,
@@ -1010,6 +1044,61 @@ the recorded log, for the claims above; the algorithm
 specification and register PROPOSED; the built
 registry MEASURED at its named pins. The re-census
 stands in its annex file.
+
+### 3.19 Placement from the forty-fifth watch (2026-11-20) — a new proof repo
+
+Stages 3, 5, and 8 — software-is-reversible, census
+pin and head 984f1faf, public, Lean 4.19.0. A new
+repo, entered in the proof family on the forty-sixth
+enumeration and censused at theorem level on its first
+sighting, by content: 55 theorem declarations in three
+Lean files. The root development (38) proves the
+reversibility theory of the search and action system:
+the frontier before weights counterexample — the
+middle plan of the three plan example is undominated,
+stands on the frontier, and is selected by no positive
+weighting, at two scales (stage 5: a frontier reading
+is never replaceable by a weighted score); the
+break-even rule in full cost form (stage 7); the
+closure worklist's missing count laws and the least
+closure beneath them (stages 4 and 8); the one-append
+frontier update in place and compensation in place
+(stage 8); the reversible action structure — an action
+with a checked inverse restores, compositions restore,
+and the empty option claims nothing (stage 8); stop
+soundness in its two faces, the acceptable face proved
+and the threshold form refuted as an optimality claim,
+with the certificate form proved against the whole
+remaining set (stages 5 and 9); the powerset count law
+beneath the subset oracle (stage 3); and tensor edits
+as overlays that protect untouched fields and
+round-trip (stage 8). The scoped development (17)
+proves the finite inverse theory: an inverse exists
+over a finite domain exactly under injectivity,
+collisions are impossible under one, inverses compose,
+the residual form reconstructs where a plain inverse
+cannot, and fiber sizes bound what reconstruction must
+retain — with a recorded axiom audit in its tree
+printing 12 of the 17 (4 axiom-free, 4 on propositional
+extensionality only, 4 on the standard pair). The root
+development's axioms file prints all 38 in source; its
+gate pass is recorded as a claim in the repo's own
+census, with no log file in the tree. Carried at the
+repo's own states: its premise register (the canonical
+premise, extraction and execution fidelity, witness
+honesty, axis meaning, threshold choice, progress,
+counted cost), with reversibility at the execution
+layer UNMEASURED until its validation system
+demonstrates the round trip per action; and two named
+unproved lemmas — the general symmetric form of the
+never-selected result, and the worklist equality
+against the canonical home's view semantics — standing
+as named work at their owners, beside the resolution
+algorithm's carried gaps. State: PROVEN in source at
+the pin for the 55 declarations, the scoped half on its
+recorded audit; the named lemmas and gaps at their
+stated states. The full census stands in its annex
+file.
 
 ## 4. Duplication and stronger homes
 
@@ -2672,3 +2761,23 @@ The eyes repo is newly proof-bearing, and it enters the proof family in this wat
 The compiler port moved by thirty-six commits: six new lowering sources added and its slices record changed, nothing removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The relay moved by two commits adding one dated fleet note. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 50. Watch update — 2026-11-20, the forty-fifth hourly re-synthesis
+
+The forty-fifth watch re-enumerated the estate completely: 573 repos, every head read individually, no read errors. Seven repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Four of the moved repos are proof repos — this repo itself, the frontier repo, the redundant compute repo, and the library repo — beside one new proof repo entered at its first sighting and placed in section 3.19, and the other three moved repos are idol-family repos. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins, beside the restated library placement in section 3.15 and the new placement in section 3.19.
+
+This repo's own head moved only by the forty-fourth watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The frontier repo moved by two commits and grew by addition only: two new library modules beside its twelve earlier files, byte-identical but for the build file's two added lines — the pipeline module, proving the derivation to action core (determinism, the selected action's frontier standing, incremental reevaluation equal to full, compensation restoring the solved set, and stop soundness in both faces, with three proved refutation controls and six labeled premises), with a recorded check log at the fresh head printing all 28 of its declarations; and the worklist module, proving the indexed closure is exactly the least full closure at every append prefix, with four closing controls and a recorded check log printing 13 of its 51 declarations. Counted by the watch method, the tree now carries 206 declarations where the last recorded head carries 127 — 79 gained and none lost. Its census pin stands with a full re-census at the fresh head owed.
+
+The redundant compute repo moved by six commits and grew by addition only: three new Lean files beside its fourteen earlier files, byte-identical — a certified action selection development over its canonical layer, a closure worklist proving its drained run computes exactly the canonical closure with its resume forms, and an intelligence join development proving convergence at a delivered cut and exact reconstruction from a delivered set, with two executed replay folders beside them. Counted by the watch method, the tree now carries 240 declarations where the last recorded head carries 201 by the same method — 39 gained and none lost; the one count difference against the last watch's record for that head stands noted in its annex, with file identity governing. The recorded check log in its proof folder predates all three files, so their gate rests on the files' own print lines and this watch's reading. Its census pin stands with a full re-census at the fresh head owed.
+
+The library repo moved by six commits landing a wholly new proof package, the space development: 55 theorems in ten Lean files over the behavioral hypergraphs of its fourteen witnessed libraries — the two data levels reconciled in the kernel with the earlier level's qualified set retracted by the level change, determination exactly factorization through a battery with its two refutations, name and body merging refuted and closure merging sound under the named locality premise, the host cone spanning in the joined graph, constructed dominance transferring only in the proved direction with one named rewrite's measured loss proved over its own record, and the realized batteries passing on their receipts while qualifying nothing. Every earlier Lean file is byte-identical at the fresh head, so its 65 earlier theorems stand unchanged and its total is now 120. It was re-censused at theorem level in full in its annex, and its census pin moves to the fresh head in this pass; its gate at the fresh head is unrecorded, as its annex states.
+
+The new repo is a proof repo, the reversible search space repo, entered and censused at theorem level at its head, which is its census pin: 55 declarations in three Lean files — the reversibility theory of the search and action system in the root development, with the frontier before weights counterexample at two scales, and the finite inverse theory in the scoped development, on a recorded axiom audit — with its premise register carried at its stated strengths, its execution layer cell UNMEASURED, and its two named unproved lemmas standing as named work. Its placement stands in section 3.19.
+
+The compiler port moved by twenty-two commits: three files added, all lowering sources, and its slices record changed, with nothing removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The sites repo moved by two commits, a new frontier before weights space and an algorithm demo: sixty-seven files added and four changed, none removed, and the paper page file is unchanged between its two heads. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.

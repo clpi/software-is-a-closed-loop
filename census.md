@@ -652,6 +652,10 @@ A twenty-eighth enumeration: 569 repos, every head read individually, no read er
 
 A twenty-ninth enumeration: 569 repos, every head read individually. Six first reads failed on transport stream errors; each of the six was re-read individually and matched its last recorded head, or its recorded empty state, so the final reads carry no errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and one further idol-family repo (the compiler port). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the twenty-seventh watch landing itself: the four commits between the heads are that watch's delta, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler port was read by tree at its fresh head and carries no proof-assistant content, so it remains proof-free by the named check; its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source, over two commits. No tree read was truncated this watch.
 
+## Watch update — 2026-11-20 (forty-fifth hourly re-synthesis)
+
+A forty-sixth enumeration: 573 repos, every head read individually, no read errors. Seven repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself; three further proof repos (the frontier repo, the redundant compute repo, and the library repo); and three further idol-family repos (the compiler port, the relay, and the sites repo). The new repo is a proof repo, the reversible search space repo, public, at 984f1faf: fifty-five theorem declarations in three Lean files — the reversibility theory of the search and action system with the frontier before weights counterexample at two scales, and the finite inverse theory on a recorded axiom audit — entered in the proof family below, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the forty-fourth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The frontier repo gained seventy-nine declarations and lost none — two new modules, the pipeline core with its recorded log printing all twenty-eight of its declarations, and the closure worklist with its recorded log printing thirteen of its fifty-one — recorded in its annex delta. The redundant compute repo gained thirty-nine declarations and lost none — three new files of certified action selection, canonical closure, and delivered cut convergence, its other fourteen files byte-identical — recorded in its annex delta. The library repo landed a wholly new proof package in six commits at 578b8b3a: the space development, fifty-five theorems over the behavioral hypergraphs of its fourteen witnessed libraries, its four earlier Lean files byte-identical, so its sixty-five theorems stand unchanged and its total is now one hundred twenty — re-censused at theorem level in full in its annex, and its census pin moves to 578b8b3a in this pass. The compiler port, the relay, and the sites repo were read by tree at their fresh heads and carry no proof-assistant content, so they remain proof-free by the named check; the compiler port's tree gained three files, all lowering sources, and its slices record changed over twenty-two commits, the relay's tree gained one file, a dated minimax note, over one commit, and the sites repo's tree gained sixty-seven files, a new frontier before weights space and an algorithm demo, and four files changed over two commits, with the paper page file byte-identical between its heads. No tree read was truncated this watch.
+
 ## The proof family — placed at theorem level in synthesis.md
 
 - software-is-quantifiable (public) — the finiteness,
@@ -783,6 +787,16 @@ synthesis placement section for this watch and the annex):
   five recorded negative controls and hash-bound
   kernel-checked receipt) joined the two earlier files
   unchanged, for sixty-five theorems in total.
+  Restated by the forty-fifth watch at pin 578b8b3a: a
+  55-theorem space package (the two witnessed data
+  levels reconciled in the kernel, determination as
+  factorization with its refutations, merging refuted
+  by name and by body and sound by closure, the host
+  cone, constructed dominance in the proved direction
+  only, and the realized batteries passing while
+  qualifying nothing) joined the four earlier files
+  unchanged, for one hundred twenty theorems in total;
+  its gate at the pin is unrecorded.
 
 Added by the thirty-fourth watch (same placement depth — the
 synthesis placement section for this watch and the annex):
@@ -850,6 +864,27 @@ synthesis placement section for this watch and the annex):
   ceiling form — sixty-one theorems in four Lean files,
   newly proof-bearing in this window, its gate run at
   the pin unrecorded. Pin 1dc24f4f.
+
+Added by the forty-fifth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-is-reversible (public) — the reversible
+  search space: the frontier before weights
+  counterexample (a frontier plan no positive weighting
+  selects, at two scales), the break-even rule in full
+  cost form, the closure worklist count laws,
+  incremental reevaluation and compensation in place,
+  the reversible action structure with its refusal
+  form, stop soundness in its acceptable and certified
+  faces with the threshold form refuted, the powerset
+  count law, and tensor edits as overlays — beside a
+  scoped finite inverse theory (an inverse exactly
+  under injectivity, residuals where no plain inverse
+  exists, and fiber bounds on reconstruction) on a
+  recorded axiom audit — fifty-five theorems in three
+  Lean files, its premise register carried, its
+  execution layer cell UNMEASURED, and two named
+  unproved lemmas standing as named work. Pin 984f1faf.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
