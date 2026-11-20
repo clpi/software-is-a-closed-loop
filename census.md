@@ -885,6 +885,18 @@ synthesis placement section for this watch and the annex):
   Lean files, its premise register carried, its
   execution layer cell UNMEASURED, and two named
   unproved lemmas standing as named work. Pin 984f1faf.
+  Restated by the forty-sixth watch at pin fcb95953: the
+  root development stands at forty-two declarations —
+  the general symmetric form proved in three parts
+  beside an overlay collapse lemma — and four example
+  developments join it (an action consensus development
+  of nine theorems on a recorded log, a product
+  frontier development of five on a recorded log, a
+  suffix page development of ten with a recorded log
+  printing seven, and a compositional pruning
+  development of eleven with its gate unrecorded), for
+  ninety-four declarations in total; the worklist
+  equality lemma stands as named work still.
 
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
@@ -2051,3 +2063,7 @@ by the named check; the compiler port gained six
 lowering sources over thirty-six commits and the
 relay one dated fleet note over two. No tree read
 was truncated this watch.
+
+## Watch update — 2026-11-20 (forty-sixth hourly re-synthesis)
+
+A forty-seventh enumeration: 573 repos, every head read individually, no read errors. Nine repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself; five further proof repos (the compiler repo, the eyes repo, the library repo, the reversible repo, and the equivalence repo); and three further idol-family repos (the compiler port, the relay, and the sites repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the forty-fifth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler repo, the eyes repo, the library repo, and the equivalence repo were read in full at their fresh heads: every Lean file in each is byte-identical to its last recorded head, so their proven sets stand unchanged — forty-five declarations in the compiler repo by the watch method, sixty-one theorems in the eyes repo, one hundred twenty theorems in the library repo, and 217 declarations in the equivalence repo — recorded in their annex deltas. The reversible repo gained thirty-nine declarations and lost none — its root development completed the general symmetric form, a named lemma standing unproved at its census pin, in three parts beside an overlay collapse lemma, for forty-two, and four new example developments landed in its two labs, an action consensus development of nine theorems on a recorded log, a product frontier development of five on a recorded log, a suffix page development of ten with a recorded log printing seven, and a compositional pruning development of eleven with its gate unrecorded, its scoped development byte-identical — re-censused at theorem level in full in its annex, and its census pin moves to fcb95953 in this pass. The compiler port, the relay, and the sites repo were read by tree at their fresh heads and carry no proof-assistant content, so they remain proof-free by the named check; the compiler port's tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, its slices record and its demand source, over two commits, the relay's tree gained one file, a dated muse note, with no file changed or removed over one commit, and the sites repo's tree gained thirty-six files, dated audit folders for the frontier before weights space and four demo wasm modules, and thirteen files changed over three commits, with the paper page file byte-identical between its heads. No tree read was truncated this watch.
