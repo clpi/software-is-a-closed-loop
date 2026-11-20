@@ -247,3 +247,7 @@ The watch re-read this repo's live head at 2df09d7b4b46ce986df131bded9732ab0247e
 ## Watch delta — 2026-11-19, the thirty-sixth hourly re-synthesis watch
 
 The watch re-read this repo's live head at f93c5fcc15139636103207db953d3a47a38ac3c0 in the full enumeration — the head the thirty-fifth watch landed with its pins bump. The theorem count is unchanged between the last recorded head 2df09d7b4b46ce986df131bded9732ab0247e52a and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The seven commits between them are the thirty-fifth watch's own census, delta, placement, ledger, and pins commits; both Lean files are byte-identical between the heads, so no Lean file changed among them. This repo's own proven count stands at eleven.
+
+## Watch delta — 2026-11-19, the thirty-seventh hourly re-synthesis watch
+
+The watch re-read this repo's live head at 944a8a136647fb473ed60b2b82c923ba46670290 in the full enumeration — the head the thirty-sixth watch landed with its pins bump. The theorem count is unchanged between the last recorded head f93c5fcc15139636103207db953d3a47a38ac3c0 and that head: 11 declarations, the same name set at both, counted by the watch method over the tree at each pin. The four commits between them are the thirty-sixth watch's own delta, placement, ledger, and pins commits; both Lean files are byte-identical between the heads, so no Lean file changed among them. This repo's own proven count stands at eleven.
