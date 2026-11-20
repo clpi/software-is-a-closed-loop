@@ -42,34 +42,38 @@ proof core file, beside an audit file carrying no
 declarations; no escape token stands in either file by
 this watch's scan. The repo's own census groups them:
 
-- Fraction arithmetic (11): equality and order by cross
+- Fraction arithmetic (13): equality and order by cross
   multiplication; equality reflexive, symmetric, and
   transitive under positive denominators; order
-  transitivity and compatibility with equality;
-  multiplication congruence; the two unit laws; the
-  inverse law; multiplication preserving order; and
-  associativity up to fraction equality.
+  reflexivity, transitivity, and compatibility with
+  equality; multiplication congruence; the two unit
+  laws; the inverse law; multiplication preserving
+  order and positivity; and associativity up to
+  fraction equality.
 - Selection (7): the champion of a list under a total
   preorder exists where the list is nonempty, is a
   member, is maximal, and is the first maximal member;
   the specification — member, maximal, first — has at
   most one satisfier.
-- The decoder (5): appending distinct tokens is
+- The decoder (6): appending distinct tokens is
   injective; the completion enumeration extends every
   enumerated completion by a suffix; the enumeration is
-  duplicate free under row well formedness; the
-  decoder's answer satisfies the specification where it
-  answers; and the answer is the unique satisfier of
-  the specification — determinism as a theorem.
+  duplicate free under row well formedness, by its
+  pairwise helper; the decoder's answer satisfies the
+  specification where it answers; and the answer is
+  the unique satisfier of the specification —
+  determinism as a theorem.
 - Certification (2): soundness — a certified answer's
   score is at least the score of every completion in
   the enumeration and at least every recorded frontier
   bound, under the coverage premise named below; and
   blocking — a frontier bound above the best complete
   score makes certification false, proved outright.
-- The overlay (7): the inverse overlay's multiplier at
+- The overlay (8): the inverse overlay's multiplier at
   a key is the inverse fraction; multipliers are
-  positive where every recorded multiplier is; the
+  positive where every recorded multiplier is, and an
+  unedited key keeps its recorded multiplier; weight
+  scores are congruent under equal weightings; the
   round trip restores every weight and every path score
   exactly; the empty overlay changes no score; and cone
   invariance — a path touching no edited key scores
