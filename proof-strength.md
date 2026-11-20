@@ -2208,3 +2208,101 @@ port and the relay, are not proof repos and carry no
 ledger rows: both were read by tree at their fresh
 heads, no proof-assistant source was found in either,
 and they remain proof-free by the named check.
+
+## Watch refresh — 2026-11-19, the thirty-seventh hourly re-synthesis watch
+
+The watch re-enumerated the estate at 572 repos, every
+head read individually, no read errors. The moved
+repos were read by tree at their fresh heads, and the
+moved equivalence repo was re-censused in full at its
+fresh head, every file read at both pins. Evidence
+below rests on the tree reads at both heads of the
+moved proof repos and on the full re-census of the
+equivalence repo in its annex. Placements stand at
+the census pins named in each row, beside the
+equivalence row's new pin.
+
+Defect-rule dispositions for this refresh:
+
+- One name loss is flagged, not absorbed, and no
+  proven set shrank as a whole. The equivalence repo's
+  proven set grew from 1 declaration to 217, and the
+  name comparison between its pins, one mechanical
+  method at both, finds exactly one lost name: the
+  seed fact of the skeleton pin, a fact of the logic
+  that stood only so the family gate had a compiled
+  development to check. The rewritten core file does
+  not restate it; the model's own theorems stand in
+  its place, and no theorem of the program was lost.
+  This repo's Lean files are byte-identical between
+  its heads, so its eleven names stand unchanged.
+  The seed loss is recorded as a flagged regression
+  of the name set at skeleton strength, with its
+  disposition stated here and in the annex.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-redundancy-is-equivalence — new census pin
+  37514fb7 (first census pin 14992281). Proven: 217
+  theorems in eight Lean files — the canonical model
+  implemented (terms with decidable spelling equality,
+  the three scopes and their nesting, the one lattice,
+  the hypergraph with its validity predicate,
+  equivalence, levels, the finite resolved upper bound,
+  and redundancy as excess), the four growth operations
+  with their preservation and run facts, and all eight
+  claims of the specification proved under the names
+  the specification assigns: monotonicity under
+  expansion, compounding as accumulation of effective
+  joins with no additive claim over shared content,
+  appearance with its control direction under the
+  stated separateness premise, coloring with the
+  two-filter rule for the derived mark, bounds with the
+  reading and the record kept apart, reconciliation in
+  either order, scope widening as growth only, and the
+  registry clauses (uniqueness and provenance exact,
+  determinism of the recorded color, epoch appends as
+  the only reweighting). The derived views layer stands
+  proved beside them: derivability monotone in the
+  store and in the steps, with its elimination fact.
+  On named premises: the two inherited labels, now
+  stated as explicit premise definitions in the tree
+  (witness honesty and reading fidelity), each with
+  its falsification route; no theorem depends on
+  either. Absent as proven, at their own stated
+  states: the resolution algorithm specification,
+  whose claims are proposed (theorem to be, premise,
+  or named open gap) and which nothing in its lane
+  implements; and the case register's eighty-three
+  seed cases, accounted or gap at that same strength.
+  The built registry is measured behavior, not proven:
+  fifteen entries over 321 witnessed terms, excess
+  zero throughout, its second epoch solved by
+  exhaustive search over the searched scheme set
+  alone, its excess and colored weights unidentifiable
+  on this set as its record owns. Controls in tree:
+  the five standing controls, each now a proved
+  statement over concrete data and each printed in
+  the gate log. Gate: the recorded log at the pin
+  prints thirty-eight axiom audits — four axiom-free,
+  two on propositional extensionality only, the rest
+  on subsets of the standard three — and ends in its
+  axiom subset check passing; green at the pin by the
+  recorded log, for the whole development.
+- software-is-a-closed-loop — fresh head 944a8a13
+  (census pin d558669b). Proven: 11 theorems, unchanged
+  — the same name set at the last recorded head and at
+  the fresh head, which is the head the thirty-sixth
+  watch landed; the four commits between them are that
+  watch's delta, placement, ledger, and pins commits
+  and carry no Lean change. Controls and gate stand
+  as the second watch row records.
+
+The one other moved repo this watch, the compiler
+port, is not a proof repo and carries no ledger row:
+it was read by tree at its fresh head, no
+proof-assistant source was found in it, and it remains
+proof-free by the named check.
