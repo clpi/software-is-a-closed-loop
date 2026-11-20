@@ -592,3 +592,7 @@ UNMEASURED. The census pin moves to the new head,
 re-census; the placements in the synthesis and the
 ledger row are restated at the new pin in this same
 pass.
+
+## Watch delta — 2026-11-20, the forty-sixth hourly re-synthesis watch
+
+The watch re-read the live head at a76bd4f922a4dc4737d49705248dfbeb9c380fa4 in the full enumeration and read the whole tree at that head (1,230 files, not truncated). Every Lean file in the tree is byte-identical between the census pin 578b8b3a7e212082bf0d1f8a5a582cca63af3a19 and the fresh head — the same blob for each of the twenty files, carrying the same one hundred twenty theorems with the same name set, counted by the watch method over the tree at each pin. The movement between the heads, in two commits, is a new port slice and its record: thirteen files added, all of one protocol buffers port — its battery, bench, reader and writer sources, vectors, and verification harness — and two files changed, the repo ledger recording a ruling flag on the space package and the space package's own readme, none of them Lean. The proven set this annex records is unchanged at the fresh head, at the strength and with the gate state the re-census above records: proven in source at the census pin, the gate at that pin unrecorded.

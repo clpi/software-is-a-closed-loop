@@ -320,3 +320,7 @@ escape tokens, compiles every file with warnings as
 errors, and fails on any printed axiom outside the
 allowed set. Gate state: green at the census pin by the
 repo's recorded log. This census ran no build of its own.
+
+## Watch delta — 2026-11-20, the forty-sixth hourly re-synthesis watch
+
+The watch re-read the live head at 37794d7492c1d2c0b01546e4762b3059007e68a3 in the full enumeration and read the whole tree at that head (28 files, not truncated). Every Lean file in the tree is byte-identical between the census pin 37514fb760ae8457bd4b75514b2dbcc4fbdccfef and the fresh head — the same blob for each of the nine files, carrying the same 217 declarations with the same name set, counted by the watch method over the tree at each pin. The movement between the heads, in two commits, is registry and approach space work only: six files added — a witnessed join record and the approach space with its build script, entries, epochs, and readme — and four files changed, the repo readme and the registry's entries, epochs, and readme, none of them Lean. The first witnessed join stands entered in the registry and the third epoch solved there, and the approach space stands founded by its semantic axes, all as registry and document content at their own states, counted nowhere in the proven column. The proven set this annex records is unchanged at the fresh head, at the strength and with the gate state the census above records: proven at the census pin on its recorded log.

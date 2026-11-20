@@ -141,3 +141,7 @@ the four named premises carried at exactly the states
 the files themselves state, the canonical file's axiom
 state unrecorded, and the gate's passing run at the pin
 unrecorded.
+
+## Watch delta — 2026-11-20, the forty-sixth hourly re-synthesis watch
+
+The watch re-read the live head at 1b0e92d37f87c62197486e812ab90ba28dd381a7 in the full enumeration and read the whole tree at that head (125 files, not truncated). Every Lean file in the tree is byte-identical between the census pin 1dc24f4fcd8240ab6fbc9056dba7726e5c62bd98 and the fresh head — the same blob for each of the four proof files, carrying the same sixty-one declarations with the same name set, counted by the watch method over the tree at each pin. The movement between the heads is harness evidence work only, in two commits: one file added, a retained offline evidence record for an executed gap attempt at a compiler seat, and one file changed, the harness document recording that attempt — compilation refused, the battery unrun, the evidence retained. The proven set this annex records is unchanged at the fresh head, at the strength and with the gate state the census above records: proven in source at the pin, the gate's passing run at the fresh head still unrecorded.
