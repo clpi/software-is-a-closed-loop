@@ -2533,3 +2533,13 @@ The new equivalence repo landed in one commit at its head, which is its census p
 The perception harness repo moved by two commits, a harness semantic layer landing and its merge: its tree gained four files, the harness document, its protocol source, and its two test files, with two files changed, its makefile and its readme. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
 
 The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 41. Watch update — 2026-11-19, the thirty-sixth hourly re-synthesis
+
+The thirty-sixth watch re-enumerated the estate completely: 572 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. One of the moved repos is a proof repo — this repo itself — and the other two are idol-family repos. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the thirty-fifth watch landing itself: the seven commits between the two heads are that watch's census, delta, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The compiler port moved by four commits, two slice landings and their merges: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+The relay moved by one commit, a dated minimax note: its tree gained one file, with no file changed or removed. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.

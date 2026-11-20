@@ -1705,3 +1705,29 @@ changed, its makefile and its readme, over two
 commits, and the relay's tree gained one file, a dated
 minimax note, with no file changed or removed over one
 commit. No tree read was truncated this watch.
+
+## Watch update — 2026-11-19 (thirty-sixth hourly re-synthesis)
+
+A thirty-seventh enumeration: 572 repos, every head
+read individually, no read errors. Three repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself, and two
+further idol-family repos (the compiler port and the
+relay). Fresh heads for every repo stand in the pins
+file at this re-synthesis. This repo's movement is the
+thirty-fifth watch landing itself: the seven commits
+between the heads are that watch's census, delta,
+placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The compiler
+port and the relay were read by tree at their fresh
+heads and carry no proof-assistant content, so they
+remain proof-free by the named check; the compiler
+port's tree stands at the same file count as at its
+last recorded head, with no file added or removed and
+two files changed, a slices record and a code
+generation source, over four commits, and the relay's
+tree gained one file, a dated minimax note, with no
+file changed or removed over one commit. No tree read
+was truncated this watch.
