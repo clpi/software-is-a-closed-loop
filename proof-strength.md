@@ -3610,3 +3610,68 @@ Restated rows, at their fresh heads:
   watch's annex, placement, ledger, and pins commits
   and carry no Lean change. Controls and gate stand as
   the second watch row records.
+
+## Watch refresh — 2026-11-20, the fifty-third hourly re-synthesis watch
+
+The watch re-enumerated the estate at 575 repos, every
+head read individually with no errors, and read the
+moved and new repos by tree at their fresh heads in
+full, no read truncated. Evidence below rests on the
+tree and commit reads at both heads of the moved proof
+repo and on the full first census of the new proof
+repo. Placements stand at the census pins named in
+each row; a full theorem-level re-census at each fresh
+head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo carries
+  every Lean file byte-identical between the last
+  recorded head and the fresh head, so no name was
+  gained and none lost; the new proof repo enters with
+  its full set at its first census, so nothing of its
+  stands lost. No regression is flagged.
+- No pin moved without this ledger moving: the moved
+  proof repo has its row restated below in this same
+  pass, and the new proof repo's row is entered below
+  in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head
+  9237f128c1e6fcfe7c268fbf7de6de0d64f451d4, census pin
+  d558669b standing. Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at
+  the fresh head, which is the head the fifty-second
+  watch landed; the four commits between them are that
+  watch's annex, placement, ledger, and pins commits
+  and carry no Lean change. Controls and gate stand as
+  the second watch row records.
+
+New row, entered at its first census:
+
+- software-tensors-are-editable — census pin
+  9d7afd54bf8e7c8dbd335b6530d4cdc6b6d14d18, its head at
+  entry. Proven: 14 theorems in one Lean file — the
+  delta algebra (6), reversal exactness (1),
+  admissibility (2), and the view results (3), beside
+  the two standing controls counted in that set. On
+  named premises: none carried as a register; the
+  composition result's one side condition — cross
+  agreement at tied coordinates — stands inside its
+  own statement, and its unconditional form stands
+  refuted by the first control. Absent: the scale
+  transport of the abstract core, the per-schema
+  check, and the tie evidence method, owed or blocked
+  as its annex records; the specification's policy,
+  recurrence, and receipt sections proposed, not
+  proved; and every behavioral effect unknown, with
+  two fixture-bound behavioral cells blocked on
+  fixtures not on the machine. Controls in tree: the
+  two proved standing controls, inside the core file.
+  Gate state: green at the pin by the repo's recorded
+  log — warnings as errors, the escape scan, and an
+  axiom line for all 14 theorems, one axiom-free,
+  seven on propositional extensionality only, one on
+  quotient soundness only, and five on that pair,
+  ending in its subset check passing.
