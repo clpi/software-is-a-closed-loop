@@ -3376,3 +3376,63 @@ at their fresh heads: no proof-assistant source stands
 in any of them and no tree read was truncated, so all
 four remain proof-free by the named check and carry no
 ledger row.
+
+## Watch refresh — 2026-11-20, the forty-eighth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 574 repos, every
+head read individually with no errors, and read the
+moved repos by tree at their fresh heads in full, no
+read truncated. Evidence below rests on the tree and
+commit reads at both heads of each moved proof repo.
+Placements stand at the census pins named in each row;
+a full theorem-level re-census at each fresh head is
+owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The name comparison found zero
+  lost names in every moved proof repo: both moved
+  proof repos carry every Lean file byte-identical
+  between the last recorded head and the fresh head, so
+  no name was gained and none lost in either. No
+  regression is flagged.
+- No pin moved without this ledger moving: every
+  moved proof repo has its row restated below in this
+  same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head
+  880b629700c822d2886fe59e71f3a94945d253b3, census pin
+  d558669b standing. Proven: 11 theorems, unchanged —
+  the same name set at the last recorded head and at
+  the fresh head, which is the head the forty-seventh
+  watch landed; the five commits between them are that
+  watch's annex, placement, ledger, correction, and
+  pins commits and carry no Lean change. Controls and
+  gate stand as the second watch row records.
+- idol — fresh head
+  cc66b42aea404ef6980f2744ec600947c230bf1e, census pin
+  561cf395 standing (proof-bearing content only).
+  Proven: unchanged — all five Lean files are
+  byte-identical between the last recorded head and
+  the fresh head, counted at forty-five declarations
+  by the watch method: the frontier file with its 7
+  theorems on the premises its row records, the
+  release tools files with their 20 and 5, the solver
+  history file with its 10, and the proof data sample
+  that remains test data, counted nowhere. The
+  movement is four commits of compiler, library, and
+  gate work, ninety-three files changed and none
+  added or removed and none of them Lean. Gate: the
+  release tools verdict stands in the high-impact
+  addendum above at its named pin; the solver history
+  file's gate remains unknown, and the full census of
+  the release tools and solver developments remains
+  owed.
+
+The relay also moved and was read by tree at its
+fresh head: no proof-assistant source stands in it
+and its tree read was not truncated, so it remains
+proof-free by the named check and carries no ledger
+row.
