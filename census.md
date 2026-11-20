@@ -1912,3 +1912,29 @@ lowering sources, and two files changed, its slices
 record and a code generation source, over nineteen
 commits, with no file removed. No tree read was
 truncated this watch.
+
+## Watch update — 2026-11-20 (forty-third hourly re-synthesis)
+
+A forty-fourth enumeration: 572 repos, every head
+read individually, no read errors. Three repos had
+moved since the last recorded heads, none were new,
+none were gone, and the paper source hash was
+unchanged. The moved set: this repo itself, and two
+further idol-family repos (the compiler port and the
+relay). Fresh heads for every repo stand in the pins
+file at this re-synthesis. This repo's movement is
+the forty-second watch landing itself: the four
+commits between the heads are that watch's delta,
+placement, ledger, and pins commits, no Lean file
+changed among them, and its eleven theorems stand
+unchanged, recorded in its annex delta. The compiler
+port and the relay were read by tree at their fresh
+heads and carry no proof-assistant content, so they
+remain proof-free by the named check; the compiler
+port's tree gained three files, all lowering
+sources, and two files changed, its slices record
+and a register allocation coloring source, over
+twenty-eight commits, with no file removed, and the
+relay's tree gained one file, a dated minimax note,
+with no file changed or removed over one commit. No
+tree read was truncated this watch.
