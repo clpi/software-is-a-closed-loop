@@ -3754,3 +3754,16 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 248e38622545e1150d82dd12174c0753dc77fb05, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the fifty-eighth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+## Watch refresh — 2026-11-20, the sixtieth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 576 repos, every head read individually with no errors, and read the moved repo by tree at its fresh head in full, no read truncated. The one new repo was read by tree at its head in the same pass: its tree holds a single ignore file, so it is proof-free by the named check and carries no ledger row. Evidence below rests on the tree and commit reads at both heads of the moved proof repo. Placements stand at the census pins named in each row; a full theorem-level re-census at each fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The one moved proof repo carries every Lean file byte-identical between the last recorded head and the fresh head, so no name was gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 16bb6ed6ba60dd9029eec728e3d22ba2bc6a4a59, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the fifty-ninth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
