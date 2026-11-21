@@ -185,3 +185,7 @@ named above. The census pin is set to the fresh head
 on this first proof census; the placements in the
 synthesis and the ledger row are entered at the pin
 in this same pass.
+
+## Watch delta — 2026-11-20, the sixty-fourth hourly re-synthesis watch
+
+The watch re-read this repo's live head at 8c4aa56af769ccba2b32e7a11c160cffc3f34227 in the full enumeration. Every Lean file is byte-identical between the census pin 6151727a7ec67d15fdbb0fbfa48c2f305057aa69 and that head, so the proven set is unchanged: 54 theorems in four files, the same name set at both pins, counted by the watch method over the tree at each pin. The movement between the pins is two commits of executed-layer growth: twelve files added — the architecture, density, and multi-model harness modules, their three frozen contracts, and their recorded reports and run output — and seven files changed, among them the claims ledger, the specification, and the readme, beside harness and recorded output files. That growth is executed evidence at its own strength, counted nowhere in the proven column. The census pin stands at 6151727a7ec67d15fdbb0fbfa48c2f305057aa69.
