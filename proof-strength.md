@@ -3845,3 +3845,16 @@ Restated row, at its fresh head:
 - software-is-a-closed-loop — fresh head 8715ef37f8e9ce72462bb25b51ee4591e43b9586, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-fourth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The other moved repo this watch, the sites repo, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
+
+## Watch refresh — 2026-11-20, the sixty-sixth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 577 repos, every head read individually with no errors, and read the moved repo by tree at its fresh head in full, no read truncated. Evidence below rests on the tree and commit reads at both heads of the moved proof repo. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo carries every Lean file byte-identical between the last recorded head and the fresh head, so no name was gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated row, at its fresh head:
+
+- software-is-a-closed-loop — fresh head 704761096bc055eda998b28bf4b6af760f37c46b, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-fifth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
