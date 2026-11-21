@@ -112,3 +112,77 @@ anywhere. That gate state is recorded in the repo's own
 tree at the pin; the watch read the file and the record
 firsthand and did not re-run the compile, so the gate
 stands at recorded strength, not watch-verified strength.
+
+## Watch delta — 2026-11-21, the seventy-seventh hourly re-synthesis watch
+
+The watch re-read this repo at its fresh head
+cddf398adceac41c4c171b8b012d9dc07af7e7f5 in the full
+enumeration and re-censused it at theorem level in full.
+Three commits landed since the last census pin
+ee3086521932c19f4ed0a054d4362cf21d525972, one per rung:
+forty-five files added and one changed, the readme, with
+no file removed. The earlier Lean file is byte-identical
+between the heads, so its twenty-two theorems stand
+unchanged and no name was lost. Three new Lean files join
+it, and the repo now carries sixty-three theorems in
+four Lean files. Its census pin moves to the fresh head
+in this pass.
+
+- Rung 4, transfer: fourteen theorems in one new file.
+  Five of its six obligations are proved — extraction
+  determinism, information equality, selection-only
+  carriage, null exactness, and carriage replay — and
+  the transfer bound stands as a named premise, stated
+  as a definition, not proved, not an axiom, and depended
+  on by no theorem. Its independent checker record at
+  the pin reports zero failures, with replay, append-cut,
+  restart, view, extraction, and search agreement all
+  exact. The rung claim is refuted in its own record:
+  the transfer effect measured exactly zero in both
+  registered pairs, falsified under both decision rules.
+- Rung 5, compounding over time: ten theorems in one
+  new file. Four of its six obligations are proved —
+  restart exactness, replay exactness, the tally at
+  every cut, and curve well-definedness. One obligation
+  stands as a premise by construction review, its review
+  stated as review and not proof, and one stands as a
+  named premise whose antecedent and consequent were
+  measured per pair in the record. Its independent
+  checker record at the pin reports zero failures across
+  replay, cut folds, append-cut equality, restarts,
+  budget shapes, and view agreement. The rung claim is
+  refuted in its own record: the field horizon gain fell
+  below the frozen control spread under both rules, and
+  the region gain was matched by the frozen control, so
+  no compounding is attributable to live accumulation.
+- Rung 6, the certificate: seventeen theorems in one
+  new file. The decidability, detector correctness,
+  margin monotonicity, and certificate checkability
+  obligations are proved, and the reweighting stability
+  obligation is proved in scoped form only, its general
+  form not claimed. Soundness and completeness on the
+  registered class stand as named premises, each stated
+  as a definition depended on by no theorem. Its
+  decision procedure was built and verified in the
+  record: the independent checker reports zero failures
+  on all twenty-five certificates, seven of seven
+  fixtures in agreement, and no verdict flips across the
+  registered band. The governing precondition fails in
+  the record — the earlier rung records do not separate,
+  the threshold the procedure needs does not exist, and
+  all twenty-five instances stand not certified, in
+  agreement with every battery outcome. No premise debt
+  was discharged by this rung; the four carried premises
+  are named inside every certificate in the record.
+
+Gate state at the fresh head, recorded in the repo's own
+tree: each new file is recorded as a cold compile clean,
+with its axiom audit printing only the standard set and
+no sorry beyond the header word in the rung 4 file. The
+watch read the files and the records firsthand and did
+not re-run the compiles, so the gate stands at recorded
+strength, not watch-verified strength. Absent at the
+pin: any in-repo proof of rung 2, which remains housed
+in its earlier records, and the endgame interfaces,
+which stand proposed. The proven set grew by forty-one
+theorems and lost none, so no regression is flagged.
