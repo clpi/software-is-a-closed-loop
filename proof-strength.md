@@ -4091,3 +4091,16 @@ Restated rows, at their fresh heads:
 - software-is-a-closed-loop — fresh head c7bbc44b32790a4a9676207635eb1a4af8d38815, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the seventy-eighth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The one other moved repo this watch, the compiler port, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
+
+## Watch refresh — 2026-11-21, the eightieth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 578 repos, every head read individually with no errors. Evidence below rests on the tree and commit reads at both heads of the one moved proof repo: no Lean file changed in this repo between its heads — both Lean files are byte-identical at the two pins, with the same eleven theorem names counted at each. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed for this repo.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. This repo's Lean files are unchanged between the last recorded head and the fresh head, so no name was lost; its eleven names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated row, at its fresh head:
+
+- software-is-a-closed-loop — fresh head d262e09378890aa2bdaddb28f4fe8495b06e0a9b, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the seventy-ninth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
