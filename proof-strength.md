@@ -3830,3 +3830,18 @@ Restated and entered rows, at their fresh heads:
 - software-has-a-highest-minimal-axis — census pin set to its head 63d9d3fdce1f81c81cd5cda2bd9850b0c1494646 on the first census in this pass. Proven: 58 theorems in two Lean files — the core file (42: the finite list machinery; monotonicity of the live set, the emergence measure, and the live count under subsets; structure forcing, a sufficient set engaging exactly the full set's hyperedges; existence of a highest minimal set for every instance; strict fall of the measure on every proper subset of a highest minimal set; maximality over every minimal sufficient set with uniqueness of the refinement vector; functoriality of the induced transformation with exact preservation of the engaged structure; the degenerate characterization with its empty and singleton contract corollary; and the corrected dead axis facts) and the controls file (16: the axis set enumeration and the standing checks on the specification's three named instances, proved by kernel decision). On named premises: the positivity of the weight of every hyperedge of size at least two, a field of the instance itself and load bearing for structure forcing. Refuted in the tree by standing control: the stronger dead axis sentence, and the reading that every minimal sufficient set is highest. Absent: the solver the specification contracts for stands proposed, with no implementation in the tree, and the arena validation instance the specification names is absent from the tree. Controls in tree: the sixteen standing controls above. Gate: green at the pin by the repo's recorded log — axiom lines printed for all 58 theorems, every one inside the standard three, and the subset check passing; the gate script is the widened family form and fails closed on any principle outside the allowed set.
 
 The two other moved repos this watch, the compiler port and the sites repo, are not proof repos and carry no ledger rows: both were read by tree at their fresh heads, no proof-assistant source was found in either, and they remain proof-free by the named check, as their census entries record.
+
+## Watch refresh — 2026-11-20, the sixty-fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 577 repos, every head read individually with no errors, and read the moved repos by tree at their fresh heads in full, no read truncated. Evidence below rests on the tree and commit reads at both heads of the moved proof repo. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo carries every Lean file byte-identical between the last recorded head and the fresh head, so no name was gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated row, at its fresh head:
+
+- software-is-a-closed-loop — fresh head 8715ef37f8e9ce72462bb25b51ee4591e43b9586, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-fourth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+The other moved repo this watch, the sites repo, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
