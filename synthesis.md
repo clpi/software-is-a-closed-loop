@@ -1176,6 +1176,61 @@ machine. State: PROVEN in source at the pin for the
 14 theorems, at the strengths its annex census
 records. The full census stands in its annex file.
 
+### 3.22 Placement from the sixty-first watch (2026-11-20) — a repo newly proof-bearing
+
+deterministic-llms (public, Lean 4.19.0) — census
+pin 6151727a, its head at entry. The proof home of
+the parametric deterministic language model in its
+decoding form: generation as a deterministic
+function of the content and a few named weights,
+decided by a certified best-first rule over exact
+integer scores and rewritable incrementally. Its
+Lean package carries 54 theorems in four files: the
+core (31) — the pick laws and the uniqueness of the
+unbeaten candidate, determinism under any candidate
+order for picks and for whole generations,
+certification sound and complete, rescoring and
+reweighting equal to recompute per step and per
+generation, the margin cone, axis locality, cache
+invisibility, and the prefix law; the skipping file
+(2) — drafted acceptance is exactly the rule's own
+generation, and batched acceptance equals per-step
+acceptance under an explicit premise, the equality
+of the two scorings, which the repo measures
+bitwise on its recorded run; the sparse file (2)
+— the exact sparse rule, the best moved candidate
+together with the best unmoved one, needing no
+margin; and the search file (19) — the archive
+holding exactly the Pareto front in any arrival
+order, per-factor minima plans, and Chebyshev
+weights reaching every front point, with two proved
+standing controls (an unsupported point the aimed
+weights reach and no positive weighted sum picks).
+The search file is, by the repo's own statement,
+copied unchanged from the redundant compute repo's
+seventh pull request: a second home for the same
+content, with its first home in the redundant
+compute family. Of the gate: the recorded log in
+the tree shows the cold build completing and axiom
+lines for seventeen named theorems, every one
+inside the standard three, ending in the check
+passing; the gate script fails closed on any
+axiom-check error after its recorded correction.
+Carried at the repo's own states: its empirical
+ledger stands at executed strength with its own
+verified, corrected, refuted, and unmeasured
+verdicts — cross-history sharing refuted on its
+data, unverified skipping refuted as exact, the
+decompiling hypothesis refuted for embedding
+directions at the declared weight on held-out
+words and unmeasured beyond the token embedding;
+and any other model, human quality judgment, long
+outputs, cross-machine determinism, and native or
+Idol implementations unmeasured. State: PROVEN in
+source at the pin for the 54 theorems, at the
+strengths its annex census records. The full
+census stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -3013,3 +3068,13 @@ The sixtieth watch re-enumerated the estate completely: 576 repos, every head re
 This repo's own head moved only by the fifty-ninth watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
 
 The new repo stands at its first commit, the repository initialization, with a single ignore file in its tree. It was read by tree at its head; no proof-assistant source was found in it and its tree read was not truncated, so it is proof-free by the named check and carries no provable results. Its census state is unknown at listing depth, as its census row records.
+
+## 66. Watch update — 2026-11-20, the sixty-first hourly re-synthesis
+
+The sixty-first watch re-enumerated the estate completely: 576 repos, every head read individually, no read errors. Four repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Three of the moved repos are proof repos — this repo itself, the compiler repo, and the library repo — and the fourth is a repo newly proof-bearing in this window, entered and placed in section 3.22. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins, beside the new placement in section 3.22.
+
+This repo's own head moved only by the sixtieth watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The compiler repo moved by one commit changing one file, its Wasm source, and the library repo moved by twenty-one commits landing a new native port and its evidence, seven files added and eight changed. Both were read by tree at their fresh heads; every Lean file in each is byte-identical between the last recorded head and the fresh head, so their proven sets stand unchanged — the compiler repo's forty-two counted declarations beside its test-data sample, and the library repo's one hundred twenty theorems.
+
+The newly proof-bearing repo is the deterministic language models repo, entered and censused at theorem level at its fresh head, which is its census pin: fifty-four theorems in four Lean files — the certified best-first core, draft acceptance under its named premise, the exact sparse rule, and the reused search development with its two standing controls — on a recorded gate log passing at the pin, its empirical ledger at executed strength with its refuted and unmeasured cells standing as named. Its placement stands in section 3.22.

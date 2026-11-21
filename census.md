@@ -939,6 +939,26 @@ synthesis placement section for this watch and the annex):
   behavioral cells blocked or unknown as named.
   Pin 9d7afd54.
 
+Added by the sixty-first watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- deterministic-llms (public) — the parametric
+  deterministic decoding model: generation as a
+  deterministic function of the content and a few
+  named weights, decided by a certified best-first
+  rule over exact integer scores — fifty-four
+  theorems in four Lean files (the certified core
+  with its determinism, certification, reweighting,
+  cone, and locality results; draft acceptance under
+  its named batched-scoring premise; the exact
+  sparse rule; and the reused search development,
+  copied unchanged from the redundant compute repo
+  by the repo's own statement, with its two standing
+  controls), on a recorded gate log passing at the
+  pin, its empirical ledger at executed strength and
+  its unmeasured cells standing as named. Pin
+  6151727a.
+
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
 also named software inside the loop — their pins re-enter at
@@ -1128,7 +1148,7 @@ same data, machine-readable, is synthesis-pins.json.
 | defre | public |  | d7f6a4e3 | 2022-06-11 |  | unknown (unexamined) |
 | derive_more | public | Some more derive(Trait) options | 718fbb67 | 2021-12-07 | fork | unknown (unexamined) |
 | des-steps | private |  | 11646d0d | 2026-06-06 |  | unknown (unexamined) |
-| deterministic-llms | public |  | c5298feb | 2026-11-21 |  | unknown (unexamined) |
+| deterministic-llms | public |  | 6151727a | 2026-11-21 |  | proof family — placed above |
 | devisa | private |  | d5a9e96e | 2021-03-13 |  | unknown (unexamined) |
 | devisa-webx | private | a project to get the core tech of devisa to mvp as quickly as possible by cutting out as much frontend learning as possible | 64fbd064 | 2021-06-26 |  | unknown (unexamined) |
 | df | private | dotfiles for i3wm/sway config, Xresources config, vim/neovim config, qutebrowser, dmenu, zsh, bspwm | 3d71a8aa | 2020-12-18 |  | unknown (unexamined) |
@@ -2165,3 +2185,7 @@ A sixtieth enumeration: 575 repos, every head read individually, no read errors.
 ## Watch update — 2026-11-20 (sixtieth hourly re-synthesis)
 
 A sixty-first enumeration: 576 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself. The new repo is the deterministic language models repo, public, at c5298feb: one commit, the repository initialization, whose tree holds a single ignore file and nothing else — entered in the long-tail table below, colored unknown with no provable results, proof-free by the named check. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the fifty-ninth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. No tree read was truncated this watch.
+
+## Watch update — 2026-11-20 (sixty-first hourly re-synthesis)
+
+A sixty-second enumeration: 576 repos, every head read individually, no read errors. Four repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself; two further proof repos (the compiler repo and the library repo); and one repo newly proof-bearing in this window (the deterministic language models repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the sixtieth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler repo moved by one commit changing only its Wasm source, and the library repo by twenty-one commits landing a new native port and its evidence; every Lean file in each is byte-identical between the last recorded head and the fresh head, so their proven sets stand unchanged, recorded in their annex deltas. The deterministic language models repo landed its whole content in five commits at 6151727a: a specification, a claims ledger, a harness, frozen contracts, recorded outputs, and a Lean package of fifty-four theorems in four files, with a recorded gate log passing in its tree — newly proof-bearing by the named check, entered in the proof family below, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin; its long-tail row below is updated to the fresh head and its new state. No tree read was truncated this watch.
