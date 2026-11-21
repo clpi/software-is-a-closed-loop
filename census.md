@@ -1005,6 +1005,17 @@ synthesis placement section for this watch and the annex):
   no-free-capability obligation standing as a named
   premise, and the rung's capability claim refuted in the
   repo's own record at the pin. Pin ee308652.
+  Restated by the seventy-seventh watch at pin cddf398a:
+  rungs 4, 5, and 6 landed in three commits — forty-one
+  new theorems in three new Lean files, for sixty-three
+  theorems in four files in total, the earlier file
+  unchanged and no name lost; the transfer and
+  compounding capability claims refuted in the repo's
+  own records, the certificate procedure built and
+  verified in its record with all twenty-five instances
+  not certified there, and the remaining obligations
+  standing as named premises or in scoped form, as its
+  annex delta records.
 
 ## The Idol family — role-and-state placements
 
@@ -1582,7 +1593,7 @@ same data, machine-readable, is synthesis-pins.json.
 | ska | private |  | 81f0c4d6 | 2023-06-12 |  | unknown (unexamined) |
 | software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress |  858a85e3  | 2026-11-18 |  | proof family — synthesis.md |
 | software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it |  1d504014  | 2026-11-18 |  | proof family — synthesis.md |
-| software-emergence-is-decidable | public | Emergence from actor interactions as a parametric, solvable, optimizable vector over any qualified system — spec, program record, and machine-checked certificates | ee308652 | 2026-11-21 |  | proof family — placed above; rung 3 landed at this head, 22 theorems in one Lean file, its capability claim refuted in-repo |
+| software-emergence-is-decidable | public | Emergence from actor interactions as a parametric, solvable, optimizable vector over any qualified system — spec, program record, and machine-checked certificates | cddf398a | 2026-11-21 |  | proof family — placed above; rungs 4, 5, and 6 landed at this head, 63 theorems in four Lean files, their capability claims refuted in-repo and the certificate instances not certified in-repo |
 | software-frontier-is-solvable | private |  |  22418d56  | 2026-11-18 |  | proof family — synthesis.md |
 | software-has-a-highest-minimal-axis | public | The highest minimal axis theorem for qualified parametric systems, proved in Lean 4.19.0 | 63d9d3fd | 2026-11-21 |  | proof family — placed above |
 | software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. | 7b174646 | 2026-11-18 |  | proof family — synthesis.md |
@@ -2294,3 +2305,8 @@ A seventy-sixth enumeration: 578 repos, every head read individually, no read er
 ## Watch update — 2026-11-21 (seventy-sixth hourly re-synthesis)
 
 A seventy-seventh enumeration: 578 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and the emergence program repo, which is newly proof-bearing in this window. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the seventy-fifth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The emergence program repo moved by one commit landing its rung 3 execution: twenty-one files added and one changed, its readme, with one Lean file of twenty-two theorems proving seven of its eight rung obligations — one in conditional form — and the eighth standing as a named premise, beside its rung record printing its capability claim as falsified in both registered families; it is entered in the proof family below, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin. The enumeration read caught it mid-movement, and the later individual read at the head recorded here governs. No tree read was truncated this watch.
+
+
+## Watch update — 2026-11-21 (seventy-seventh hourly re-synthesis)
+
+A seventy-eighth enumeration: 578 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself; one further proof repo (the emergence program repo); and one further idol-family repo (the compiler port). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the seventy-sixth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The emergence program repo landed rungs 4, 5, and 6 in three commits at cddf398a: three new Lean files of fourteen, ten, and seventeen theorems, its earlier Lean file byte-identical between the heads, so its twenty-two theorems stand unchanged and its total is now sixty-three theorems in four files, with the transfer bound, the construction-review obligation, the accumulation monotonicity obligation, and the certificate soundness and completeness obligations standing as named premises, and reweighting stability proved in scoped form only; it was re-censused at theorem level in full at its fresh head in its annex, and its census pin moves to cddf398a in this pass. The compiler port was read by tree at its fresh head and carries no proof-assistant content, so it remains proof-free by the named check; its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a native backend source, over four commits. No tree read was truncated this watch.
