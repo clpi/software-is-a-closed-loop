@@ -3971,3 +3971,16 @@ Restated rows, at their fresh heads:
 - software-is-a-closed-loop — fresh head 02a254991791315483424df475b8f8db4815ad86, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the seventieth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The two other moved repos this watch, the compiler port and the sites repo, are not proof repos and carry no ledger rows: both were read by tree at their fresh heads, no proof-assistant source was found in either, and they remain proof-free by the named check, as their census entries record.
+
+## Watch refresh — 2026-11-21, the seventy-second hourly re-synthesis watch
+
+The watch re-enumerated the estate at 577 repos, every head read individually with no errors, and read the moved repo by tree at its fresh head. Evidence below rests on the tree and commit reads at both heads of the moved proof repo: no Lean file changed between them. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files are unchanged between the last recorded head and the fresh head, so no name was lost; this repo's eleven names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head ebde0c4497095de310aa0b661cccdeb0dc45914d, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the seventy-first watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
