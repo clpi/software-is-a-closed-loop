@@ -4014,3 +4014,19 @@ Restated rows, at their fresh heads:
 - software-is-a-closed-loop — fresh head ae85d7aa2d17e023d2d366fe1f1dcaf209c90254, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the seventy-third watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The one other moved repo this watch, the compiler port, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
+
+
+## Watch refresh — 2026-11-21, the seventy-fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 578 repos, every head read individually with no errors, and read the moved repos by tree at their fresh heads. Evidence below rests on the tree and commit reads at both heads of the moved proof repo: no Lean file changed between them. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files are unchanged between the last recorded head and the fresh head, so no name was lost; this repo's eleven names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 3b571361eee8033aff466ca7d9bb5fb6b10c00d4, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the seventy-fourth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+The two other moved repos this watch, the compiler port and the sites repo, are not proof repos and carry no ledger rows: each was read by tree at its fresh head, no proof-assistant source was found in either, and both remain proof-free by the named check, as their census entries record. The one new repo this watch, the emergence program repo, carries no proof content in its tree at its founding head by the same check, so it takes no ledger row; its state is recorded as proposed in the census.
