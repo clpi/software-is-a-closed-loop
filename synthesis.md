@@ -3270,3 +3270,11 @@ The emergence program repo stands restated at cddf398a, its new census pin. Its 
 The seventy-eighth watch re-enumerated the estate completely: 578 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. The one moved repo is a proof repo — this repo itself. The annex file carries the evidence at the fresh head; the placements in section 3 stand at their census pins.
 
 No proof repo shrank at its fresh head. This repo itself moved with every Lean file byte-identical, so its proven set stands unchanged: its head moved only by the seventy-seventh watch landing — its four commits carry no Lean change, so its own eleven theorems stand unchanged at the fresh head.
+
+## 84. Watch update — 2026-11-21, the seventy-ninth hourly re-synthesis
+
+The seventy-ninth watch re-enumerated the estate completely: 578 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. One of the moved repos is a proof repo and one is an idol-family repo. The annex file carries the evidence at the fresh head; the placements in section 3 stand at their census pins.
+
+No proof repo grew or shrank at its fresh head. This repo itself moved with every Lean file byte-identical, so its proven set stands unchanged: its head moved only by the seventy-eighth watch landing — its four commits carry no Lean change, so its own eleven theorems stand unchanged at the fresh head.
+
+The one idol-family repo moved without proof content: the compiler port, by four commits landing a second fusion group slice and a re-judged slice record, its tree at the same file count with two files changed, its slices record and its native backend source. It was read by tree at its fresh head; no proof-assistant source was found in it and no tree read was truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
