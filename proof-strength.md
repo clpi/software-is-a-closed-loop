@@ -3783,3 +3783,18 @@ Restated and entered rows, at their fresh heads:
 - idol — fresh head 948b55cb764817b137260a77059499b34f14dbea, census pin 561cf395 standing (proof-bearing content only). Proven: unchanged — all five Lean files are byte-identical between the last recorded head and the fresh head, counted at forty-five declarations by the watch method: the frontier file with its 7, the retention file with its 20, the qualification file with its 5, the solver history file with its 10, and the proof data sample with its 3, which remains test data counted nowhere. The one commit between the heads changes only the Wasm source. On named premises, absent set, controls, and gate stand as the earlier rows record; the full census of the release tools and solver developments remains owed.
 - idol-lib — fresh head f8a45b4cced3def7ab2684bab0b7e629d5957f8f, census pin 578b8b3a standing. Proven: 120 theorems, unchanged — all twenty Lean files are byte-identical between the census pin and the fresh head, the same name set at both, counted by the watch method over the tree at each pin. The twenty-one commits between the last recorded head and the fresh head land a new native port and its evidence, seven files added and eight changed, none of them Lean. On named premises, absent set, controls, and gate stand as its re-census row records: proven in source at the census pin, the gate at that pin unrecorded.
 - software-is-a-closed-loop — fresh head 4fa8035ff75d2a460a070ab0a3394fd1b5391e21, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixtieth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+## Watch refresh — 2026-11-20, the sixty-second hourly re-synthesis watch
+
+The watch re-enumerated the estate at 576 repos, every head read individually with no errors, and read the moved repos by tree at their fresh heads in full, no read truncated. Evidence below rests on the tree and commit reads at both heads of the moved proof repo. Placements stand at the census pins named in each row; a full theorem-level re-census at each fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The one moved proof repo carries every Lean file byte-identical between the last recorded head and the fresh head, so no name was gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head aca5e3658effcc90bd0d0d72d271d70225f8957d, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-first watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+The one other moved repo this watch, the sites repo, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
