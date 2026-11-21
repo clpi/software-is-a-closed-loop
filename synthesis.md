@@ -1231,6 +1231,52 @@ source at the pin for the 54 theorems, at the
 strengths its annex census records. The full
 census stands in its annex file.
 
+### 3.23 Placement from the sixty-fourth watch (2026-11-20) — a new proof repo
+
+software-has-a-highest-minimal-axis (public, Lean
+4.19.0) — census pin 63d9d3fd, its head at entry.
+The proof home of the highest minimal axis theorem
+for qualified parametric systems: a smallest axis
+set whose variation inside the contract already
+produces the full emergent live interacting
+structure, chosen among the smallest by the maximal
+refinement vector, the emergence measure first and
+the live count second. Its Lean package carries 58
+theorems in two files beside an audit file: the
+core (42) — the finite list machinery; monotonicity
+of the live set, the emergence measure, and the
+live count under subsets; structure forcing, a
+sufficient set engaging exactly the full set's
+hyperedges with the positive weights load bearing;
+existence of a highest minimal set for every
+instance; strict fall of the measure on every
+proper subset of a highest minimal set; maximality
+over every minimal sufficient set with uniqueness
+of the refinement vector; functoriality of the
+induced transformation with exact preservation of
+the engaged structure; the degenerate
+characterization with its empty and singleton
+contract corollary; and the corrected dead axis
+facts — and the controls (16), the standing checks
+on the specification's three named instances,
+proved by kernel decision. Refuted in the tree by
+standing control: the stronger dead axis sentence
+(a dead axis can belong to a minimal sufficient
+set, and the proved form is that its removal is
+already sufficient) and the reading that every
+minimal sufficient set is highest. Of the gate:
+the recorded log in the tree prints axiom lines
+for all 58 theorems, every one inside the standard
+three, and its subset check passes; the gate
+script is the widened family form, failing closed
+on any principle outside the allowed set. Carried
+at the repo's own states: the solver its
+specification contracts for stands proposed, with
+no implementation in this tree. State: PROVEN in
+source at the pin for the 58 theorems, at the
+strengths its annex census records. The full
+census stands in its annex file.
+
 ## 4. Duplication and stronger homes
 
 From the topology census, carried as rulings:
@@ -3094,3 +3140,15 @@ The sixty-third watch re-enumerated the estate completely: 576 repos, every head
 This repo's own head moved only by the sixty-second watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
 
 The sites repo moved by one commit updating the frontier before weights space sources: its tree gained six files, one dated audit folder with its document text, probe record, report, and screenshots, and eleven files changed — its catalogue entry, its harness and build records, its probe records, its deploy and build manifests and built pages, and the space source itself — with no file removed, and the paper page file is byte-identical between its heads. It was read by tree at its fresh head; no proof-assistant source was found in it and its tree read was not truncated, so it remains proof-free by the named check. Its movement changes its pin only, not its placement.
+
+## 69. Watch update — 2026-11-20, the sixty-fourth hourly re-synthesis
+
+The sixty-fourth watch re-enumerated the estate completely: 577 repos, every head read individually, no read errors. Four repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. Two of the moved repos are proof repos — this repo itself and the deterministic language models repo — and the new repo is a proof repo, entered at theorem level in section 3.23. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins except where this watch sets a new one.
+
+This repo's own head moved only by the sixty-third watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The deterministic language models repo moved by two commits of executed-layer growth — twelve files added, the architecture, density, and multi-model harness modules with their frozen contracts and recorded reports, and seven files changed, among them its claims ledger and specification — with every Lean file byte-identical between its census pin and its fresh head, so its fifty-four theorems stand unchanged and its census pin stands.
+
+The new repo is the highest minimal axis proof repo, public, at 63d9d3fd: fifty-eight theorems in two Lean files — the monotonicity, structure forcing, existence, minimality, maximality, functoriality, and degenerate results of its specification, with the corrected dead axis facts — beside sixteen standing controls on its three named instances and a recorded gate log passing at the head, which is its census pin.
+
+The compiler port moved by four commits landing a divisor slice and its re-judged frontier record: its tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, its slices record and its native backend source. The sites repo moved by one commit updating the frontier before weights space sources: its tree gained six files, one dated audit folder with its document text, probe record, report, and screenshots, and eleven files changed, with no file removed, and the paper page file is byte-identical between its heads. Both were read by tree at their fresh heads; no proof-assistant source was found in either and no tree read was truncated, so both remain proof-free by the named check. Their movement changes their pins only, not their placements.

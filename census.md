@@ -959,6 +959,30 @@ synthesis placement section for this watch and the annex):
   its unmeasured cells standing as named. Pin
   6151727a.
 
+Added by the sixty-fourth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-has-a-highest-minimal-axis (public) — the
+  highest minimal axis model: a smallest axis set
+  whose variation inside the contract already
+  produces the full emergent live interacting
+  structure, chosen among the smallest by the maximal
+  refinement vector — monotonicity of liveness and
+  of both measures under subsets, structure forcing
+  under the positive weights, existence for every
+  instance, strict fall on every proper subset,
+  maximality with uniqueness of the refinement
+  vector, functoriality of the induced transformation
+  with exact preservation of the engaged structure,
+  and the degenerate characterization with its empty
+  and singleton contract corollary, beside the
+  corrected dead axis facts and sixteen standing
+  controls on the specification's three named
+  instances — fifty-eight theorems in two Lean files,
+  on a recorded gate log passing at the pin, its
+  contracted solver standing proposed with no
+  implementation in the tree. Pin 63d9d3fd.
+
 In loop terms the proof family is the loop's own theory: it
 supplies the theorems governing stages 1–9. Its repos are
 also named software inside the loop — their pins re-enter at
@@ -1542,6 +1566,7 @@ same data, machine-readable, is synthesis-pins.json.
 | software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress |  858a85e3  | 2026-11-18 |  | proof family — synthesis.md |
 | software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it |  1d504014  | 2026-11-18 |  | proof family — synthesis.md |
 | software-frontier-is-solvable | private |  |  22418d56  | 2026-11-18 |  | proof family — synthesis.md |
+| software-has-a-highest-minimal-axis | public | The highest minimal axis theorem for qualified parametric systems, proved in Lean 4.19.0 | 63d9d3fd | 2026-11-21 |  | proof family — placed above |
 | software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. | 7b174646 | 2026-11-18 |  | proof family — synthesis.md |
 | software-is-incrementally-certifiable | private | Lean 4 proof that incremental monotonic certification is extensive and yields Pareto-optimal dominance across releases |  36901673  | 2026-11-18 |  | proof family — synthesis.md |
 | software-is-incrementally-safe | private | Lean 4 proof that safety is preserved incrementally across releases, with security consequences (noninterference, monotone capability shrinkage), built on software-is-composable. | 97e55d28 | 2026-11-18 |  | proof family — synthesis.md |
@@ -2197,3 +2222,7 @@ A sixty-third enumeration: 576 repos, every head read individually, no read erro
 ## Watch update — 2026-11-20 (sixty-third hourly re-synthesis)
 
 A sixty-fourth enumeration: 576 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and one further idol-family repo (the sites repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the sixty-second watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The sites repo was read by tree at its fresh head and carries no proof-assistant content, so it remains proof-free by the named check; its tree gained six files, one dated audit folder for the frontier before weights space, and eleven files changed over one commit, with the paper page file byte-identical between its heads. No tree read was truncated this watch.
+
+## Watch update — 2026-11-20 (sixty-fourth hourly re-synthesis)
+
+A sixty-fifth enumeration: 577 repos, every head read individually, no read errors. Four repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself; one further proof repo (the deterministic language models repo); and two further idol-family repos (the compiler port and the sites repo). The new repo is the highest minimal axis proof repo, public, at 63d9d3fd: fifty-eight theorem declarations in two Lean files — the core development of monotonicity, structure forcing, existence, minimality, maximality, functoriality, and the degenerate characterization, with the corrected dead axis facts — beside sixteen standing controls on its three named instances and a recorded gate log passing in its tree — entered in the proof family above, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the sixty-third watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The deterministic language models repo was re-read at its fresh head: every Lean file is byte-identical between its census pin and the fresh head, so its fifty-four theorems stand unchanged, recorded in its annex delta; its movement is twelve files added and seven changed of harness, contract, and recorded output growth over two commits. The compiler port and the sites repo were read by tree at their fresh heads and carry no proof-assistant content, so they remain proof-free by the named check; the compiler port's tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed over four commits, and the sites repo's tree gained six files, one dated audit folder for the frontier before weights space, and eleven files changed over one commit, with the paper page file byte-identical between its heads. No tree read was truncated this watch.
