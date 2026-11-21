@@ -3798,3 +3798,18 @@ Restated rows, at their fresh heads:
 - software-is-a-closed-loop — fresh head aca5e3658effcc90bd0d0d72d271d70225f8957d, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-first watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The one other moved repo this watch, the sites repo, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
+
+## Watch refresh — 2026-11-20, the sixty-third hourly re-synthesis watch
+
+The watch re-enumerated the estate at 576 repos, every head read individually with no errors, and read the moved repos by tree at their fresh heads in full, no read truncated. Evidence below rests on the tree and commit reads at both heads of the moved proof repo. Placements stand at the census pins named in each row; a full theorem-level re-census at each fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The one moved proof repo carries every Lean file byte-identical between the last recorded head and the fresh head, so no name was gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 1c81fa03873a46425d076f97558587e99adaa770, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-second watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+The one other moved repo this watch, the sites repo, is not a proof repo and carries no ledger row: it was read by tree at its fresh head, no proof-assistant source was found in it, and it remains proof-free by the named check, as its census entry records.
