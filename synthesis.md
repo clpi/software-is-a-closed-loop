@@ -3005,3 +3005,11 @@ This repo's own head moved only by the fifty-seventh watch landing itself: the f
 The fifty-ninth watch re-enumerated the estate completely: 575 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. The one moved repo is a proof repo — this repo itself. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
 
 This repo's own head moved only by the fifty-eighth watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+## 65. Watch update — 2026-11-20, the sixtieth hourly re-synthesis
+
+The sixtieth watch re-enumerated the estate completely: 576 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged, so no paper re-sync was owed. The one moved repo is a proof repo — this repo itself. The new repo is a long-tail repo with no proof content, entered in the census at listing depth. The annex files carry the evidence at the fresh heads; the placements in section 3 stand at their census pins.
+
+This repo's own head moved only by the fifty-ninth watch landing itself: the four commits between the two heads are that watch's annex, placement, ledger, and pins commits, and both Lean files are byte-identical between the heads, so its eleven theorems stand unchanged at the fresh head.
+
+The new repo stands at its first commit, the repository initialization, with a single ignore file in its tree. It was read by tree at its head; no proof-assistant source was found in it and its tree read was not truncated, so it is proof-free by the named check and carries no provable results. Its census state is unknown at listing depth, as its census row records.

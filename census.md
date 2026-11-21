@@ -1128,6 +1128,7 @@ same data, machine-readable, is synthesis-pins.json.
 | defre | public |  | d7f6a4e3 | 2022-06-11 |  | unknown (unexamined) |
 | derive_more | public | Some more derive(Trait) options | 718fbb67 | 2021-12-07 | fork | unknown (unexamined) |
 | des-steps | private |  | 11646d0d | 2026-06-06 |  | unknown (unexamined) |
+| deterministic-llms | public |  | c5298feb | 2026-11-21 |  | unknown (unexamined) |
 | devisa | private |  | d5a9e96e | 2021-03-13 |  | unknown (unexamined) |
 | devisa-webx | private | a project to get the core tech of devisa to mvp as quickly as possible by cutting out as much frontend learning as possible | 64fbd064 | 2021-06-26 |  | unknown (unexamined) |
 | df | private | dotfiles for i3wm/sway config, Xresources config, vim/neovim config, qutebrowser, dmenu, zsh, bspwm | 3d71a8aa | 2020-12-18 |  | unknown (unexamined) |
@@ -2160,3 +2161,7 @@ A fifty-ninth enumeration: 575 repos, every head read individually, no read erro
 ## Watch update — 2026-11-20 (fifty-ninth hourly re-synthesis)
 
 A sixtieth enumeration: 575 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the fifty-eighth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. No tree read was truncated this watch.
+
+## Watch update — 2026-11-20 (sixtieth hourly re-synthesis)
+
+A sixty-first enumeration: 576 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself. The new repo is the deterministic language models repo, public, at c5298feb: one commit, the repository initialization, whose tree holds a single ignore file and nothing else — entered in the long-tail table below, colored unknown with no provable results, proof-free by the named check. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the fifty-ninth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. No tree read was truncated this watch.
