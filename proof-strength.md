@@ -368,19 +368,55 @@ New rows from the sweep:
   direction only. Controls: a recorded rejected mutation in
   the example. Gate: the recorded check log at the pin.
 
-## software-is-more-traceable-than-you-think — pin 4420fb1e
+## software-is-more-traceable-than-you-think — pin 8f6a1280 (sweep re-census 2026-11-18; prior census pin 4420fb1e, superseded — the proof landed between the two pins)
 
-- Proven in this repo: 5 theorems of an invoice example, at
-  fixture scale, on its recorded transcript (3 on propext and
-  quotient soundness, 2 axiom-free), with a recorded rejected
-  mutation.
-- Absent in this repo: the thesis itself — the witness
-  hypergraph construction, the grain determination, and the
-  platform-independence proof are recorded in its readme as
-  implemented in a lane and not yet landed here. State:
-  claimed, not proven, in-repo; the grain map proposed.
-  (Live head moved to 5f84b051 after this census; what landed
-  there is the continuous job's next re-census.)
+- Proven in this repo: 43 theorems over 4 Lean files — the
+  construction (20: losslessness on both faces of the fold,
+  order independence in membership form, permutation and
+  duplication independence, time independence in membership
+  and reassignment form, retraction exactness on both faces
+  and in recomputation form, all quantified over arbitrary
+  node/event/time types and an arbitrary lifting, so free of
+  any platform token — mechanically audited, 0 hits over 52
+  platform words), the adversarial controls (12: three
+  standing counterexamples proving duplication, order and
+  retraction independence non-vacuous, plus the symbol-grain
+  necessity control), the invoice example (5, incl. the
+  route-free-receipt impossibility), and the bridge-repair
+  example (6, incl. two-never-enough ambiguity and the exact
+  three-bridge restore).
+- On named premises: PREMISE (one) — returns_head's
+  `contributed` restates the conclusion (it is fold_edges),
+  and its witnessed-head hypothesis is not read by the proof
+  term. The real-execution lifting (kernel-boundary sensing)
+  is stated, never formalized; the store-level hypergraph and
+  grain map are execution-verified over the frozen snapshot,
+  not proven; the store carries no timestamps — exact time is
+  batch-and-step-index, weaker than the claim's narrative.
+- Controls in tree: the three *_claim_fails counterexamples
+  in the Controls module; the range-ledger must-fail mutation
+  control in the gate; grain and residue controls at concrete
+  data.
+- Gate state: green on the repo's committed receipts covering
+  every Lean file with warnings as errors (proof/check.sh is
+  the widened family gate with escape scan and axiom-subset
+  check over proof/; the two examples' gates compile
+  warnings-as-errors, range-ledger with a must-fail control).
+  Printed axioms: propext and Quot.sound only. Caveats: the
+  independent re-run was NOT EXECUTED (no Lean toolchain in
+  the census environment) — carried as a verification-lane
+  item; the examples gate lacks the escape scan and axiom
+  check; one receipt line in examples/verification.txt (the
+  invoice mutation control) has no corresponding in-tree
+  gate step at this pin.
+- Name verdict: proves a weaker statement — lossless,
+  order/duplication/time-independent, retraction-exact,
+  platform-free by universal quantification fold of an
+  arbitrary witness stream. That real executions emit
+  informative witnesses is the unformalized lifting premise;
+  the store-level grain is executed, not proven. No
+  dishonest overclaim: the readme's evidence states are
+  accurate at the pin.
 
 ## idol-theses — pin d207be6e
 

@@ -1,79 +1,144 @@
 # Census — software-is-more-traceable-than-you-think
 
+Sweep re-census at the landed head. It supersedes the first census of
+this repo, taken at pin 4420fb1e before the proof landed: that census
+recorded the thesis as not landed, with only the invoice example in
+tree. Between 4420fb1e and the current head the repo gained its
+witness-store hypergraph, its grain map, its Lean proof of platform
+independence with adversarial controls, and the range-ledger
+bridge-repair example.
+
 ## Pin and identity
 
-- Live head (gh API, read first): `4420fb1e5422d965668c66f93d9d352cc3cec982`
-- Clone head (full clone, history present): same — verified match.
-- Visibility (gh API): private. Default branch: master (only branch). API description: the historical witness hypergraph of software at symbol grain — exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language.
-- Toolchain pin: no toolchain file in this repo. The example's readme states the replay runs with Lean 4.19.0 available, and the example's recorded verification transcript records Lean version 4.19.0.
-- Files: a readme (22 lines) and an examples folder (one example module of 44 lines, its own readme, its own check script, a recorded verification transcript). That is the entire repository at this head: two commits — the first states the claim and the evidence states, the second adds the example. There is no root Lean module, no root check script, no recorded root check log, and no sums file. No Mathlib anywhere: the one Lean file imports the standard library only.
-- Headline finding of this census: the artifacts the thesis needs — the witness hypergraph construction over the real store, the grain determination, and the Lean proof of platform independence — are NOT in this repository at this head. The readme itself says so, in its own evidence states (carried exactly below). The only Lean in the repo is the invoice example, which proves facts about premise extraction from a fixed journal fixture and nothing about the witness hypergraph, time, grain, or platforms.
+- Live head (local clone, branch master, in sync with origin/master): `8f6a128069d0e68e97c4a69d78689c84350b0d2f`
+- Visibility: private; default branch master. Archive description: the historical witness hypergraph of software at symbol grain — exact time, order independent, with a Lean proof that it holds independent of operating system, software, and language.
+- Toolchain pin: `proof/lean-toolchain` = `leanprover/lean4:v4.19.0`. The examples carry no toolchain file; their recorded transcripts also say Lean 4.19.0.
+- Files at the pin: README.md; `hypergraph/` (build.py, REPORT.md, hypergraph.json — the 10.9 MB built hypergraph over the frozen snapshot); `returns/` (extract.py, GRAINMAP.md, results.json); `proof/` (Traceability.lean, Controls.lean, check.sh, CHECK.log, REPORT.md, platform-audit.py, PLATFORM-AUDIT.log, lean-toolchain); `examples/` (InvoiceTrace.lean, check.sh, README.md, verification.txt, range-ledger/ with BridgeRepair.lean, check.sh, mutation.patch, README.md, verification.txt). Four Lean files, 726 lines total. A sibling-repo division of labor is stated in the README: this repo proves the witness-stream level and platform independence; the fold at the accounting level lives in software-is-quantifiable, the incremental hypergraph semantics in software-optimality.
+- This census read all four Lean files in full. No file is UNREAD.
 
-## Thesis in plain English
+## The thesis, one sentence
 
-Every execution of software appends witnesses to an append-only ledger. The accounting is a pure fold, so the historical witness hypergraph is a function of the witness set alone, independent of arrival order and of time. Witnesses carry exact time. The grain is the symbol, refined to the derivation step wherever a provable return needs it. A return is provable when the exact premise set of any witnessed outcome is derivable from the hypergraph alone. The construction is claimed to hold independent of operating system, software, and language, because foreign executions enter through lifting plus kernel-boundary sensing. That is the claim as the readme states it; its evidence state, per the readme itself, is settled intent — the parts that would prove or implement it are recorded by the readme as not yet landed in this repository.
+Every execution appends witnesses to an append-only ledger, the accounting is a pure fold, so the historical witness hypergraph is a function of the witness set alone — independent of arrival order and of time, at symbol grain refined to the derivation step where a provable return needs it — and a return is provable when the exact premise set of any witnessed outcome is derivable from the hypergraph alone, the construction holding independent of operating system, software, and language.
 
-## Controls and zero-sorries evidence
+## The two evidence lanes
 
-- Gate evidence state: this census did not run any build. Everything in this section is the repo's own recorded material, read at the pin.
-- There is no family check gate in this repo: no root check script, no escape scan, no recorded gate log. The only check script is the example's: it compiles the single example module with warnings as errors. It performs no sorry scan and no axiom scan beyond what the module itself prints.
-- This census's own word-boundary scan over the repo's only Lean file: no sorry, admit, axiom, or native-decide token.
-- The example's recorded verification transcript: Lean 4.19.0; the computed triple of the journal length (8) and the two extracted premise lists (two events for the override route, three for the pricing route); print-axioms lines for its five theorems — three depend on propext and quotient soundness, two on no axioms; and a rejected control — a mutation omitting the signature event from an override trace is recorded as rejected with exit 1.
-- No other recorded logs exist in the repo. In particular there is no recorded evidence in this repo for the witness store snapshot the readme cites (see the premises section): the store is not in the repo, and no sums file or log here lets a reader check the cited snapshot.
+The repo's claim splits into an executed lane and a proven lane, and
+the README says plainly which is which.
 
-## Definitions carried
+- Executed, not proven: the hypergraph establishment over the frozen witness store (2,509 witnesses, 8,482 recorded join edges in; 20,480 nodes, 9,356 hyperedges out; construction run four times with byte-identical output including a shuffled and a duplicated feed; 719 classes re-derived from the hypergraph alone, identical) and the grain map (1,526 accounting entries: 1,522 provable returns at symbol grain, 4 at derivation-step grain, none failing). These are verified by running Python over a snapshot; nothing in the Lean imports or touches the store. The README also concedes the store's records carry no timestamp field: exact time in this store is the batch and its step index.
+- Proven: the witness-stream level — order independence, duplication independence, time independence, retraction exactness, and what the fold does and does not lose, quantified over arbitrary node, event, and time types and an arbitrary lifting; plus the invoice and range-ledger examples as checked worked instances. All 43 named theorems are listed below.
 
-All definitions below are the readme's claim-level definitions; none of them is formalized in this repo at this head.
+## Theorem census — 43 theorems, zero lemmas, four files
 
-- Witness: a record appended to an append-only ledger by an execution of software. Witnesses carry exact time.
-- Historical witness hypergraph: the accounting structure obtained as a pure fold over the witness set — a function of the set alone, independent of arrival order and of time.
-- Grain: the symbol, refined to the derivation step wherever a provable return needs it.
-- Provable return: a return is provable when the exact premise set of any witnessed outcome is derivable from the hypergraph alone.
-- Platform independence, as claimed: the construction holds independent of operating system, software, and language, because foreign executions enter through lifting plus kernel-boundary sensing.
-- The example module's local definitions (the only formalized definitions in the repo): a journal as a fixed list of eight event kinds; two routes, each with its needed event list (the override route needs the override and signature events; the pricing route needs the quote, tax, and currency events); support of a route by an event list (every needed event is present); and evidence extraction (the journal filtered to the route's needed events).
+Strength columns: what each theorem concludes, what it assumes, and
+whether any premise does the conclusion's work. A premise that
+restates the conclusion is labeled PREMISE, per the family's
+quantifiable claim-5 precedent. Axioms are as recorded in the repo's
+committed gate log.
 
-## Theorem census — 5 named theorems, all in the example module
+### proof/Traceability.lean — 20 theorems (the main construction)
 
-Token column quotes at most one load-bearing word per theorem. These theorems are about the invoice fixture only. None of them is a theorem about the witness hypergraph, the fold, exact time, symbol grain, order independence, or platform independence; the repo contains no such theorems at this head.
+Model: `Derivation Node` = a premise characteristic function plus a head, so a hyperedge carries its full premise set; `Graph Node` = node and derivation characteristic functions; `fold lift` = pointwise `join` over the stream under an arbitrary contribution assignment `lift : Ev → Graph Node`; `foldtimed` folds through the underlying events only, never reading time components.
 
-| Token | Hypotheses → conclusion | Axioms (recorded transcript) |
+| Theorem | Statement (one line) | Concludes / assumes / premise audit |
 |---|---|---|
-| `exact` | No hypotheses → an event is in the extracted evidence for a route exactly when it is in the journal and in the route's needed list. Extraction is exact, for arbitrary routes and event lists. | propext, quotient soundness |
-| `verdict` | No hypotheses → a route is supported by its extracted evidence exactly as it is supported by the full journal: extraction preserves the verdict, for arbitrary routes and event lists. | propext, quotient soundness |
-| `least` | Premise: an alternative event list supports the chosen route → every event in the evidence extracted from the fixed journal is in the alternative. The extracted evidence is the least support, relative to this complete journal. | propext, quotient soundness |
-| `before` | No hypotheses → the journal has eight events, the override route's evidence is exactly its two events, and the pricing route's evidence is exactly its three events (checked by computation). The before-and-after fixture fact. | none |
-| `needed` | No hypotheses → no function of the bare approval verdict returns the route's needed event list for every route: both routes give the same visible approval, so a route-free receipt cannot recover its premises. **Negation theorem**, at fixture scale. | none |
+| bool_eq_of_agree | `(a = true ↔ b = true) → a = b` | Lemma-tool; assumes only the agreement. |
+| graph_ext | pointwise node and edge agreement → `g = h` | Extensionality; no premises beyond the agreements. |
+| join_assoc | `join (join a b) c = join a (join b c)` | Pure algebra; no premises. [Quot.sound] |
+| join_comm | `join a b = join b a` | Pure algebra; no premises. [Quot.sound] |
+| join_idem | `join a a = a` | Pure algebra; no premises. [Quot.sound] |
+| join_empty_left | `join empty a = a` | Identity law; no premises. |
+| join_empty_right | `join a empty = a` | Identity law; no premises. |
+| fold_append | `fold lift (l₁ ++ l₂) = join (fold lift l₁) (fold lift l₂)` | Partition-recompute agreement; no premises. [propext, Quot.sound] |
+| fold_nodes | node in fold ↔ some event of the stream contributes it | Losslessness, node face; no premises (quantified over arbitrary lift). [propext] |
+| fold_edges | derivation in fold ↔ some event of the stream contributes it, premise set read off exactly as recorded | Losslessness, derivation face — the load-bearing theorem for premise-set recovery; no premises. [propext] |
+| returns_head | `(fold lift l).nodes d.head = true → (∃ e, e ∈ l ∧ (lift e).edges d = true) → (fold lift l).edges d = true` | Concludes: a contributed derivation whose head is witnessed is present. Assumes: **PREMISE** — `contributed` restates the conclusion (presence of a contributed derivation is exactly fold_edges), and the proof is one line, `(fold_edges lift).mpr contributed`; the `_witnessed` hypothesis is not even read by the term. The "provable return" of a witnessed outcome is thus a corollary of losslessness, not an independent result. [propext] |
+| fold_ext | `(∀ e, e ∈ l₁ ↔ e ∈ l₂) → fold lift l₁ = fold lift l₂` | **Order independence**: same membership (weaker than permutation) → equal hypergraphs; hypothesis is the intended grain. [propext, Quot.sound] |
+| fold_perm | `l₁.Perm l₂ → fold lift l₁ = fold lift l₂` | Permutation independence; corollary of fold_ext. [propext, Quot.sound] |
+| fold_append_self | `fold lift (l ++ l) = fold lift l` | Duplication independence; corollary. [propext, Quot.sound] |
+| foldtimed_ext | timed streams with same underlying membership → equal timed folds | **Time independence, membership form**; time components never read. [propext, Quot.sound] |
+| map_event | `(es.map fun e => Timed.mk e (t e)).map Timed.event = es` | Retraction identity; no premises. |
+| foldtimed_retime | reassigning every time component (`f` vs `g`) leaves the fold unchanged | **Time independence, reassignment form**; no premises. [propext] |
+| retract_nodes | node in filtered fold ↔ some surviving event contributes it | Retraction exactness, node face; no premises. [propext] |
+| retract_edges | derivation in filtered fold ↔ some surviving event contributes it | Retraction exactness, derivation face; no premises. [propext] |
+| retract_eq | `(∀ e, e ∈ s ↔ e ∈ l ∧ keep e = true) → fold lift (l.filter keep) = fold lift s` | Observables after retraction equal recomputation from survivors; hypothesis `h` defines `s` to be the survivor set, which is the theorem's meaning. [propext, Quot.sound] |
 
-### Non-Lean lanes and their evidence states, exactly as the repo states them
+Independence reading: the theorems quantify over arbitrary `Node`,
+`Ev`, `Time` and an arbitrary `lift`; no platform, language, OS or
+mechanism is named in the proof terms (mechanically audited, see
+hygiene below). The independence is real but thin: `lift` is
+uninterpreted, so the theorems say the accounting is environment-free
+*given* whatever the lifting records — not that real executions
+produce informative witnesses.
 
-The readme's own table of parts and evidence states at creation, carried without inflation. The family's four states are settled intent, proposed, implemented, and verified; the readme adds that nothing in it claims a part is verified before its artifact and check land in this repository.
+### proof/Controls.lean — 12 theorems (adversarial controls, standing counterexamples)
 
-| Part | State as the repo itself states it | Evidence state for this census |
+Each weakens one axis of the construction and proves the weakened
+claim false on kernel-checked concrete data; each `*_claim_fails`
+theorem is a negation with a concrete witness.
+
+| Theorem | Statement (one line) | Concludes / assumes / premise audit |
 |---|---|---|
-| The claim itself | Settled intent — the ruling of Chris, dated 2026-11-18. | premise (a ruling, not a proof) |
-| The hypergraph establishment over the real witness store | Implemented in a lane and not yet landed in this repository. The readme cites a store of 2,509 witnesses and a snapshot hash (quoted once as evidence: `673ab30b1bea3bc98cd42ea68b1e1b58d3194891bb021b3f7b8949c7085e2c7e`). Neither the store, the construction, nor any check of it is in this repo. | claimed-not-proven (in this repo: unknown; nothing here can be checked) |
-| The grain map (the grain determination) | Proposed. Its executed check is not yet landed. | proposed |
-| The Lean proof of platform independence | Implemented in a lane and not yet landed in this repository. No such proof file exists at this head. | claimed-not-proven (in this repo: unknown; nothing here can be checked) |
-| The invoice example | Landed at this head with its check script and recorded verification transcript, including a rejected mutation control. | proven at fixture scale, on the repo's recorded transcript (not re-run by this census) |
+| count_once | `countfold [0] 0 = 1` | Control fixture; no premises. Kernel decide. |
+| count_twice | `countfold ([0] ++ [0]) 0 = 2` | Control fixture; no premises. Kernel decide. |
+| count_claim_fails | `¬∀ l, countfold (l ++ l) = countfold l` | **Duplication independence kills the counting join** (adds counts instead of union); counterexample `[0]`. Axiom-free. |
+| swap_same_set | `x ∈ [0,1] ↔ x ∈ [1,0]` | Order-control fixture; premise for first_claim_fails. [propext] |
+| first_claim_fails | `¬∀ l₁ l₂, same membership → firstfold ownlift l₁ = firstfold ownlift l₂` | **Order independence kills the first-event fold**; witnesses `[0,1]` vs `[1,0]`. [propext] |
+| prem_differ | `fullprem ≠ noprem` | Grain-control fixture: same head, different premise sets. [propext] |
+| grain_absent | `(fold grainlift [0]).edges noprem = false` | At exact grain the premise-less derivation is absent. [propext] |
+| grain_coarse_present | `∃ d', present ∧ shares head with noprem` | At coarse (head) grain the same derivation reads present. [propext] |
+| grain_claim_fails | `¬∀ d, (coarse presence) → exact presence` | **Symbol grain is necessary**: head-grain presence gives the wrong premise set; standing counterexample in-tree. [propext] |
+| residue_survivor_absent | surviving fold lacks node 0 | Retraction-control fixture. [propext] |
+| residue_present | residuefold has node 0 present | Retracted event leaves residue in the weakened variant. [propext] |
+| residue_claim_fails | `residuefold ownlift keep [0,1] ≠ fold ownlift ([0,1].filter keep)` | **Retraction exactness kills the residue fold**; standing counterexample. [propext] |
 
-## Premises carried rather than proven (consolidated)
+### examples/InvoiceTrace.lean — 5 theorems (worked example: premise extraction from a fixed journal)
 
-1. The whole headline construction rests on work recorded as living elsewhere: the living spec in the Idol workspace records (named in the readme as the decidability engine spec of 2026-11-17, sections 17 and 18) is the source of record for the claim's design, including the lifting and kernel-boundary sensing by which foreign executions are said to enter.
-2. The fold at the accounting level is cited to the quantifiable sibling repo, which the readme says proves it; the incremental hypergraph semantics are cited to the optimality sibling repo. This repo states it proves the witness-stream level and platform independence and does not re-prove the siblings' results — but at this head the witness-stream proof itself is recorded as not yet landed, so both levels rest on citation here, not on artifacts in this repo.
-3. The witness store snapshot (2,509 witnesses, hash quoted in the table above) is a premise as cited: the store is not in this repo and cannot be checked from anything in this repo.
-4. Exact time, symbol grain, and order independence are definitional parts of the claim as stated; no artifact in this repo at this head establishes any of them.
+| Theorem | Statement (one line) | Concludes / assumes / premise audit |
+|---|---|---|
+| extraction_exact | `e ∈ evidence r events ↔ e ∈ events ∧ e ∈ needs r` | Extraction is exact filter; no premises. [propext, Quot.sound] |
+| preserves_verdict | `supported r (evidence r events) = supported r events` | Evidence subset preserves the support verdict; no premises. [propext, Quot.sound] |
+| least_support | `supported r alt = true → ∀ e ∈ evidence r journal, e ∈ alt` | Any alternative supporting list carries the extracted evidence; `ok` is load-bearing but legitimate (it is the meaning of "supports"). [propext, Quot.sound] |
+| before_after | `journal.length = 8 ∧ evidence overridePath journal = [override,signature] ∧ evidence pricingPath journal = [quote,tax,currency]` | Checked before-and-after fixture. Axiom-free (kernel decide). |
+| route_is_needed | `¬∃ f : Bool → List Event, ∀ r, f (supported r journal) = needs r` | **A route-free receipt cannot recover its premises** — the traceability of the example is necessary, not incidental. Axiom-free. |
 
-## Non-claims carried
+### examples/range-ledger/BridgeRepair.lean — 6 theorems (restore tracing across disconnected telemetry islands)
 
-1. The readme's own boundary, carried exactly: nothing in the readme claims a part is verified before its artifact and check land in this repository. By that standard, at this head the hypergraph establishment, the grain determination, and the platform independence proof are all unverified in this repo, whatever their state in the lanes the readme mentions.
-2. The example's own scope limits (its readme, carried exactly): the fixture has one event per kind, one invoice, and a trusted route tag. The scan-based extractor still reads the whole journal; the saving is in evidence presented for inspection, not in reading. Production correlation, timestamps, and event authentication need their own contracts — so the example proves nothing about exact time or authentication, and its least-support fact is relative to its one complete journal.
-3. This repo does not re-prove the sibling repos' results (readme), and this census does not import their evidence states: the fold and the hypergraph semantics stand or fall at their own pins, censused separately.
-4. No performance, coverage, or completeness claim is made or censused here: nothing in the repo states that every execution in fact appends witnesses, and the sensing premise behind that is carried at its home, not discharged here.
+Model: four ledger positions with independent unknown potential
+offsets; wires observe pairwise differences; `blind ws` searches the
+16 masks for a nontrivial potential making every observed wire read
+zero.
 
-## Watch delta — 2026-11-18, the hourly re-synthesis watch
+| Theorem | Statement (one line) | Concludes / assumes / premise audit |
+|---|---|---|
+| returned_cut | `blind ws = some m → 0 < m ∧ m < 15 ∧ ∀ w ∈ ws, value (bit m) w = 0` | A returned cut is a genuine nontrivial cut; `found` does the work by hypothesis (it is the search's own output). [propext, Quot.sound] |
+| cut_distinguishes | `0 < m.val ∧ m.val < 15 → ∃ i j, bit m i ≠ bit m j` | Every nontrivial cut separates positions. Kernel decide over the 16 masks. [propext, Quot.sound] |
+| two_never_enough | `ws.length ≤ 2 → (blind ws).isSome = true` | Two wires never pin the offsets. [propext] |
+| ambiguity | `ws.length ≤ 2 → ∃ p, (∀ w ∈ ws, value p w = 0) ∧ ∃ i j, p i ≠ p j` | **Disconnected telemetry leaves exact positions unrecoverable**; disjunction of the two above. [propext, Quot.sound] |
+| three_suffice | `recover (value p ab) (value p bc) (value p cd) i = p i - p 0` | A spanning bridge chain restores every position exactly up to the global offset. [propext, Quot.sound] |
+| bad_three | `(blind [ab,ac,bc]).isSome = true ∧ blind [ab,bc,cd] = none` | Not all three-wire sets work: the wrong middle bridge fails the decoder; checked against the must-fail mutation patch in-tree. Kernel decide. [propext] |
 
-The watch re-read the live head at 5f84b051b165bcf12a42a66850cc6fec188f1728, past this annex's census pin 4420fb1e, and shallow-cloned it. Mechanical count at the live head: 37 theorem or lemma declarations across 3 Lean files (the traceability proof, its controls file, and the worked invoice example), no sorry token, no custom axiom declaration — the same declaration total the watch counted at the intermediate head 54bff506. The prose placements above stand at 4420fb1e; a full re-census at 5f84b051 is owed.
+## Hygiene verdict — zero of each, with receipts
 
-## Watch delta — 2026-11-18, the second hourly re-synthesis watch
+- **Zero `sorry`**: this census's word-boundary grep over all four Lean files: no hit. The committed `proof/CHECK.log` (`grep -Eq 'sorryAx|error:|warning:'` gate) contains none.
+- **Zero custom axioms**: no `axiom` declaration in any file (the only `axiom` tokens are `#print axioms` audit commands). The gate's axiom-subset check receipt, quoted: `Axiom subset check passed: printed axioms are a subset of {propext, Classical.choice, Quot.sound}` / `Axioms printed: Quot.sound propext`. Across all 43 theorems the printed axioms are only `propext` and `Quot.sound`; the twelve control theorems include three axiom-free ones; `count_claim_fails` is axiom-free. Example files' transcripts print the same shape (`propext`, `Quot.sound`, or none).
+- **Zero escapes**: no `native_decide`, no `implemented_by`, no `extern`, no `unsafe`, no `admit`, no `@and_all`-style attribute escapes in any of the four files (this census's scan plus the proof gate's own token scan). The `decide` occurrences (`before_after`, the control fixtures, `cut_distinguishes` over the 16 masks, `bad_three`) are kernel `decide`, not `native_decide` — allowed.
+- **Mechanical platform audit**: `proof/platform-audit.py` + `PLATFORM-AUDIT.log` — 52 platform words (linux, windows, posix, java, rust, compiler…) scanned against every `#check`-printed statement, receipt: `Hits: 0` / `Platform audit: PASS`.
+- PREMISE-labeled items: one, `returns_head`'s `contributed` (the hypothesis *is* fold_edges; the witnessed-head hypothesis is dead). Every other load-bearing hypothesis (`fold_ext` membership, `retract_eq` survivor-set definition, `least_support`'s `ok`, `returned_cut`'s `found`) is the theorem's intended grain, not a smuggled conclusion — recorded here as carried, not as defects.
 
-The watch re-read the live head at the enumeration head 8f6a128069d0e68e97c4a69d78689c84350b0d2f and shallow-cloned it. Mechanical count at that head, by the watch's own method (every theorem or lemma declaration in every Lean file in the tree): 43 declarations (43 distinct short names) across 4 Lean files, no sorry token and no custom axiom declaration in any file, 0 example declarations. The same method at the last recorded head 5f84b051b165bcf12a42a66850cc6fec188f1728 counted 37 declarations (37 distinct short names). Name comparison, one mechanical method both times: 6 names gained, 0 lost. The prose placements in this annex stand at the census pin 4420fb1e5422d965668c66f93d9d352cc3cec982; a full re-census at the new head is owed and the owed mark in the ledger stands.
+## Gate verdict
+
+- **Cover exists**: `proof/check.sh` is the widened family gate — escape-token scan, compile with `-DwarningAsError=true`, retry loop over deferred imports, failure on any `sorryAx|error:|warning:` in the log, and an axiom-subset check. **Coverage caveat**: it runs from `proof/`, so its recursive scan and enforcement reach only the two `proof/` files. The two example files are covered by `examples/check.sh` (compiles `InvoiceTrace.lean` with warnings as errors) and `examples/range-ledger/check.sh` (compiles `BridgeRepair.lean` with warnings as errors, then applies `mutation.patch` and asserts the mutated file *fails* to compile — a must-fail control that lands in-tree). Collectively every one of the four Lean files is compiled by some warnings-as-errors gate at the pin; the escape scan and axiom-subset enforcement apply to `proof/` only (this census's own scan closes that gap for the examples, at the cost of not being in the gate).
+- **Result at the pin**: by the repo's committed receipts — `proof/CHECK.log`: version line `Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)`, then 16 `Traceability` axiom print-outs, then 12 `Controls` print-outs, then the two closing PASS lines; `examples/verification.txt` and `examples/range-ledger/verification.txt`: same version line, per-theorem axiom lines, and `Rejected control:` lines showing the must-fail controls fired.
+- **Receipt finding (minor)**: `examples/verification.txt` ends `Rejected control: omit the signature from an override trace (Lean exit 1).` — but the `examples/check.sh` at this head has no mutation step and no `mutation.patch` for the invoice example exists in tree (only range-ledger's does). That control line is un-reproducible from the tree as gated; either the control step or the receipt predates the current script.
+- **Independent re-run**: NOT EXECUTED. No Lean toolchain exists in the census environment and toolchain download is network-blocked, so this census could not re-run the gates itself; the verdict above is the repo's recorded evidence at the pin, not a fresh green. This stands against the family bar's independent re-check requirement and is carried as an open verification-lane item, consistent with the idol-semi precedent (gate recorded green, re-run blocked on the environment).
+
+## Name-overclaim judgment
+
+The name claims: **software's history is more traceable than you think — the exact premise set of any witnessed outcome is recoverable from the fold of the witness stream, independent of platform, order, and time.**
+
+Judgment: **the theorems prove a weaker statement; the name's full claim is proven modulo an unformalized premise and partly by execution.** What is proven at the pin: for an *arbitrary* contribution assignment, the fold of a stream loses nothing on either face (fold_nodes, fold_edges), is a function of the event *set* alone (fold_ext, fold_perm, fold_append_self), ignores time entirely (foldtimed_ext, foldtimed_retime), and survives retraction exactly (retract_nodes, retract_edges, retract_eq) — all platform-free by quantification, with three controls proving each independence non-vacuous against concrete weakened variants, and two worked examples showing traceability necessary and a minimal spanning restore. What the name passes to premise: (a) the lifting premise — the theorems hold for every lift precisely because they say nothing about which lift real executions produce; the "kernel-boundary sensing" story that would connect real executions to the stream is stated, never formalized; (b) the store-level facts — the 2,509-witness snapshot, the four identical construction runs, and the 1,526-entry grain map are verified by running Python, not by the Lean; (c) the acknowledged time gap — the store carries no timestamps, "exact time" is batch-and-step-index, a weaker time than the claim's narrative suggests. So: no dishonest overclaim (the README's evidence states are accurate), but the name's force ("more traceable than you think" about *software*, meaning real systems) is cashed out as an abstract-folk theorem plus executed snapshot evidence plus an open lifting premise.
+
+## Ledger row
+
+pin 8f6a1280 · 4 Lean files (all read, none UNREAD) · 43 theorems (0 lemmas; 20 construction + 12 controls + 5 invoice + 6 bridge-repair) · hygiene 0 sorry / 0 custom axioms / 0 escapes (1 PREMISE: returns_head's `contributed`; environment-free scan 0 hits) · gate green on committed receipts covering all 4 files warnings-as-errors, but independent re-run NOT EXECUTED (no Lean toolchain available) and the examples gate lacks the escape scan/axiom check (1 minor un-reproducible receipt line) · name: weaker statement proven — fold of an arbitrary witness stream is lossless, order/duplication/time-independent, retraction-exact, platform-free by universal quantification; store-level grain map execution-verified not proven; real-execution lifting a stated, unformalized PREMISE.
