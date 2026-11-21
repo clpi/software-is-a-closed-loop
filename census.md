@@ -989,6 +989,23 @@ also named software inside the loop — their pins re-enter at
 stage 0 like any other, and this census is their stage 3
 witnessing by other means.
 
+
+Added by the seventy-sixth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software-emergence-is-decidable (public) — the emergence
+  ladder's rung 3, composition: twenty-two theorems in one
+  Lean file proving the verification stack under emergent
+  groups as actors — the tally algebra, formation from the
+  level-1 projection alone, restart exactness, the freeze
+  laws, the exact group-step exchange, the joint tally as
+  the componentwise sum of the level tallies, and the
+  shuffle marginal laws — with the measure monotonicity
+  obligation proved in conditional form, the
+  no-free-capability obligation standing as a named
+  premise, and the rung's capability claim refuted in the
+  repo's own record at the pin. Pin ee308652.
+
 ## The Idol family — role-and-state placements
 
 The Idol family is the loop's principal subject: the named
@@ -1565,7 +1582,7 @@ same data, machine-readable, is synthesis-pins.json.
 | ska | private |  | 81f0c4d6 | 2023-06-12 |  | unknown (unexamined) |
 | software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress |  858a85e3  | 2026-11-18 |  | proof family — synthesis.md |
 | software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it |  1d504014  | 2026-11-18 |  | proof family — synthesis.md |
-| software-emergence-is-decidable | public | Emergence from actor interactions as a parametric, solvable, optimizable vector over any qualified system — spec, program record, and machine-checked certificates | 192df382 | 2026-11-21 |  | new — spec and program record only at its founding head; no proof content in its tree by the named check — proposed |
+| software-emergence-is-decidable | public | Emergence from actor interactions as a parametric, solvable, optimizable vector over any qualified system — spec, program record, and machine-checked certificates | ee308652 | 2026-11-21 |  | proof family — placed above; rung 3 landed at this head, 22 theorems in one Lean file, its capability claim refuted in-repo |
 | software-frontier-is-solvable | private |  |  22418d56  | 2026-11-18 |  | proof family — synthesis.md |
 | software-has-a-highest-minimal-axis | public | The highest minimal axis theorem for qualified parametric systems, proved in Lean 4.19.0 | 63d9d3fd | 2026-11-21 |  | proof family — placed above |
 | software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. | 7b174646 | 2026-11-18 |  | proof family — synthesis.md |
@@ -2272,3 +2289,8 @@ A seventy-fifth enumeration: 577 repos, every head read individually, no read er
 ## Watch update — 2026-11-21 (seventy-fifth hourly re-synthesis)
 
 A seventy-sixth enumeration: 578 repos, every head read individually, no read errors. Three repos had moved since the last recorded heads, one was new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and two further idol-family repos (the compiler port and the sites repo). The new repo is the emergence program repo, public, at 192df382: three files at its founding head — a ladder specification, a program record, and a readme — read in full by the watch; it carries no proof-assistant source and no machine-checked artifact in its tree, so it is not proof-bearing in-repo by the named check, and it enters the census table below as a new repo whose in-repo state is proposed, its proved foundations housed in other repos of the family. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the seventy-fourth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler port and the sites repo were read by tree at their fresh heads and carry no proof-assistant content, so they remain proof-free by the named check; the compiler port's tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a native backend source, over four commits, and the sites repo's tree gained twelve files, two dated audit folders for the dash and frontier sweep spaces, and twenty-four files changed over two commits, with no file removed and the paper page file byte-identical between its heads. No tree read was truncated this watch.
+
+
+## Watch update — 2026-11-21 (seventy-sixth hourly re-synthesis)
+
+A seventy-seventh enumeration: 578 repos, every head read individually, no read errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and the emergence program repo, which is newly proof-bearing in this window. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the seventy-fifth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The emergence program repo moved by one commit landing its rung 3 execution: twenty-one files added and one changed, its readme, with one Lean file of twenty-two theorems proving seven of its eight rung obligations — one in conditional form — and the eighth standing as a named premise, beside its rung record printing its capability claim as falsified in both registered families; it is entered in the proof family below, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin. The enumeration read caught it mid-movement, and the later individual read at the head recorded here governs. No tree read was truncated this watch.
