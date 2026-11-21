@@ -3935,3 +3935,22 @@ Restated row, at its fresh head:
 - software-is-a-closed-loop — fresh head 46c480137ed01ab2355c0f0c9c54f600cff13be8, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-eighth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
 
 The two other moved repos this watch, the compiler port and the sites repo, are not proof repos and carry no ledger rows: both were read by tree at their fresh heads, no proof-assistant source was found in either, and they remain proof-free by the named check, as their census entries record.
+
+## Watch refresh — 2026-11-21, the seventieth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 577 repos, every head read individually with no errors, and read the moved repos by tree at their fresh heads in full, no read truncated. Evidence below rests on the tree and commit reads at both heads of each moved proof repo. Placements stand at the census pins named in the rows; a full theorem-level re-census at the fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Two moved proof repos grew (five names gained in one, ninety-five in the other), three carry every Lean file byte-identical between the last recorded head and the fresh head, and no name was lost in any of the five. No regression is flagged.
+- No pin moved without this ledger moving: every moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- deterministic-llms — fresh head a71ef232225fee24479449e19e9980c1b964f209, census pin 6151727a standing. Proven: 59 theorems, grown from 54 — the five new theorems stand in one new Lean file, the loop development (the admission, rejection, and scope soundness results and the two architecture coverage results), with no name lost and no sorry and no axiom declaration at either head. Premise set, controls, and gate state stand as the last refresh records; the check script and the recorded reports changed at the fresh head beside the new file.
+- software-redundant-compute-expands — fresh head 1c794e29c897053658ce47e7a42cac6a712621f2, census pin 1ea28648 standing, full re-census at the fresh head owed. Proven: 335 declarations (287 distinct names), grown from 240 (192 distinct) — ninety-five names gained across three new proof files, the worklist development at fifty, the closure development at twenty-six, and the algorithm search development at nineteen, with none lost and no sorry and no axiom declaration at either head. The recorded check log in the proof folder grew at the fresh head. Premise set and controls stand as the last refresh records.
+- idol-eyes — fresh head 4586347ff8316a85a2ca06016bb062546d21eef9, census pin 1dc24f4f standing. Proven: 61 theorems, unchanged — every Lean file byte-identical between the heads; the movement is a dated claims audit folder of scripts, raw outputs, and recorded check outputs, which is audit evidence at its own strength and is counted nowhere in the proven column. Premise set, controls, and gate state stand as the last refresh records.
+- idol-lib — fresh head da0f414837a68e8e81246f1a04b33f6f4fa83424, census pin 578b8b3a standing. Proven: 120 theorems, unchanged — every Lean file byte-identical between the heads; the movement is one new data format port and its evidence, none of it Lean. Premise set, controls, and gate state stand as the last refresh records.
+- software-is-a-closed-loop — fresh head 80b31f59e9aa7e18b9184c8913f1606a5732944d, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the six commits between them are the sixty-ninth watch landing and one further lane's re-census of the traceability repo inside this repo, landed by merge, and carry no Lean change. Controls and gate stand as the second watch row records.
+
+The three other moved repos this watch, the compiler port, the relay, and the sites repo, are not proof repos and carry no ledger rows: all were read by tree at their fresh heads, no proof-assistant source was found in any of them, and they remain proof-free by the named check, as their census entries record.
