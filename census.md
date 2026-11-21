@@ -644,6 +644,10 @@ A twenty-sixth enumeration: 569 repos, every head read individually, no read err
 
 A twenty-seventh enumeration: 569 repos, every head read individually, no read errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the twenty-fifth watch landing itself: the four commits between the heads are that watch's delta, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. No tree read was truncated this watch.
 
+## Watch update — 2026-11-21 (eighty-first hourly re-synthesis)
+
+An eighty-second enumeration: 578 repos, every head read individually. One first read failed on a transport stream error; it was re-read individually and matched its last recorded head, so the final reads carry no errors. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and one further proof repo (the emergence program repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the eightieth watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, six files changed and none added or removed, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The emergence program repo landed its premise audit in two commits at 8eb2906b: three files added, all in a new audit folder — the audit record, one Lean file of five theorems, and an audit script — and five files changed, the four rung records and the readme, with no file removed; its four rung Lean files are byte-identical between the heads, so its sixty-three theorems stand unchanged and its total is now sixty-eight theorems in five files. The five new theorems discharge the accumulation monotonicity premise for the concrete measure, in conditional form under one named hypothesis, a duplicate-free edge family; the other three carried premises stay premises, each traced in the audit record to its exact missing link, so the premise debt falls from four to three. It was re-censused at theorem level in full at its fresh head in its annex, and its census pin moves to 8eb2906b in this pass. No tree read was truncated this watch.
+
 ## Watch update — 2026-11-19 (twenty-seventh hourly re-synthesis)
 
 A twenty-eighth enumeration: 569 repos, every head read individually, no read errors. Four repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and three further idol-family repos (the compiler port, the relay, and the sites repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the twenty-sixth watch landing itself: the four commits between the heads are that watch's delta, placement, ledger, and pins commits, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. The compiler port, the relay, and the sites repo were read by tree at their fresh heads and carry no proof-assistant content, so they remain proof-free by the named check; the compiler port's tree stands at the same file count as at its last recorded head, with no file added or removed and two files changed, a slices record and a code generation source, over two commits, the relay's tree gained one file, a dated minimax note, with no file changed or removed over one commit, and the sites repo's tree gained twelve files, two dated audit folders, and twenty-two files changed over two commits, with the paper page file byte-identical between the heads. No tree read was truncated this watch.
@@ -1016,6 +1020,17 @@ synthesis placement section for this watch and the annex):
   not certified there, and the remaining obligations
   standing as named premises or in scoped form, as its
   annex delta records.
+  Restated by the eighty-first watch at pin 8eb2906b:
+  the premise audit landed — five new theorems in one
+  new Lean file discharging the accumulation
+  monotonicity premise for the concrete measure, in
+  conditional form under one named hypothesis, the
+  earlier four files unchanged, for sixty-eight
+  theorems in five files in total; the remaining three
+  carried premises stay premises, each traced in the
+  audit record to its exact missing link, and every
+  registered capability claim stays refuted as
+  registered.
 
 ## The Idol family — role-and-state placements
 
@@ -1593,7 +1608,7 @@ same data, machine-readable, is synthesis-pins.json.
 | ska | private |  | 81f0c4d6 | 2023-06-12 |  | unknown (unexamined) |
 | software-doesnt-have-to-regress | private | Lean 4 proof that a release process with per-symbol observed-behavior certification never has to regress |  858a85e3  | 2026-11-18 |  | proof family — synthesis.md |
 | software-doesnt-need-review | private | Lean 4 proof of when manual code review is redundant given per-symbol certification, and a proposal to replace it |  1d504014  | 2026-11-18 |  | proof family — synthesis.md |
-| software-emergence-is-decidable | public | Emergence from actor interactions as a parametric, solvable, optimizable vector over any qualified system — spec, program record, and machine-checked certificates | cddf398a | 2026-11-21 |  | proof family — placed above; rungs 4, 5, and 6 landed at this head, 63 theorems in four Lean files, their capability claims refuted in-repo and the certificate instances not certified in-repo |
+| software-emergence-is-decidable | public | Emergence from actor interactions as a parametric, solvable, optimizable vector over any qualified system — spec, program record, and machine-checked certificates | 8eb2906b | 2026-11-21 |  | proof family — placed above; the premise audit landed at this head, 68 theorems in five Lean files, the accumulation monotonicity premise discharged for the concrete measure, three carried premises standing, their capability claims refuted in-repo and the certificate instances not certified in-repo |
 | software-frontier-is-solvable | private |  |  22418d56  | 2026-11-18 |  | proof family — synthesis.md |
 | software-has-a-highest-minimal-axis | public | The highest minimal axis theorem for qualified parametric systems, proved in Lean 4.19.0 | 63d9d3fd | 2026-11-21 |  | proof family — placed above |
 | software-is-composable | private | Independent Lean 4 proof of incremental release monotonicity: per-symbol observed behavior qualifies or disqualifies each release, and qualification composes across releases. | 7b174646 | 2026-11-18 |  | proof family — synthesis.md |
