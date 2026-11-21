@@ -3884,3 +3884,18 @@ Defect-rule dispositions for this refresh:
 Restated row, at its fresh head:
 
 - software-is-a-closed-loop — fresh head 00e2c4358183d4a832d400bfc4ab61eb6e92005e, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-seventh watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+## Watch refresh — 2026-11-21, the sixty-ninth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 577 repos, every head read individually with no errors, and read the moved repos by tree at their fresh heads in full, no read truncated. Evidence below rests on the tree and commit reads at both heads of the moved proof repo. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed where the row says so.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo carries every Lean file byte-identical between the last recorded head and the fresh head, so no name was gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated row, at its fresh head:
+
+- software-is-a-closed-loop — fresh head 46c480137ed01ab2355c0f0c9c54f600cff13be8, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head, which is the head the sixty-eighth watch landed; the four commits between them are that watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+The two other moved repos this watch, the compiler port and the sites repo, are not proof repos and carry no ledger rows: both were read by tree at their fresh heads, no proof-assistant source was found in either, and they remain proof-free by the named check, as their census entries record.
