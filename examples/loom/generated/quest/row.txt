@@ -1,0 +1,1 @@
+[E-QUESTDB1] rate bar 4 rows per ingested row (8 divide 2, round half up at 0 places)

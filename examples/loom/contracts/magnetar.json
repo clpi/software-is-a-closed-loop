@@ -1,0 +1,10 @@
+{
+  "cell": "E-MAGNETAR1",
+  "section": 55,
+  "shape": "zero-knowledge proving rate on the paper contract, 15 workloads, traces of 2 to the 22nd power cycles, 120 bits of provable security, standard hashes alone, no trusted setup, 12 performance cores",
+  "venue": "the paper contract",
+  "figures": [
+    {"name": "rate", "start": "12.8", "ops": [["times", "2"]], "places": 1, "unit": "million cycles per second"},
+    {"name": "floor", "start": "8.7", "ops": [["times", "2"]], "places": 1, "unit": "million cycles per second"}
+  ]
+}

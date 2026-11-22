@@ -1,0 +1,7 @@
+{
+  "gemm": {"verdict": "PARTIAL", "figures": {"rate": "647", "call": "0.37", "size": "8"}},
+  "quest": {"verdict": "VERIFIED", "figures": {"rate": "4"}},
+  "carry": {"verdict": "VERIFIED", "figures": {"speed": "4.79"}},
+  "magnetar": {"verdict": "VERIFIED", "figures": {"rate": "25.6", "floor": "17.4"}},
+  "forge": {"verdict": "VERIFIED", "figures": {"raw": "836", "branch": "418"}}
+}

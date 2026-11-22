@@ -1,0 +1,84 @@
+{
+  "call": [
+    {
+      "expect": "0.12",
+      "start": "0.23"
+    },
+    {
+      "expect": "0.62",
+      "start": "1.23"
+    },
+    {
+      "expect": "0.87",
+      "start": "1.73"
+    },
+    {
+      "expect": "1.37",
+      "start": "2.73"
+    },
+    {
+      "expect": "5.37",
+      "start": "10.73"
+    }
+  ],
+  "rate": [
+    {
+      "expect": "644",
+      "start": "429"
+    },
+    {
+      "expect": "645",
+      "start": "430"
+    },
+    {
+      "expect": "646",
+      "start": "430.5"
+    },
+    {
+      "expect": "647",
+      "start": "431.5"
+    },
+    {
+      "expect": "648",
+      "start": "432"
+    },
+    {
+      "expect": "650",
+      "start": "433"
+    },
+    {
+      "expect": "662",
+      "start": "441"
+    }
+  ],
+  "size": [
+    {
+      "expect": "8",
+      "start": "1022"
+    },
+    {
+      "expect": "8",
+      "start": "1023"
+    },
+    {
+      "expect": "8",
+      "start": "1023.5"
+    },
+    {
+      "expect": "8",
+      "start": "1024.5"
+    },
+    {
+      "expect": "8",
+      "start": "1025"
+    },
+    {
+      "expect": "8",
+      "start": "1026"
+    },
+    {
+      "expect": "8",
+      "start": "1034"
+    }
+  ]
+}

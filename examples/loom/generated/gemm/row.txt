@@ -1,0 +1,1 @@
+[E-GEMM1] rate bar 647 GFLOP/s (431 times 3/2, round half up at 0 places); call bar 0.37 ns (0.73 divide 2, round half up at 2 places); size bar 8 MiB (1024 times 1024 times 8 divide 1048576, round half up at 0 places)

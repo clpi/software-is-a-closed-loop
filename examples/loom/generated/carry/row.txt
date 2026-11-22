@@ -1,0 +1,1 @@
+[E-CARRY1] speed bar 4.79 times (3.83 times 1.25, round half up at 2 places)

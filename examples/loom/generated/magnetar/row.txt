@@ -1,0 +1,1 @@
+[E-MAGNETAR1] rate bar 25.6 million cycles per second (12.8 times 2, round half up at 1 places); floor bar 17.4 million cycles per second (8.7 times 2, round half up at 1 places)
