@@ -115,3 +115,30 @@ work, and no instance claim made. The census pin is
 set to the fresh head on this first proof census; the
 placements in the synthesis and the ledger row are
 entered at the pin in this same pass.
+
+## Re-census — 2026-11-22, the ninety-fifth hourly re-synthesis watch
+
+Re-censused at theorem level in full at the fresh head 5b45d5fd22e57e0bf9044d4efe4fbc1ed7bc1f00; the census pin moves from 426ac15dc381b3eadd8954145faf805a37704203 to that head in this pass. One commit stands between the pins, the second lane's landing. The first proof file, the first test file, and the control draft are byte-identical between the pins, so the twenty proven theorems of the first lane and its twelve checked test instances stand unchanged. Two files are new: a second proof file carrying 38 declarations and a second test file carrying 6 checked instances; the audit file, the readme, the audit script, and the gate script changed. Counted by the watch method over the whole tree, declarations grew from 33 to 77 and distinct short names from 29 to 67, with 38 names gained and none lost — no proven set shrank and no regression is flagged. No placeholder token stands in the new files by this watch's scan.
+
+The 38 new declarations discharge, in the repo's own obligation numbering:
+
+- Obligation ten: soundness of the computed frontier, proved from the frontier membership characterization over the pairwise verdicts.
+- Obligation eleven: completeness and closure — a row outside the frontier has a dominator on the frontier, termination resting on the dominator count taken from the finite row list, with finiteness derived and never a hypothesis.
+- Obligation twelve: checker identity — the checker frontier and the solver frontier have exactly the same members, beside its executed instance in the second test file.
+- Obligation thirteen: the assembled optimality claim at exactly its proved strength, assembled from obligations ten, eleven, and twelve with no additional hypothesis.
+- Obligation fifteen: the frontier cone scope and kept forms, beside its executed instance control.
+- Obligation sixteen: reuse on certificate — membership, carry, and refusal, beside its executed controls for the unchanged and the one-cell-changed cones.
+- Obligation seventeen: incremental equals full, by induction over the operation sequence through its join and drop step results and its uniqueness results, beside its executed walk control.
+- Obligation eighteen: version binding and its changed form, beside the executed control that changes each of the four tuple components in turn.
+- Obligation nineteen: the premise registry audit, carried in the audit script and run by the gate over all four sources — the recorded audit at the closing pin enumerates the assumption atoms of both lanes and matches each against the registry classes, finding none outside the registry.
+- Obligation twenty: reopening scoped — the scope, kept-characterization, and partition results, beside the executed reopening control.
+- Beside the obligations: the core development the frontier results rest on — the frontier membership characterization, the step lemmas for the cover, edge, and verdict relations, the self-verdict results, and the counting results the completeness proof terminates on.
+
+Premises, absent set, and gate state at the fresh head:
+
+- On named premises: the premise registry (four premises) is kept explicit and never discharged, exactly as at the first pin; the assembled claim carries them as inherited in content from its parts.
+- Absent: no obligation of the twenty now stands unclaimed — obligations ten to thirteen and fifteen to twenty, named unclaimed work at the first pin, are discharged in this pass. No instance claim is made: the theorems are over the general definitions, and any claim about a concrete estate instance is later work at its own pin.
+- Controls in tree: the standing control draft stands unchanged and must still be refused by the audit; the checked test instances grew from twelve to eighteen with the second test file.
+- Gate state: green at the fresh head by the repo's recorded home record for the second lane — cold compile exit zero over all four sources, zero placeholders, 67 theorems axiom-audited with every one depending on no axioms or on a subset of the standard three, the hypothesis, naming, and premise audits passing over all four sources, and the finiteness control refused as required. The census did not re-run the build.
+
+State: PROVEN in source at the fresh head for all twenty obligations, on the recorded gate record at the head — the premise registry carried explicit, and no instance claim made. The census pin is set to the fresh head in this pass, and the placements in the synthesis and the ledger row are restated at the pin in this same pass.
