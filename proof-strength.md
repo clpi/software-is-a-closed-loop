@@ -4243,3 +4243,16 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 788ca52c92d7b5c2e54f29571f6cf8a54abc3195, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the eighty-eighth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
+
+## Watch refresh — 2026-11-21, the ninetieth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 582 repos, every head read individually, with the eighty empty repos returning no branch and matching their recorded empty state, so the final reads carry no errors, and read the moved repos by tree at their fresh heads. Evidence below rests on the tree and commit reads at both heads of the moved proof repo: no Lean file changed between them. The other moved repo, the compiler port, carries no proof-assistant content at its fresh head and has no ledger row. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files are unchanged between the last recorded head and the fresh head, so no name was lost; this repo's eleven names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 0b0f4365cd51524264081c4f507aafa054ea6fed, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the eighty-ninth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
