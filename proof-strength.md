@@ -4217,3 +4217,16 @@ Restated rows, at their fresh heads:
 New row, entered at its census pin:
 
 - software-qualification-is-two-sided — new row, entered at its census pin 6d68fbd81f45865050e0a7411a8e91a3919b6c5f, which is its fresh head. Proven: 19 theorem declarations in three Lean files — the boundary result, the margin result, and the growth result, beside their space, distance, and fold lemmas and the three standing controls. Recorded axiom states at the pin: the boundary and margin results on propositional extensionality, classical choice, and quotient soundness; the growth result on propositional extensionality and quotient soundness; one control on propositional extensionality alone and two controls on no axioms. Premise set: the configuration space finite by the definition of qualification, taken as an explicit list; distance counted in single-premise changes; and strengthening as enlargement of the qualified set. Absent set: any predictive verdict on the hinge width — the registered flip test is void on its instance with zero observed flips — and any width figure for a subject other than the recorded frontier instance, both named as not claimed in the repo. Controls in tree: three standing controls on concrete data, proving the failing existence premise load-bearing, the monotonicity not vacuous, and the strengthening premise load-bearing. Gate state: the gate script stands in the tree — escape scan, cold compile with warnings as errors, and the allowed-principle check — and the readme records the audit at the founding pin; no recorded gate log file stands in the tree, and this watch did not re-run the gate, so the gate stands at recorded strength.
+
+## Watch refresh — 2026-11-21, the eighty-eighth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 582 repos, every head read individually, with one first read failing on a transport stream error and matching its last recorded head on an individual re-read, so the final reads carry no errors, and read the moved repo by tree at its fresh head. Evidence below rests on the tree and commit reads at both heads of the moved proof repo: no Lean file changed between them. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files are unchanged between the last recorded head and the fresh head, so no name was lost; this repo's eleven names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 924a52e42c90ae51d27d9614ad5d13360dfd031f, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the eighty-seventh watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
