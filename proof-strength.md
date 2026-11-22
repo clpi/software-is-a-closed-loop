@@ -4425,3 +4425,16 @@ Restated rows, at their fresh heads:
 
 - software-is-quantifiable — fresh head 4e98484d96dee379baa5b5dd63daa13c529b12c4, census pin f3709926 standing. Proven by the watch method: 363 declarations, 352 distinct names (was 246 declarations at the last recorded head); 117 gained, none lost. The growth is the remaining groups of the update and checker spine: the delta group (obligations one to nine; 50 declarations in the new delta file, beside a new core file of definitions carrying no declarations), the coverage group (obligations twenty-two to thirty-two; 57 declarations in the new sensing file), and the end-to-end group (obligations thirty-three and thirty-four; 10 declarations in the new final file), with a new verification corpus file carrying no declarations and a four-line change to the root module file; the closure group (obligations ten to twenty-one) landed at the last recorded head. On named premises: the spine results stand at the strengths their files state, and the premises the spine record names — root signatures, collision resistance, and the committed scope matching the physical world among them — stay premises, not theorems, until a census at this head reads them in full. Absent: a full census of the spine development in this ledger — owed. Gate: no recorded gate log covering the new spine files was read in this watch, so a passing gate at this head is unrecorded for them; the earlier development's gate state stands as the sweep row records.
 - software-is-a-closed-loop — fresh head dbcc122ca5f406952a752fa4def6fedce917f8c8, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the hundredth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-22, the hundred-second hourly re-synthesis watch
+
+The watch re-enumerated the estate at 583 repos, every head read individually, with the eighty empty repos returning no branch and matching their recorded empty state, so the final reads carry no errors, and read the one moved proof repo by tree at its fresh head. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. This repo's Lean files are byte-identical between its heads, so its name set stands unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass, and its census pin stands. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head c709725e326eb950a0a16edebb36bcad40a7fc2e, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the hundred-first watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
