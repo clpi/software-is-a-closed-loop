@@ -151,3 +151,7 @@ census pin is set to the fresh head on this first
 proof census; the placements in the synthesis and
 the ledger row are entered at the pin in this same
 pass.
+
+## Watch delta — 2026-11-21, the eighty-fifth hourly re-synthesis watch
+
+The watch re-read this repo's live head at b12fdb2411f23df33c02f4695f0b2d8c09ecaa89 in the full enumeration and read the whole tree at that head (19 files, not truncated) and at the last recorded head 63d9d3fdce1f81c81cd5cda2bd9850b0c1494646 (8 files). No Lean file changed between the heads, so the proven set is unchanged: the same 58 theorems with the same name set at both, counted by the watch method over the tree at each pin, with no sorry token and no axiom declaration. The movement is two commits landing a deterministic finite solver for the axis problem beside the proof: eleven files added, all in a new solver folder — the solver, its model, an independent checker, a validation script, a Lean check script, four fixtures, a readme, and a validation record — and two files changed, the proof folder's check log and check script, with no file removed. The state recorded above at the census pin, that the solver stood proposed with no implementation in the tree, no longer holds at the fresh head: an implementation now stands in the tree, recorded here at delta strength from the tree and commit reads; its validation record is the repo's own, read firsthand and not re-run by this watch. The census pin stands at 63d9d3fdce1f81c81cd5cda2bd9850b0c1494646, with a full re-census at the fresh head owed.
