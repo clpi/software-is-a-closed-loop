@@ -1,0 +1,9 @@
+{
+  "cell": "E-CARRY1",
+  "section": 53,
+  "shape": "speculative decoding speedup over autoregressive decoding on the paper contract",
+  "venue": "the paper contract",
+  "figures": [
+    {"name": "speed", "start": "3.83", "ops": [["times", "1.25"]], "places": 2, "unit": "times"}
+  ]
+}

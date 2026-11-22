@@ -1,0 +1,1 @@
+[E-FORGE2] raw bar 836 pushes per second (418 times 2, round half up at 0 places); branch bar 418 pushes per second (418, round half up at 0 places)

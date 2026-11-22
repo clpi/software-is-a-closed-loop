@@ -1,0 +1,10 @@
+{
+  "cell": "E-FORGE2",
+  "section": 58,
+  "shape": "native host push throughput on the restated vendor contract, tiny checkpoint commits to uncontended references, post-receive pipeline bypassed on the raw arm, eval gating enabled on the real-branch arm",
+  "venue": "the restated vendor contract",
+  "figures": [
+    {"name": "raw", "start": "418", "ops": [["times", "2"]], "places": 0, "unit": "pushes per second"},
+    {"name": "branch", "start": "418", "ops": [], "places": 0, "unit": "pushes per second"}
+  ]
+}

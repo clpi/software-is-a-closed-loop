@@ -1,0 +1,11 @@
+{
+  "cell": "E-GEMM1",
+  "section": 49,
+  "shape": "square double-precision multiply at side 1024, single thread, column-major, no transposition, accumulating into the result, nominal rate from the median wall time",
+  "venue": "M4 Mac mini",
+  "figures": [
+    {"name": "rate", "start": "431", "ops": [["times", "3/2"]], "places": 0, "unit": "GFLOP/s"},
+    {"name": "call", "start": "0.73", "ops": [["divide", "2"]], "places": 2, "unit": "ns"},
+    {"name": "size", "start": "1024", "ops": [["times", "1024"], ["times", "8"], ["divide", "1048576"]], "places": 0, "unit": "MiB"}
+  ]
+}

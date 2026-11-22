@@ -1,0 +1,9 @@
+{
+  "cell": "E-QUESTDB1",
+  "section": 451,
+  "shape": "partitioned-table workload of the demo shape, hourly partitions, late commits into sealed partitions, physically written rows per ingested row",
+  "venue": "Idol derived store",
+  "figures": [
+    {"name": "rate", "start": "8", "ops": [["divide", "2"]], "places": 0, "unit": "rows per ingested row"}
+  ]
+}

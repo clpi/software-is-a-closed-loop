@@ -1,0 +1,59 @@
+Lean (version 4.19.0, x86_64-unknown-linux-gnu, commit 6caaee842e94, Release)
+'Loom.agrees' does not depend on any axioms
+'Loom.refuses' does not depend on any axioms
+'Loom.sampled' does not depend on any axioms
+'Loom.bar' does not depend on any axioms
+'Loom.miss' does not depend on any axioms
+'Loom.half' does not depend on any axioms
+== regenerate ==
+gemm: all written to work/generated/gemm
+quest: all written to work/generated/quest
+carry: all written to work/generated/carry
+magnetar: all written to work/generated/magnetar
+forge: all written to work/generated/forge
+== registered check 1: harnesses reproduce the standing verdicts ==
+gemm rate: NO-HOLD derived=647 stated=646
+gemm call: HOLD derived=0.37 stated=0.37
+gemm size: HOLD derived=8 stated=8
+PASS gemm verdict PARTIAL against recorded PARTIAL
+quest rate: HOLD derived=4 stated=4
+PASS quest verdict VERIFIED against recorded VERIFIED
+carry speed: HOLD derived=4.79 stated=4.79
+PASS carry verdict VERIFIED against recorded VERIFIED
+magnetar rate: HOLD derived=25.6 stated=25.6
+magnetar floor: HOLD derived=17.4 stated=17.4
+PASS magnetar verdict VERIFIED against recorded VERIFIED
+forge raw: HOLD derived=836 stated=836
+forge branch: HOLD derived=418 stated=418
+PASS forge verdict VERIFIED against recorded VERIFIED
+== registered check 2: regenerated rows match the corrected standing rows ==
+PASS gemm row figures {"call": "0.37", "rate": "647", "size": "8"} against corrected {"call": "0.37", "rate": "647", "size": "8"}
+PASS quest row figures {"rate": "4"} against corrected {"rate": "4"}
+PASS carry row figures {"speed": "4.79"} against corrected {"speed": "4.79"}
+PASS magnetar row figures {"floor": "17.4", "rate": "25.6"} against corrected {"floor": "17.4", "rate": "25.6"}
+PASS forge row figures {"branch": "418", "raw": "836"} against corrected {"branch": "418", "raw": "836"}
+== held-out validation: independent decimal path over rows and held cases ==
+gemm rate: row agrees at 647
+gemm call: row agrees at 0.37
+gemm size: row agrees at 8
+gemm: held cases agree
+quest rate: row agrees at 4
+quest: held cases agree
+carry speed: row agrees at 4.79
+carry: held cases agree
+magnetar rate: row agrees at 25.6
+magnetar floor: row agrees at 17.4
+magnetar: held cases agree
+forge raw: row agrees at 836
+forge branch: row agrees at 418
+forge: held cases agree
+probe: PASS
+PASS probe exit 0
+== control a: a drifted stated figure is refused (forge raw 836 to 835) ==
+PASS forge verdict under drift PARTIAL (must not be VERIFIED)
+== control b: the corrected matrix multiply figure verifies (gemm rate 646 to 647) ==
+PASS gemm verdict under the corrected figure VERIFIED
+== control c: the row is a projection of the contract (carry start 3.83 to 3.84) ==
+PASS mutated carry row speed 4.80 (projection moved with the contract)
+battery: PASS
+loom: PASS

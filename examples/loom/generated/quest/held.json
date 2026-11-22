@@ -1,0 +1,32 @@
+{
+  "rate": [
+    {
+      "expect": "3",
+      "start": "6"
+    },
+    {
+      "expect": "4",
+      "start": "7"
+    },
+    {
+      "expect": "4",
+      "start": "7.5"
+    },
+    {
+      "expect": "4",
+      "start": "8.5"
+    },
+    {
+      "expect": "5",
+      "start": "9"
+    },
+    {
+      "expect": "5",
+      "start": "10"
+    },
+    {
+      "expect": "9",
+      "start": "18"
+    }
+  ]
+}
