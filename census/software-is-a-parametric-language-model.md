@@ -145,3 +145,7 @@ work at their owners. The census pin is set to the
 fresh head on this first census; the placements in the
 synthesis and the ledger row are entered at the pin in
 this same pass.
+
+## Watch delta — 2026-11-22, the ninety-fourth hourly re-synthesis watch
+
+The watch re-read this repo's live head at 2ed9a077e11f3fee024120ad5648c8f59dd204c0 in the full enumeration and read the whole tree at that head (16 files, not truncated) and at the last recorded head ca4ca2b39181bb93a717b3edbb58ab476761fa5c (12 files). No Lean file stands among the changed files between the heads, so the proven set is unchanged: the same forty declarations with the same name set at both, counted by the watch method over the tree at each pin, with no sorry token and no axiom declaration at the fresh head. The movement is five commits on incremental recomputation of certified best-first synthesis — lookup cones, deletions under the update and checker bar, early cutoff, and the resume rule — landing as executed harness work: four files added, the incremental harness folder with its gate, its synthesis module, and its readme, none of them Lean. That harness work is executed evidence at its own strength, counted nowhere in the proven column. The census pin stands at ca4ca2b39181bb93a717b3edbb58ab476761fa5c in the pins file's census record for this repo, with the placements at that pin.
