@@ -4277,3 +4277,16 @@ Restated rows, at their fresh heads:
 - software-is-more-traceable-than-you-think — fresh head 03ed5be28011f26978350a90d16faa48e05324e7, census pin 4420fb1e standing. Proven by the watch method: 307 declarations, up from 284, with 23 distinct names gained and none lost, in twenty-two Lean files, up from twenty; the growth is a headed return development and its controls. Premises, absent set, controls, and gate stand as the annex census records.
 - software-is-solvable — fresh head ccf7a358ba8e6b8a614a10c32182230822701276, census pin 5bbceee7 standing. Proven by the watch method: 53 declarations, down from 54, with 22 distinct names gained and 22 lost, the distinct count standing at 53 at both heads, in seven Lean files at both heads; two Lean files were removed and one new Pareto development was added in a restructure. This row carries the regression flag recorded above. Premises, absent set, controls, and gate stand as the annex census records.
 - software-optimality — fresh head 06b09449d580e6192138deedbdac2a341c7c51a7, census pin b52c3170 standing. Proven by the watch method: 760 declarations, up from 692, with 66 distinct names gained and none lost, the distinct count rising from 596 to 662, in eighty-two Lean files, up from eighty; the growth is a closure strength development and a frontier obligations controls development, beside changes in the composition, frontier, Pareto, campaign, and selection developments. Premises, absent set, controls, and gate stand as the annex census records.
+
+## Watch refresh — 2026-11-22, the ninety-second hourly re-synthesis watch
+
+The watch re-enumerated the estate at 582 repos, every head read individually, with the eighty empty repos returning no branch and matching their recorded empty state, so the final reads carry no errors, and read the moved repo by tree at its fresh head. Evidence below rests on the tree and commit reads at both heads of the moved proof repo: no Lean file changed between them. Placements stand at the census pins named in the row; a full theorem-level re-census at the fresh head is owed.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo's Lean files are unchanged between the last recorded head and the fresh head, so no name was lost; this repo's eleven names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head b07a75ed98d69336460135483a983e3187308040, census pin d558669b standing. Proven: 11 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the ninety-first watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records.
