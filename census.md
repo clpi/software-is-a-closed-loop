@@ -2375,3 +2375,7 @@ An eighty-eighth enumeration: 582 repos, every head read individually, no read e
 Added by the eighty-seventh watch (same placement depth — the synthesis placement section for this watch and the annex):
 
 - software-qualification-is-two-sided (public) — the hinge width model: a qualified configuration nearest failing witness, its distance, the boundary and margin results, and monotonicity under strengthening, with three load-bearing controls. Its frontier instance width distribution is recorded in the repo; its registered flip test is void with zero observed flips, and no predictive verdict is claimed. Pin 6d68fbd8.
+
+## Watch update — 2026-11-21 (eighty-eighth hourly re-synthesis)
+
+An eighty-ninth enumeration: 582 repos, every head read individually. One first read failed on a transport stream error; it was re-read individually and matched its last recorded head, so the final reads carry no errors. One repo had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself. Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the eighty-seventh watch landing itself: the four commits between the heads are that watch's annex, placement, ledger, and pins commits, nine files in all with one annex file added and eight files changed, no Lean file changed among them, and its eleven theorems stand unchanged, recorded in its annex delta. No tree read was truncated this watch.
