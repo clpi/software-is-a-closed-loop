@@ -4341,3 +4341,16 @@ Restated rows, at their fresh heads:
 
 - software-pareto-is-provable — fresh head and new census pin 5b45d5fd22e57e0bf9044d4efe4fbc1ed7bc1f00 (prior census pin 426ac15dc381b3eadd8954145faf805a37704203). Proven: 58 declarations in its two proof files — the first file's 20 unchanged, discharging obligations one to nine and fourteen, and the second file's 38, discharging obligations ten to thirteen and fifteen to twenty: soundness, completeness and closure, checker identity, the assembled optimality claim, frontier cones, reuse on certificate, incremental equals full, version binding, the premise registry audit, and reopening scoped, beside the core frontier development they rest on. All twenty obligations now stand proved over the general definitions. On named premises: the premise registry (four premises) is carried explicit and never discharged; the assembled claim carries them as inherited in content from its parts. Absent: no obligation stands unclaimed; no instance claim is made. Controls in tree: the standing control draft, unchanged, which states finiteness as a hypothesis and must be refused by the repo's audit, and eighteen checked test instances, counted as executed evidence. Gate state: green at the fresh head by the repo's recorded home record — cold compile exit zero over all four sources, zero placeholders, 67 theorems axiom-audited inside the standard three, the hypothesis, naming, and premise audits passing, and the control refusal passing; the census did not re-run the build.
 - software-is-a-closed-loop — fresh head 1bf2ddc9430e1deb994db7898a28d83166550b54, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the ninety-fourth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-22, the ninety-sixth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 583 repos, every head read individually, with the eighty empty repos returning no branch and matching their recorded empty state, so the final reads carry no errors, and read the one moved proof repo by tree at its fresh head. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. This repo's Lean files are byte-identical between its heads, so its seventeen names stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass, and its census pin stands. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head dac376cb82737c87c07e3608178572ea0c1e7b7b, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the ninety-fifth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
