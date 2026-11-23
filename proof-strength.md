@@ -4496,3 +4496,16 @@ Restated rows, at their fresh heads:
 - software-is-a-parametric-language-model — fresh head aedf97ec908afb2957db91e512c13b06461cfab1, census pin ca4ca2b3 standing. Proven: 40 declarations, unchanged — every Lean file byte-identical between the heads, the same name set at both. The movement is one commit of incremental synthesis work, a randomized differential check on a shared gate version, landing as executed harness work. Premises and gate stand as its annex records.
 - software-is-reversible — fresh head 91d396df6da5d77823360d8bd29d7f75a7b790c5, census pin fcb95953 standing. Proven: unchanged — every Lean file byte-identical between the heads, the same name set at both, at the strength its annex records. The movement is one commit of meta search work, a candidate's own score change invalidating the selections that saw it, landing as executed work beside a fuzz script in the incremental folder. Premises, absent set, and gate stand as its annex records.
 - software-redundant-compute-expands — fresh head f13fa381fc45fa650d7f8dec5e43c0033cb18641, census pin 1ea28648 standing, full re-census at the fresh head owed. Proven: unchanged — every Lean file byte-identical between the heads, the same name set at both, at the strength its annex records. The movement is one commit of incremental gate work, a shared gate version and a randomized frontier check, landing as executed work in the incremental recomputation example. Premise set and controls stand as the last refresh records; the example's recorded gate receipts are executed evidence at their own strength.
+
+## Watch refresh — 2026-11-22, the hundred-seventh hourly re-synthesis watch
+
+The watch re-enumerated the estate at 583 repos, every head read individually, with the eighty empty repos returning no branch and matching their recorded empty state, so the final reads carry no errors, and read the one moved proof repo by tree at its fresh head. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The one moved proof repo has every Lean file byte-identical between its heads, so its name set stands unchanged, none gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: the one moved proof repo has its row restated below in this same pass, and its census pin stands. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head f522a92068781a9fc72faa0445d79f3e0f820660, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the hundred-sixth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
