@@ -4535,3 +4535,17 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head ea859ad3baf10c2940ea4768053ffe35431ed686, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the hundred-eighth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-22, the hundred-tenth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 583 repos, every head read individually, with the eighty empty repos returning no head and matching their recorded empty state, so the final reads carry no errors, and read both moved proof repos by tree at their fresh heads. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Both moved proof repos have every Lean file byte-identical between their heads, so their name sets stand unchanged, none gained and none lost. No regression is flagged.
+- No pin moved without this ledger moving: both moved proof repos have their rows restated below in this same pass, and their census pins stand. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol — fresh head 28143ca27d373be75d940120c47c193a268ec821, census pin 561cf395 standing, proof-bearing content only. Proven: unchanged — all five Lean files stand at the same blobs at both heads: the frontier file with its 7 theorems on the premises its row records, the release tools files with their 20 and 5 declarations, and the solver history file with its 10, beside the proof data sample that remains test data. The movement between the heads is compiler and gate work in seven commits, none of it Lean. Gate: the release tools verdict stands in the high-impact addendum above at its named pin; the solver history file's gate remains unknown, as its row records.
+- software-is-a-closed-loop — fresh head 96880b4b2984ac24bff12d1a7006dd4752171f0e, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the four commits between them are the hundred-ninth watch's annex, placement, ledger, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
