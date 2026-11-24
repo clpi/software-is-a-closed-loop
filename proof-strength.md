@@ -4882,3 +4882,18 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head bc091e26f99cadca030282f8bbdcc9b2d89a82c9, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-thirty-third watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-23, the hundred-thirty-fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read in the authenticated owner listing, with the eighty empty repos returning no head and matching their recorded empty state, so the final reads carry no errors, and read the three moved proof repos at their fresh heads. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Two moved proof repos have no Lean change, so their name sets stand unchanged; the third gained 233 distinct names and lost none. No regression is flagged.
+- No pin moved without this ledger moving: every moved proof repo has its row restated below in this same pass, and its census pin stands. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol — fresh head 6a1d01842ef04c762cd41cf7988ca284035c421c, census pin 561cf395 standing. Proven: 45 declarations, unchanged — every Lean file byte-identical between the heads, the same name set at both; the movement is one gate commit requiring actual execution in a driver gate's positive cases. Premises, absent set, controls, and gate stand as the earlier rows record, with the full census of the release tools and solver developments still owed.
+- software-has-a-highest-minimal-axis — fresh head 0ffbabf42b84ffbda9d4fa5943d01d0001a2ee41, census pin 63d9d3fd standing, full re-census at the fresh head owed. Proven: 580 declarations, grown — 233 distinct names gained and none lost against the last recorded head, no sorry token and no axiom declaration at either head; the growth is eleven new Lean files in the proof folder carrying the parametric Pareto, Pareto policy, optimal controller, incremental control, online, and reasoning developments, beside a recorded check log at the fresh head ending in a pass, read as the repo's own record and not re-run by this watch. On named premises: the one named premise stands as the earlier rows record, the positivity of the weight of every hyperedge of size at least two. Controls stand as the earlier rows record, beside the new reasoning controls recorded in the annex delta.
+- software-is-a-closed-loop — fresh head 1279b58ccf4e04232f8649905d91812260043843, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-thirty-fourth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
