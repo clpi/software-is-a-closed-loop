@@ -5022,3 +5022,16 @@ Restated rows, at their fresh heads:
 
 - idol — fresh head 39e7685d936c3941490a117e74ef8a737929085b, census pin 561cf395 standing. Proven: 45 declarations, unchanged — every Lean file byte-identical between the heads, the same name set at both; the movement is compiler work in two commits (one landing commit and its merge), one file changed and none added or removed, none of it Lean. Premises, absent set, controls, and gate stand as the earlier rows record, with the full census of the release tools and solver developments still owed.
 - software-is-a-closed-loop — fresh head 5603ff795e5ddf4d3775ff880d703f86c99fcfb9, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-forty-third watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-24, the hundred-forty-fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated in six pages past the public cap, with the eighty empty repos returning no head and matching their recorded empty state, and the moved head re-read individually and matching, so the final reads carry no errors, and read the one moved proof repo at its fresh head. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo has no Lean change between its heads, so its name set stands unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass, and its census pin stands. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 455e0d4bbdf2c0bfb1065844f4243929060ef911, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-forty-fourth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
