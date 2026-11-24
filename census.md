@@ -1032,6 +1032,21 @@ synthesis placement section for this watch and the annex):
   registered capability claim stays refuted as
   registered.
 
+Added by the hundred-thirty-sixth watch (same placement depth — the
+synthesis placement section for this watch and the annex):
+
+- software (public) — the consolidated proof repo: the
+  thirty-two proof repos of this family imported at named
+  pins under one tree, their histories carried in, the
+  byte-identical copies reconciled to one shared copy
+  each, and one canonical form of the four shared core
+  concepts with bridges proving each thesis's own form
+  equal to it — 415 Lean files carrying 4,328 theorem
+  declarations and 2 lemma declarations by this watch's
+  mechanical count, beside 261 checked examples. Its
+  gate receipts are recorded in its tree and were not
+  re-run by this watch. Pin eb8282a3.
+
 ## The Idol family — role-and-state placements
 
 The Idol family is the loop's principal subject: the named
@@ -2571,3 +2586,7 @@ A hundred-thirty-fifth enumeration: 584 repos, every head read in the authentica
 ## Watch update — 2026-11-23 (hundred-thirty-fifth hourly re-synthesis)
 
 A hundred-thirty-sixth enumeration: 584 repos, every head read in the authenticated owner listing, paginated in six pages past the public cap. The eighty empty repos returned no head, matching their recorded empty state, so the final reads carry no errors. Three repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and two further proof repos (the idol repo and the highest minimal axis repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the hundred-thirty-fourth watch landing itself: the five commits between the heads are that watch's annex, placement, ledger, readme, and pins commits, six files in all changed with none added or removed, no Lean file changed among them, and its seventeen theorems stand unchanged, recorded in its annex delta. The idol repo moved by one gate commit with every Lean file byte-identical, recorded in its annex delta. The highest minimal axis repo landed parametric Pareto policies and incremental autonomous execution in two commits at 0ffbabf4: eleven new Lean files carrying 243 new declarations, for 580 in all, with no name lost — recorded in its annex delta. No tree read was truncated this watch.
+
+## Watch update — 2026-11-23 (hundred-thirty-sixth hourly re-synthesis)
+
+A hundred-thirty-seventh enumeration: 584 repos, every head read in the authenticated owner listing, paginated in six pages past the public cap, and the moved heads re-read individually and matching, so the final reads carry no errors. The eighty empty repos returned no head, matching their recorded empty state. Two repos had moved since the last recorded heads, none were new, none were gone, and the paper source hash was unchanged. The moved set: this repo itself, and one repo that stood in the long tail and now carries proof content (the consolidated repo). Fresh heads for every repo stand in the pins file at this re-synthesis. This repo's movement is the hundred-thirty-fifth watch landing itself: the five commits between the heads are that watch's annex, placement, ledger, readme, and pins commits, eight files in all changed with none added or removed, no Lean file changed among them, and its seventeen theorems stand unchanged, recorded in its annex delta. The consolidated repo landed at eb8282a3 the import of the thirty-two proof repos of the family at the pins named in its import commits, with their histories carried in, beside the reconciliation of byte-identical copies, a shared core with proved bridges to each thesis's own core concepts, consolidation tooling and its inventory manifest, and recorded gate receipts: 1,734 files in all, 415 of them Lean, carrying 4,328 theorem declarations and 2 lemma declarations by this watch's mechanical count. Its tree at the last recorded head was re-read in this pass and carries one readme file and no proof-assistant content, so the repo is newly proof-bearing by the named check — entered in the proof family above, censused at theorem level in its annex, and placed in the synthesis at its head, which is its census pin. Its gate receipts were read as its own record and not re-run by this watch. No tree read was truncated this watch.
