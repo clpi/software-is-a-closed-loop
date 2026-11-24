@@ -5035,3 +5035,16 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 455e0d4bbdf2c0bfb1065844f4243929060ef911, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-forty-fourth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-24, the hundred-forty-sixth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated in six pages past the public cap, with the eighty empty repos returning no head and matching their recorded empty state, and the moved heads re-read individually and matching, so the final reads carry no errors, and read the one moved proof repo at its fresh head. The other moved repo, the compiler port, carries no proof-assistant content at either head by the tree check, so it is not proof-bearing and no ledger row is owed for it. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo has no Lean change between its heads, so its name set stands unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass, and its census pin stands. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head a311c0634895661a406e6b775402117e080475ec, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-forty-fifth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
