@@ -5240,3 +5240,17 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 58df631b71ee8b68a26af9241b18b7bb742fa947, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-fifty-ninth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-25, the hundred-sixty-first hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated past the public cap, with the eighty empty repos returning no head and matching their recorded empty state, so the final reads carry no errors. The two moved repos are proof repos — the idol repo and this repo itself — and were read at their fresh heads. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row; no census pin moves in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. Both moved proof repos have no Lean change between their heads — every Lean file byte-identical in each — so their name sets stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: both moved proof repos have their rows restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol — fresh head d1249b3d39abf93ea151ad2470fce30cc86cf76f, census pin 561cf395 standing, proof-bearing content only. Proven: unchanged — all five Lean files stand at the same blobs at both heads, counted by the watch method as forty-five declarations with the same name set, on the premises its earlier rows record. The movement between the heads is two commits of gate and lowering work: three gate face files added, and a gate script and the lowering source changed. Gate: the release tools verdict stands in the high-impact addendum above at its named pin; the full census of the release tools and solver developments remains owed.
+- software-is-a-closed-loop — fresh head cf42b0ac13d9d62ff41493c1c6280ea90c4ef0ea, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-sixtieth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
