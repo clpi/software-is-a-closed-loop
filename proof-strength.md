@@ -5320,3 +5320,16 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 8f285db786ffc356462d279d4181c71697d45ca6, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-sixty-fifth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-25, the hundred-sixty-seventh hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated past the public cap, with the eighty empty repos returning no head and matching their recorded empty state, so the final reads carry no errors. One of the two moved repos is a proof repo — this repo itself — and was read at its fresh head. The other moved repo, the sites repo, carries no proof-assistant content by the named check and has no ledger row. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row; no census pin moves in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo has no Lean change between its heads — every Lean file byte-identical — so its name set stands unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 14ad358c62b9fe9bdab9e9bf62610abce724736d, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-sixty-sixth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
