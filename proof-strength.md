@@ -5157,3 +5157,17 @@ Restated rows, at their fresh heads:
 
 - idol — fresh head d00c676f4f6717199d2d9faa2a3a3dba8a3c517f, census pin 561cf395 standing. Proven: forty-five declarations in its five Lean files, unchanged — no Lean file among the added or changed files between its heads, and the same blob for each of the five files at both heads; the movement is four commits of compiler and gate work, three insertion gate files added and the graph lowering source changed. The full census of its release tools and solver developments remains owed, and that owed mark stands.
 - software-is-a-closed-loop — fresh head 26831b5f68cae6bca4dcfda3abf770c55a6dca64, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-fifty-third watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-24, the hundred-fifty-fifth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated past the public cap, with the eighty empty repos returning no head and matching their recorded empty state, so the final reads carry no errors. The two moved repos are proof repos and were read at their fresh heads. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row; no census pin moves in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The idol repo and this repo have no Lean change between their heads — every Lean file byte-identical, the same blob for each file at both heads — so their name sets stand unchanged. No regression is flagged.
+- No pin moved without this ledger moving: every moved proof repo has its row restated below in this same pass, and no census pin moves. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- idol — fresh head 4b09f69c1199475fd90501211095e106a01531c4, census pin 561cf395 standing. Proven: forty-five declarations in its five Lean files, unchanged — no Lean file among the added or changed files between its heads, and the same blob for each of the five files at both heads; the movement is two commits of backend and gate work, two gate files added and the backend source changed. The full census of its release tools and solver developments remains owed, and that owed mark stands.
+- software-is-a-closed-loop — fresh head edea8a77c819836bfd6d19072f53a8db42e9f7fa, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-fifty-fourth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
