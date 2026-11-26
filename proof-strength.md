@@ -5483,3 +5483,16 @@ Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 234272b188015125c97e3a1f526c0e53b2e52595, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the six commits between them are the hundred-seventy-seventh watch's two annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
 - idol — fresh head 99dd9f12b265c8dd2734afb66b402a8839e8ed74, census pin 561cf395 standing, proof-bearing content only. Proven: unchanged — all five Lean files stand at the same blobs at both heads, counted by the watch method as forty-five declarations with the same name set, on the premises its earlier rows record. The movement between the heads is three commits of evidence hygiene work: one hundred seven files removed, all temporary benchmark admit outputs, and none added, none of them Lean. Gate: the release tools verdict stands in the high-impact addendum above at its named pin; the full census of the release tools and solver developments remains owed.
+
+## Watch refresh — 2026-11-25, the hundred-seventy-ninth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated past the public cap, with no read errors, and the eighty empty repos returning no head and matching their recorded empty state. The one moved repo is a proof repo — this repo itself — and was read at its fresh head. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row; no census pin moves in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo has no Lean change between its heads — every Lean file byte-identical — so its name set stands unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 9e03d2b11c16c4edb4c936347c521d7a0acc1d2f, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the six commits between them are the hundred-seventy-eighth watch's two annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
