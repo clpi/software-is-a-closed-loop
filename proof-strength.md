@@ -5757,3 +5757,16 @@ Defect-rule dispositions for this refresh:
 Restated rows, at their fresh heads:
 
 - software-is-a-closed-loop — fresh head 0301651e11f80908908da82780fcfd67ac25f67b, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-ninety-eighth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
+
+## Watch refresh — 2026-11-26, the two-hundredth hourly re-synthesis watch
+
+The watch re-enumerated the estate at 584 repos, every head read individually through the authenticated owner listing, paginated past the public cap, and the eighty empty repos returned no head, matching their recorded empty state, so the final reads carry no errors. The one moved repo is a proof repo — this repo itself — and was read at its fresh head. No other proof repo moved, so no other ledger row is owed in this pass. Placements stand at the census pins named in each row; no census pin moves in this pass.
+
+Defect-rule dispositions for this refresh:
+
+- No proven set shrank. The moved proof repo has no Lean change between its heads — every Lean file byte-identical — so its name set stands unchanged. No regression is flagged.
+- No pin moved without this ledger moving: the moved proof repo has its row restated below in this same pass. No synthesis defect is flagged.
+
+Restated rows, at their fresh heads:
+
+- software-is-a-closed-loop — fresh head 60a76cde5aa5307b1e940bb2685794d7ecd6128c, census pin d558669b standing. Proven: 17 theorems, unchanged — the same name set at the last recorded head and at the fresh head; the five commits between them are the hundred-ninety-ninth watch's annex, placement, ledger, readme, and pins commits and carry no Lean change. Controls and gate stand as the second watch row records, beside the loom record in the ninety-fourth watch row.
